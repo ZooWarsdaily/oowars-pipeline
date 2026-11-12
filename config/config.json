@@ -95,5 +95,10 @@
     "arena2d"
   ],
   "_slots_help": "un creneau par video du jour (heure de Paris) ; slotGames dit quel jeu va dans chaque creneau",
-  "productionRule": "J+1 et J+2 complets : rien ; seul J+1 complet : produire J+2 et J+3 ; seul J+2 complet : J+1 et J+3 ; aucun : J+1, J+2, J+3 (voir orchestrator.js plan-today)"
+  "productionRule": "J+1 et J+2 complets : rien ; seul J+1 complet : produire J+2 et J+3 ; seul J+2 complet : J+1 et J+3 ; aucun : J+1, J+2, J+3 (voir orchestrator.js plan-today)",
+  "studio": {
+    "youtube": "https://studio.youtube.com/channel/UCSpSNPtpl-3rwvnmnQglhoA",
+    "tiktok": "https://www.tiktok.com/tiktokstudio/content",
+    "_help": "lus en lecture seule par channel-analyst via le navigateur integre (connexion faite par le proprietaire le 12/11/2026)"
+  }
 }
