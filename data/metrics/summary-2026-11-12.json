@@ -1,0 +1,611 @@
+{
+  "weekStart": "2026-11-06",
+  "weekEnd": "2026-11-12",
+  "posts": 23,
+  "prevPosts": 0,
+  "totals": {
+    "views": 4221,
+    "prevViews": 0,
+    "likes": 38,
+    "comments": 1
+  },
+  "byPlatform": {
+    "youtube": {
+      "n": 12,
+      "medianViews": 117.5,
+      "medianLikes": 2.5,
+      "medianAvgWatchSec": null,
+      "totalViews": 4221
+    },
+    "tiktok": {
+      "n": 11,
+      "medianViews": 0,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 0,
+      "totalViews": 0
+    }
+  },
+  "byGame": {
+    "territory": {
+      "n": 6,
+      "medianViews": 1,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 0,
+      "totalViews": 922
+    },
+    "hotpotato2d": {
+      "n": 5,
+      "medianViews": 0,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 0,
+      "totalViews": 2220
+    },
+    "bigeatssmall": {
+      "n": 6,
+      "medianViews": 12.5,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 0,
+      "totalViews": 436
+    },
+    "colorwar": {
+      "n": 6,
+      "medianViews": 5.5,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 0,
+      "totalViews": 643
+    }
+  },
+  "byGamePlatform": {
+    "territory / youtube": {
+      "n": 3,
+      "medianViews": 62,
+      "medianLikes": 0,
+      "medianAvgWatchSec": null,
+      "totalViews": 922
+    },
+    "territory / tiktok": {
+      "n": 3,
+      "medianViews": 0,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 0,
+      "totalViews": 0
+    },
+    "hotpotato2d / youtube": {
+      "n": 3,
+      "medianViews": 999,
+      "medianLikes": 4,
+      "medianAvgWatchSec": null,
+      "totalViews": 2220
+    },
+    "bigeatssmall / youtube": {
+      "n": 3,
+      "medianViews": 164,
+      "medianLikes": 1,
+      "medianAvgWatchSec": null,
+      "totalViews": 436
+    },
+    "colorwar / tiktok": {
+      "n": 3,
+      "medianViews": 0,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 0,
+      "totalViews": 0
+    },
+    "colorwar / youtube": {
+      "n": 3,
+      "medianViews": 71,
+      "medianLikes": 4,
+      "medianAvgWatchSec": null,
+      "totalViews": 643
+    },
+    "hotpotato2d / tiktok": {
+      "n": 2,
+      "medianViews": 0,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 0,
+      "totalViews": 0
+    },
+    "bigeatssmall / tiktok": {
+      "n": 3,
+      "medianViews": 0,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 0,
+      "totalViews": 0
+    }
+  },
+  "bySlot": {
+    "01:53": {
+      "n": 1,
+      "medianViews": 858,
+      "medianLikes": 7,
+      "medianAvgWatchSec": null,
+      "totalViews": 858
+    },
+    "12:00": {
+      "n": 4,
+      "medianViews": 0,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 0,
+      "totalViews": 71
+    },
+    "13:00": {
+      "n": 2,
+      "medianViews": 780,
+      "medianLikes": 6,
+      "medianAvgWatchSec": null,
+      "totalViews": 1560
+    },
+    "15:00": {
+      "n": 2,
+      "medianViews": 154.5,
+      "medianLikes": 0.5,
+      "medianAvgWatchSec": null,
+      "totalViews": 309
+    },
+    "15:30": {
+      "n": 1,
+      "medianViews": 0,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 0,
+      "totalViews": 0
+    },
+    "17:00": {
+      "n": 2,
+      "medianViews": 616,
+      "medianLikes": 5,
+      "medianAvgWatchSec": null,
+      "totalViews": 1232
+    },
+    "18:00": {
+      "n": 2,
+      "medianViews": 12.5,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 0,
+      "totalViews": 25
+    },
+    "19:00": {
+      "n": 4,
+      "medianViews": 1,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 0,
+      "totalViews": 166
+    },
+    "21:00": {
+      "n": 1,
+      "medianViews": 0,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 0,
+      "totalViews": 0
+    },
+    "16:00": {
+      "n": 2,
+      "medianViews": 0,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 0,
+      "totalViews": 0
+    },
+    "21:30": {
+      "n": 1,
+      "medianViews": 0,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 0,
+      "totalViews": 0
+    },
+    "20:30": {
+      "n": 1,
+      "medianViews": 0,
+      "medianLikes": 0,
+      "medianAvgWatchSec": null,
+      "totalViews": 0
+    }
+  },
+  "byWeekday": {
+    "Tue": {
+      "n": 9,
+      "medianViews": 2,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 0,
+      "totalViews": 2117
+    },
+    "Wed": {
+      "n": 7,
+      "medianViews": 0,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 0,
+      "totalViews": 1946
+    },
+    "Thu": {
+      "n": 7,
+      "medianViews": 0,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 0,
+      "totalViews": 158
+    }
+  },
+  "byDecor": {},
+  "byHook": {
+    "Who will own the map? 🎨 Last place is out every 12 seconds. Pick your animal 👇": {
+      "n": 2,
+      "medianViews": 429,
+      "medianLikes": 3.5,
+      "medianAvgWatchSec": 0,
+      "totalViews": 858
+    },
+    "Who will own the map? 🎨 Last place is out every 12 seconds… pick your animal before the end 👇": {
+      "n": 2,
+      "medianViews": 1,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 0,
+      "totalViews": 2
+    },
+    "Don't get caught holding the bomb 💣 Who survives the last explosion? Pick your animal before the end 👇": {
+      "n": 2,
+      "medianViews": 499.5,
+      "medianLikes": 2,
+      "medianAvgWatchSec": 0,
+      "totalViews": 999
+    },
+    "Bigger eats smaller 😱 Eat, grow… or get eaten. Comment your pick in the first 5 seconds 👇": {
+      "n": 2,
+      "medianViews": 123.5,
+      "medianLikes": 0.5,
+      "medianAvgWatchSec": 0,
+      "totalViews": 247
+    },
+    "Every hit steals a tile 🟥 Only one color survives. Who's your champion? 👇": {
+      "n": 2,
+      "medianViews": 5.5,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 0,
+      "totalViews": 11
+    },
+    "Every hit steals a tile 🟥 Only one color survives. Pick yours 👇": {
+      "n": 2,
+      "medianViews": 280.5,
+      "medianLikes": 4,
+      "medianAvgWatchSec": 0,
+      "totalViews": 561
+    },
+    "Don't get caught holding the bomb 💣 Who survives the last explosion? 👇": {
+      "n": 2,
+      "medianViews": 610.5,
+      "medianLikes": 5,
+      "medianAvgWatchSec": 0,
+      "totalViews": 1221
+    },
+    "Bigger eats smaller 😱 Eat, grow… or get eaten. Pick your animal 👇": {
+      "n": 2,
+      "medianViews": 82,
+      "medianLikes": 2,
+      "medianAvgWatchSec": 0,
+      "totalViews": 164
+    },
+    "6 animals, 1 map, only 1 survivor 🎨 Who's your pick?": {
+      "n": 2,
+      "medianViews": 31,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 0,
+      "totalViews": 62
+    },
+    "Which color takes over the board? 🟥🟦🟩 Comment before the end!": {
+      "n": 2,
+      "medianViews": 35.5,
+      "medianLikes": 2,
+      "medianAvgWatchSec": 0,
+      "totalViews": 71
+    },
+    "Only the biggest survives 🍖 Who's your pick?": {
+      "n": 2,
+      "medianViews": 12.5,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 0,
+      "totalViews": 25
+    },
+    "Pass it or BOOM 💣 Pick your animal before the end!": {
+      "n": 1,
+      "medianViews": 0,
+      "medianLikes": 0,
+      "medianAvgWatchSec": null,
+      "totalViews": 0
+    }
+  },
+  "byQuestion": {},
+  "top": [
+    {
+      "postId": "6af611d816fe4fcc9041beed",
+      "platform": "youtube",
+      "date": "2026-11-11",
+      "weekday": "Wed",
+      "time": "17:00",
+      "inWeek": true,
+      "videoId": "",
+      "auto": false,
+      "game": "hotpotato2d",
+      "decor": "",
+      "winner": "",
+      "slot": "",
+      "hook": "Don't get caught holding the bomb 💣 Who survives the last explosion? 👇",
+      "question": "",
+      "intensity": null,
+      "duration": null,
+      "views": 1221,
+      "likes": 10,
+      "comments": 1,
+      "shares": null,
+      "reach": null,
+      "avgWatchSec": null,
+      "watchMin": null,
+      "ageHours": 29.6,
+      "views48h": null,
+      "views7d": null,
+      "likes48h": null
+    },
+    {
+      "postId": "6af611d816fe4fcc9041bef7",
+      "platform": "youtube",
+      "date": "2026-11-10",
+      "weekday": "Tue",
+      "time": "13:00",
+      "inWeek": true,
+      "videoId": "",
+      "auto": false,
+      "game": "hotpotato2d",
+      "decor": "",
+      "winner": "",
+      "slot": "",
+      "hook": "Don't get caught holding the bomb 💣 Who survives the last explosion? Pick your animal before the end 👇",
+      "question": "",
+      "intensity": null,
+      "duration": null,
+      "views": 999,
+      "likes": 4,
+      "comments": 0,
+      "shares": null,
+      "reach": null,
+      "avgWatchSec": null,
+      "watchMin": null,
+      "ageHours": 57.6,
+      "views48h": 999,
+      "views7d": null,
+      "likes48h": 4
+    },
+    {
+      "postId": "6af611d816fe4fcc9041bef3",
+      "platform": "youtube",
+      "date": "2026-11-10",
+      "weekday": "Tue",
+      "time": "01:53",
+      "inWeek": true,
+      "videoId": "",
+      "auto": false,
+      "game": "territory",
+      "decor": "",
+      "winner": "",
+      "slot": "",
+      "hook": "Who will own the map? 🎨 Last place is out every 12 seconds. Pick your animal 👇",
+      "question": "",
+      "intensity": null,
+      "duration": null,
+      "views": 858,
+      "likes": 7,
+      "comments": 0,
+      "shares": null,
+      "reach": null,
+      "avgWatchSec": null,
+      "watchMin": null,
+      "ageHours": 68.8,
+      "views48h": 858,
+      "views7d": null,
+      "likes48h": 7
+    },
+    {
+      "postId": "6af611d816fe4fcc9041bee7",
+      "platform": "youtube",
+      "date": "2026-11-11",
+      "weekday": "Wed",
+      "time": "13:00",
+      "inWeek": true,
+      "videoId": "",
+      "auto": false,
+      "game": "colorwar",
+      "decor": "",
+      "winner": "",
+      "slot": "",
+      "hook": "Every hit steals a tile 🟥 Only one color survives. Pick yours 👇",
+      "question": "",
+      "intensity": null,
+      "duration": null,
+      "views": 561,
+      "likes": 8,
+      "comments": 0,
+      "shares": null,
+      "reach": null,
+      "avgWatchSec": null,
+      "watchMin": null,
+      "ageHours": 33.6,
+      "views48h": null,
+      "views7d": null,
+      "likes48h": null
+    },
+    {
+      "postId": "6af611d816fe4fcc9041bee9",
+      "platform": "youtube",
+      "date": "2026-11-10",
+      "weekday": "Tue",
+      "time": "15:00",
+      "inWeek": true,
+      "videoId": "",
+      "auto": false,
+      "game": "bigeatssmall",
+      "decor": "",
+      "winner": "",
+      "slot": "",
+      "hook": "Bigger eats smaller 😱 Eat, grow… or get eaten. Comment your pick in the first 5 seconds 👇",
+      "question": "",
+      "intensity": null,
+      "duration": null,
+      "views": 247,
+      "likes": 1,
+      "comments": 0,
+      "shares": null,
+      "reach": null,
+      "avgWatchSec": null,
+      "watchMin": null,
+      "ageHours": 55.6,
+      "views48h": 247,
+      "views7d": null,
+      "likes48h": 1
+    }
+  ],
+  "flop": [
+    {
+      "postId": "6af60dc2b82e39b08e37eca6",
+      "platform": "tiktok",
+      "date": "2026-11-10",
+      "weekday": "Tue",
+      "time": "12:00",
+      "inWeek": true,
+      "videoId": "",
+      "auto": false,
+      "game": "territory",
+      "decor": "",
+      "winner": "",
+      "slot": "",
+      "hook": "Who will own the map? 🎨 Last place is out every 12 seconds… pick your animal before the end 👇",
+      "question": "",
+      "intensity": null,
+      "duration": null,
+      "views": 0,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "reach": 0,
+      "avgWatchSec": 0,
+      "watchMin": 0,
+      "ageHours": 58.7,
+      "views48h": 0,
+      "views7d": null,
+      "likes48h": 0
+    },
+    {
+      "postId": "6af60dc2b82e39b08e37eca0",
+      "platform": "tiktok",
+      "date": "2026-11-10",
+      "weekday": "Tue",
+      "time": "15:30",
+      "inWeek": true,
+      "videoId": "",
+      "auto": false,
+      "game": "colorwar",
+      "decor": "",
+      "winner": "",
+      "slot": "",
+      "hook": "Every hit steals a tile 🟥 Only one color survives. Who's your champion? 👇",
+      "question": "",
+      "intensity": null,
+      "duration": null,
+      "views": 0,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "reach": 0,
+      "avgWatchSec": 0,
+      "watchMin": 0,
+      "ageHours": 55.2,
+      "views48h": 0,
+      "views7d": null,
+      "likes48h": 0
+    },
+    {
+      "postId": "6af60dc2b82e39b08e37eca2",
+      "platform": "tiktok",
+      "date": "2026-11-10",
+      "weekday": "Tue",
+      "time": "18:00",
+      "inWeek": true,
+      "videoId": "",
+      "auto": false,
+      "game": "hotpotato2d",
+      "decor": "",
+      "winner": "",
+      "slot": "",
+      "hook": "Don't get caught holding the bomb 💣 Who survives the last explosion? Pick your animal before the end 👇",
+      "question": "",
+      "intensity": null,
+      "duration": null,
+      "views": 0,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "reach": 0,
+      "avgWatchSec": 0,
+      "watchMin": 0,
+      "ageHours": 52.7,
+      "views48h": 0,
+      "views7d": null,
+      "likes48h": 0
+    },
+    {
+      "postId": "6af60dc2b82e39b08e37eca8",
+      "platform": "tiktok",
+      "date": "2026-11-10",
+      "weekday": "Tue",
+      "time": "21:00",
+      "inWeek": true,
+      "videoId": "",
+      "auto": false,
+      "game": "bigeatssmall",
+      "decor": "",
+      "winner": "",
+      "slot": "",
+      "hook": "Bigger eats smaller 😱 Eat, grow… or get eaten. Comment your pick in the first 5 seconds 👇",
+      "question": "",
+      "intensity": null,
+      "duration": null,
+      "views": 0,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "reach": 0,
+      "avgWatchSec": 0,
+      "watchMin": 0,
+      "ageHours": 49.7,
+      "views48h": 0,
+      "views7d": null,
+      "likes48h": 0
+    },
+    {
+      "postId": "6af60dc2b82e39b08e37ecb0",
+      "platform": "tiktok",
+      "date": "2026-11-11",
+      "weekday": "Wed",
+      "time": "12:00",
+      "inWeek": true,
+      "videoId": "",
+      "auto": false,
+      "game": "territory",
+      "decor": "",
+      "winner": "",
+      "slot": "",
+      "hook": "Who will own the map? 🎨 Last place is out every 12 seconds. Pick your animal 👇",
+      "question": "",
+      "intensity": null,
+      "duration": null,
+      "views": 0,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "reach": 0,
+      "avgWatchSec": 0,
+      "watchMin": 0,
+      "ageHours": 34.7,
+      "views48h": null,
+      "views7d": null,
+      "likes48h": null
+    }
+  ],
+  "dataWarnings": [
+    "All TikTok posts show 0 views in Buffer: check TikTok Studio (metrics not synced, or videos not distributed).",
+    "14 posts have no 48 h capture yet: latest value used."
+  ]
+}
