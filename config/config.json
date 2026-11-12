@@ -59,10 +59,11 @@
     "arena2d": {
       "rotation": [
         "terr",
-        "color"
+        "color",
+        "hot"
       ],
       "candidates": 6,
-      "_help": "1 video 2D par jour, en alternance Territory War / Color War (Big Eats Small exclu)"
+      "_help": "1 video 2D par jour, en rotation Territory War / Color War / Hot Potato 2D (Big Eats Small exclu) ; le jeu le moins recemment utilise passe en premier"
     }
   },
   "qc": {
