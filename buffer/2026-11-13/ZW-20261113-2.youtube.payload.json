@@ -1,0 +1,24 @@
+{
+  "channelId": "6af611d662b70b94b00d5648",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "dueAt": "2026-11-13T19:00:00+01:00",
+  "text": "The bomb drops, the chase begins with lava bubbling below. Seven explosions, one survivor.\nNew Zoo Wars battle every day.\n\n#shorts #zoowars #satisfying #whowouldwin",
+  "assets": [
+    {
+      "video": {
+        "url": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-13/ZW-20261113-2.mp4",
+        "metadata": {}
+      }
+    }
+  ],
+  "metadata": {
+    "youtube": {
+      "title": "Last Animal Standing – Hot Potato Battle",
+      "categoryId": "24",
+      "madeForKids": false,
+      "privacy": "public",
+      "notifySubscribers": true
+    }
+  }
+}

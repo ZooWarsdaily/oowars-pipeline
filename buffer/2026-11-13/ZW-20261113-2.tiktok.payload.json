@@ -1,0 +1,18 @@
+{
+  "channelId": "6af60dc162b70b94b00d05a1",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "dueAt": "2026-11-13T19:00:00+01:00",
+  "text": "This final was way too close 😤\nHot potato battle with lava bubbling below.\n\nDid your animal survive? 👇\n\n#zoowars #satisfying #whowouldwin #animalbattle #hotpotato",
+  "assets": [
+    {
+      "video": {
+        "url": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-13/ZW-20261113-2.mp4",
+        "metadata": {
+          "thumbnailOffset": 3000
+        }
+      }
+    }
+  ],
+  "metadata": {}
+}

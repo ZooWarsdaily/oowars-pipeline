@@ -20,3 +20,11 @@
 2026-11-12T21:37:41+01:00 [producer] ZW-20261113-2 | part 1 frame 300 / 965
 2026-11-12T21:38:40+01:00 [producer] ZW-20261113-2 | part 0 frame 300 / 966
 2026-11-12T21:40:50+01:00 [producer] ZW-20261113-2 | part 1 frame 600 / 965
+2026-11-12T21:42:51+01:00 [producer] ZW-20261113-2 | part 0 frame 600 / 966
+2026-11-12T21:44:28+01:00 [producer] ZW-20261113-2 | part 1 frame 900 / 965
+2026-11-12T21:46:04+01:00 [producer] ZW-20261113-2 | part 0 frame 900 / 966
+2026-11-12T21:46:39+01:00 [producer] ZW-20261113-2 | DONE /home/claude/oowars-pipeline/production/2026-11-13/ZW-20261113-2.mp4 in 751 s {"seed":3441190179,"theme":"volcano","vt":64.3666666666643,"phase":"win","tags":21,"winner":"fox","order":["bear","panda","lion","gorilla","tiger","bull","wolf"],"kinds":[1,1,0,0,0,2,1]}
+2026-11-12T21:46:39+01:00 [producer] ZW-20261113-2: rendered in 13 min
+2026-11-12T21:46:52+01:00 [producer] ZW-20261113-2: VALIDATED (64.37s, 56.8 MB)
+2026-11-12T21:46:52+01:00 [producer] run 2026-11-13 finished: ZW-20261113-1=scheduled ZW-20261113-2=validated
+PRODUCER_RESULT ZW-20261113-1=scheduled ZW-20261113-2=validated

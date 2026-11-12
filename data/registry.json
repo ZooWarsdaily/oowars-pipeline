@@ -631,16 +631,63 @@
       "slot": 2,
       "time": "19:00",
       "game": "hot-potato-3d",
-      "status": "planned",
+      "status": "scheduled",
       "plan": {
         "winner": "fox",
         "theme": "volcano"
       },
-      "posts": {},
+      "posts": {
+        "tiktok": {
+          "status": "scheduled",
+          "dueAt": "2026-11-13T18:00:00.000Z",
+          "payload": "buffer/2026-11-13/ZW-20261113-2.tiktok.payload.json",
+          "mode": "live",
+          "at": "2026-11-12T21:49:05+01:00",
+          "bufferPostId": "6af6264b48a8bf93e4242acc",
+          "bufferStatus": "scheduled",
+          "recordedAt": "2026-11-12T21:49:23+01:00",
+          "simulated": false
+        },
+        "youtube": {
+          "status": "scheduled",
+          "dueAt": "2026-11-13T18:00:00.000Z",
+          "payload": "buffer/2026-11-13/ZW-20261113-2.youtube.payload.json",
+          "mode": "live",
+          "at": "2026-11-12T21:49:05+01:00",
+          "bufferPostId": "6af6264c7d05892ccea7697b",
+          "bufferStatus": "scheduled",
+          "recordedAt": "2026-11-12T21:49:23+01:00",
+          "simulated": false
+        }
+      },
       "history": [
         {
           "at": "2026-11-12T21:18:31+01:00",
           "to": "planned"
+        },
+        {
+          "at": "2026-11-12T21:46:39+01:00",
+          "from": "planned",
+          "to": "produced",
+          "note": "render ok"
+        },
+        {
+          "at": "2026-11-12T21:46:52+01:00",
+          "from": "produced",
+          "to": "validated",
+          "note": "qc ok"
+        },
+        {
+          "at": "2026-11-12T21:49:05+01:00",
+          "from": "validated",
+          "to": "uploaded",
+          "note": "git blob ok (4521e2e1e4)"
+        },
+        {
+          "at": "2026-11-12T21:49:23+01:00",
+          "from": "uploaded",
+          "to": "scheduled",
+          "note": "tiktok 6af6264b48a8bf93e4242acc / youtube 6af6264c7d05892ccea7697b"
         }
       ],
       "selection": {
@@ -690,6 +737,70 @@
             "score": 63.73
           }
         ]
+      },
+      "render": {
+        "file": "production/2026-11-13/ZW-20261113-2.mp4",
+        "seconds": 751,
+        "info": {
+          "seed": 3441190179,
+          "theme": "volcano",
+          "vt": 64.3666666666643,
+          "phase": "win",
+          "tags": 21,
+          "winner": "fox",
+          "order": [
+            "bear",
+            "panda",
+            "lion",
+            "gorilla",
+            "tiger",
+            "bull",
+            "wolf"
+          ],
+          "kinds": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            2,
+            1
+          ]
+        }
+      },
+      "qc": {
+        "at": "2026-11-12T21:46:52+01:00",
+        "ok": true,
+        "problems": [],
+        "duration": 64.37,
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "videoCodec": "h264",
+        "audioCodec": "aac",
+        "sizeMB": 56.8,
+        "sha256": "0c55502751555a0ee58c6b2adb68887de06604ee93ae970747707e77f78f33ed",
+        "luminance": [
+          136.2,
+          145.7,
+          133.1,
+          128.1,
+          109.6
+        ]
+      },
+      "approvedFile": "approved/2026-11-13/ZW-20261113-2.mp4",
+      "fiche": "approved/2026-11-13/ZW-20261113-2.json",
+      "publicUrl": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-13/ZW-20261113-2.mp4",
+      "uploadCheck": "git blob ok (4521e2e1e4)",
+      "captions": {
+        "tiktok": {
+          "text": "This final was way too close 😤\nHot potato battle with lava bubbling below.\n\nDid your animal survive? 👇\n\n#zoowars #satisfying #whowouldwin #animalbattle #hotpotato"
+        },
+        "youtube": {
+          "title": "Last Animal Standing – Hot Potato Battle",
+          "text": "The bomb drops, the chase begins with lava bubbling below. Seven explosions, one survivor.\nNew Zoo Wars battle every day.\n\n#shorts #zoowars #satisfying #whowouldwin"
+        },
+        "at": "2026-11-12T21:49:05+01:00"
       }
     }
   },
@@ -711,7 +822,13 @@
     "ttq|Which animal should get a rematch?",
     "yt|Zoo Wars: Hot Potato Showdown|Zoo Wars simulation {theme}: the bomb carrier has to catch someone before it explodes.",
     "ytt|Zoo Wars: Hot Potato Showdown",
-    "yte|Who did you pick? Tell us in the comments!"
+    "yte|Who did you pick? Tell us in the comments!",
+    "tt|This final was way too close 😤|Did your animal survive? 👇",
+    "tth|This final was way too close 😤",
+    "ttq|Did your animal survive? 👇",
+    "yt|Last Animal Standing – Hot Potato Battle|The bomb drops, the chase begins {theme}. Seven explosions, one survivor.",
+    "ytt|Last Animal Standing – Hot Potato Battle",
+    "yte|New Zoo Wars battle every day."
   ],
-  "updatedAt": "2026-11-12T21:41:47+01:00"
+  "updatedAt": "2026-11-12T21:49:23+01:00"
 }
