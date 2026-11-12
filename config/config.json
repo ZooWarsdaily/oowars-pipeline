@@ -1,0 +1,83 @@
+{
+  "mode": "draft",
+  "_mode_help": "test = aucune requete Buffer (identifiants simules) | draft = brouillons Buffer (verifie que Buffer accepte la video, rien n'est publie) | live = programmation reelle",
+  "timezone": "Europe/Paris",
+  "videosPerDay": 2,
+  "slots": [
+    "12:30",
+    "19:00"
+  ],
+  "produceDaysAhead": 2,
+  "buffer": {
+    "organizationId": "6af60d1f91eb89558077e389",
+    "organizationName": "My organization",
+    "maxQueuedPerChannel": 10,
+    "channels": {
+      "tiktok": {
+        "id": "6af60dc162b70b94b00d05a1",
+        "name": "zoowarsdaily"
+      },
+      "youtube": {
+        "id": "6af611d662b70b94b00d5648",
+        "name": "Zoo Wars",
+        "categoryId": "24",
+        "madeForKids": false,
+        "privacy": "public"
+      }
+    }
+  },
+  "media": {
+    "githubOwner": "ZooWarsdaily",
+    "repo": "oowars-pipeline",
+    "branch": "media",
+    "rawUrlTemplate": "https://raw.githubusercontent.com/{owner}/{repo}/{branch}/{path}",
+    "pruneAfterPublished": true,
+    "_prune_help": "true = autorise par le proprietaire le 12/11/2026 : une video publiee sur TikTok ET YouTube est retiree de la branche media (fiche et registre conserves)"
+  },
+  "production": {
+    "game": "hot-potato-3d",
+    "fps": 30,
+    "quality": "fast",
+    "candidatesPerVideo": 600,
+    "animals": [
+      "lion",
+      "tiger",
+      "bear",
+      "wolf",
+      "gorilla",
+      "fox",
+      "bull",
+      "panda"
+    ],
+    "themes": [
+      "volcano",
+      "ice",
+      "jungle",
+      "space"
+    ]
+  },
+  "qc": {
+    "width": 1080,
+    "height": 1920,
+    "minDuration": 45,
+    "maxDuration": 90,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "minFps": 29,
+    "maxFps": 31,
+    "maxSizeMB": 95
+  },
+  "captions": {
+    "hashtags": [
+      "#zoowars",
+      "#hotpotato",
+      "#animalbattle",
+      "#whowouldwin",
+      "#simulation",
+      "#satisfying"
+    ],
+    "tiktokHashtagCount": 5,
+    "youtubeHashtagCount": 3
+  },
+  "startDate": "2026-11-13"
+}

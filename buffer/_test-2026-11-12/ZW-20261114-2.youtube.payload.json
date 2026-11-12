@@ -1,0 +1,24 @@
+{
+  "channelId": "6af611d662b70b94b00d5648",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "dueAt": "2026-11-14T19:00:00+01:00",
+  "text": "The bomb drops, the chase begins on the frozen arena. Seven explosions, one survivor.\nComment your animal for the next battle!\n\n#shorts #zoowars #hotpotato #satisfying",
+  "assets": [
+    {
+      "video": {
+        "url": "https://raw.githubusercontent.com//zoowars-pipeline/media/2026-11-14/ZW-20261114-2.mp4",
+        "metadata": {}
+      }
+    }
+  ],
+  "metadata": {
+    "youtube": {
+      "title": "8 Animals, 1 Bomb – Who Survives?",
+      "categoryId": "24",
+      "madeForKids": false,
+      "privacy": "public",
+      "notifySubscribers": true
+    }
+  }
+}

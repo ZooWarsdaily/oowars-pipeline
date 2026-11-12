@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-14",
+  "mode": "test",
+  "verdict": "OK",
+  "confirmed": 4,
+  "expected": 4,
+  "ok": [
+    "ZW-20261114-1 (12:30, décor space) : vidéo validée, 65.1 s, 52.26 Mo",
+    "ZW-20261114-1 tiktok : programmée 14/11/2026 12:30:00 — post ffffffffe746340ceea96dd4 (simulé)",
+    "ZW-20261114-1 youtube : programmée 14/11/2026 12:30:00 — post ffffffffd40227f208fc76e3 (simulé)",
+    "ZW-20261114-2 (19:00, décor ice) : vidéo validée, 62.37 s, 53.91 Mo",
+    "ZW-20261114-2 tiktok : programmée 14/11/2026 19:00:00 — post ffffffffa1ff6aa9e35d3b37 (simulé)",
+    "ZW-20261114-2 youtube : programmée 14/11/2026 19:00:00 — post ffffffff5703e0b9ef7e38ac (simulé)"
+  ],
+  "issues": [],
+  "actions": [],
+  "at": "2026-11-12T21:10:55+01:00"
+}

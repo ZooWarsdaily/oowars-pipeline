@@ -1,0 +1,51 @@
+2026-11-12T20:38:08+01:00 [producer] planned ZW-20261114-1 {"slot":"12:30","theme":"space"}
+2026-11-12T20:38:08+01:00 [producer] planned ZW-20261114-2 {"slot":"19:00","theme":"ice"}
+2026-11-12T20:39:01+01:00 [producer] ZW-20261114-1: 600 games simulated in 48s, 56 valid with the planned winner
+2026-11-12T20:39:01+01:00 [producer] ZW-20261114-1: best seed 3728312916 score 67.91 {"tags":22,"clutch":7,"final":5,"dur":63.18}
+2026-11-12T20:39:53+01:00 [producer] ZW-20261114-1: 600 games simulated in 42s, 60 valid with the planned winner
+2026-11-12T20:39:53+01:00 [producer] ZW-20261114-1: best seed 1140410146 score 66.95 {"tags":22,"clutch":7,"final":5,"dur":65.1}
+2026-11-12T20:39:53+01:00 [producer] ZW-20261114-1: render starts (seed 1140410146, space)
+2026-11-12T20:39:57+01:00 [producer] ZW-20261114-1 | seed 1140410146 frames 1953
+2026-11-12T20:44:31+01:00 [producer] ZW-20261114-1 | part 1 frame 300 / 976
+2026-11-12T20:45:20+01:00 [producer] ZW-20261114-1 | part 0 frame 300 / 977
+2026-11-12T20:48:30+01:00 [producer] ZW-20261114-1 | part 1 frame 600 / 976
+2026-11-12T20:50:27+01:00 [producer] ZW-20261114-1 | part 0 frame 600 / 977
+2026-11-12T20:52:32+01:00 [producer] ZW-20261114-1 | part 1 frame 900 / 976
+2026-11-12T20:54:50+01:00 [producer] ZW-20261114-1 | part 0 frame 900 / 977
+2026-11-12T20:55:45+01:00 [producer] ZW-20261114-1 | DONE /home/claude/zoowars-pipeline/production/2026-11-14/ZW-20261114-1.mp4 in 951 s {"seed":1140410146,"theme":"space","vt":65.09999999999759,"phase":"win","tags":22,"winner":"gorilla","order":["fox","bull","bear","lion","panda","tiger","wolf"],"kinds":[2,1,2,2,2,2,1]}
+2026-11-12T20:55:45+01:00 [producer] ZW-20261114-1: rendered in 16 min
+2026-11-12T20:56:02+01:00 [producer] ZW-20261114-1: VALIDATED (65.1s, 52.26 MB)
+2026-11-12T20:56:58+01:00 [producer] ZW-20261114-2: 600 games simulated in 51s, 84 valid with the planned winner
+2026-11-12T20:56:58+01:00 [producer] ZW-20261114-2: best seed 889243904 score 67.31 {"tags":20,"clutch":8,"final":4,"dur":62.37}
+2026-11-12T20:56:58+01:00 [producer] ZW-20261114-2: render starts (seed 889243904, ice)
+2026-11-12T20:57:03+01:00 [producer] ZW-20261114-2 | seed 889243904 frames 1871
+2026-11-12T21:00:53+01:00 [producer] ZW-20261114-2 | part 1 frame 300 / 935
+2026-11-12T21:01:38+01:00 [producer] ZW-20261114-2 | part 0 frame 300 / 936
+2026-11-12T21:04:22+01:00 [producer] ZW-20261114-2 | part 1 frame 600 / 935
+2026-11-12T21:05:44+01:00 [producer] ZW-20261114-2 | part 0 frame 600 / 936
+2026-11-12T21:08:17+01:00 [producer] ZW-20261114-2 | part 1 frame 900 / 935
+2026-11-12T21:09:18+01:00 [producer] ZW-20261114-2 | part 0 frame 900 / 936
+2026-11-12T21:09:43+01:00 [producer] ZW-20261114-2 | DONE /home/claude/zoowars-pipeline/production/2026-11-14/ZW-20261114-2.mp4 in 765 s {"seed":889243904,"theme":"ice","vt":62.36666666666441,"phase":"win","tags":20,"winner":"wolf","order":["fox","panda","gorilla","bull","bear","tiger","lion"],"kinds":[2,2,2,0,1,0,0]}
+2026-11-12T21:09:43+01:00 [producer] ZW-20261114-2: rendered in 13 min
+2026-11-12T21:09:58+01:00 [producer] ZW-20261114-2: VALIDATED (62.37s, 53.91 MB)
+2026-11-12T21:09:58+01:00 [producer] run 2026-11-14 finished: ZW-20261114-1=validated ZW-20261114-2=validated
+2026-11-12T21:10:23+01:00 [orchestrator] ZW-20261114-1: media push skipped (test mode)
+2026-11-12T21:10:23+01:00 [publisher] ZW-20261114-1: uploaded (simulated (test mode)) https://raw.githubusercontent.com//zoowars-pipeline/media/2026-11-14/ZW-20261114-1.mp4
+2026-11-12T21:10:23+01:00 [publisher] ZW-20261114-1: captions written
+2026-11-12T21:10:23+01:00 [publisher] ZW-20261114-1: tiktok payload ready (test)
+2026-11-12T21:10:23+01:00 [publisher] ZW-20261114-1: tiktok confirmed by Buffer, post ffffffffe746340ceea96dd4 (scheduled)
+2026-11-12T21:10:23+01:00 [publisher] ZW-20261114-1: youtube payload ready (test)
+2026-11-12T21:10:23+01:00 [publisher] ZW-20261114-1: youtube confirmed by Buffer, post ffffffffd40227f208fc76e3 (scheduled)
+2026-11-12T21:10:23+01:00 [orchestrator] ZW-20261114-2: media push skipped (test mode)
+2026-11-12T21:10:23+01:00 [publisher] ZW-20261114-2: uploaded (simulated (test mode)) https://raw.githubusercontent.com//zoowars-pipeline/media/2026-11-14/ZW-20261114-2.mp4
+2026-11-12T21:10:24+01:00 [publisher] ZW-20261114-2: captions written
+2026-11-12T21:10:24+01:00 [publisher] ZW-20261114-2: tiktok payload ready (test)
+2026-11-12T21:10:24+01:00 [publisher] ZW-20261114-2: tiktok confirmed by Buffer, post ffffffffa1ff6aa9e35d3b37 (scheduled)
+2026-11-12T21:10:24+01:00 [publisher] ZW-20261114-2: youtube payload ready (test)
+2026-11-12T21:10:24+01:00 [publisher] ZW-20261114-2: youtube confirmed by Buffer, post ffffffff5703e0b9ef7e38ac (scheduled)
+2026-11-12T21:10:24+01:00 [monitor] check 2026-11-14: OK (4/4) {"issues":0,"actions":0}
+2026-11-12T21:10:42+01:00 [monitor] check 2026-11-14: À CORRIGER (3/4) {"issues":3,"actions":2}
+2026-11-12T21:10:43+01:00 [publisher] ZW-20261114-1: youtube NOT confirmed ["no Buffer post id in the answer"]
+2026-11-12T21:10:43+01:00 [monitor] check 2026-11-14: À CORRIGER (3/4) {"issues":1,"actions":1}
+2026-11-12T21:10:55+01:00 [publisher] ZW-20261114-1: youtube confirmed by Buffer, post ffffffffd40227f208fc76e3 (scheduled)
+2026-11-12T21:10:55+01:00 [monitor] check 2026-11-14: OK (4/4) {"issues":0,"actions":0}

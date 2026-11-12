@@ -1,0 +1,6 @@
+*.mp4
+*.tmp*
+*.lock
+production/
+media/
+node_modules/

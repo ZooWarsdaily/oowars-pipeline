@@ -1,0 +1,14 @@
+{
+  "id": "ffffffffa1ff6aa9e35d3b37",
+  "status": "scheduled",
+  "dueAt": "2026-11-14T19:00:00+01:00",
+  "channelId": "6af60dc162b70b94b00d05a1",
+  "assets": [
+    {
+      "video": {
+        "url": "https://raw.githubusercontent.com//zoowars-pipeline/media/2026-11-14/ZW-20261114-2.mp4"
+      }
+    }
+  ],
+  "simulated": true
+}

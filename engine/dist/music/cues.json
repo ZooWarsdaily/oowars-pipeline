@@ -1,0 +1,48 @@
+{
+ "source": "zoo_wars_heroic_wild_v4.wav",
+ "sampleRate": 48000,
+ "bpm": 118.0,
+ "beatsPerBar": 4,
+ "clips": {
+  "A": {
+   "main": "music/A_main.wav",
+   "perc": "music/A_perc.wav",
+   "sourceBar": 0,
+   "bars": 6,
+   "downbeat": 0.023395833333333334,
+   "tail": 0.75
+  },
+  "B": {
+   "main": "music/B_main.wav",
+   "perc": "music/B_perc.wav",
+   "sourceBar": 8,
+   "bars": 6,
+   "downbeat": 0.0,
+   "tail": 0.75
+  },
+  "H": {
+   "main": "music/H_main.wav",
+   "perc": "music/H_perc.wav",
+   "sourceBar": 14,
+   "bars": 2,
+   "downbeat": 0.0,
+   "tail": 0.75
+  },
+  "C1": {
+   "main": "music/C1_main.wav",
+   "perc": "music/C1_perc.wav",
+   "sourceBar": 16,
+   "bars": 8,
+   "downbeat": 0.0,
+   "tail": 0.75
+  },
+  "C2": {
+   "main": "music/C2_main.wav",
+   "perc": "music/C2_perc.wav",
+   "sourceBar": 24,
+   "bars": 5,
+   "downbeat": 0.0,
+   "tail": 0.75
+  }
+ }
+}

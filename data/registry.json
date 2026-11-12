@@ -1,0 +1,392 @@
+{
+  "version": 1,
+  "videos": {
+    "ZW-20261114-1": {
+      "id": "ZW-20261114-1",
+      "date": "2026-11-14",
+      "slot": 1,
+      "time": "12:30",
+      "game": "hot-potato-3d",
+      "status": "validated",
+      "plan": {
+        "winner": "gorilla",
+        "theme": "space"
+      },
+      "posts": {},
+      "history": [
+        {
+          "at": "2026-11-12T20:38:08+01:00",
+          "to": "planned"
+        },
+        {
+          "at": "2026-11-12T20:55:45+01:00",
+          "from": "planned",
+          "to": "produced",
+          "note": "render ok"
+        },
+        {
+          "at": "2026-11-12T20:56:02+01:00",
+          "from": "produced",
+          "to": "validated",
+          "note": "qc ok"
+        },
+        {
+          "at": "2026-11-12T21:10:23+01:00",
+          "from": "validated",
+          "to": "uploaded",
+          "note": "simulated (test mode)"
+        },
+        {
+          "at": "2026-11-12T21:10:23+01:00",
+          "from": "uploaded",
+          "to": "scheduled",
+          "note": "tiktok ffffffffe746340ceea96dd4 / youtube ffffffffd40227f208fc76e3"
+        },
+        {
+          "at": "2026-11-12T20:17:16.221Z",
+          "to": "validated",
+          "note": "reset after test mode, ready for live"
+        }
+      ],
+      "selection": {
+        "seed": 1140410146,
+        "metrics": {
+          "seed": 1140410146,
+          "winner": "gorilla",
+          "dur": 65.1,
+          "tags": 22,
+          "minTags": 2,
+          "roundTags": [
+            3,
+            2,
+            3,
+            3,
+            3,
+            3,
+            5
+          ],
+          "clutch": 7,
+          "dodges": 20,
+          "finalTags": 5,
+          "finalDur": 7.23,
+          "order": [
+            "fox",
+            "bull",
+            "bear",
+            "lion",
+            "panda",
+            "tiger",
+            "wolf"
+          ],
+          "score": 66.95
+        },
+        "simulated": 600,
+        "runnersUp": [
+          {
+            "seed": 344274863,
+            "score": 66.56
+          },
+          {
+            "seed": 2207673412,
+            "score": 64.27
+          },
+          {
+            "seed": 2716197334,
+            "score": 63.42
+          }
+        ]
+      },
+      "render": {
+        "file": "production/2026-11-14/ZW-20261114-1.mp4",
+        "seconds": 952,
+        "info": {
+          "seed": 1140410146,
+          "theme": "space",
+          "vt": 65.09999999999759,
+          "phase": "win",
+          "tags": 22,
+          "winner": "gorilla",
+          "order": [
+            "fox",
+            "bull",
+            "bear",
+            "lion",
+            "panda",
+            "tiger",
+            "wolf"
+          ],
+          "kinds": [
+            2,
+            1,
+            2,
+            2,
+            2,
+            2,
+            1
+          ]
+        }
+      },
+      "qc": {
+        "at": "2026-11-12T20:56:02+01:00",
+        "ok": true,
+        "problems": [],
+        "duration": 65.1,
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "videoCodec": "h264",
+        "audioCodec": "aac",
+        "sizeMB": 52.26,
+        "sha256": "04ee751ed51065122cf0e4191dc372a0940bad2443556a3b8327a7799f80ce76",
+        "luminance": [
+          79.6,
+          80.2,
+          82.6,
+          80.6,
+          58.8
+        ]
+      },
+      "approvedFile": "approved/2026-11-14/ZW-20261114-1.mp4",
+      "fiche": "approved/2026-11-14/ZW-20261114-1.json",
+      "captions": {
+        "tiktok": {
+          "text": "Chaos in the arena 🌀\nHot potato battle on a space platform.\n\nCall your winner in the comments 👇\n\n#zoowars #whowouldwin #animalbattle #satisfying #simulation"
+        },
+        "youtube": {
+          "title": "Insane Final Duel in Animal Hot Potato",
+          "text": "Who can dodge the bomb the longest? Animal hot potato battle on a space platform.\nDid your pick make it to the final duel?\n\n#shorts #zoowars #whowouldwin #animalbattle"
+        },
+        "at": "2026-11-12T21:10:23+01:00"
+      },
+      "testRun": {
+        "posts": {
+          "tiktok": {
+            "status": "scheduled",
+            "dueAt": "2026-11-14T12:30:00+01:00",
+            "payload": "buffer/2026-11-14/ZW-20261114-1.tiktok.payload.json",
+            "mode": "test",
+            "at": "2026-11-12T21:10:23+01:00",
+            "bufferPostId": "ffffffffe746340ceea96dd4",
+            "bufferStatus": "scheduled",
+            "recordedAt": "2026-11-12T21:10:23+01:00",
+            "simulated": true
+          },
+          "youtube": {
+            "status": "scheduled",
+            "dueAt": "2026-11-14T12:30:00+01:00",
+            "payload": "buffer/2026-11-14/ZW-20261114-1.youtube.payload.json",
+            "mode": "test",
+            "at": "2026-11-12T21:10:23+01:00",
+            "bufferPostId": "ffffffffd40227f208fc76e3",
+            "bufferStatus": "scheduled",
+            "recordedAt": "2026-11-12T21:10:55+01:00",
+            "simulated": true
+          }
+        },
+        "publicUrl": "https://raw.githubusercontent.com//zoowars-pipeline/media/2026-11-14/ZW-20261114-1.mp4",
+        "note": "simulated test 2026-11-12"
+      }
+    },
+    "ZW-20261114-2": {
+      "id": "ZW-20261114-2",
+      "date": "2026-11-14",
+      "slot": 2,
+      "time": "19:00",
+      "game": "hot-potato-3d",
+      "status": "validated",
+      "plan": {
+        "winner": "wolf",
+        "theme": "ice"
+      },
+      "posts": {},
+      "history": [
+        {
+          "at": "2026-11-12T20:38:08+01:00",
+          "to": "planned"
+        },
+        {
+          "at": "2026-11-12T21:09:43+01:00",
+          "from": "planned",
+          "to": "produced",
+          "note": "render ok"
+        },
+        {
+          "at": "2026-11-12T21:09:58+01:00",
+          "from": "produced",
+          "to": "validated",
+          "note": "qc ok"
+        },
+        {
+          "at": "2026-11-12T21:10:23+01:00",
+          "from": "validated",
+          "to": "uploaded",
+          "note": "simulated (test mode)"
+        },
+        {
+          "at": "2026-11-12T21:10:24+01:00",
+          "from": "uploaded",
+          "to": "scheduled",
+          "note": "tiktok ffffffffa1ff6aa9e35d3b37 / youtube ffffffff5703e0b9ef7e38ac"
+        },
+        {
+          "at": "2026-11-12T20:17:16.228Z",
+          "to": "validated",
+          "note": "reset after test mode, ready for live"
+        }
+      ],
+      "selection": {
+        "seed": 889243904,
+        "metrics": {
+          "seed": 889243904,
+          "winner": "wolf",
+          "dur": 62.37,
+          "tags": 20,
+          "minTags": 2,
+          "roundTags": [
+            3,
+            2,
+            3,
+            2,
+            2,
+            4,
+            4
+          ],
+          "clutch": 8,
+          "dodges": 13,
+          "finalTags": 4,
+          "finalDur": 6.22,
+          "order": [
+            "fox",
+            "panda",
+            "gorilla",
+            "bull",
+            "bear",
+            "tiger",
+            "lion"
+          ],
+          "score": 67.31
+        },
+        "simulated": 600,
+        "runnersUp": [
+          {
+            "seed": 1803482574,
+            "score": 65.51
+          },
+          {
+            "seed": 2629440995,
+            "score": 65.38
+          },
+          {
+            "seed": 179434417,
+            "score": 65.16
+          }
+        ]
+      },
+      "render": {
+        "file": "production/2026-11-14/ZW-20261114-2.mp4",
+        "seconds": 765,
+        "info": {
+          "seed": 889243904,
+          "theme": "ice",
+          "vt": 62.36666666666441,
+          "phase": "win",
+          "tags": 20,
+          "winner": "wolf",
+          "order": [
+            "fox",
+            "panda",
+            "gorilla",
+            "bull",
+            "bear",
+            "tiger",
+            "lion"
+          ],
+          "kinds": [
+            2,
+            2,
+            2,
+            0,
+            1,
+            0,
+            0
+          ]
+        }
+      },
+      "qc": {
+        "at": "2026-11-12T21:09:58+01:00",
+        "ok": true,
+        "problems": [],
+        "duration": 62.37,
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "videoCodec": "h264",
+        "audioCodec": "aac",
+        "sizeMB": 53.91,
+        "sha256": "7165e3841f92f0747cf2a02607c644439d3ef0fbced0fc1129a316290ff6ecdf",
+        "luminance": [
+          154.3,
+          167,
+          151.4,
+          149.6,
+          169.9
+        ]
+      },
+      "approvedFile": "approved/2026-11-14/ZW-20261114-2.mp4",
+      "fiche": "approved/2026-11-14/ZW-20261114-2.json",
+      "captions": {
+        "tiktok": {
+          "text": "Don't blink at the end 👀\nHot potato battle on the frozen arena.\n\nComment your animal before the end 👀\n\n#zoowars #hotpotato #satisfying #simulation #animalbattle"
+        },
+        "youtube": {
+          "title": "8 Animals, 1 Bomb – Who Survives?",
+          "text": "The bomb drops, the chase begins on the frozen arena. Seven explosions, one survivor.\nComment your animal for the next battle!\n\n#shorts #zoowars #hotpotato #satisfying"
+        },
+        "at": "2026-11-12T21:10:24+01:00"
+      },
+      "testRun": {
+        "posts": {
+          "tiktok": {
+            "status": "scheduled",
+            "dueAt": "2026-11-14T19:00:00+01:00",
+            "payload": "buffer/2026-11-14/ZW-20261114-2.tiktok.payload.json",
+            "mode": "test",
+            "at": "2026-11-12T21:10:24+01:00",
+            "bufferPostId": "ffffffffa1ff6aa9e35d3b37",
+            "bufferStatus": "scheduled",
+            "recordedAt": "2026-11-12T21:10:24+01:00",
+            "simulated": true
+          },
+          "youtube": {
+            "status": "scheduled",
+            "dueAt": "2026-11-14T19:00:00+01:00",
+            "payload": "buffer/2026-11-14/ZW-20261114-2.youtube.payload.json",
+            "mode": "test",
+            "at": "2026-11-12T21:10:24+01:00",
+            "bufferPostId": "ffffffff5703e0b9ef7e38ac",
+            "bufferStatus": "scheduled",
+            "recordedAt": "2026-11-12T21:10:24+01:00",
+            "simulated": true
+          }
+        },
+        "publicUrl": "https://raw.githubusercontent.com//zoowars-pipeline/media/2026-11-14/ZW-20261114-2.mp4",
+        "note": "simulated test 2026-11-12"
+      }
+    }
+  },
+  "captionsUsed": [
+    "tt|Chaos in the arena 🌀|Call your winner in the comments 👇",
+    "tth|Chaos in the arena 🌀",
+    "ttq|Call your winner in the comments 👇",
+    "yt|Insane Final Duel in Animal Hot Potato|Who can dodge the bomb the longest? Animal hot potato battle {theme}.",
+    "ytt|Insane Final Duel in Animal Hot Potato",
+    "yte|Did your pick make it to the final duel?",
+    "tt|Don't blink at the end 👀|Comment your animal before the end 👀",
+    "tth|Don't blink at the end 👀",
+    "ttq|Comment your animal before the end 👀",
+    "yt|8 Animals, 1 Bomb – Who Survives?|The bomb drops, the chase begins {theme}. Seven explosions, one survivor.",
+    "ytt|8 Animals, 1 Bomb – Who Survives?",
+    "yte|Comment your animal for the next battle!"
+  ],
+  "updatedAt": "2026-11-12T21:10:55+01:00"
+}

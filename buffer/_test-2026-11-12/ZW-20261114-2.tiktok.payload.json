@@ -1,0 +1,18 @@
+{
+  "channelId": "6af60dc162b70b94b00d05a1",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "dueAt": "2026-11-14T19:00:00+01:00",
+  "text": "Don't blink at the end 👀\nHot potato battle on the frozen arena.\n\nComment your animal before the end 👀\n\n#zoowars #hotpotato #satisfying #simulation #animalbattle",
+  "assets": [
+    {
+      "video": {
+        "url": "https://raw.githubusercontent.com//zoowars-pipeline/media/2026-11-14/ZW-20261114-2.mp4",
+        "metadata": {
+          "thumbnailOffset": 3000
+        }
+      }
+    }
+  ],
+  "metadata": {}
+}
