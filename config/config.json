@@ -8,7 +8,6 @@
     "19:00",
     "16:00"
   ],
-  "produceDaysAhead": 2,
   "buffer": {
     "organizationId": "6af60d1f91eb89558077e389",
     "organizationName": "My organization",
@@ -95,5 +94,6 @@
     "hot-potato-3d",
     "arena2d"
   ],
-  "_slots_help": "un creneau par video du jour (heure de Paris) ; slotGames dit quel jeu va dans chaque creneau"
+  "_slots_help": "un creneau par video du jour (heure de Paris) ; slotGames dit quel jeu va dans chaque creneau",
+  "productionRule": "J+1 et J+2 complets : rien ; seul J+1 complet : produire J+2 et J+3 ; seul J+2 complet : J+1 et J+3 ; aucun : J+1, J+2, J+3 (voir orchestrator.js plan-today)"
 }

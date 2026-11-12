@@ -158,3 +158,4 @@
 2026-11-12T22:12:45+01:00 [publisher] ZW-20261114-3: youtube confirmed by Buffer, post 6af62bc4f8f0d4b8329f320b (scheduled)
 2026-11-12T22:12:50+01:00 [monitor] check 2026-11-13: OK (6/6) {"issues":0,"actions":0}
 2026-11-12T22:12:54+01:00 [monitor] check 2026-11-14: OK (6/6) {"issues":0,"actions":0}
+2026-11-12T22:32:47+01:00 [orchestrator] plan: D+1 2026-11-13 complete | D+2 2026-11-14 complete | D+3 2026-11-15 not complete -> produce nothing
