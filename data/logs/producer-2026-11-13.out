@@ -4,3 +4,19 @@
 2026-11-12T21:19:25+01:00 [producer] ZW-20261113-1: best seed 800002287 score 69.15 {"tags":22,"clutch":7,"final":4,"dur":64.7}
 2026-11-12T21:19:25+01:00 [producer] ZW-20261113-1: render starts (seed 800002287, jungle)
 2026-11-12T21:19:29+01:00 [producer] ZW-20261113-1 | seed 800002287 frames 1941
+2026-11-12T21:23:40+01:00 [producer] ZW-20261113-1 | part 1 frame 300 / 970
+2026-11-12T21:24:04+01:00 [producer] ZW-20261113-1 | part 0 frame 300 / 971
+2026-11-12T21:27:25+01:00 [producer] ZW-20261113-1 | part 1 frame 600 / 970
+2026-11-12T21:28:14+01:00 [producer] ZW-20261113-1 | part 0 frame 600 / 971
+2026-11-12T21:31:37+01:00 [producer] ZW-20261113-1 | part 1 frame 900 / 970
+2026-11-12T21:32:28+01:00 [producer] ZW-20261113-1 | part 0 frame 900 / 971
+2026-11-12T21:33:10+01:00 [producer] ZW-20261113-1 | DONE /home/claude/oowars-pipeline/production/2026-11-13/ZW-20261113-1.mp4 in 825 s {"seed":800002287,"theme":"jungle","vt":64.69999999999762,"phase":"win","tags":22,"winner":"bear","order":["wolf","gorilla","bull","fox","panda","tiger","lion"],"kinds":[1,0,2,1,0,1,1]}
+2026-11-12T21:33:10+01:00 [producer] ZW-20261113-1: rendered in 14 min
+2026-11-12T21:33:23+01:00 [producer] ZW-20261113-1: VALIDATED (64.7s, 55.2 MB)
+2026-11-12T21:34:08+01:00 [producer] ZW-20261113-2: 600 games simulated in 41s, 70 valid with the planned winner
+2026-11-12T21:34:08+01:00 [producer] ZW-20261113-2: best seed 3441190179 score 66.31 {"tags":21,"clutch":7,"final":5,"dur":64.37}
+2026-11-12T21:34:08+01:00 [producer] ZW-20261113-2: render starts (seed 3441190179, volcano)
+2026-11-12T21:34:12+01:00 [producer] ZW-20261113-2 | seed 3441190179 frames 1931
+2026-11-12T21:37:41+01:00 [producer] ZW-20261113-2 | part 1 frame 300 / 965
+2026-11-12T21:38:40+01:00 [producer] ZW-20261113-2 | part 0 frame 300 / 966
+2026-11-12T21:40:50+01:00 [producer] ZW-20261113-2 | part 1 frame 600 / 965

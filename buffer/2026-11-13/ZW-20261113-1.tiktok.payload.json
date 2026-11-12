@@ -1,0 +1,18 @@
+{
+  "channelId": "6af60dc162b70b94b00d05a1",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "dueAt": "2026-11-13T12:30:00+01:00",
+  "text": "Nobody wants to hold the bomb 😅\nHot potato battle between the jungle trees.\n\nWhich animal should get a rematch?\n\n#zoowars #hotpotato #animalbattle #whowouldwin #simulation",
+  "assets": [
+    {
+      "video": {
+        "url": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-13/ZW-20261113-1.mp4",
+        "metadata": {
+          "thumbnailOffset": 3000
+        }
+      }
+    }
+  ],
+  "metadata": {}
+}

@@ -453,16 +453,63 @@
       "slot": 1,
       "time": "12:30",
       "game": "hot-potato-3d",
-      "status": "planned",
+      "status": "scheduled",
       "plan": {
         "winner": "bear",
         "theme": "jungle"
       },
-      "posts": {},
+      "posts": {
+        "tiktok": {
+          "status": "scheduled",
+          "dueAt": "2026-11-13T11:30:00.000Z",
+          "payload": "buffer/2026-11-13/ZW-20261113-1.tiktok.payload.json",
+          "mode": "live",
+          "at": "2026-11-12T21:41:27+01:00",
+          "bufferPostId": "6af6248348a8bf93e423c5bf",
+          "bufferStatus": "scheduled",
+          "recordedAt": "2026-11-12T21:41:47+01:00",
+          "simulated": false
+        },
+        "youtube": {
+          "status": "scheduled",
+          "dueAt": "2026-11-13T11:30:00.000Z",
+          "payload": "buffer/2026-11-13/ZW-20261113-1.youtube.payload.json",
+          "mode": "live",
+          "at": "2026-11-12T21:41:27+01:00",
+          "bufferPostId": "6af624848a13f5efaafa494f",
+          "bufferStatus": "scheduled",
+          "recordedAt": "2026-11-12T21:41:47+01:00",
+          "simulated": false
+        }
+      },
       "history": [
         {
           "at": "2026-11-12T21:18:31+01:00",
           "to": "planned"
+        },
+        {
+          "at": "2026-11-12T21:33:10+01:00",
+          "from": "planned",
+          "to": "produced",
+          "note": "render ok"
+        },
+        {
+          "at": "2026-11-12T21:33:23+01:00",
+          "from": "produced",
+          "to": "validated",
+          "note": "qc ok"
+        },
+        {
+          "at": "2026-11-12T21:41:22+01:00",
+          "from": "validated",
+          "to": "uploaded",
+          "note": "git blob ok (c6ef16f994)"
+        },
+        {
+          "at": "2026-11-12T21:41:47+01:00",
+          "from": "uploaded",
+          "to": "scheduled",
+          "note": "tiktok 6af6248348a8bf93e423c5bf / youtube 6af624848a13f5efaafa494f"
         }
       ],
       "selection": {
@@ -512,6 +559,70 @@
             "score": 59.54
           }
         ]
+      },
+      "render": {
+        "file": "production/2026-11-13/ZW-20261113-1.mp4",
+        "seconds": 825,
+        "info": {
+          "seed": 800002287,
+          "theme": "jungle",
+          "vt": 64.69999999999762,
+          "phase": "win",
+          "tags": 22,
+          "winner": "bear",
+          "order": [
+            "wolf",
+            "gorilla",
+            "bull",
+            "fox",
+            "panda",
+            "tiger",
+            "lion"
+          ],
+          "kinds": [
+            1,
+            0,
+            2,
+            1,
+            0,
+            1,
+            1
+          ]
+        }
+      },
+      "qc": {
+        "at": "2026-11-12T21:33:23+01:00",
+        "ok": true,
+        "problems": [],
+        "duration": 64.7,
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "videoCodec": "h264",
+        "audioCodec": "aac",
+        "sizeMB": 55.2,
+        "sha256": "052bc3219ae7c5b117111fd962dfec0cd47b133051de35e1c7e162bd31a21520",
+        "luminance": [
+          138.3,
+          142.9,
+          139.1,
+          127.9,
+          88.4
+        ]
+      },
+      "approvedFile": "approved/2026-11-13/ZW-20261113-1.mp4",
+      "fiche": "approved/2026-11-13/ZW-20261113-1.json",
+      "publicUrl": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-13/ZW-20261113-1.mp4",
+      "uploadCheck": "git blob ok (c6ef16f994)",
+      "captions": {
+        "tiktok": {
+          "text": "Nobody wants to hold the bomb 😅\nHot potato battle between the jungle trees.\n\nWhich animal should get a rematch?\n\n#zoowars #hotpotato #animalbattle #whowouldwin #simulation"
+        },
+        "youtube": {
+          "title": "Zoo Wars: Hot Potato Showdown",
+          "text": "Zoo Wars simulation between the jungle trees: the bomb carrier has to catch someone before it explodes.\nWho did you pick? Tell us in the comments!\n\n#shorts #zoowars #hotpotato #animalbattle"
+        },
+        "at": "2026-11-12T21:41:22+01:00"
       }
     },
     "ZW-20261113-2": {
@@ -531,7 +642,55 @@
           "at": "2026-11-12T21:18:31+01:00",
           "to": "planned"
         }
-      ]
+      ],
+      "selection": {
+        "seed": 3441190179,
+        "metrics": {
+          "seed": 3441190179,
+          "winner": "fox",
+          "dur": 64.37,
+          "tags": 21,
+          "minTags": 2,
+          "roundTags": [
+            3,
+            2,
+            3,
+            3,
+            2,
+            3,
+            5
+          ],
+          "clutch": 7,
+          "dodges": 19,
+          "finalTags": 5,
+          "finalDur": 7.98,
+          "order": [
+            "bear",
+            "panda",
+            "lion",
+            "gorilla",
+            "tiger",
+            "bull",
+            "wolf"
+          ],
+          "score": 66.31
+        },
+        "simulated": 600,
+        "runnersUp": [
+          {
+            "seed": 3788447816,
+            "score": 64.01
+          },
+          {
+            "seed": 1190514713,
+            "score": 63.74
+          },
+          {
+            "seed": 2701557554,
+            "score": 63.73
+          }
+        ]
+      }
     }
   },
   "captionsUsed": [
@@ -546,7 +705,13 @@
     "ttq|Comment your animal before the end 👀",
     "yt|8 Animals, 1 Bomb – Who Survives?|The bomb drops, the chase begins {theme}. Seven explosions, one survivor.",
     "ytt|8 Animals, 1 Bomb – Who Survives?",
-    "yte|Comment your animal for the next battle!"
+    "yte|Comment your animal for the next battle!",
+    "tt|Nobody wants to hold the bomb 😅|Which animal should get a rematch?",
+    "tth|Nobody wants to hold the bomb 😅",
+    "ttq|Which animal should get a rematch?",
+    "yt|Zoo Wars: Hot Potato Showdown|Zoo Wars simulation {theme}: the bomb carrier has to catch someone before it explodes.",
+    "ytt|Zoo Wars: Hot Potato Showdown",
+    "yte|Who did you pick? Tell us in the comments!"
   ],
-  "updatedAt": "2026-11-12T21:21:22+01:00"
+  "updatedAt": "2026-11-12T21:41:47+01:00"
 }
