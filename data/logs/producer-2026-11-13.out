@@ -1,0 +1,6 @@
+2026-11-12T21:18:31+01:00 [producer] planned ZW-20261113-1 {"slot":"12:30","theme":"jungle"}
+2026-11-12T21:18:31+01:00 [producer] planned ZW-20261113-2 {"slot":"19:00","theme":"volcano"}
+2026-11-12T21:19:25+01:00 [producer] ZW-20261113-1: 600 games simulated in 48s, 72 valid with the planned winner
+2026-11-12T21:19:25+01:00 [producer] ZW-20261113-1: best seed 800002287 score 69.15 {"tags":22,"clutch":7,"final":4,"dur":64.7}
+2026-11-12T21:19:25+01:00 [producer] ZW-20261113-1: render starts (seed 800002287, jungle)
+2026-11-12T21:19:29+01:00 [producer] ZW-20261113-1 | seed 800002287 frames 1941

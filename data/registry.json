@@ -7,12 +7,35 @@
       "slot": 1,
       "time": "12:30",
       "game": "hot-potato-3d",
-      "status": "validated",
+      "status": "scheduled",
       "plan": {
         "winner": "gorilla",
         "theme": "space"
       },
-      "posts": {},
+      "posts": {
+        "tiktok": {
+          "status": "scheduled",
+          "dueAt": "2026-11-14T11:30:00.000Z",
+          "payload": "buffer/2026-11-14/ZW-20261114-1.tiktok.payload.json",
+          "mode": "live",
+          "at": "2026-11-12T21:19:49+01:00",
+          "bufferPostId": "6af61f5bad1ba188ea6c7a0a",
+          "bufferStatus": "scheduled",
+          "recordedAt": "2026-11-12T21:20:12+01:00",
+          "simulated": false
+        },
+        "youtube": {
+          "status": "scheduled",
+          "dueAt": "2026-11-14T11:30:00.000Z",
+          "payload": "buffer/2026-11-14/ZW-20261114-1.youtube.payload.json",
+          "mode": "live",
+          "at": "2026-11-12T21:20:12+01:00",
+          "bufferPostId": "6af61f8c76b8df0929bcae25",
+          "bufferStatus": "scheduled",
+          "recordedAt": "2026-11-12T21:20:36+01:00",
+          "simulated": false
+        }
+      },
       "history": [
         {
           "at": "2026-11-12T20:38:08+01:00",
@@ -46,6 +69,18 @@
           "at": "2026-11-12T20:17:16.221Z",
           "to": "validated",
           "note": "reset after test mode, ready for live"
+        },
+        {
+          "at": "2026-11-12T21:19:19+01:00",
+          "from": "validated",
+          "to": "uploaded",
+          "note": "git blob ok (249e1729b9)"
+        },
+        {
+          "at": "2026-11-12T21:20:36+01:00",
+          "from": "uploaded",
+          "to": "scheduled",
+          "note": "tiktok 6af61f5bad1ba188ea6c7a0a / youtube 6af61f8c76b8df0929bcae25"
         }
       ],
       "selection": {
@@ -185,7 +220,9 @@
         },
         "publicUrl": "https://raw.githubusercontent.com//zoowars-pipeline/media/2026-11-14/ZW-20261114-1.mp4",
         "note": "simulated test 2026-11-12"
-      }
+      },
+      "publicUrl": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-14/ZW-20261114-1.mp4",
+      "uploadCheck": "git blob ok (249e1729b9)"
     },
     "ZW-20261114-2": {
       "id": "ZW-20261114-2",
@@ -193,12 +230,35 @@
       "slot": 2,
       "time": "19:00",
       "game": "hot-potato-3d",
-      "status": "validated",
+      "status": "scheduled",
       "plan": {
         "winner": "wolf",
         "theme": "ice"
       },
-      "posts": {},
+      "posts": {
+        "tiktok": {
+          "status": "scheduled",
+          "dueAt": "2026-11-14T18:00:00.000Z",
+          "payload": "buffer/2026-11-14/ZW-20261114-2.tiktok.payload.json",
+          "mode": "live",
+          "at": "2026-11-12T21:20:37+01:00",
+          "bufferPostId": "6af61fa77d05892ccea5646f",
+          "bufferStatus": "scheduled",
+          "recordedAt": "2026-11-12T21:21:01+01:00",
+          "simulated": false
+        },
+        "youtube": {
+          "status": "scheduled",
+          "dueAt": "2026-11-14T18:00:00.000Z",
+          "payload": "buffer/2026-11-14/ZW-20261114-2.youtube.payload.json",
+          "mode": "live",
+          "at": "2026-11-12T21:21:01+01:00",
+          "bufferPostId": "6af61fbd8a13f5efaaf8c682",
+          "bufferStatus": "scheduled",
+          "recordedAt": "2026-11-12T21:21:22+01:00",
+          "simulated": false
+        }
+      },
       "history": [
         {
           "at": "2026-11-12T20:38:08+01:00",
@@ -232,6 +292,18 @@
           "at": "2026-11-12T20:17:16.228Z",
           "to": "validated",
           "note": "reset after test mode, ready for live"
+        },
+        {
+          "at": "2026-11-12T21:19:20+01:00",
+          "from": "validated",
+          "to": "uploaded",
+          "note": "git blob ok (d45ccfda30)"
+        },
+        {
+          "at": "2026-11-12T21:21:22+01:00",
+          "from": "uploaded",
+          "to": "scheduled",
+          "note": "tiktok 6af61fa77d05892ccea5646f / youtube 6af61fbd8a13f5efaaf8c682"
         }
       ],
       "selection": {
@@ -371,7 +443,95 @@
         },
         "publicUrl": "https://raw.githubusercontent.com//zoowars-pipeline/media/2026-11-14/ZW-20261114-2.mp4",
         "note": "simulated test 2026-11-12"
+      },
+      "publicUrl": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-14/ZW-20261114-2.mp4",
+      "uploadCheck": "git blob ok (d45ccfda30)"
+    },
+    "ZW-20261113-1": {
+      "id": "ZW-20261113-1",
+      "date": "2026-11-13",
+      "slot": 1,
+      "time": "12:30",
+      "game": "hot-potato-3d",
+      "status": "planned",
+      "plan": {
+        "winner": "bear",
+        "theme": "jungle"
+      },
+      "posts": {},
+      "history": [
+        {
+          "at": "2026-11-12T21:18:31+01:00",
+          "to": "planned"
+        }
+      ],
+      "selection": {
+        "seed": 800002287,
+        "metrics": {
+          "seed": 800002287,
+          "winner": "bear",
+          "dur": 64.7,
+          "tags": 22,
+          "minTags": 3,
+          "roundTags": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            4
+          ],
+          "clutch": 7,
+          "dodges": 18,
+          "finalTags": 4,
+          "finalDur": 6.98,
+          "order": [
+            "wolf",
+            "gorilla",
+            "bull",
+            "fox",
+            "panda",
+            "tiger",
+            "lion"
+          ],
+          "score": 69.15
+        },
+        "simulated": 600,
+        "runnersUp": [
+          {
+            "seed": 1095855337,
+            "score": 63.51
+          },
+          {
+            "seed": 3328092972,
+            "score": 61.02
+          },
+          {
+            "seed": 1531393223,
+            "score": 59.54
+          }
+        ]
       }
+    },
+    "ZW-20261113-2": {
+      "id": "ZW-20261113-2",
+      "date": "2026-11-13",
+      "slot": 2,
+      "time": "19:00",
+      "game": "hot-potato-3d",
+      "status": "planned",
+      "plan": {
+        "winner": "fox",
+        "theme": "volcano"
+      },
+      "posts": {},
+      "history": [
+        {
+          "at": "2026-11-12T21:18:31+01:00",
+          "to": "planned"
+        }
+      ]
     }
   },
   "captionsUsed": [
@@ -388,5 +548,5 @@
     "ytt|8 Animals, 1 Bomb – Who Survives?",
     "yte|Comment your animal for the next battle!"
   ],
-  "updatedAt": "2026-11-12T21:10:55+01:00"
+  "updatedAt": "2026-11-12T21:21:22+01:00"
 }

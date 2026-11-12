@@ -49,3 +49,23 @@
 2026-11-12T21:10:43+01:00 [monitor] check 2026-11-14: À CORRIGER (3/4) {"issues":1,"actions":1}
 2026-11-12T21:10:55+01:00 [publisher] ZW-20261114-1: youtube confirmed by Buffer, post ffffffffd40227f208fc76e3 (scheduled)
 2026-11-12T21:10:55+01:00 [monitor] check 2026-11-14: OK (4/4) {"issues":0,"actions":0}
+2026-11-12T21:18:31+01:00 [producer] planned ZW-20261113-1 {"slot":"12:30","theme":"jungle"}
+2026-11-12T21:18:31+01:00 [producer] planned ZW-20261113-2 {"slot":"19:00","theme":"volcano"}
+2026-11-12T21:18:39+01:00 [orchestrator] ZW-20261114-1: pushed to media branch
+2026-11-12T21:19:11+01:00 [orchestrator] ZW-20261114-2: pushed to media branch
+2026-11-12T21:19:19+01:00 [publisher] ZW-20261114-1: uploaded (git blob ok (249e1729b9)) https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-14/ZW-20261114-1.mp4
+2026-11-12T21:19:20+01:00 [publisher] ZW-20261114-2: uploaded (git blob ok (d45ccfda30)) https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-14/ZW-20261114-2.mp4
+2026-11-12T21:19:25+01:00 [producer] ZW-20261113-1: 600 games simulated in 48s, 72 valid with the planned winner
+2026-11-12T21:19:25+01:00 [producer] ZW-20261113-1: best seed 800002287 score 69.15 {"tags":22,"clutch":7,"final":4,"dur":64.7}
+2026-11-12T21:19:25+01:00 [producer] ZW-20261113-1: render starts (seed 800002287, jungle)
+2026-11-12T21:19:29+01:00 [producer] ZW-20261113-1 | seed 800002287 frames 1941
+2026-11-12T21:19:32+01:00 [publisher] ZW-20261114-1: tiktok payload ready (draft)
+2026-11-12T21:19:49+01:00 [publisher] ZW-20261114-1: tiktok payload ready (live)
+2026-11-12T21:20:12+01:00 [publisher] ZW-20261114-1: tiktok confirmed by Buffer, post 6af61f5bad1ba188ea6c7a0a (scheduled)
+2026-11-12T21:20:12+01:00 [publisher] ZW-20261114-1: youtube payload ready (live)
+2026-11-12T21:20:36+01:00 [publisher] ZW-20261114-1: youtube confirmed by Buffer, post 6af61f8c76b8df0929bcae25 (scheduled)
+2026-11-12T21:20:37+01:00 [publisher] ZW-20261114-2: tiktok payload ready (live)
+2026-11-12T21:21:01+01:00 [publisher] ZW-20261114-2: tiktok confirmed by Buffer, post 6af61fa77d05892ccea5646f (scheduled)
+2026-11-12T21:21:01+01:00 [publisher] ZW-20261114-2: youtube payload ready (live)
+2026-11-12T21:21:22+01:00 [publisher] ZW-20261114-2: youtube confirmed by Buffer, post 6af61fbd8a13f5efaaf8c682 (scheduled)
+2026-11-12T21:21:33+01:00 [monitor] check 2026-11-14: OK (4/4) {"issues":0,"actions":0}

@@ -1,5 +1,5 @@
 {
-  "mode": "draft",
+  "mode": "live",
   "_mode_help": "test = aucune requete Buffer (identifiants simules) | draft = brouillons Buffer (verifie que Buffer accepte la video, rien n'est publie) | live = programmation reelle",
   "timezone": "Europe/Paris",
   "videosPerDay": 2,

@@ -51,12 +51,25 @@ function uploaded(id, url) {
   let check = 'simulated (test mode)';
   if (cfg.mode !== 'test') {
     // download the public file and compare its fingerprint with the validated one
+    // 1) try to download the public URL and compare sha256 with the validated file
     const tmp = path.join(require('os').tmpdir(), id + '.check.mp4');
-    try { execFileSync('curl', ['-sS', '-L', '--fail', '-m', '300', '-o', tmp, url]); }
-    catch (e) { L.die('public URL not reachable: ' + url + ' (' + String(e.stderr || e.message).slice(0, 150) + ')'); }
-    const sha = crypto.createHash('sha256').update(fs.readFileSync(tmp)).digest('hex'); fs.unlinkSync(tmp);
-    if (sha !== v.qc.sha256) L.die('public file differs from the validated file (sha256)');
-    check = 'sha256 ok';
+    let viaHttp = false;
+    try { execFileSync('curl', ['-sS', '-L', '--fail', '-m', '300', '-o', tmp, url], { stdio: ['ignore', 'pipe', 'pipe'] }); viaHttp = true; } catch (e) { /* the cloud workspace cannot always reach raw.githubusercontent.com */ }
+    if (viaHttp) {
+      const sha = crypto.createHash('sha256').update(fs.readFileSync(tmp)).digest('hex'); fs.unlinkSync(tmp);
+      if (sha !== v.qc.sha256) L.die('public file differs from the validated file (sha256)');
+      check = 'http sha256 ok';
+    } else {
+      // 2) otherwise prove GitHub holds exactly these bytes on the public branch: git blob id of the remote file = blob id of the validated file
+      const media = path.join(L.P.root, 'media'), rel = url.split('/' + cfg.media.branch + '/')[1];
+      if (!fs.existsSync(path.join(media, '.git')) || !rel) L.die('cannot verify: public URL unreachable from here and no media worktree');
+      execFileSync('git', ['fetch', '-q', 'origin', `+${cfg.media.branch}:refs/remotes/origin/${cfg.media.branch}`], { cwd: media });
+      let remote; try { remote = execFileSync('git', ['rev-parse', `origin/${cfg.media.branch}:${rel}`], { cwd: media }).toString().trim(); } catch (e) { L.die('file not found on the public branch: ' + rel); }
+      const local = execFileSync('git', ['hash-object', path.join(L.P.root, v.approvedFile)]).toString().trim();
+      if (remote !== local) L.die('file on GitHub differs from the validated file');
+      if (!url.startsWith(`https://raw.githubusercontent.com/${cfg.media.githubOwner}/${cfg.media.repo}/${cfg.media.branch}/`)) L.die('URL does not match the configured public repository');
+      check = 'git blob ok (' + local.slice(0, 10) + ')';
+    }
   }
   L.withRegistry(r => { const x = r.videos[id]; x.publicUrl = url; x.uploadCheck = check; if (x.status === 'validated') L.setVideoStatus(r, id, 'uploaded', check); });
   L.log(AG, `${id}: uploaded (${check}) ${url}`);
@@ -83,6 +96,10 @@ function payload(id, ch) {
       L.withRegistry(r => { r.videos[id].posts = r.videos[id].posts || {}; r.videos[id].posts[ch] = { ...(r.videos[id].posts[ch] || {}), status: 'needs_review', foundInBuffer: same.map(p => p.id) }; });
       L.die(`DUPLICATE BLOCKED: Buffer already holds ${same.map(p => p.id + '/' + p.status).join(', ')} for ${id} on ${ch}. Run record with that post instead of creating a new one.`);
     }
+    // second key: our slot on this channel already taken by a live post (Buffer may replace the asset URL once sent)
+    const due0 = new Date(dueAt).getTime();
+    const slot = posts.filter(p => p.status !== 'error' && p.status !== 'draft' && chanOf(p) === chan.id && p.dueAt && Math.abs(new Date(p.dueAt).getTime() - due0) < 60000);
+    if (slot.length) L.die(`DUPLICATE BLOCKED: ${ch} slot ${dueAt} already holds ${slot.map(p => p.id + '/' + p.status).join(', ')}. Check it, then run record with that post if it is this video.`);
     const queued = posts.filter(p => (!chanOf(p) || chanOf(p) === chan.id) && ['scheduled', 'needs_approval', 'sending'].includes(p.status)).length;
     if (queued >= cfg.buffer.maxQueuedPerChannel) L.die(`${ch}: Buffer queue full (${queued}/${cfg.buffer.maxQueuedPerChannel}, free plan)`);
   }

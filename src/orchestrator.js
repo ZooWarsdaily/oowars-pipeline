@@ -38,7 +38,7 @@ function planToday() {
 function ensureMedia() {
   if (fs.existsSync(path.join(MEDIA, '.git'))) return;
   let remote = false; try { git(['ls-remote', '--exit-code', '--heads', 'origin', cfg.media.branch]); remote = true; } catch (e) {}
-  if (remote) { git(['fetch', 'origin', cfg.media.branch]); git(['worktree', 'add', MEDIA, 'origin/' + cfg.media.branch, '-B', cfg.media.branch]); }
+  if (remote) { git(['fetch', 'origin', `+${cfg.media.branch}:refs/remotes/origin/${cfg.media.branch}`]); git(['worktree', 'add', MEDIA, 'origin/' + cfg.media.branch, '-B', cfg.media.branch]); }
   else { git(['worktree', 'add', '--orphan', '-b', cfg.media.branch, MEDIA]); fs.writeFileSync(path.join(MEDIA, 'README.md'), 'Public video files of Zoo Wars (used by Buffer).\n'); git(['add', '.'], MEDIA); git(['commit', '-m', 'media branch'], MEDIA); }
 }
 function publishMedia(id) {
@@ -59,22 +59,18 @@ function publishMedia(id) {
 // Keep the public media branch small: rebuild it with only the videos not yet published on both channels.
 // Runs ONLY if the owner allowed it (config.media.pruneAfterPublished = true). The fiche and registry stay on main.
 function pruneMedia() {
+  // Non-destructive: removes the published files from the tip of the media branch with a normal commit (no history rewrite).
   if (!cfg.media.pruneAfterPublished) { console.log('prune disabled (config.media.pruneAfterPublished=false): nothing removed'); return; }
   if (cfg.mode === 'test') { console.log('test mode: nothing removed'); return; }
   ensureMedia();
-  const reg = L.loadRegistry(), keep = Object.values(reg.videos).filter(v => v.publicUrl && v.status !== 'published');
+  const reg = L.loadRegistry();
   const gone = Object.values(reg.videos).filter(v => v.publicUrl && v.status === 'published' && fs.existsSync(path.join(MEDIA, v.date, v.id + '.mp4')));
   if (!gone.length) { console.log('nothing to prune'); return; }
-  const tmp = MEDIA + '-new'; try { git(['worktree', 'remove', '--force', tmp]); } catch (e) {}
-  try { git(['branch', '-D', 'media-new']); } catch (e) {}
-  git(['worktree', 'add', '--orphan', '-b', 'media-new', tmp]);
-  fs.writeFileSync(path.join(tmp, 'README.md'), 'Public video files of Zoo Wars (used by Buffer).\n');
-  for (const v of keep) { const rel = `${v.date}/${v.id}.mp4`; fs.mkdirSync(path.join(tmp, v.date), { recursive: true }); fs.copyFileSync(path.join(MEDIA, rel), path.join(tmp, rel)); }
-  git(['add', '.'], tmp); git(['commit', '-m', 'media: pending videos only'], tmp);
-  git(['push', '--force', 'origin', 'media-new:' + cfg.media.branch], tmp);
-  L.withRegistry(r => { for (const v of gone) { r.videos[v.id].mediaPruned = L.nowParisISO(); } });
-  L.log(AG, `media pruned: ${gone.map(v => v.id).join(', ')} removed, ${keep.length} kept`);
-  git(['worktree', 'remove', '--force', MEDIA]); git(['worktree', 'remove', '--force', tmp]); git(['branch', '-D', 'media-new']);
+  for (const v of gone) git(['rm', '-q', `${v.date}/${v.id}.mp4`], MEDIA);
+  git(['commit', '-m', 'remove published videos: ' + gone.map(v => v.id).join(', ')], MEDIA);
+  git(['push', 'origin', cfg.media.branch], MEDIA);
+  L.withRegistry(r => { for (const v of gone) r.videos[v.id].mediaPruned = L.nowParisISO(); });
+  L.log(AG, `media pruned: ${gone.map(v => v.id).join(', ')}`);
 }
 
 function save(msg) {
