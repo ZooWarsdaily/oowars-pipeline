@@ -2,10 +2,11 @@
   "mode": "live",
   "_mode_help": "test = aucune requete Buffer (identifiants simules) | draft = brouillons Buffer (verifie que Buffer accepte la video, rien n'est publie) | live = programmation reelle",
   "timezone": "Europe/Paris",
-  "videosPerDay": 2,
+  "videosPerDay": 3,
   "slots": [
     "12:30",
-    "19:00"
+    "19:00",
+    "16:00"
   ],
   "produceDaysAhead": 2,
   "buffer": {
@@ -54,7 +55,15 @@
       "ice",
       "jungle",
       "space"
-    ]
+    ],
+    "arena2d": {
+      "rotation": [
+        "terr",
+        "color"
+      ],
+      "candidates": 6,
+      "_help": "1 video 2D par jour, en alternance Territory War / Color War (Big Eats Small exclu)"
+    }
   },
   "qc": {
     "width": 1080,
@@ -79,5 +88,11 @@
     "tiktokHashtagCount": 5,
     "youtubeHashtagCount": 3
   },
-  "startDate": "2026-11-13"
+  "startDate": "2026-11-13",
+  "slotGames": [
+    "hot-potato-3d",
+    "hot-potato-3d",
+    "arena2d"
+  ],
+  "_slots_help": "un creneau par video du jour (heure de Paris) ; slotGames dit quel jeu va dans chaque creneau"
 }

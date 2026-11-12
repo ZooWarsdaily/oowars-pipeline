@@ -802,6 +802,284 @@
         },
         "at": "2026-11-12T21:49:05+01:00"
       }
+    },
+    "ZW-20261113-3": {
+      "id": "ZW-20261113-3",
+      "date": "2026-11-13",
+      "slot": 3,
+      "time": "16:00",
+      "game": "arena2d",
+      "status": "scheduled",
+      "plan": {
+        "winner": null,
+        "theme": "color"
+      },
+      "posts": {
+        "tiktok": {
+          "status": "scheduled",
+          "dueAt": "2026-11-13T15:00:00.000Z",
+          "payload": "buffer/2026-11-13/ZW-20261113-3.tiktok.payload.json",
+          "mode": "live",
+          "at": "2026-11-12T22:09:58+01:00",
+          "bufferPostId": "6af62b30a01fb6efee4b91a6",
+          "bufferStatus": "scheduled",
+          "recordedAt": "2026-11-12T22:10:14+01:00",
+          "simulated": false
+        },
+        "youtube": {
+          "status": "scheduled",
+          "dueAt": "2026-11-13T15:00:00.000Z",
+          "payload": "buffer/2026-11-13/ZW-20261113-3.youtube.payload.json",
+          "mode": "live",
+          "at": "2026-11-12T22:09:58+01:00",
+          "bufferPostId": "6af62b307d05892ccea929cd",
+          "bufferStatus": "scheduled",
+          "recordedAt": "2026-11-12T22:10:14+01:00",
+          "simulated": false
+        }
+      },
+      "history": [
+        {
+          "at": "2026-11-12T22:04:57+01:00",
+          "to": "planned"
+        },
+        {
+          "at": "2026-11-12T22:08:08+01:00",
+          "from": "planned",
+          "to": "produced",
+          "note": "render ok"
+        },
+        {
+          "at": "2026-11-12T22:08:14+01:00",
+          "from": "produced",
+          "to": "validated",
+          "note": "qc ok"
+        },
+        {
+          "at": "2026-11-12T22:09:52+01:00",
+          "from": "validated",
+          "to": "uploaded",
+          "note": "git blob ok (2760a49f82)"
+        },
+        {
+          "at": "2026-11-12T22:10:14+01:00",
+          "from": "uploaded",
+          "to": "scheduled",
+          "note": "tiktok 6af62b30a01fb6efee4b91a6 / youtube 6af62b307d05892ccea929cd"
+        }
+      ],
+      "selection": {
+        "seed": 3819516589,
+        "metrics": {
+          "game": "color",
+          "seed": 3819516589,
+          "frames": 2006,
+          "seconds": 66.86666666666666,
+          "winner": "Bear",
+          "out": 5,
+          "gameT": 60.02222222222586,
+          "finalMargin": null,
+          "score": 15
+        },
+        "simulated": 6,
+        "runnersUp": [
+          {
+            "seed": 3435067129,
+            "score": 15
+          },
+          {
+            "seed": 3361090769,
+            "score": 15
+          }
+        ]
+      },
+      "render": {
+        "file": "production/2026-11-13/ZW-20261113-3.mp4",
+        "seconds": 105,
+        "info": {
+          "game": "color",
+          "seed": 3819516589,
+          "frames": 2006,
+          "seconds": 66.86666666666666,
+          "winner": "Bear",
+          "out": 5,
+          "gameT": 60.02222222222586,
+          "finalMargin": null
+        }
+      },
+      "qc": {
+        "at": "2026-11-12T22:08:14+01:00",
+        "ok": true,
+        "problems": [],
+        "duration": 66.87,
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "videoCodec": "h264",
+        "audioCodec": "aac",
+        "sizeMB": 11.23,
+        "sha256": "ced9ca2f33094cdd474b0be65a885579993a1adbde746b48dcea89d87623eacb",
+        "luminance": [
+          95.8,
+          90,
+          89.7,
+          87.4,
+          30
+        ]
+      },
+      "approvedFile": "approved/2026-11-13/ZW-20261113-3.mp4",
+      "fiche": "approved/2026-11-13/ZW-20261113-3.json",
+      "publicUrl": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-13/ZW-20261113-3.mp4",
+      "uploadCheck": "git blob ok (2760a49f82)",
+      "captions": {
+        "tiktok": {
+          "text": "Bounce, steal, survive 🔵\n\nCall your winner in the comments 👇\n\n#zoowars #colorwar #simulation #animalbattle #whowouldwin"
+        },
+        "youtube": {
+          "title": "Six Colors, One Winner – Animal Color War",
+          "text": "A Zoo Wars color battle: every hit steals a tile, only one color survives.\nDid your pick survive the cuts?\n\n#shorts #zoowars #colorwar #simulation"
+        },
+        "at": "2026-11-12T22:09:58+01:00"
+      }
+    },
+    "ZW-20261114-3": {
+      "id": "ZW-20261114-3",
+      "date": "2026-11-14",
+      "slot": 3,
+      "time": "16:00",
+      "game": "arena2d",
+      "status": "scheduled",
+      "plan": {
+        "winner": null,
+        "theme": "terr"
+      },
+      "posts": {
+        "tiktok": {
+          "status": "scheduled",
+          "dueAt": "2026-11-14T15:00:00.000Z",
+          "payload": "buffer/2026-11-14/ZW-20261114-3.tiktok.payload.json",
+          "mode": "live",
+          "at": "2026-11-12T22:12:26+01:00",
+          "bufferPostId": "6af62bc4446d978be7e9a25d",
+          "bufferStatus": "scheduled",
+          "recordedAt": "2026-11-12T22:12:45+01:00",
+          "simulated": false
+        },
+        "youtube": {
+          "status": "scheduled",
+          "dueAt": "2026-11-14T15:00:00.000Z",
+          "payload": "buffer/2026-11-14/ZW-20261114-3.youtube.payload.json",
+          "mode": "live",
+          "at": "2026-11-12T22:12:26+01:00",
+          "bufferPostId": "6af62bc4f8f0d4b8329f320b",
+          "bufferStatus": "scheduled",
+          "recordedAt": "2026-11-12T22:12:45+01:00",
+          "simulated": false
+        }
+      },
+      "history": [
+        {
+          "at": "2026-11-12T22:08:14+01:00",
+          "to": "planned"
+        },
+        {
+          "at": "2026-11-12T22:11:32+01:00",
+          "from": "planned",
+          "to": "produced",
+          "note": "render ok"
+        },
+        {
+          "at": "2026-11-12T22:11:38+01:00",
+          "from": "produced",
+          "to": "validated",
+          "note": "qc ok"
+        },
+        {
+          "at": "2026-11-12T22:12:26+01:00",
+          "from": "validated",
+          "to": "uploaded",
+          "note": "git blob ok (351c561af8)"
+        },
+        {
+          "at": "2026-11-12T22:12:45+01:00",
+          "from": "uploaded",
+          "to": "scheduled",
+          "note": "tiktok 6af62bc4446d978be7e9a25d / youtube 6af62bc4f8f0d4b8329f320b"
+        }
+      ],
+      "selection": {
+        "seed": 579639366,
+        "metrics": {
+          "game": "terr",
+          "seed": 579639366,
+          "frames": 2006,
+          "seconds": 66.86666666666666,
+          "winner": "Snake",
+          "out": 5,
+          "gameT": 60.02222222222586,
+          "finalMargin": null,
+          "score": 15
+        },
+        "simulated": 6,
+        "runnersUp": [
+          {
+            "seed": 557393117,
+            "score": 15
+          },
+          {
+            "seed": 4074899818,
+            "score": 15
+          }
+        ]
+      },
+      "render": {
+        "file": "production/2026-11-14/ZW-20261114-3.mp4",
+        "seconds": 99,
+        "info": {
+          "game": "terr",
+          "seed": 579639366,
+          "frames": 2006,
+          "seconds": 66.86666666666666,
+          "winner": "Snake",
+          "out": 5,
+          "gameT": 60.02222222222586,
+          "finalMargin": null
+        }
+      },
+      "qc": {
+        "at": "2026-11-12T22:11:38+01:00",
+        "ok": true,
+        "problems": [],
+        "duration": 66.87,
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "videoCodec": "h264",
+        "audioCodec": "aac",
+        "sizeMB": 11.65,
+        "sha256": "a1333e3d46b9045a8e687f4b733e121c17b1384d08fc49fa3a0fb260639f7d2e",
+        "luminance": [
+          53.9,
+          78.6,
+          88.8,
+          93.5,
+          29.7
+        ]
+      },
+      "approvedFile": "approved/2026-11-14/ZW-20261114-3.mp4",
+      "fiche": "approved/2026-11-14/ZW-20261114-3.json",
+      "publicUrl": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-14/ZW-20261114-3.mp4",
+      "uploadCheck": "git blob ok (351c561af8)",
+      "captions": {
+        "tiktok": {
+          "text": "Watch the map change hands 👀\n\nWhich animal are you rooting for next time?\n\n#zoowars #territorywar #animalbattle #whowouldwin #simulation"
+        },
+        "youtube": {
+          "title": "Paint the Map! Animal Territory War",
+          "text": "A Zoo Wars territory battle: grab tiles, survive the cuts, own the map.\nComment your animal for the next battle!\n\n#shorts #zoowars #territorywar #animalbattle"
+        },
+        "at": "2026-11-12T22:12:26+01:00"
+      }
     }
   },
   "captionsUsed": [
@@ -828,7 +1106,19 @@
     "ttq|Did your animal survive? 👇",
     "yt|Last Animal Standing – Hot Potato Battle|The bomb drops, the chase begins {theme}. Seven explosions, one survivor.",
     "ytt|Last Animal Standing – Hot Potato Battle",
-    "yte|New Zoo Wars battle every day."
+    "yte|New Zoo Wars battle every day.",
+    "2h|Every hit steals a tile 🟥",
+    "ttq|Who did you pick? 👇",
+    "2t|Color War: Last Color Standing",
+    "yte|Did your pick make it to the final duel?",
+    "2h|Bounce, steal, survive 🔵",
+    "ttq|Call your winner in the comments 👇",
+    "2t|Six Colors, One Winner – Animal Color War",
+    "yte|Did your pick survive the cuts?",
+    "2h|Watch the map change hands 👀",
+    "ttq|Which animal are you rooting for next time?",
+    "2t|Paint the Map! Animal Territory War",
+    "yte|Comment your animal for the next battle!"
   ],
-  "updatedAt": "2026-11-12T21:49:23+01:00"
+  "updatedAt": "2026-11-12T22:12:45+01:00"
 }

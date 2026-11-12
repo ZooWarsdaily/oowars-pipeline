@@ -1,0 +1,38 @@
+{
+  "id": "ZW-20261113-3",
+  "game": "Color War",
+  "publishDate": "2026-11-13",
+  "slot": 3,
+  "time": "16:00",
+  "timezone": "Europe/Paris",
+  "seed": 3819516589,
+  "winner": "Bear",
+  "highlights": {
+    "eliminations": 5,
+    "finalMargin": null,
+    "videoSeconds": 66.9,
+    "score": 15,
+    "gamesPreviewed": 6
+  },
+  "file": {
+    "name": "ZW-20261113-3.mp4",
+    "at": "2026-11-12T22:08:14+01:00",
+    "ok": true,
+    "problems": [],
+    "duration": 66.87,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "sizeMB": 11.23,
+    "sha256": "ced9ca2f33094cdd474b0be65a885579993a1adbde746b48dcea89d87623eacb",
+    "luminance": [
+      95.8,
+      90,
+      89.7,
+      87.4,
+      30
+    ]
+  }
+}

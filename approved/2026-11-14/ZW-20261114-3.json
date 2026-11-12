@@ -1,0 +1,38 @@
+{
+  "id": "ZW-20261114-3",
+  "game": "Territory War",
+  "publishDate": "2026-11-14",
+  "slot": 3,
+  "time": "16:00",
+  "timezone": "Europe/Paris",
+  "seed": 579639366,
+  "winner": "Snake",
+  "highlights": {
+    "eliminations": 5,
+    "finalMargin": null,
+    "videoSeconds": 66.9,
+    "score": 15,
+    "gamesPreviewed": 6
+  },
+  "file": {
+    "name": "ZW-20261114-3.mp4",
+    "at": "2026-11-12T22:11:38+01:00",
+    "ok": true,
+    "problems": [],
+    "duration": 66.87,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "sizeMB": 11.65,
+    "sha256": "a1333e3d46b9045a8e687f4b733e121c17b1384d08fc49fa3a0fb260639f7d2e",
+    "luminance": [
+      53.9,
+      78.6,
+      88.8,
+      93.5,
+      29.7
+    ]
+  }
+}

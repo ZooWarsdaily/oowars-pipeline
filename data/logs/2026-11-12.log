@@ -107,3 +107,54 @@
 2026-11-12T21:49:23+01:00 [publisher] ZW-20261113-2: tiktok confirmed by Buffer, post 6af6264b48a8bf93e4242acc (scheduled)
 2026-11-12T21:49:23+01:00 [publisher] ZW-20261113-2: youtube confirmed by Buffer, post 6af6264c7d05892ccea7697b (scheduled)
 2026-11-12T21:49:28+01:00 [monitor] check 2026-11-13: OK (4/4) {"issues":0,"actions":0}
+2026-11-12T22:04:57+01:00 [producer] planned ZW-20261113-3 {"slot":"16:00","game":"color"}
+2026-11-12T22:04:57+01:00 [producer] ZW-20261113-1 already scheduled
+2026-11-12T22:04:57+01:00 [producer] ZW-20261113-2 already scheduled
+2026-11-12T22:06:23+01:00 [producer] ZW-20261113-3: 6 color games previewed in 86s
+2026-11-12T22:06:23+01:00 [producer] ZW-20261113-3: best seed 3819516589 score 15
+2026-11-12T22:06:23+01:00 [producer] ZW-20261113-3: render starts (seed 3819516589, color)
+2026-11-12T22:06:37+01:00 [producer] ZW-20261113-3 | frame 300
+2026-11-12T22:06:51+01:00 [producer] ZW-20261113-3 | frame 600
+2026-11-12T22:07:05+01:00 [producer] ZW-20261113-3 | frame 900
+2026-11-12T22:07:18+01:00 [producer] ZW-20261113-3 | frame 1200
+2026-11-12T22:07:31+01:00 [producer] ZW-20261113-3 | frame 1500
+2026-11-12T22:07:42+01:00 [producer] ZW-20261113-3 | frame 1800
+2026-11-12T22:08:08+01:00 [producer] ZW-20261113-3 | DONE /home/claude/oowars-pipeline/production/2026-11-13/ZW-20261113-3.mp4 in 104 s {"game":"color","seed":3819516589,"frames":2006,"seconds":66.86666666666666,"winner":"Bear","out":5,"gameT":60.02222222222586,"finalMargin":null}
+2026-11-12T22:08:08+01:00 [producer] ZW-20261113-3: rendered in 2 min
+2026-11-12T22:08:14+01:00 [producer] ZW-20261113-3: VALIDATED (66.87s, 11.23 MB)
+2026-11-12T22:08:14+01:00 [producer] run 2026-11-13 finished: ZW-20261113-1=scheduled ZW-20261113-2=scheduled ZW-20261113-3=validated
+2026-11-12T22:08:14+01:00 [producer] planned ZW-20261114-3 {"slot":"16:00","game":"terr"}
+2026-11-12T22:08:14+01:00 [producer] ZW-20261114-1 already scheduled
+2026-11-12T22:08:14+01:00 [producer] ZW-20261114-2 already scheduled
+2026-11-12T22:09:51+01:00 [orchestrator] ZW-20261113-3: pushed to media branch
+2026-11-12T22:09:52+01:00 [publisher] ZW-20261113-3: uploaded (git blob ok (2760a49f82)) https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-13/ZW-20261113-3.mp4
+2026-11-12T22:09:52+01:00 [publisher] ZW-20261113-3: captions written
+2026-11-12T22:09:52+01:00 [publisher] ZW-20261113-3: tiktok payload ready (live)
+2026-11-12T22:09:52+01:00 [publisher] ZW-20261113-3: youtube payload ready (live)
+2026-11-12T22:09:53+01:00 [producer] ZW-20261114-3: 6 terr games previewed in 99s
+2026-11-12T22:09:53+01:00 [producer] ZW-20261114-3: best seed 579639366 score 15
+2026-11-12T22:09:53+01:00 [producer] ZW-20261114-3: render starts (seed 579639366, terr)
+2026-11-12T22:09:58+01:00 [publisher] ZW-20261113-3: captions written
+2026-11-12T22:09:58+01:00 [publisher] ZW-20261113-3: tiktok payload ready (live)
+2026-11-12T22:09:58+01:00 [publisher] ZW-20261113-3: youtube payload ready (live)
+2026-11-12T22:10:08+01:00 [producer] ZW-20261114-3 | frame 300
+2026-11-12T22:10:14+01:00 [publisher] ZW-20261113-3: tiktok confirmed by Buffer, post 6af62b30a01fb6efee4b91a6 (scheduled)
+2026-11-12T22:10:14+01:00 [publisher] ZW-20261113-3: youtube confirmed by Buffer, post 6af62b307d05892ccea929cd (scheduled)
+2026-11-12T22:10:22+01:00 [producer] ZW-20261114-3 | frame 600
+2026-11-12T22:10:35+01:00 [producer] ZW-20261114-3 | frame 900
+2026-11-12T22:10:48+01:00 [producer] ZW-20261114-3 | frame 1200
+2026-11-12T22:11:01+01:00 [producer] ZW-20261114-3 | frame 1500
+2026-11-12T22:11:14+01:00 [producer] ZW-20261114-3 | frame 1800
+2026-11-12T22:11:32+01:00 [producer] ZW-20261114-3 | DONE /home/claude/oowars-pipeline/production/2026-11-14/ZW-20261114-3.mp4 in 99 s {"game":"terr","seed":579639366,"frames":2006,"seconds":66.86666666666666,"winner":"Snake","out":5,"gameT":60.02222222222586,"finalMargin":null}
+2026-11-12T22:11:32+01:00 [producer] ZW-20261114-3: rendered in 2 min
+2026-11-12T22:11:38+01:00 [producer] ZW-20261114-3: VALIDATED (66.87s, 11.65 MB)
+2026-11-12T22:11:38+01:00 [producer] run 2026-11-14 finished: ZW-20261114-1=scheduled ZW-20261114-2=scheduled ZW-20261114-3=validated
+2026-11-12T22:12:25+01:00 [orchestrator] ZW-20261114-3: pushed to media branch
+2026-11-12T22:12:26+01:00 [publisher] ZW-20261114-3: uploaded (git blob ok (351c561af8)) https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-14/ZW-20261114-3.mp4
+2026-11-12T22:12:26+01:00 [publisher] ZW-20261114-3: captions written
+2026-11-12T22:12:26+01:00 [publisher] ZW-20261114-3: tiktok payload ready (live)
+2026-11-12T22:12:26+01:00 [publisher] ZW-20261114-3: youtube payload ready (live)
+2026-11-12T22:12:45+01:00 [publisher] ZW-20261114-3: tiktok confirmed by Buffer, post 6af62bc4446d978be7e9a25d (scheduled)
+2026-11-12T22:12:45+01:00 [publisher] ZW-20261114-3: youtube confirmed by Buffer, post 6af62bc4f8f0d4b8329f320b (scheduled)
+2026-11-12T22:12:50+01:00 [monitor] check 2026-11-13: OK (6/6) {"issues":0,"actions":0}
+2026-11-12T22:12:54+01:00 [monitor] check 2026-11-14: OK (6/6) {"issues":0,"actions":0}
