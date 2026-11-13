@@ -36,6 +36,11 @@ function captions(id) {
     if (v.captions) return v.captions;
     if (!['validated', 'uploaded'].includes(v.status)) L.die(`${id} is ${v.status}: captions only for validated videos`);
     const c = C.make(v, cfg, reg.captionsUsed);
+    // standings line (Hot Potato 3D only), added after the winner check: it names the season leader, never this video's winner
+    if (v.game === cfg.production.game) {
+      const line = require('./standings').captionLine(v);
+      if (line) for (const k of ['tiktok', 'youtube']) c[k].text = c[k].text.replace(/\n\n(#[^\n]*)$/, `\n${line}\n\n$1`);
+    }
     v.captions = { tiktok: c.tiktok, youtube: c.youtube, at: L.nowParisISO() };
     reg.captionsUsed = (reg.captionsUsed || []).concat(c.signatures).slice(-90); // recent history only
     L.writeJSON(path.join(bufDir(v.date), id + '.captions.json'), v.captions);

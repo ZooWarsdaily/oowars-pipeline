@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // ORCHESTRATOR helpers (the orchestration itself is CLAUDE.md, run by Claude):
 //   status [days]              registry overview from yesterday to +days
-//   plan-today                 what today's run must do (dates to produce / schedule / check), in order
+//   plan-today --buffer <file> what today's run must do, from what Buffer really holds for D+1..D+3 (3-day rule)
 //   publish-media <id>         copy the validated MP4 to the public "media" branch, push, print the public URL
 //   save "<message>"           commit registry, fiches, payloads, reports and logs on main and push
 //   week                       weekly summary (14 videos / 28 posts target)
@@ -21,18 +21,45 @@ function status(days) {
   if (!rows.length) console.log('(no video in this window)');
 }
 
+// Production rule (owner, 12/11/2026), looking at what Buffer really holds:
+//   D+1 and D+2 complete -> nothing to produce
+//   only D+1 complete     -> produce D+2 and D+3
+//   only D+2 complete     -> produce D+1 and D+3
+//   neither               -> produce D+1, D+2 and D+3 (start-up case)
+// "complete" = every video of the day scheduled on both channels in Buffer (3 videos x 2 = 6 posts).
+// A partly scheduled day is "not complete": producing it only fills what is missing (every step is idempotent).
 function planToday() {
-  const t = L.todayParis(), reg = L.loadRegistry(), steps = [];
-  for (let k = 1; k <= cfg.produceDaysAhead; k++) {
-    const d = L.addDays(t, k);
-    const ids = Array.from({ length: cfg.videosPerDay }, (_, i) => L.videoId(d, i + 1));
-    const st = ids.map(id => (reg.videos[id] || {}).status || 'missing');
-    if (st.some(s => ['missing', 'planned', 'produced', 'error'].includes(s))) steps.push(`PRODUCE ${d}  (${ids.map((id, i) => id + '=' + st[i]).join(', ')})`);
-    if (st.some(s => ['validated', 'uploaded'].includes(s)) || st.some(s => ['missing', 'planned', 'produced', 'error'].includes(s))) steps.push(`PUBLISH ${d}`);
-  }
-  steps.push(`MONITOR ${L.addDays(t, 1)}`);
-  steps.push('SYNC (statuses of past posts) + SAVE');
-  console.log(steps.join('\n'));
+  const t = L.todayParis(), reg = L.loadRegistry(), f = arg('--buffer');
+  if (!f) L.die('--buffer <list_posts.json> required: all posts of both channels due from D+1 00:00 to D+3 23:59');
+  const posts = postsFrom(L.readJSON(f)).filter(p => !['error', 'draft'].includes(p.status));
+  const chans = Object.values(cfg.buffer.channels).map(c => c.id);
+  const complete = d => {
+    for (const sl of L.daySlots(d)) {
+      const id = L.videoId(d, sl.slot), due = new Date(L.dueAtFor(d, sl.time)).getTime();
+      for (const ch of chans) {
+        const ok = posts.some(p => (p.channelId || (p.channel && p.channel.id)) === ch && p.dueAt && Math.abs(new Date(p.dueAt).getTime() - due) < 60000 && JSON.stringify(p.assets || '').includes(id + '.mp4'));
+        if (!ok) return false;
+      }
+    }
+    return true;
+  };
+  const d1 = L.addDays(t, 1), d2 = L.addDays(t, 2), d3 = L.addDays(t, 3), c1 = complete(d1), c2 = complete(d2);
+  let produce = c1 && c2 ? [] : c1 ? [d2, d3] : c2 ? [d1, d3] : [d1, d2, d3];
+  produce = produce.filter(d => !complete(d));
+  const state = `D+1 ${d1} ${c1 ? 'complete' : 'NOT complete'} | D+2 ${d2} ${c2 ? 'complete' : 'NOT complete'} | D+3 ${d3} ${complete(d3) ? 'complete' : 'not complete'}`;
+  L.log(AG, 'plan: ' + state + ' -> produce ' + (produce.join(', ') || 'nothing'));
+  console.log(state);
+  for (const d of produce) console.log(`PRODUCE ${d}\nPUBLISH ${d}`);
+  if (!produce.length) console.log('NOTHING TO PRODUCE');
+  console.log(`MONITOR ${d1}`);
+  console.log('SYNC (statuses of past posts) + PRUNE + SAVE');
+}
+const arg = n => { const i = process.argv.indexOf(n); return i > 0 ? process.argv[i + 1] : null; };
+const HEX24 = /^[a-f\d]{24}$/;
+function postsFrom(json) {
+  const out = []; const walk = o => { if (!o || typeof o !== 'object') return; if (Array.isArray(o)) return o.forEach(walk);
+    if (typeof o.id === 'string' && HEX24.test(o.id) && (o.status || o.dueAt)) out.push(o); for (const k of Object.keys(o)) if (o[k] && typeof o[k] === 'object') walk(o[k]); };
+  walk(json); const seen = new Set(); return out.filter(p => !seen.has(p.id) && seen.add(p.id));
 }
 
 function ensureMedia() {
@@ -85,7 +112,7 @@ function week() {
   const vids = Object.values(reg.videos).filter(v => days.includes(v.date));
   const posts = vids.flatMap(v => Object.values(v.posts || {}));
   const winners = {}; for (const v of vids) winners[v.plan.winner] = (winners[v.plan.winner] || 0) + 1;
-  console.log(`last 7 days: ${vids.filter(v => v.qc && v.qc.ok).length}/14 videos validated, ${posts.filter(p => ['scheduled', 'published'].includes(p.status)).length}/28 posts scheduled or published, winners ${JSON.stringify(winners)}`);
+  console.log(`last 7 days: ${vids.filter(v => v.qc && v.qc.ok).length}/${cfg.videosPerDay * 7} videos validated, ${posts.filter(p => ['scheduled', 'published'].includes(p.status)).length}/${cfg.videosPerDay * 14} posts scheduled or published, winners ${JSON.stringify(winners)}`);
 }
 
 const [cmd, a] = process.argv.slice(2);

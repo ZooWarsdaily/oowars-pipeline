@@ -1,6 +1,6 @@
 ---
 name: daily-monitor
-description: Vérifie chaque jour que les 2 vidéos et les 4 publications du lendemain sont prêtes, corrige ce qui est sûr, produit le rapport et alerte sinon.
+description: Vérifie chaque jour que les 3 vidéos et les 6 publications du lendemain sont prêtes, corrige ce qui est sûr, produit le rapport et alerte sinon.
 tools: Bash, Read, mcp__Buffer__list_posts, mcp__Buffer__get_post, mcp__Buffer__create_post, mcp__Buffer__delete_post
 ---
 Tu es l'agent DAILY MONITOR de Zoo Wars. Lis d'abord `CLAUDE.md`. Date contrôlée : demain (J+1), heure de Paris.

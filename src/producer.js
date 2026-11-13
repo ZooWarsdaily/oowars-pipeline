@@ -3,7 +3,7 @@
 // Uses the existing Hot Potato 3D engine as is (never changes the game). Commands:
 //   plan <date>        create the day's video entries (winner + decor planned for variety)
 //   select <id>        simulate many games, score them, keep the best unused one
-//   render <id>        render the MP4 with engine/grender.js            -> status produced
+//   render <id>        render the MP4 (engine/grender.js for Hot Potato 3D, engine2d/render2d.js for the 2D arena) -> produced
 //   qc <id>            check the file, write its fiche, file it by date   -> status validated
 //   run <date>         plan + select + render + qc for every video of the date that is not validated yet
 'use strict';
@@ -14,23 +14,47 @@ const AG = 'producer';
 const cfg = L.config();
 
 // ---------- plan ----------
+function drawWinner() {
+  const odds = cfg.production.winOdds || {}, a = cfg.production.animals, w = a.map(x => odds[x] || 1), tot = w.reduce((p, q) => p + q, 0);
+  let r = crypto.randomBytes(4).readUInt32BE(0) / 2 ** 32 * tot;
+  for (let i = 0; i < a.length; i++) { r -= w[i]; if (r < 0) return a[i]; }
+  return a[a.length - 1];
+}
 function plan(date) {
   return L.withRegistry(reg => {
     const all = Object.values(reg.videos).filter(v => v.status !== 'error' || v.plan);
     const count = (k, f) => { const c = {}; for (const x of cfg.production[k]) c[x] = 0; for (const v of all) if (v.plan && c[v.plan[f]] !== undefined) c[v.plan[f]]++; return c; };
     const ids = [];
-    for (let s = 1; s <= cfg.videosPerDay; s++) {
-      const id = L.videoId(date, s); ids.push(id);
+    for (const sl of L.daySlots(date)) {
+      const s = sl.slot, id = L.videoId(date, s); ids.push(id);
       if (reg.videos[id]) continue;
       const sameDay = Object.values(reg.videos).filter(v => v.date === date);
-      const lastWinners = Object.values(reg.videos).sort((a, b) => (a.id < b.id ? 1 : -1)).slice(0, 4).map(v => v.plan && v.plan.winner);
+      const game = sl.game;
+      if (game === 'standings') {
+        reg.videos[id] = { id, date, slot: s, time: sl.time, game: 'standings', status: 'planned', plan: { winner: null, theme: 'standings' }, posts: {}, history: [{ at: L.nowParisISO(), to: 'planned' }] };
+        L.log(AG, `planned ${id}`, { slot: sl.time, game: 'standings' }); continue;
+      }
+      if (game === 'arena2d') {
+        // rotation: the 2D game used least recently (never used first) goes next
+        const rot = cfg.production.arena2d.rotation;
+        const lastUse = g => Object.values(reg.videos).filter(x => x.game === 'arena2d' && x.plan.theme === g && x.date < date).map(x => x.date).sort().pop() || '';
+        const theme = rot.slice().sort((a, b) => lastUse(a).localeCompare(lastUse(b)) || rot.indexOf(a) - rot.indexOf(b))[0];
+        reg.videos[id] = { id, date, slot: s, time: sl.time, game: 'arena2d', status: 'planned', plan: { winner: null, theme }, posts: {}, history: [{ at: L.nowParisISO(), to: 'planned' }] };
+        L.log(AG, `planned ${id}`, { slot: sl.time, game: theme }); continue;
+      }
+      const hp = Object.values(reg.videos).filter(v => v.game !== 'arena2d');
+      const lastWinners = hp.sort((a, b) => (a.id < b.id ? 1 : -1)).slice(0, 4).map(v => v.plan && v.plan.winner);
       const wc = count('animals', 'winner'), tc = count('themes', 'theme');
       // least used winner, not used today nor in the last 4 videos; least used decor not used today
-      const winner = cfg.production.animals.filter(a => !sameDay.some(v => v.plan.winner === a) && !lastWinners.includes(a)).sort((a, b) => wc[a] - wc[b] || Math.random() - .5)[0]
+      // natural winners (owner's choice, 13/11/2026): the winner is DRAWN AT RANDOM with the game's own odds (about 1/8 each),
+      // then the best game won by that animal is kept. Keeping "the best of 600" whoever wins would favour some characters
+      // (test of 13/11: gorilla 24 %, panda 1 %), so the draw keeps the standings fair.
+      const winner = cfg.production.naturalWinners ? drawWinner() : cfg.production.animals.filter(a => !sameDay.some(v => v.plan.winner === a) && !lastWinners.includes(a)).sort((a, b) => wc[a] - wc[b] || Math.random() - .5)[0]
         || cfg.production.animals.sort((a, b) => wc[a] - wc[b])[0];
+      // natural winners (owner's choice, 13/11/2026): the simulation decides who wins, the best game is kept whoever wins
       const theme = cfg.production.themes.filter(t => !sameDay.some(v => v.plan.theme === t)).sort((a, b) => tc[a] - tc[b] || Math.random() - .5)[0];
-      reg.videos[id] = { id, date, slot: s, time: cfg.slots[s - 1], game: cfg.production.game, status: 'planned', plan: { winner, theme }, posts: {}, history: [{ at: L.nowParisISO(), to: 'planned' }] };
-      L.log(AG, `planned ${id}`, { slot: cfg.slots[s - 1], theme });
+      reg.videos[id] = { id, date, slot: s, time: sl.time, game: cfg.production.game, status: 'planned', plan: { winner, theme }, posts: {}, history: [{ at: L.nowParisISO(), to: 'planned' }] };
+      L.log(AG, `planned ${id}`, { slot: sl.time, theme, winner: cfg.production.naturalWinners ? 'random draw' : winner });
     }
     return ids;
   });
@@ -66,6 +90,8 @@ async function select(id) {
   const reg = L.loadRegistry(), v = reg.videos[id]; if (!v) L.die('unknown ' + id);
   if (v.selection && v.status !== 'error') { L.log(AG, `${id} already selected (seed ${v.selection.seed})`); return; }
   const used = new Set(Object.values(reg.videos).filter(x => x.selection && x.id !== id).map(x => x.selection.seed));
+  if (v.game === 'arena2d') return select2d(id, v, reg, used);
+  if (v.game === 'standings') { L.withRegistry(r => { r.videos[id].selection = { seed: 0, metrics: {}, simulated: 0 }; }); return; }
   const { chromium } = require('/opt/npm-tools/node_modules/playwright');
   const srv = await serve(), br = await chromium.launch({ executablePath: '/usr/bin/google-chrome', args: ['--no-sandbox', '--use-angle=swiftshader', '--enable-unsafe-swiftshader'] });
   const p = await br.newPage(); await p.route(/googleapis|gstatic/, r => r.abort());
@@ -75,11 +101,28 @@ async function select(id) {
   const t0 = Date.now(); let res = [];
   for (let i = 0; i < seeds.length; i += 50) res = res.concat(await p.evaluate(`(${scoreGames.toString()})(${JSON.stringify(seeds.slice(i, i + 50))}, ${isVoid})`));
   await br.close(); srv.close();
-  const cand = res.filter(m => m.winner === v.plan.winner).map(m => ({ ...m, score: rate(m) })).filter(m => m.score > 0).sort((a, b) => b.score - a.score);
-  L.log(AG, `${id}: ${res.length} games simulated in ${Math.round((Date.now() - t0) / 1000)}s, ${cand.length} valid with the planned winner`);
+  const cand = res.filter(m => !v.plan.winner || m.winner === v.plan.winner).map(m => ({ ...m, score: rate(m) })).filter(m => m.score > 0).sort((a, b) => b.score - a.score);
+  L.log(AG, `${id}: ${res.length} games simulated in ${Math.round((Date.now() - t0) / 1000)}s, ${cand.length} valid${v.plan.winner ? ' with the planned winner' : ' (natural winner)'}`);
   if (!cand.length) { L.withRegistry(r => { r.videos[id].lastError = 'no valid game found'; }); L.die('no valid game for ' + id); }
   L.withRegistry(r => { r.videos[id].selection = { seed: cand[0].seed, metrics: cand[0], simulated: res.length, runnersUp: cand.slice(1, 4).map(c => ({ seed: c.seed, score: c.score })) }; });
   L.log(AG, `${id}: best seed ${cand[0].seed} score ${cand[0].score}`, { tags: cand[0].tags, clutch: cand[0].clutch, final: cand[0].finalTags, dur: cand[0].dur });
+}
+
+// 2D arena: games always last about 67 s; preview a few seeds (exact replay) and prefer a winner that has not won this game recently
+async function select2d(id, v, reg, used) {
+  const N = cfg.production.arena2d.candidates, t0 = Date.now(), res = [];
+  const recent = Object.values(reg.videos).filter(x => x.game === 'arena2d' && x.plan.theme === v.plan.theme && x.selection && x.id !== id).sort((a, b) => (a.id < b.id ? 1 : -1)).slice(0, 4).map(x => x.selection.metrics.winner);
+  for (let i = 0; i < N; i++) {
+    const seed = crypto.randomBytes(4).readUInt32BE(0); if (used.has(seed)) continue;
+    try { const o = execFileSync('node', [path.join(L.P.root, 'engine2d/render2d.js'), 'preview', v.plan.theme, String(seed)], { timeout: 180000 }).toString();
+      const m = JSON.parse(o.slice(o.indexOf('PREVIEW ') + 8)); if (m.winner && m.seconds > 45 && m.seconds < 90) res.push(m); } catch (e) { L.log(AG, `${id}: preview failed ${e.message.slice(0, 100)}`); }
+  }
+  const score = m => (recent.includes(m.winner) ? 0 : 10) + (m.finalMargin === null ? 0 : (1 - m.finalMargin) * 5) + (m.out || 0);
+  const cand = res.map(m => ({ ...m, score: +score(m).toFixed(2) })).sort((a, b) => b.score - a.score);
+  L.log(AG, `${id}: ${res.length} ${v.plan.theme} games previewed in ${Math.round((Date.now() - t0) / 1000)}s`);
+  if (!cand.length) { L.withRegistry(r => { r.videos[id].lastError = 'no valid 2D game'; }); L.die('no valid game for ' + id); }
+  L.withRegistry(r => { r.videos[id].selection = { seed: cand[0].seed, metrics: cand[0], simulated: res.length, runnersUp: cand.slice(1, 3).map(c => ({ seed: c.seed, score: c.score })) }; });
+  L.log(AG, `${id}: best seed ${cand[0].seed} score ${cand[0].score}`);
 }
 
 // ---------- render ----------
@@ -90,7 +133,11 @@ function render(id) {
     const dir = path.join(L.P.production, v.date); fs.mkdirSync(dir, { recursive: true });
     const out = path.join(dir, id + '.mp4'), t0 = Date.now();
     L.log(AG, `${id}: render starts (seed ${v.selection.seed}, ${v.plan.theme})`);
-    const ch = spawn('node', [path.join(L.P.engine, 'grender.js'), String(v.selection.seed), out, String(cfg.production.fps), v.plan.winner, v.plan.theme, cfg.production.quality], { cwd: L.P.engine, env: { ...process.env, GAME: DIST } });
+    const ch = v.game === 'arena2d'
+      ? spawn('node', [path.join(L.P.root, 'engine2d/render2d.js'), 'render', v.plan.theme, String(v.selection.seed), out, String(cfg.production.fps)], { cwd: path.join(L.P.root, 'engine2d') })
+      : v.game === 'standings'
+      ? spawn('node', [path.join(L.P.root, 'standings/render-standings.js'), id, out, String(cfg.production.fps)], { cwd: path.join(L.P.root, 'standings') })
+      : spawn('node', [path.join(L.P.engine, 'grender.js'), String(v.selection.seed), out, String(cfg.production.fps), v.plan.winner || v.selection.metrics.winner, v.plan.theme, cfg.production.quality], { cwd: L.P.engine, env: { ...process.env, GAME: DIST, STANDING: standingLine(v) } });
     let done = null, buf = '';
     const eat = d => { buf += d; const lines = buf.split('\n'); buf = lines.pop(); for (const l of lines) { if (l.startsWith('DONE')) done = l; if (/frame|DONE|MUSIC|NO GAME|seed/.test(l)) L.log(AG, `${id} | ${l.slice(0, 300)}`); } };
     ch.stdout.on('data', eat); ch.stderr.on('data', eat);
@@ -99,12 +146,22 @@ function render(id) {
       const info = JSON.parse(done.slice(done.indexOf('{')));
       L.withRegistry(r => {
         const x = r.videos[id]; x.render = { file: path.relative(L.P.root, out), seconds: Math.round((Date.now() - t0) / 1000), info };
-        if (info.winner !== x.plan.winner || info.theme !== x.plan.theme) { x.lastError = `render mismatch: ${info.winner}/${info.theme}`; L.setVideoStatus(r, id, 'error', x.lastError); }
+        const mism = x.game === 'standings' ? false : x.game === 'arena2d' ? info.winner !== x.selection.metrics.winner : (info.winner !== (x.plan.winner || x.selection.metrics.winner) || info.theme !== x.plan.theme);
+        if (mism) { x.lastError = `render mismatch: ${info.winner}/${info.theme || info.game}`; L.setVideoStatus(r, id, 'error', x.lastError); }
         else L.setVideoStatus(r, id, 'produced', 'render ok');
       });
       L.log(AG, `${id}: rendered in ${Math.round((Date.now() - t0) / 60000)} min`); ok();
     });
   });
+}
+// end-screen line for a 3D video: the winner's season rank once this win is counted, e.g. "SEASON 1 · #2 · 5 WINS"
+function standingLine(v) {
+  try {
+    const S = require('./standings'), w = v.plan.winner || v.selection.metrics.winner, st = S.standings(S.pubTime(v));
+    if (!st || !w) return '';
+    const wins = st.table.find(r => r.animal === w).wins + 1, above = st.table.filter(r => r.animal !== w && r.wins > wins).length, tied = st.table.some(r => r.animal !== w && r.wins === wins);
+    return `SEASON ${st.season} · ${tied ? 'TIED ' : ''}#${above + 1} · ${wins} WIN${wins > 1 ? 'S' : ''}`;
+  } catch (e) { L.log(AG, 'standing line skipped: ' + e.message); return ''; }
 }
 function setErr(r, id, why) { try { L.setVideoStatus(r, id, 'error', why); } catch (e) { r.videos[id].status = 'error'; } }
 
@@ -125,7 +182,8 @@ function qc(id) {
     if (fps < Q.minFps || fps > Q.maxFps) problems.push('fps ' + fps);
   }
   if (!as) problems.push('no audio stream'); else if (as.codec_name !== Q.audioCodec) problems.push('audio codec ' + as.codec_name);
-  if (dur < Q.minDuration || dur > Q.maxDuration) problems.push('duration ' + dur.toFixed(1) + ' s');
+  const dmin = v.game === 'standings' ? (Q.standingsMinDuration || 10) : Q.minDuration, dmax = v.game === 'standings' ? (Q.standingsMaxDuration || 60) : Q.maxDuration;
+  if (dur < dmin || dur > dmax) problems.push('duration ' + dur.toFixed(1) + ' s');
   if (size > Q.maxSizeMB * 1048576) problems.push('size ' + (size / 1048576).toFixed(1) + ' MB');
   // integrity: decode every frame and every audio sample
   try { const e = execFileSync('ffmpeg', ['-v', 'error', '-i', f, '-f', 'null', '-'], { stdio: ['ignore', 'pipe', 'pipe'] }).toString(); if (e.trim()) problems.push('decode errors: ' + e.slice(0, 200)); }
@@ -139,7 +197,7 @@ function qc(id) {
   const sha = fs.existsSync(f) ? crypto.createHash('sha256').update(fs.readFileSync(f)).digest('hex') : '';
   const dupe = Object.values(reg.videos).find(x => x.id !== id && x.qc && x.qc.sha256 === sha);
   if (dupe) problems.push('identical file already exists: ' + dupe.id);
-  const dupeSeed = Object.values(reg.videos).find(x => x.id !== id && x.selection && x.selection.seed === v.selection.seed && x.plan.theme === v.plan.theme && x.status !== 'error');
+  const dupeSeed = v.game !== 'standings' && Object.values(reg.videos).find(x => x.id !== id && x.selection && x.selection.seed === v.selection.seed && x.plan.theme === v.plan.theme && x.game === v.game && x.status !== 'error');
   if (dupeSeed) problems.push('same game already used by ' + dupeSeed.id);
 
   const result = { at: L.nowParisISO(), ok: !problems.length, problems, duration: +dur.toFixed(2), width: vs && vs.width, height: vs && vs.height, fps, videoCodec: vs && vs.codec_name, audioCodec: as && as.codec_name, sizeMB: +(size / 1048576).toFixed(2), sha256: sha, luminance: lum.map(x => +x.toFixed(1)) };
@@ -151,10 +209,14 @@ function qc(id) {
   const dir = path.join(L.P.approved, v.date); fs.mkdirSync(dir, { recursive: true });
   const dest = path.join(dir, id + '.mp4'); fs.copyFileSync(f, dest);
   if (crypto.createHash('sha256').update(fs.readFileSync(dest)).digest('hex') !== sha) L.die('copy corrupted ' + id);
-  const m = v.selection.metrics;
-  const fiche = {
+  const m = v.selection.metrics, is2d = v.game === 'arena2d';
+  const fiche = v.game === 'standings' ? { id, game: 'Weekly standings', publishDate: v.date, time: v.time, timezone: cfg.timezone, standings: v.render.info, file: { name: id + '.mp4', ...result } } : is2d ? {
+    id, game: { terr: 'Territory War', color: 'Color War', hot: 'Hot Potato 2D' }[v.plan.theme], publishDate: v.date, slot: v.slot, time: v.time, timezone: cfg.timezone,
+    seed: v.selection.seed, winner: m.winner, highlights: { eliminations: m.out, finalMargin: m.finalMargin, videoSeconds: +m.seconds.toFixed(1), score: m.score, gamesPreviewed: v.selection.simulated },
+    file: { name: id + '.mp4', ...result },
+  } : {
     id, game: 'Hot Potato 3D', publishDate: v.date, slot: v.slot, time: v.time, timezone: cfg.timezone,
-    seed: v.selection.seed, theme: v.plan.theme, winner: v.plan.winner, eliminationOrder: v.render.info.order,
+    seed: v.selection.seed, theme: v.plan.theme, winner: v.plan.winner || v.selection.metrics.winner, eliminationOrder: v.render.info.order,
     highlights: { passes: m.tags, lastSecondPasses: m.clutch, passesInFinalDuel: m.finalTags, finalDuelSeconds: m.finalDur, dodges: m.dodges, gameSeconds: m.dur, score: m.score, gamesSimulated: v.selection.simulated },
     file: { name: id + '.mp4', ...result },
   };
@@ -163,7 +225,14 @@ function qc(id) {
   L.log(AG, `${id}: VALIDATED (${result.duration}s, ${result.sizeMB} MB)`); return true;
 }
 
+// the games' own font (Lilita One, SIL OFL) must be installed before ANY render, or the 3D game falls back to another font
+function ensureFonts() {
+  const src = path.join(L.P.root, 'engine2d/fonts'), dst = path.join(require('os').homedir(), '.fonts'); fs.mkdirSync(dst, { recursive: true }); let added = false;
+  for (const f of fs.readdirSync(src).filter(f => f.endsWith('.ttf'))) if (!fs.existsSync(path.join(dst, f))) { fs.copyFileSync(path.join(src, f), path.join(dst, f)); added = true; }
+  if (added) try { execFileSync('fc-cache', ['-f']); } catch (e) {}
+}
 async function run(date) {
+  ensureFonts();
   const ids = plan(date);
   for (const id of ids) {
     let v = L.loadRegistry().videos[id];

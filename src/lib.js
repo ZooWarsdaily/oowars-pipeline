@@ -6,7 +6,7 @@ const ROOT = path.resolve(__dirname, '..');
 const P = {
   root: ROOT,
   config: path.join(ROOT, 'config/config.json'),
-  registry: path.join(ROOT, 'data/registry.json'),
+  registry: process.env.ZW_REGISTRY || path.join(ROOT, 'data/registry.json'), // ZW_REGISTRY: test copy only
   logs: path.join(ROOT, 'data/logs'),
   production: path.join(ROOT, 'production'),
   approved: path.join(ROOT, 'approved'),
@@ -17,7 +17,14 @@ const P = {
 };
 for (const k of ['logs', 'production', 'approved', 'buffer', 'archives', 'reports']) fs.mkdirSync(P[k], { recursive: true });
 
-const readJSON = (f, d) => { try { return JSON.parse(fs.readFileSync(f, 'utf8')); } catch (e) { if (d !== undefined) return d; throw e; } };
+// Buffer tool results may be saved as [{type:'text', text:'<json>'}, …]: unwrap them
+function unwrapToolJSON(o) {
+  if (Array.isArray(o) && o.length && o.every(x => x && x.type === 'text' && typeof x.text === 'string')) {
+    return o.map(x => { try { return JSON.parse(x.text); } catch (e) { return null; } }).filter(Boolean);
+  }
+  return o;
+}
+const readJSON = (f, d) => { try { return unwrapToolJSON(JSON.parse(fs.readFileSync(f, 'utf8'))); } catch (e) { if (d !== undefined) return d; throw e; } };
 // atomic write: temp file + rename, so a crash never leaves a half-written registry
 const writeJSON = (f, o) => { fs.mkdirSync(path.dirname(f), { recursive: true }); const t = f + '.tmp' + process.pid; fs.writeFileSync(t, JSON.stringify(o, null, 2) + '\n'); fs.renameSync(t, f); };
 const config = () => readJSON(P.config);
@@ -28,7 +35,7 @@ function parisParts(d = new Date()) {
   const f = new Intl.DateTimeFormat('en-GB', { timeZone: TZ, year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', hourCycle: 'h23' });
   const o = {}; for (const p of f.formatToParts(d)) o[p.type] = p.value; return o;
 }
-const todayParis = () => { const o = parisParts(); return `${o.year}-${o.month}-${o.day}`; };
+const todayParis = () => { if (process.env.ZW_TODAY) return process.env.ZW_TODAY; const o = parisParts(); return `${o.year}-${o.month}-${o.day}`; };
 const nowParisISO = () => { const o = parisParts(); return `${o.year}-${o.month}-${o.day}T${o.hour}:${o.minute}:${o.second}${offsetFor(`${o.year}-${o.month}-${o.day}`, `${o.hour}:${o.minute}`)}`; };
 function addDays(date, n) { const d = new Date(date + 'T12:00:00Z'); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); }
 // UTC offset of Paris at a given local date/time (handles summer/winter time)
@@ -72,8 +79,15 @@ function setVideoStatus(reg, id, status, note) {
   v.history = v.history || []; v.history.push({ at: nowParisISO(), from: v.status, to: status, note: note || '' });
   v.status = status;
 }
+// every video slot of a date: the daily slots + the weekly ones (e.g. Sunday 18:00 standings)
+function daySlots(date) {
+  const cfg = config(), wd = new Date(date + 'T12:00:00Z').getUTCDay();
+  const out = cfg.slots.map((time, i) => ({ slot: i + 1, time, game: (cfg.slotGames || [])[i] || 'hot-potato-3d' }));
+  for (const w of cfg.weeklySlots || []) if (w.weekday === wd && !(w.game === 'standings' && cfg.standings && date < addDays(cfg.standings.season1Start, 6))) out.push({ slot: out.length + 1, time: w.time, game: w.game });
+  return out;
+}
 const videoId = (date, slot) => `ZW-${date.replace(/-/g, '')}-${slot}`;
 
 function die(msg) { console.error('ERROR: ' + msg); process.exit(1); }
 
-module.exports = { P, readJSON, writeJSON, config, todayParis, nowParisISO, addDays, dueAtFor, offsetFor, log, withRegistry, loadRegistry, setVideoStatus, videoId, die };
+module.exports = { daySlots, P, readJSON, writeJSON, config, todayParis, nowParisISO, addDays, dueAtFor, offsetFor, log, withRegistry, loadRegistry, setVideoStatus, videoId, die };

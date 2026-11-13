@@ -36,10 +36,57 @@ const YT_DESC = [
 ];
 const YT_END = ['Who did you pick? Tell us in the comments!', 'Comment your animal for the next battle!', 'Did your pick make it to the final duel?', 'New Zoo Wars battle every day.'];
 
+// 2D arena games (Territory War / Color War)
+const G2 = {
+  terr: {
+    name: 'Territory War', tag: '#territorywar',
+    hooks: ['Who will own the map? 🎨', '6 animals, 1 map, only 1 survivor 🎨', 'Paint the map or get wiped out 🖌️', 'Last place is out every 12 seconds ⏱️', 'The map keeps shrinking… 😳', 'Every tile counts 🟩', 'Biggest territory wins 🗺️', 'Watch the map change hands 👀'],
+    titles: ['Who Will Own the Map? Animal Territory War', 'Territory War: Last Animal Standing', '6 Animals Fight for the Map', 'Animal Territory Battle – Pick Your Fighter', 'Paint the Map! Animal Territory War', 'Which Animal Conquers the Map?'],
+    desc: ['Six animals paint the map. Every 12 seconds, the smallest territory is out.', 'A Zoo Wars territory battle: grab tiles, survive the cuts, own the map.', 'Power-ups, freezes and paint bombs: who will control the whole map?'],
+  },
+  color: {
+    name: 'Color War', tag: '#colorwar',
+    hooks: ['Which color takes over the board? 🟥🟦🟩', 'Every hit steals a tile 🟥', 'Only one color survives 🎨', 'The board is a battlefield 🟦', 'Six colors, one winner 🏆', 'Bounce, steal, survive 🔵', 'Last place is out every 12 seconds ⏱️', 'Watch the colors fight 👀'],
+    titles: ['Color War: Which Color Takes the Board?', 'Six Colors, One Winner – Animal Color War', 'Every Hit Steals a Tile! Color War', 'Animal Color Battle – Pick Your Color', 'Which Animal Paints the Whole Board?', 'Color War: Last Color Standing'],
+    desc: ['Six animals bounce across the board and steal tiles from each other. Every 12 seconds, last place is out.', 'A Zoo Wars color battle: every hit steals a tile, only one color survives.', 'Bounce, steal and survive: which color will take over the whole board?'],
+  },
+  hot: {
+    name: 'Hot Potato', tag: '#hotpotato',
+    hooks: ["Don't get caught holding the bomb 💣", 'Pass it or BOOM 💣', 'The bomb is looking for a new owner 😅', 'Run! The bomb is coming 🏃💨', 'Six animals, one bomb 💥', 'Who survives the last explosion? 💣', 'Tag, run, explode 💥', 'Nobody wants this bomb 😬'],
+    titles: ['Pass the Bomb! Animal Hot Potato', 'Who Survives the Last Explosion?', 'Animal Hot Potato – Run From the Bomb', 'Six Animals, One Bomb', "Don't Get Caught Holding the Bomb!", 'Hot Potato Chase – Pick Your Animal'],
+    desc: ['Six animals run from the bomb. The carrier has to tag someone before the fuse runs out.', 'A Zoo Wars hot potato chase: tag, run, and pray the bomb is not in your hands at zero.', 'The bomb keeps changing hands until only one animal is left standing.'],
+  },
+};
+const END2D = ['Who did you pick? Tell us in the comments!', 'Comment your animal for the next battle!', 'Did your pick survive the cuts?', 'New Zoo Wars battle every day.'];
+function make2d(video, cfg, used, rnd) {
+  const g = G2[video.plan.theme], usedSet = new Set(used || []), recent = new Set((used || []).slice(-20)), base = cfg.captions.hashtags.filter(t => t !== '#hotpotato' && t !== g.tag);
+  let h, q, t, d, e;
+  for (let i = 0; i < 400; i++) { h = pick(g.hooks, rnd); q = pick(TT_QUESTION, rnd); if (!recent.has('2h|' + h) && !recent.has('ttq|' + q)) break; }
+  for (let i = 0; i < 400; i++) { t = pick(g.titles, rnd); d = pick(g.desc, rnd); e = pick(END2D, rnd); if (!recent.has('2t|' + t) && !recent.has('yte|' + e)) break; }
+  const rest = base.slice(1).sort(() => rnd() - .5);
+  const tiktok = { text: `${h}\n\n${q}\n\n${[base[0], g.tag, ...rest.slice(0, cfg.captions.tiktokHashtagCount - 2)].join(' ')}` };
+  const youtube = { title: t.slice(0, 100), text: `${d}\n${e}\n\n${['#shorts', base[0], g.tag, ...rest.slice(0, cfg.captions.youtubeHashtagCount - 2)].join(' ')}` };
+  const w = video.selection && video.selection.metrics && video.selection.metrics.winner;
+  for (const s of [tiktok.text, youtube.title, youtube.text]) if (w && new RegExp('\\b' + w + '\\b', 'i').test(s)) throw new Error('caption reveals the winner');
+  void usedSet; return { tiktok, youtube, signatures: ['2h|' + h, 'ttq|' + q, '2t|' + t, 'yte|' + e] };
+}
+
 function pick(arr, rnd) { return arr[Math.floor(rnd() * arr.length)]; }
 function rng(seed) { let s = seed >>> 0; return () => { s = (s * 1664525 + 1013904223) >>> 0; return s / 2 ** 32; }; }
 
+function makeStandings(video, cfg) {
+  const i = (video.render && video.render.info) || {}, lead = i.leader ? i.leader.charAt(0).toUpperCase() + i.leader.slice(1) : null;
+  const top = lead ? `${lead} leads Season ${i.season}! 👑` : `Season ${i.season} standings 🏆`;
+  const tags = ['#zoowars', '#hotpotato', '#animalbattle', '#leaderboard', '#whowouldwin'];
+  return {
+    tiktok: { text: `${top}\nThis week's wins and the full season ranking.\n\nWho wins next week? Comment your animal 👇\n\n${tags.join(' ')}` },
+    youtube: { title: `Zoo Wars Season ${i.season} Standings${lead ? ' – ' + lead + ' on Top!' : ''}`.slice(0, 100), text: `Weekly Zoo Wars standings: every Hot Potato win of the week and the season ranking.\nWho wins next week? Comment your animal!\n\n#shorts #zoowars #hotpotato #leaderboard` },
+    signatures: [],
+  };
+}
 function make(video, cfg, used) {
+  if (video.game === 'standings') return makeStandings(video, cfg);
+  if (video.game === 'arena2d') return make2d(video, cfg, used, rng(video.selection ? video.selection.seed : Date.now()));
   const usedSet = new Set(used || []), recent = new Set((used || []).slice(-20)), rnd = rng(video.selection ? video.selection.seed : Date.now());
   const theme = video.plan.theme, tags = cfg.captions.hashtags;
   let tt, yt;
@@ -61,7 +108,8 @@ function make(video, cfg, used) {
   const tiktok = { text: `${tt.h}\nHot potato battle ${thLine}.\n\n${tt.q}\n\n${ttTags}` };
   const youtube = { title: yt.t.slice(0, 100), text: `${yt.d.replace('{theme}', thLine)}\n${yt.e}\n\n${ytTags}` };
   // safety: never reveal the winner
-  for (const s of [tiktok.text, youtube.title, youtube.text]) if (video.plan.winner && new RegExp('\\b' + video.plan.winner + '\\b', 'i').test(s)) throw new Error('caption reveals the winner');
+  const w3 = video.plan.winner || (video.selection && video.selection.metrics && video.selection.metrics.winner);
+  for (const s of [tiktok.text, youtube.title, youtube.text]) if (w3 && new RegExp('\\b' + w3 + '\\b', 'i').test(s)) throw new Error('caption reveals the winner');
   return { tiktok, youtube, signatures: [tt.sig, 'tth|' + tt.h, 'ttq|' + tt.q, yt.sig, 'ytt|' + yt.t, 'yte|' + yt.e] };
 }
 module.exports = { make };

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Zoo Wars – standings</title>
+<style>
+@font-face{font-family:'Lilita One';src:url('../engine2d/fonts/LilitaOne-Regular.ttf')}
+html,body{margin:0;background:#0d1f17}canvas{width:540px;height:960px;display:block}
+</style></head>
+<body><canvas id="cv" width="1080" height="1920"></canvas>
+<script>
+// Weekly standings video (1080x1920). draw(t) is a pure function of the time t (s) and window.DATA, so frames
+// can be rendered one by one. DATA = {season, weekLabel, weekTable:[{animal,weekWins}], table:[{animal,wins}], cta}
+const cv = document.getElementById('cv'), g = cv.getContext('2d'), W = 1080, H = 1920;
+const COL = { lion: '#f5b82e', tiger: '#f08a24', bear: '#b9773e', wolf: '#9aa7c7', gorilla: '#8f7ad6', fox: '#ee6a2c', bull: '#e0624e', panda: '#e8e8e8', elephant: '#8fa7b8', penguin: '#4b6a8f' };
+const IMG = {}; let ready = 0;
+window.loadImages = names => Promise.all(names.map(n => new Promise(ok => { const i = new Image(); i.onload = () => { IMG[n] = i; ok(); }; i.onerror = ok; i.src = 'assets/' + n + '.png'; })));
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const ease = x => { x = clamp(x); return 1 - Math.pow(1 - x, 3); };
+const cap = s => s.toUpperCase();
+function txt(s, x, y, size, color, align = 'center', stroke = 10) {
+  g.font = `${size}px 'Lilita One'`; g.textAlign = align; g.textBaseline = 'middle'; g.lineJoin = 'round';
+  if (stroke) { g.lineWidth = stroke; g.strokeStyle = 'rgba(20,12,4,.92)'; g.strokeText(s, x, y); }
+  g.fillStyle = color; g.fillText(s, x, y);
+}
+function portrait(n, x, y, r, a = 1) {
+  g.save(); g.globalAlpha *= a; g.beginPath(); g.arc(x, y, r + 6, 0, 7); g.fillStyle = COL[n] || '#fff'; g.fill();
+  g.beginPath(); g.arc(x, y, r, 0, 7); g.clip(); if (IMG[n]) g.drawImage(IMG[n], x - r, y - r, 2 * r, 2 * r); else { g.fillStyle = '#333'; g.fill(); } g.restore();
+}
+function bg(t) {
+  const gr = g.createLinearGradient(0, 0, 0, H); gr.addColorStop(0, '#173d2a'); gr.addColorStop(1, '#0b1a13'); g.fillStyle = gr; g.fillRect(0, 0, W, H);
+  g.save(); g.globalAlpha = .07; g.fillStyle = '#fff';  // slow drifting dots
+  for (let i = 0; i < 40; i++) { const x = (i * 263 + t * 18 * (1 + i % 3)) % W, y = (i * 517 + t * 30) % H; g.beginPath(); g.arc(x, y, 6 + i % 5 * 3, 0, 7); g.fill(); }
+  g.restore();
+}
+function header(t, title, sub) {
+  const a = ease(t / .5);
+  txt('ZOO WARS', W / 2, 150, 64, '#ffffff', 'center', 8);
+  g.save(); g.globalAlpha = a; txt(title, W / 2, 255, 112, '#ffd23f', 'center', 16); txt(sub, W / 2, 350, 50, '#ffffff', 'center', 8); g.restore();
+}
+// scene 1: this week's wins, bars growing
+function weekScene(t) {
+  const D = window.DATA, rows = D.weekTable, max = Math.max(1, ...rows.map(r => r.weekWins));
+  header(t, 'THIS WEEK', D.weekLabel);
+  rows.forEach((r, i) => {
+    const y = 470 + i * 160, appear = ease((t - .3 - i * .08) / .4), grow = ease((t - 1 - i * .05) / 1.6);
+    g.save(); g.globalAlpha = appear; g.translate((1 - appear) * -120, 0);
+    portrait(r.animal, 120, y, 58);
+    txt(cap(r.animal), 210, y - 34, 46, '#ffffff', 'left', 7);
+    const bw = 520 * (r.weekWins / max) * grow;
+    g.fillStyle = 'rgba(255,255,255,.12)'; g.beginPath(); g.roundRect(210, y + 2, 520, 44, 22); g.fill();
+    if (bw > 0) { g.fillStyle = COL[r.animal]; g.beginPath(); g.roundRect(210, y + 2, Math.max(44, bw), 44, 22); g.fill(); }
+    const n = Math.round(r.weekWins * grow);
+    txt(String(n) + (r.weekWins === 1 ? ' WIN' : ' WINS'), 750, y + 24, 46, i === 0 && r.weekWins > 0 ? '#ffd23f' : '#ffffff', 'left', 7);
+    g.restore();
+  });
+}
+// scene 2: season table with the leader highlighted
+function seasonScene(t) {
+  const D = window.DATA, rows = D.table;
+  header(t, 'SEASON ' + D.season, D.seasonLabel);
+  rows.forEach((r, i) => {
+    const y = 480 + i * 156, appear = ease((t - .2 - (rows.length - 1 - i) * .12) / .45);
+    g.save(); g.globalAlpha = appear; g.translate(0, (1 - appear) * 60);
+    if (i === 0 && r.wins > 0) { g.fillStyle = 'rgba(255,210,63,.18)'; g.beginPath(); g.roundRect(70, y - 70, 860, 140, 30); g.fill(); g.strokeStyle = '#ffd23f'; g.lineWidth = 5; g.stroke(); }
+    txt('#' + (i + 1), 120, y, 60, i === 0 ? '#ffd23f' : '#ffffff', 'center', 8);
+    portrait(r.animal, 255, y, 56);
+    txt(cap(r.animal), 345, y, 58, '#ffffff', 'left', 8);
+    txt(String(r.wins), 880, y, 72, i === 0 && r.wins > 0 ? '#ffd23f' : '#ffffff', 'right', 9);
+    if (i === 0 && r.wins > 0) txt('👑', 255, y - 78, 56, '#ffd23f', 'center', 0);
+    g.restore();
+  });
+  g.save(); g.globalAlpha = ease((t - 1.6) / .5); txt('WINS', 880, 400, 34, '#cfe8d7', 'right', 6); g.restore();
+}
+function ctaScene(t) {
+  const D = window.DATA, s = 1 + .04 * Math.sin(t * 6);
+  txt('ZOO WARS', W / 2, 150, 64, '#ffffff', 'center', 8);
+  g.save(); g.globalAlpha = ease(t / .4); g.translate(W / 2, 760); g.scale(s, s);
+  txt(D.cta[0], 0, 0, 90, '#ffd23f', 'center', 16); g.restore();
+  g.save(); g.globalAlpha = ease((t - .4) / .4); txt(D.cta[1], W / 2, 900, 62, '#ffffff', 'center', 9); g.restore();
+  const n = D.table.length; D.table.forEach((r, i) => { const a = ease((t - .6 - i * .07) / .3); portrait(r.animal, W / 2 + (i - (n - 1) / 2) * 124, 1120, 52, a); });
+  g.save(); g.globalAlpha = ease((t - 1.4) / .4); txt('NEW BATTLES EVERY DAY', W / 2, 1300, 46, '#cfe8d7', 'center', 7); g.restore();
+}
+const SCENES = [[0, 6.5, weekScene], [6.5, 13.5, seasonScene], [13.5, 18, ctaScene]];
+window.DURATION = 18;
+window.draw = t => {
+  bg(t);
+  for (const [a, b, f] of SCENES) if (t >= a && t < b) {
+    const fade = Math.min(ease((t - a) / .25), ease((b - t) / .25)); g.save(); g.globalAlpha = fade; f(t - a); g.restore();
+  }
+};
+</script></body></html>

@@ -658,6 +658,8 @@ const AUD={ctx:null,out:null,log:[],m0:0,m1:-1,md:-1,sched:0,G:null,cd:null,orig
 /* ---------------- view state ---------------- */
 let V=null;
 const GEST={lion:'roar',tiger:'flex',bear:'pat',wolf:'howl',gorilla:'pound',fox:'heh',bull:'snort',panda:'crunch'};
+// season standing line under 'X WINS!' (Zoo Wars standings, added 13/11/2026 with the owner's approval): given by the video maker as ?st=..., empty in the live page
+const ST_LINE=(()=>{try{const v=new URLSearchParams(location.search).get('st');return v?String(v).toUpperCase().slice(0,40):''}catch(e){return ''}})();
 const END_Q=['WHO WINS NEXT ROUND?','WHO WAS YOUR PICK?','DID YOU CALL IT?','WHO SHOULD WIN NEXT?'];
 function startGame(seed,theme){
   seed=seed>>>0;const name=theme&&THEME_DEF[theme]?theme:THEME_NAMES[seed%THEME_NAMES.length],T=getTheme(name),G=createGame(seed,{void:T.hazard==='void'}),fr=RNG((seed^0x9e37)>>>0);
@@ -841,6 +843,7 @@ function render(){
     g.beginPath();for(let i=0;i<8;i++){const an=i/8*TAU,rr=i%2?r*.2:r;g.lineTo(Math.cos(an)*rr,Math.sin(an)*rr)}g.closePath();g.fill();g.restore();g.globalAlpha=1}
   txt('HOT POTATO',W/2,205,128,'#ffd23f',.18);
   if(win){const u=clamp(G.pt*3,0,1),n=SPEC[G.winner.k].n;txt(n+' WINS!',W/2,330,(n.length>6?96:116)*(1.25-.25*u),SPEC[G.winner.k].c,.18);
+    if(ST_LINE){g.globalAlpha=clamp((G.pt-.35)*3,0,1);txt(ST_LINE,W/2,428,52,'#fff');g.globalAlpha=1}
     g.globalAlpha=clamp((G.pt-.5)*3,0,1);txt(END_Q[G.seed%END_Q.length],W/2,1318,70,'#fff');txt('COMMENT YOUR ANIMAL',W/2,1404,48,'#ffd23f');g.globalAlpha=1}
   else txt(vt<INTRO+3?'ONLY 1 SURVIVES':'WHO SURVIVES?',W/2,300,52,vt<INTRO+3?'#ff8a7a':'#fff');
   if(vt<INTRO){const u=clamp(vt*6,0,1);g.globalAlpha=u;txt('PICK YOUR ANIMAL!',W/2,430,104*(1.35-.35*u),'#fff',.18);g.globalAlpha=1}

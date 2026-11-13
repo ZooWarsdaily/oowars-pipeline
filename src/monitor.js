@@ -33,8 +33,9 @@ function check(date) {
   }
   const onDay = bufferPosts.filter(p => p.dueAt && new Date(p.dueAt).toLocaleDateString('sv-SE', { timeZone: 'Europe/Paris' }) === date);
 
-  for (let s = 1; s <= cfg.videosPerDay; s++) {
-    const id = L.videoId(date, s), v = reg.videos[id], time = cfg.slots[s - 1];
+  const slots = L.daySlots(date);
+  for (const sl of slots) {
+    const s = sl.slot, id = L.videoId(date, s), v = reg.videos[id], time = sl.time;
     if (!v) { issues.push(`${id} (${time}) : vidéo inexistante`); actions.push({ type: 'produce', safe: true, date, why: 'video missing' }); continue; }
     // video availability & validation
     if (!v.qc || !v.qc.ok || !['validated', 'uploaded', 'scheduled', 'published'].includes(v.status)) {
@@ -48,7 +49,7 @@ function check(date) {
       if (sha !== v.qc.sha256) { issues.push(`${id} : fichier validé modifié (empreinte différente)`); actions.push({ type: 'alert', msg: `${id} : le fichier ne correspond plus à la version validée` }); continue; }
     }
     if (!v.publicUrl) { issues.push(`${id} : pas encore en ligne`); actions.push({ type: 'upload', safe: true, id }); continue; }
-    ok.push(`${id} (${time}, décor ${v.plan.theme}) : vidéo validée, ${v.qc.duration} s, ${v.qc.sizeMB} Mo`);
+    ok.push(`${id} (${time}, ${v.game === 'hot-potato-3d' ? 'décor ' : ''}${v.plan.theme}) : vidéo validée, ${v.qc.duration} s, ${v.qc.sizeMB} Mo`);
 
     for (const c of CH) {
       const chanId = cfg.buffer.channels[c].id, p = (v.posts || {})[c] || {};
@@ -79,7 +80,7 @@ function check(date) {
   // posts of that day that belong to no known video
   for (const b of onDay) if (!vidOf(b) || !reg.videos[vidOf(b)]) issues.push(`post inconnu ${b.id} (${b.status}, ${paris(b.dueAt)}) : non créé par le système, laissé tel quel`);
 
-  const expected = cfg.videosPerDay * CH.length, good = ok.filter(x => /programmée|déjà publiée/.test(x)).length;
+  const expected = slots.length * CH.length, good = ok.filter(x => /programmée|déjà publiée/.test(x)).length;
   const verdict = good === expected && !issues.length ? 'OK' : actions.some(a => !a.safe) ? 'ALERTE' : 'À CORRIGER';
   const now = L.todayParis(), stamp = L.nowParisISO();
   const md = [`# Rapport Zoo Wars du ${now} — contrôle du ${date}`, '', `Mode : **${cfg.mode}**. Verdict : **${verdict}** (${good}/${expected} publications confirmées).`, '',
