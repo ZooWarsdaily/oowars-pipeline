@@ -219,7 +219,7 @@ function createGame(seed,opts){opts=opts||{};
       if(C.cd<=0&&!B.hop&&f<1){const duel=alive().length===2;for(const o of A){if(o===C||!o.alive||o.cd>0||o.shell>0)continue;const od=Math.hypot(o.p[0]-C.p[0],o.p[1]-C.p[1]);
         if(!C.leap&&od<(C.slam>0?1.7:C.T.tongue&&C.tongueCd<=0?2.15:C.T.reach||1.0)){B.hop={from:head(C),u:0};
           if(C.T.tongue&&od>1.05){C.tongueCd=3.4;C.tg={to:o.i,t:.3};emit('tongue',{from:C.i,to:o.i})}
-          if(C.T.reach>1.3&&od>1.05){C.reachT=.4;emit('trunk',{i:C.i})}C.cd=duel?.95:1.3;C.sq=1.15;const kx=C.p[0]-o.p[0],kz=C.p[1]-o.p[1],kl=Math.hypot(kx,kz)||1;C.v=[kx*5,kz*5];o.cd=.5;o.sq=.7;o.v=[0,0];o.grudge=C.i;
+          if(C.T.reach>1.3&&od>1.05){C.reachT=.4;emit('trunk',{i:C.i,to:o.i})}C.cd=duel?.95:1.3;C.sq=1.15;const kx=C.p[0]-o.p[0],kz=C.p[1]-o.p[1],kl=Math.hypot(kx,kz)||1;C.v=[kx*5,kz*5];o.cd=.5;o.sq=.7;o.v=[0,0];o.grudge=C.i;
           if(C.T.bump){o.cd=1.0;o.v=[-kx/kl*7,-kz/kl*7];o.sq=.6;emit('bump',{i:o.i})}
           o.shock=.5;C.relief=.8;G.carrier=o.i;G.tags++;G.rt=(G.rt||0)+1;emit('tag',{from:C.i,to:o.i});break}}}
       if(f>=1&&!B.hop)boom()}
@@ -805,8 +805,8 @@ const ST_LINE=(()=>{try{const v=new URLSearchParams(location.search).get('st');r
 const END_Q=['WHO WINS NEXT ROUND?','WHO WAS YOUR PICK?','DID YOU CALL IT?','WHO SHOULD WIN NEXT?'];
 function startGame(seed,theme){
   seed=seed>>>0;const name=theme&&THEME_DEF[theme]?theme:THEME_NAMES[seed%THEME_NAMES.length],T=getTheme(name),G=createGame(seed,{void:T.hazard==='void'}),fr=RNG((seed^0x9e37)>>>0);
-  V={G,T,fr,rr:RNG(seed^0x1234),parts:[],smoke:[],conf:[],pops:[],drops:[],stars2:[],bangs:[],shake:0,flash:0,duelCard:0,note:null,later:[],Rv:G.R,cam:{eye:[0,6,12],at:[0,1,0],fov:.95},amb:[],spout:0,lastK:'',
-    an:G.animals.map(()=>({look:0,nod:0,blink:fr()*3,skid:0}))};
+  V={G,T,fr,rr:RNG(seed^0x1234),parts:[],smoke:[],conf:[],pops:[],drops:[],stars2:[],bangs:[],calls:[],tongues:[],shake:0,flash:0,duelCard:0,note:null,later:[],Rv:G.R,cam:{eye:[0,6,12],at:[0,1,0],fov:.95},amb:[],spout:0,lastK:'',
+    an:G.animals.map(()=>({look:0,nod:0,blink:fr()*3,skid:0,cc:0,zs:1,sl:0,hy:0,tired:0}))};
   for(let i=0;i<90;i++)V.amb.push({p:[(fr()-.5)*46,-10+fr()*18,(fr()-.5)*46],v:.6+fr()*1.4,s:.05+fr()*.07,ph:fr()*9});
   E.env={L:norm([.45,1,.4]),key:T.key,sky:T.amb,gnd:T.gnd,fog:T.fog};
   AUD.reset();return V;
@@ -815,6 +815,7 @@ function bombMatrix(){const B=V.G.bomb,f=clamp(B.fuse/B.max,0,1),pl=Math.pow(Mat
   return M4.mulN(M4.T(B.pos[0],B.pos[1]+.12,B.pos[2]),M4.RZ(Math.sin(V.G.t*9)*(.12+.2*f)),M4.S(sc,sc,sc))}
 function fxStep(dt){
   const G=V.G,T=V.T,fr=V.fr,A=G.animals,d=dt*G.scale(),sc=T.splash;
+  const call=(i,t,force)=>{const s=V.an[i];if(!force&&s.cc>0)return;s.cc=force?1.2:6;V.calls=V.calls.filter(c=>c.i!==i);V.calls.push({i,t,life:1.1,max:1.1})}; // power callouts above the animals
   for(const e of G.ev){
     if(e.type==='drop'){AUD.play('drop');if(G.round===1){V.note={t:'RUN!',life:.9,max:.9,big:true};AUD.play('hook')}}
     else if(e.type==='land'){AUD.play('land',{first:e.first})}
@@ -823,11 +824,12 @@ function fxStep(dt){
     else if(e.type==='dodge'){const a=A[e.i];for(let i=0;i<6;i++)V.smoke.push({p:[a.p[0],.2,a.p[1]],v:[(fr()-.5)*2.4,.6+fr(),(fr()-.5)*2.4],life:.5,max:.5,s:.3,sh:.85,al:.3});AUD.play('dodge')}
     else if(e.type==='tick')AUD.play('tick',{f:e.f});
     else if(e.type==='bump'){const a=A[e.i];AUD.play('bump');V.shake=Math.max(V.shake,.45);for(let i=0;i<10;i++)V.smoke.push({p:[a.p[0],.4,a.p[1]],v:[(fr()-.5)*4,.8+fr(),(fr()-.5)*4],life:.5,max:.5,s:.35,sh:.9,al:.35})}
-    else if(e.type==='leap'||e.type==='lunge')AUD.play('leap');
-    else if(e.type==='tongue')AUD.play('slurp');
-    else if(e.type==='trunk')AUD.play('trumpet');
+    else if(e.type==='leap')AUD.play('leap');
+    else if(e.type==='lunge'){AUD.play('leap');call(e.i,'SNAP!',1)}
+    else if(e.type==='tongue'){AUD.play('slurp');V.tongues.push({from:e.from,to:e.to,life:.5});call(e.from,'SLURP!',1)}
+    else if(e.type==='trunk'){AUD.play('trumpet');call(e.i,'TRUNK!',1);const a=A[e.i],o=A[e.to];for(let k=0;k<10;k++){const u=k/9;V.smoke.push({p:[lerp(a.p[0],o.p[0],u),1.3*a.sc+Math.sin(Math.PI*u)*.5,lerp(a.p[1],o.p[1],u)],v:[(fr()-.5)*.6,.5,(fr()-.5)*.6],life:.5,max:.5,s:.28,sh:.85,al:.45})}}
     else if(e.type==='chomp'){const a=A[e.i];AUD.play('chomp');V.shake=Math.max(V.shake,.3);for(let i=0;i<8;i++)V.smoke.push({p:[a.p[0],.2,a.p[1]],v:[(fr()-.5)*3,.6+fr(),(fr()-.5)*3],life:.45,max:.45,s:.3,sh:.9,al:.3})}
-    else if(e.type==='shell'){const a=A[e.i];AUD.play('pop');for(let i=0;i<8;i++)V.smoke.push({p:[a.p[0],.5,a.p[1]],v:[(fr()-.5)*2.4,.8+fr(),(fr()-.5)*2.4],life:.5,max:.5,s:.3,sh:.9,al:.3})}
+    else if(e.type==='shell'){const a=A[e.i];AUD.play('pop');call(e.i,'SHELL!',1);V.pops.push({p:[a.p[0],.6,a.p[1]],life:.7});for(let i=0;i<8;i++)V.smoke.push({p:[a.p[0],.5,a.p[1]],v:[(fr()-.5)*2.4,.8+fr(),(fr()-.5)*2.4],life:.5,max:.5,s:.3,sh:.9,al:.3})}
     else if(e.type==='slam'){const a=A[e.i];AUD.play('slam');V.shake=Math.max(V.shake,.6);V.pops.push({p:[a.p[0],.4,a.p[1]],life:.7});for(let i=0;i<16;i++){const an=i/16*TAU;V.smoke.push({p:[a.p[0],.15,a.p[1]],v:[Math.cos(an)*4,.5,Math.sin(an)*4],life:.55,max:.55,s:.35,sh:.9,al:.4})}}
     else if(e.type==='boom'){const p=e.p;V.shake=1;V.flash=1;AUD.play('boom',{left:e.left});AUD.play(e.kind===2?'whistle':'fly');
       const big=e.left===1?2:1;if(big>1){V.shake=1.5;V.flash=1.8}
@@ -855,6 +857,14 @@ function fxStep(dt){
     if(a.out){const o=a.out;if(!o.gone&&o.t<1.6&&fr()<.7&&o.kind!==1)V.smoke.push({p:[o.p[0],o.p[1]+1,o.p[2]],v:[(fr()-.5),(fr()-.5),(fr()-.5)],life:.7,max:.7,s:.3+fr()*.25,sh:.12,al:.45});
       if(!o.gone&&o.kind===0&&o.splash===1)for(let j=0;j<2;j++)V.parts.push({p:[o.p[0],o.p[1]+.3,o.p[2]],v:[(fr()-.5)*2,-1-fr()*2,(fr()-.5)*2],life:.3,max:.3,s:.25,c:[1,.6,.15],drag:1,g:0,grow:0});
       if(!o.gone&&o.kind===2)for(let j=0;j<2;j++)V.parts.push({p:[o.p[0],o.p[1]+.2,o.p[2]],v:[(fr()-.5)*2,-3,(fr()-.5)*2],life:.4,max:.4,s:.18,c:[1,.8,.3],drag:1,g:0,grow:0});return}
+    s.cc=Math.max(0,s.cc-d);
+    if(G.phase==='chase'||G.phase==='drop'){
+      if(a.T.slide){if(a.sl>.7&&s.sl<=.7)call(a.i,'WHEEE!');if(a.sl>.55&&fr()<.8)V.smoke.push({p:[a.p[0]-a.v[0]*.06,.12,a.p[1]-a.v[1]*.06],v:[(fr()-.5)*1.6,.8+fr()*.8,(fr()-.5)*1.6],life:.5,max:.5,s:.2+fr()*.12,sh:.97,al:.45})}
+      if(a.T.hop){if(a.hy>.05&&s.hy<=.05)call(a.i,'BOING!');if(a.hy<=0&&s.hy>0)for(let j=0;j<8;j++){const an=j/8*TAU;V.smoke.push({p:[a.p[0],.12,a.p[1]],v:[Math.cos(an)*2.4,.4,Math.sin(an)*2.4],life:.4,max:.4,s:.24,sh:.9,al:.35})}}
+      if(a.T.zig){if(a.zs!==s.zs&&a.fear>.25&&!a.tired){call(a.i,'ZIGZAG!');for(let j=0;j<5;j++)V.smoke.push({p:[a.p[0],.12,a.p[1]],v:[(fr()-.5)*2.6,.5+fr()*.6,(fr()-.5)*2.6],life:.4,max:.4,s:.22,sh:.9,al:.4})}if(a.tired>0&&!(s.tired>0))call(a.i,'PUFF…',1)}
+      if(a.shell>0&&fr()<.6){const an=fr()*TAU;V.parts.push({p:[a.p[0]+Math.cos(an)*.9,.5+fr()*.9,a.p[1]+Math.sin(an)*.9],v:[0,1.2,0],life:.45,max:.45,s:.12+fr()*.08,c:[1,.9,.4],drag:1,g:0,grow:0})}
+      if(a.leap&&a.leap.flat)for(let j=0;j<2;j++)V.smoke.push({p:[a.p[0],.15,a.p[1]],v:[(fr()-.5)*1.5,.6+fr()*.5,(fr()-.5)*1.5],life:.45,max:.45,s:.3,sh:.9,al:.4})}
+    s.zs=a.zs;s.sl=a.sl||0;s.hy=a.hy||0;s.tired=a.tired||0;
     let want=0,nod=0;
     if(G.phase==='drop'&&B.on){nod=-.55}
     else if(G.phase==='chase'&&C&&a!==C&&a.fear>.25){want=clamp(((Math.atan2(C.p[0]-a.p[0],C.p[1]-a.p[1])-a.yaw+Math.PI*3)%TAU)-Math.PI,-1.25,1.25)}
@@ -880,7 +890,7 @@ function fxStep(dt){
     else if(T.name==='jungle'){e.p[0]+=Math.sin(G.t*.7+e.ph)*d*1.2;e.p[1]+=Math.cos(G.t*.9+e.ph*2)*d*.8;e.p[2]+=Math.cos(G.t*.6+e.ph)*d*1.2}
     else if(T.name==='space'){e.p[0]+=d*.4;if(e.p[0]>23)e.p[0]=-23}
     else{e.p[1]+=e.v*d;e.p[0]+=Math.sin(G.t*1.3+e.ph)*d*.5;if(e.p[1]>8)e.p[1]=-10}}
-  for(const p of V.pops)p.life-=d;V.pops=V.pops.filter(p=>p.life>0);for(const p of V.bangs)p.life-=d;V.bangs=V.bangs.filter(p=>p.life>0);for(const p of V.stars2)p.life-=dt;V.stars2=V.stars2.filter(p=>p.life>0);
+  for(const p of V.pops)p.life-=d;V.pops=V.pops.filter(p=>p.life>0);for(const p of V.bangs)p.life-=d;V.bangs=V.bangs.filter(p=>p.life>0);for(const p of V.calls)p.life-=d;V.calls=V.calls.filter(p=>p.life>0);for(const p of V.tongues)p.life-=d;V.tongues=V.tongues.filter(p=>p.life>0);for(const p of V.stars2)p.life-=dt;V.stars2=V.stars2.filter(p=>p.life>0);
   for(const p of V.parts){p.life-=d;p.v[1]+=p.g*d;p.v=mulS(p.v,Math.max(0,1-p.drag*d));p.p=add(p.p,mulS(p.v,d))}V.parts=V.parts.filter(p=>p.life>0);
   for(const p of V.drops){p.life-=d;p.v[1]-=14*d;p.p=add(p.p,mulS(p.v,d))}V.drops=V.drops.filter(p=>p.life>0);
   for(const p of V.smoke){p.life-=d;p.v=mulS(p.v,Math.max(0,1-1.6*d));p.v[1]+=1.2*d;p.p=add(p.p,mulS(p.v,d));p.s+=d*.9}V.smoke=V.smoke.filter(p=>p.life>0);
@@ -923,8 +933,8 @@ function drawAnimal(a,sh,late){
   if(a.shell>0){ // the turtle hides: only the spinning shell is left
     const bm=M4.mulN(M4.T(a.p[0],a.y,a.p[1]),M4.RY(a.yaw+G.t*5),M4.S(a.sc),M4.T(0,.25,.3),M4.S(1.08,.72,1.08));E.draw(F.body,bm,{spec:.35,outline:.028});
     sh.push([BLOB,M4.mulN(bm,M4.T(0,.62,-.3),M4.S(.8,.6,.7))]);return}
-  const base=M4.mulN(M4.T(a.p[0]+shk,a.y+hopY,a.p[1]),M4.RY(a.yaw),M4.S(a.sc));
-  const body=M4.mulN(base,M4.T(0,.9,0),M4.RZ(a.roll*1.5+(du?a.dd*TAU*du*(a.k==='panda'?2:1):0)+(win?Math.sin(G.pt*5.5)*.22:0)),M4.T(0,-.9,0),M4.RX(.28*k+(a.chg||0)*.25+(a.sl||0)*1.05+(a.leap&&a.leap.flat?.55:0)+(a.fear>.9&&!carry?-.12:0)+(win?0:a.cheer&&(a.k==='lion'||a.k==='wolf')?-.22:a.cheer&&a.k==='bull'?.2:0)),M4.S(q,a.sq*(cower?.82:1),q)),op={spec:.25,outline:.028};
+  const base=M4.mulN(M4.T(a.p[0]+shk,a.y+hopY+(a.hy||0)*.7,a.p[1]),M4.RY(a.yaw),M4.S(a.sc));
+  const body=M4.mulN(base,M4.T(0,.9,0),M4.RZ(a.roll*1.5+(du?a.dd*TAU*du*(a.k==='panda'?2:1):0)+(win?Math.sin(G.pt*5.5)*.22:0)),M4.T(0,-.9,0),M4.RX(.28*k+(a.chg||0)*.25+(a.sl||0)*1.4+(a.leap&&a.leap.flat?.55:0)+(a.fear>.9&&!carry?-.12:0)+(win?0:a.cheer&&(a.k==='lion'||a.k==='wolf')?-.22:a.cheer&&a.k==='bull'?.2:0)),M4.S(q,a.sq*(cower?.82:1),q)),op={spec:.25,outline:.028};
   const head=M4.mulN(body,M4.T(0,1.0,0),M4.RY(s.look),M4.RX(s.nod+Math.sin(a.ph*2)*.05*k+(a.reachT>0?Math.sin(Math.PI*a.reachT/.4)*.55:0)),M4.T(0,-1.0,0));
   const face=a.mood==='normal'&&s.blink<0?F.face.blink:F.face[a.mood]||F.face.normal;
   E.draw(F.body,body,op);E.draw(F.head,head,op);E.draw(face,head);sh.push([BLOB,M4.mulN(body,M4.T(0,.62,0),M4.S(.62,.62,.54))],[BLOB,M4.mulN(head,M4.T(0,1.42,0),M4.S(.68,.6,.6))]);
@@ -954,9 +964,9 @@ function drawAnimal(a,sh,late){
     else if(a.cheer||a.relief>0||a.shock>0||du){rz=sg*(.5+Math.sin(G.t*14+sg)*.25);rx=-Math.PI*.92}
     else if(a.mood==='scared'){rz=sg*.3;rx=-2.3-Math.sin(ph*1.5)*.5}
     const am=M4.mulN(body,M4.T(sg*R.ax,R.ay,.06),M4.RZ(rz),M4.RX(rx));E.draw(F.arm,am,op);sh.push([BLOB,M4.mulN(am,M4.T(0,-.3,0),M4.S(.17,.34,.17))])}
-  if(a.tg){const o=G.animals[a.tg.to],u=1-a.tg.t/.3,ext=Math.min(1,Math.sin(Math.PI*u)*1.6),p=M4.pt(head,[.12,1.05,.62]),q=[o.p[0],o.y+1.15*o.sc,o.p[1]],
+  for(const tg of V.tongues){if(tg.from!==a.i)continue;const o=G.animals[tg.to],u=1-tg.life/.5,ext=Math.min(1,Math.sin(Math.PI*u)*1.6),p=M4.pt(head,[.12,1.05,.62]),q=[o.p[0],o.y+1.15*o.sc,o.p[1]],
       dx=q[0]-p[0],dy=q[1]-p[1],dz=q[2]-p[2],L=Math.hypot(dx,dy,dz)*ext,hz=Math.hypot(dx,dz);
-    if(L>.05){const m=M4.mulN(M4.T(p[0],p[1],p[2]),M4.RY(Math.atan2(dx,dz)),M4.RX(-Math.atan2(dy,hz)));E.draw(tongueM,M4.mul(m,M4.S(.075,.075,L)),op);E.draw(tongueTip,M4.mulN(m,M4.T(0,0,L),M4.S(.15)),op)}}
+    if(L>.05){const m=M4.mulN(M4.T(p[0],p[1],p[2]),M4.RY(Math.atan2(dx,dz)),M4.RX(-Math.atan2(dy,hz)));E.draw(tongueM,M4.mul(m,M4.S(.12,.12,L)),op);E.draw(tongueTip,M4.mulN(m,M4.T(0,0,L),M4.S(.22)),op)}}
 }
 function txt(s,x,y,size,fill,sw){g.font=(LIL?'400 ':'900 ')+size+'px '+FONT;g.textAlign='center';g.textBaseline='middle';g.lineJoin='round';
   if(sw!==0){g.lineWidth=size*(sw||.2);g.strokeStyle='#14060c';g.strokeText(s,x,y)}g.fillStyle=fill||'#fff';g.fillText(s,x,y)}
@@ -999,6 +1009,8 @@ function render(){
   if(!win)for(const a of A){if(!a.alive)continue;const front=G.phase==='intro'&&a.row===0,p=E.project(front?[a.p[0]+Math.sin(CAM0)*.75,-.15,a.p[1]+Math.cos(CAM0)*.75]:[a.p[0],a.y+3.05*a.sc+(G.carrier===a.i&&B.on?1.1:0),a.p[1]]);if(p[2]<1||p[1]<350||p[1]>1440)continue;
     if(G.phase==='intro')txt(SPEC[a.k].n,p[0],p[1]+(a.i%2?(front?46:-46):0),46,SPEC[a.k].c);else txt(SPEC[a.k].n,p[0],p[1],clamp(40*24/p[2],30,64),SPEC[a.k].c)}
   for(const b of V.bangs){const a=A[b.i],p=E.project([a.p[0],a.y+3.9,a.p[1]]),u=1-b.life/.55;if(p[2]>1){g.globalAlpha=Math.min(1,b.life*5);txt('!',p[0]+70,p[1]+40-u*40,110*(1+.3*Math.sin(u*9)),'#ff3a2a',.16);g.globalAlpha=1}}
+  for(const c of V.calls){const a=A[c.i];if(!a.alive)continue;const p=E.project([a.p[0],a.y+3.05*a.sc+(G.carrier===a.i&&B.on?1.1:0),a.p[1]]),u=1-c.life/c.max;if(p[2]<1)continue;
+    g.globalAlpha=Math.min(1,c.life*4);txt(c.t,p[0],p[1]-70-u*30,clamp(48*24/p[2],46,74)*(1+.45*Math.max(0,1-u*7)),SPEC[a.k].c,.22);g.globalAlpha=1}
   for(const s of V.stars2){const p=E.project(s.p),u=1-s.life/.9,px=clamp(p[0],80,W-80),py=clamp(p[1],380,900),r=70*Math.sin(Math.PI*u);g.save();g.translate(px,py);g.rotate(u*2);g.fillStyle='#fff';g.globalAlpha=1-u*u;
     g.beginPath();for(let i=0;i<8;i++){const an=i/8*TAU,rr=i%2?r*.2:r;g.lineTo(Math.cos(an)*rr,Math.sin(an)*rr)}g.closePath();g.fill();g.restore();g.globalAlpha=1}
   txt('HOT POTATO',W/2,205,128,'#ffd23f',.18);
