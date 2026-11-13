@@ -133,3 +133,13 @@ Require stack:
 2026-11-13T22:28:16+01:00 [publisher] ZW-20261116-2: youtube confirmed by Buffer, post 6af780e778196a0a9720a706 (scheduled)
 2026-11-13T22:28:16+01:00 [publisher] ZW-20261116-3: tiktok confirmed by Buffer, post 6af780e84b28296eb117cd43 (scheduled)
 2026-11-13T22:28:16+01:00 [publisher] ZW-20261116-3: youtube confirmed by Buffer, post 6af780e881e1228421c5e1ac (scheduled)
+2026-11-13T22:28:21+01:00 [monitor] check 2026-11-14: OK (6/6) {"issues":0,"actions":0}
+2026-11-13T22:28:32+01:00 [monitor] check 2026-11-14: OK (6/6) {"issues":0,"actions":0}
+2026-11-13T22:28:32+01:00 [publisher] ZW-20261113-1: tiktok published
+2026-11-13T22:28:32+01:00 [publisher] ZW-20261113-1: youtube published
+2026-11-13T22:28:32+01:00 [publisher] ZW-20261113-2: tiktok published
+2026-11-13T22:28:32+01:00 [publisher] ZW-20261113-2: youtube published
+2026-11-13T22:28:32+01:00 [publisher] ZW-20261113-3: tiktok published
+2026-11-13T22:28:32+01:00 [publisher] ZW-20261113-3: youtube published
+2026-11-13T22:28:32+01:00 [analytics] snapshot: 29 posts with metrics stored
+2026-11-13T22:28:34+01:00 [orchestrator] media pruned: ZW-20261113-1, ZW-20261113-2, ZW-20261113-3

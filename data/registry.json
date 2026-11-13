@@ -453,33 +453,37 @@
       "slot": 1,
       "time": "12:30",
       "game": "hot-potato-3d",
-      "status": "scheduled",
+      "status": "published",
       "plan": {
         "winner": "bear",
         "theme": "jungle"
       },
       "posts": {
         "tiktok": {
-          "status": "scheduled",
+          "status": "published",
           "dueAt": "2026-11-13T11:30:00.000Z",
           "payload": "buffer/2026-11-13/ZW-20261113-1.tiktok.payload.json",
           "mode": "live",
           "at": "2026-11-12T21:41:27+01:00",
           "bufferPostId": "6af6248348a8bf93e423c5bf",
-          "bufferStatus": "scheduled",
+          "bufferStatus": "sent",
           "recordedAt": "2026-11-12T21:41:47+01:00",
-          "simulated": false
+          "simulated": false,
+          "syncedAt": "2026-11-13T22:28:32+01:00",
+          "sentAt": "2026-11-13T11:32:27.740Z"
         },
         "youtube": {
-          "status": "scheduled",
+          "status": "published",
           "dueAt": "2026-11-13T11:30:00.000Z",
           "payload": "buffer/2026-11-13/ZW-20261113-1.youtube.payload.json",
           "mode": "live",
           "at": "2026-11-12T21:41:27+01:00",
           "bufferPostId": "6af624848a13f5efaafa494f",
-          "bufferStatus": "scheduled",
+          "bufferStatus": "sent",
           "recordedAt": "2026-11-12T21:41:47+01:00",
-          "simulated": false
+          "simulated": false,
+          "syncedAt": "2026-11-13T22:28:32+01:00",
+          "sentAt": "2026-11-13T11:30:37.238Z"
         }
       },
       "history": [
@@ -510,6 +514,12 @@
           "from": "uploaded",
           "to": "scheduled",
           "note": "tiktok 6af6248348a8bf93e423c5bf / youtube 6af624848a13f5efaafa494f"
+        },
+        {
+          "at": "2026-11-13T22:28:32+01:00",
+          "from": "scheduled",
+          "to": "published",
+          "note": "both channels sent"
         }
       ],
       "selection": {
@@ -623,7 +633,8 @@
           "text": "Zoo Wars simulation between the jungle trees: the bomb carrier has to catch someone before it explodes.\nWho did you pick? Tell us in the comments!\n\n#shorts #zoowars #hotpotato #animalbattle"
         },
         "at": "2026-11-12T21:41:22+01:00"
-      }
+      },
+      "mediaPruned": "2026-11-13T22:28:34+01:00"
     },
     "ZW-20261113-2": {
       "id": "ZW-20261113-2",
@@ -631,33 +642,37 @@
       "slot": 2,
       "time": "19:00",
       "game": "hot-potato-3d",
-      "status": "scheduled",
+      "status": "published",
       "plan": {
         "winner": "fox",
         "theme": "volcano"
       },
       "posts": {
         "tiktok": {
-          "status": "scheduled",
+          "status": "published",
           "dueAt": "2026-11-13T18:00:00.000Z",
           "payload": "buffer/2026-11-13/ZW-20261113-2.tiktok.payload.json",
           "mode": "live",
           "at": "2026-11-12T21:49:05+01:00",
           "bufferPostId": "6af6264b48a8bf93e4242acc",
-          "bufferStatus": "scheduled",
+          "bufferStatus": "sent",
           "recordedAt": "2026-11-12T21:49:23+01:00",
-          "simulated": false
+          "simulated": false,
+          "syncedAt": "2026-11-13T22:28:32+01:00",
+          "sentAt": "2026-11-13T18:03:34.948Z"
         },
         "youtube": {
-          "status": "scheduled",
+          "status": "published",
           "dueAt": "2026-11-13T18:00:00.000Z",
           "payload": "buffer/2026-11-13/ZW-20261113-2.youtube.payload.json",
           "mode": "live",
           "at": "2026-11-12T21:49:05+01:00",
           "bufferPostId": "6af6264c7d05892ccea7697b",
-          "bufferStatus": "scheduled",
+          "bufferStatus": "sent",
           "recordedAt": "2026-11-12T21:49:23+01:00",
-          "simulated": false
+          "simulated": false,
+          "syncedAt": "2026-11-13T22:28:32+01:00",
+          "sentAt": "2026-11-13T18:02:29.588Z"
         }
       },
       "history": [
@@ -688,6 +703,12 @@
           "from": "uploaded",
           "to": "scheduled",
           "note": "tiktok 6af6264b48a8bf93e4242acc / youtube 6af6264c7d05892ccea7697b"
+        },
+        {
+          "at": "2026-11-13T22:28:32+01:00",
+          "from": "scheduled",
+          "to": "published",
+          "note": "both channels sent"
         }
       ],
       "selection": {
@@ -801,7 +822,8 @@
           "text": "The bomb drops, the chase begins with lava bubbling below. Seven explosions, one survivor.\nNew Zoo Wars battle every day.\n\n#shorts #zoowars #satisfying #whowouldwin"
         },
         "at": "2026-11-12T21:49:05+01:00"
-      }
+      },
+      "mediaPruned": "2026-11-13T22:28:34+01:00"
     },
     "ZW-20261113-3": {
       "id": "ZW-20261113-3",
@@ -809,33 +831,37 @@
       "slot": 3,
       "time": "16:00",
       "game": "arena2d",
-      "status": "scheduled",
+      "status": "published",
       "plan": {
         "winner": null,
         "theme": "color"
       },
       "posts": {
         "tiktok": {
-          "status": "scheduled",
+          "status": "published",
           "dueAt": "2026-11-13T15:00:00.000Z",
           "payload": "buffer/2026-11-13/ZW-20261113-3.tiktok.payload.json",
           "mode": "live",
           "at": "2026-11-12T22:09:58+01:00",
           "bufferPostId": "6af62b30a01fb6efee4b91a6",
-          "bufferStatus": "scheduled",
+          "bufferStatus": "sent",
           "recordedAt": "2026-11-12T22:10:14+01:00",
-          "simulated": false
+          "simulated": false,
+          "syncedAt": "2026-11-13T22:28:32+01:00",
+          "sentAt": "2026-11-13T15:06:00.783Z"
         },
         "youtube": {
-          "status": "scheduled",
+          "status": "published",
           "dueAt": "2026-11-13T15:00:00.000Z",
           "payload": "buffer/2026-11-13/ZW-20261113-3.youtube.payload.json",
           "mode": "live",
           "at": "2026-11-12T22:09:58+01:00",
           "bufferPostId": "6af62b307d05892ccea929cd",
-          "bufferStatus": "scheduled",
+          "bufferStatus": "sent",
           "recordedAt": "2026-11-12T22:10:14+01:00",
-          "simulated": false
+          "simulated": false,
+          "syncedAt": "2026-11-13T22:28:32+01:00",
+          "sentAt": "2026-11-13T15:02:32.088Z"
         }
       },
       "history": [
@@ -866,6 +892,12 @@
           "from": "uploaded",
           "to": "scheduled",
           "note": "tiktok 6af62b30a01fb6efee4b91a6 / youtube 6af62b307d05892ccea929cd"
+        },
+        {
+          "at": "2026-11-13T22:28:32+01:00",
+          "from": "scheduled",
+          "to": "published",
+          "note": "both channels sent"
         }
       ],
       "selection": {
@@ -940,7 +972,8 @@
           "text": "A Zoo Wars color battle: every hit steals a tile, only one color survives.\nDid your pick survive the cuts?\n\n#shorts #zoowars #colorwar #simulation"
         },
         "at": "2026-11-12T22:09:58+01:00"
-      }
+      },
+      "mediaPruned": "2026-11-13T22:28:34+01:00"
     },
     "ZW-20261114-3": {
       "id": "ZW-20261114-3",
@@ -2182,5 +2215,5 @@
     "2t|Color War: Last Color Standing",
     "yte|Did your pick survive the cuts?"
   ],
-  "updatedAt": "2026-11-13T22:28:16+01:00"
+  "updatedAt": "2026-11-13T22:28:34+01:00"
 }
