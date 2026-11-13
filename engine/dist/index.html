@@ -639,7 +639,7 @@ function candidateFigure(k) {
   return { body: m.build(gl), head: h.build(gl), foot: foot.build(gl), arm: arm.build(gl), rig: R, face: faces(R, h.pre) };
 }
 const FIG={};for(const k of ALL_KINDS)FIG[k]=CAND[k]?candidateFigure(k):figure(k);
-const tongueM=new Mesh().s('sphere',0,0,.5,1,1,.5,'#ff5a7a').build(gl),tongueTip=new Mesh().s('sphere',0,0,0,1,1,1,'#ff7a95').build(gl);
+const trunkBall=new Mesh().s('sphere',0,0,0,1,1,1,'#7f97aa').build(gl),trunkTip=new Mesh().s('sphere',0,0,0,1,.8,.6,'#7d93a4').build(gl),tongueM=new Mesh().s('sphere',0,0,.5,1,1,.5,'#ff5a7a').build(gl),tongueTip=new Mesh().s('sphere',0,0,0,1,1,1,'#ff7a95').build(gl);
 const bombMesh=new Mesh().s('sphere',0,0,0,.46,.46,.46,'#15151b').s('cyl',0,.36,0,.17,.16,.17,'#3c3c48').s('cyl',0,.5,0,.04,.26,.04,'#d2ab70',0,M4.RZ(-.25)).build(gl);
 const FUSE_TIP=[.07,.76,0];
 const ringM=new Mesh().add(sector(.78,1,0,TAU,.03,48),M4.id(),'#fff0c0',1).build(gl);
@@ -805,7 +805,7 @@ const ST_LINE=(()=>{try{const v=new URLSearchParams(location.search).get('st');r
 const END_Q=['WHO WINS NEXT ROUND?','WHO WAS YOUR PICK?','DID YOU CALL IT?','WHO SHOULD WIN NEXT?'];
 function startGame(seed,theme){
   seed=seed>>>0;const name=theme&&THEME_DEF[theme]?theme:THEME_NAMES[seed%THEME_NAMES.length],T=getTheme(name),G=createGame(seed,{void:T.hazard==='void'}),fr=RNG((seed^0x9e37)>>>0);
-  V={G,T,fr,rr:RNG(seed^0x1234),parts:[],smoke:[],conf:[],pops:[],drops:[],stars2:[],bangs:[],calls:[],tongues:[],shake:0,flash:0,duelCard:0,note:null,later:[],Rv:G.R,cam:{eye:[0,6,12],at:[0,1,0],fov:.95},amb:[],spout:0,lastK:'',
+  V={G,T,fr,rr:RNG(seed^0x1234),parts:[],smoke:[],conf:[],pops:[],drops:[],stars2:[],bangs:[],calls:[],tongues:[],trunks:[],shake:0,flash:0,duelCard:0,note:null,later:[],Rv:G.R,cam:{eye:[0,6,12],at:[0,1,0],fov:.95},amb:[],spout:0,lastK:'',
     an:G.animals.map(()=>({look:0,nod:0,blink:fr()*3,skid:0,cc:0,zs:1,sl:0,hy:0,tired:0}))};
   for(let i=0;i<90;i++)V.amb.push({p:[(fr()-.5)*46,-10+fr()*18,(fr()-.5)*46],v:.6+fr()*1.4,s:.05+fr()*.07,ph:fr()*9});
   E.env={L:norm([.45,1,.4]),key:T.key,sky:T.amb,gnd:T.gnd,fog:T.fog};
@@ -820,7 +820,7 @@ function fxStep(dt){
     if(e.type==='drop'){AUD.play('drop');if(G.round===1){V.note={t:'RUN!',life:.9,max:.9,big:true};AUD.play('hook')}}
     else if(e.type==='land'){AUD.play('land',{first:e.first})}
     else if(e.type==='duel'){AUD.play('duel');V.duelCard=2.2}
-    else if(e.type==='tag'){const h=G.head(A[e.to]);V.pops.push({p:h,life:.7});V.bangs.push({i:e.to,life:.55});V.shake=Math.max(V.shake,.25);AUD.play('tag')}
+    else if(e.type==='tag'){const h=G.head(A[e.to]);if(A[e.from].T.reach>1.3)V.trunks.push({from:e.from,to:e.to,life:.55});V.pops.push({p:h,life:.7});V.bangs.push({i:e.to,life:.55});V.shake=Math.max(V.shake,.25);AUD.play('tag')}
     else if(e.type==='dodge'){const a=A[e.i];for(let i=0;i<6;i++)V.smoke.push({p:[a.p[0],.2,a.p[1]],v:[(fr()-.5)*2.4,.6+fr(),(fr()-.5)*2.4],life:.5,max:.5,s:.3,sh:.85,al:.3});AUD.play('dodge')}
     else if(e.type==='tick')AUD.play('tick',{f:e.f});
     else if(e.type==='bump'){const a=A[e.i];AUD.play('bump');V.shake=Math.max(V.shake,.45);for(let i=0;i<10;i++)V.smoke.push({p:[a.p[0],.4,a.p[1]],v:[(fr()-.5)*4,.8+fr(),(fr()-.5)*4],life:.5,max:.5,s:.35,sh:.9,al:.35})}
@@ -890,7 +890,7 @@ function fxStep(dt){
     else if(T.name==='jungle'){e.p[0]+=Math.sin(G.t*.7+e.ph)*d*1.2;e.p[1]+=Math.cos(G.t*.9+e.ph*2)*d*.8;e.p[2]+=Math.cos(G.t*.6+e.ph)*d*1.2}
     else if(T.name==='space'){e.p[0]+=d*.4;if(e.p[0]>23)e.p[0]=-23}
     else{e.p[1]+=e.v*d;e.p[0]+=Math.sin(G.t*1.3+e.ph)*d*.5;if(e.p[1]>8)e.p[1]=-10}}
-  for(const p of V.pops)p.life-=d;V.pops=V.pops.filter(p=>p.life>0);for(const p of V.bangs)p.life-=d;V.bangs=V.bangs.filter(p=>p.life>0);for(const p of V.calls)p.life-=d;V.calls=V.calls.filter(p=>p.life>0);for(const p of V.tongues)p.life-=d;V.tongues=V.tongues.filter(p=>p.life>0);for(const p of V.stars2)p.life-=dt;V.stars2=V.stars2.filter(p=>p.life>0);
+  for(const p of V.pops)p.life-=d;V.pops=V.pops.filter(p=>p.life>0);for(const p of V.bangs)p.life-=d;V.bangs=V.bangs.filter(p=>p.life>0);for(const p of V.calls)p.life-=d;V.calls=V.calls.filter(p=>p.life>0);for(const p of V.tongues)p.life-=d;V.tongues=V.tongues.filter(p=>p.life>0);for(const p of V.trunks)p.life-=d;V.trunks=V.trunks.filter(p=>p.life>0);for(const p of V.stars2)p.life-=dt;V.stars2=V.stars2.filter(p=>p.life>0);
   for(const p of V.parts){p.life-=d;p.v[1]+=p.g*d;p.v=mulS(p.v,Math.max(0,1-p.drag*d));p.p=add(p.p,mulS(p.v,d))}V.parts=V.parts.filter(p=>p.life>0);
   for(const p of V.drops){p.life-=d;p.v[1]-=14*d;p.p=add(p.p,mulS(p.v,d))}V.drops=V.drops.filter(p=>p.life>0);
   for(const p of V.smoke){p.life-=d;p.v=mulS(p.v,Math.max(0,1-1.6*d));p.v[1]+=1.2*d;p.p=add(p.p,mulS(p.v,d));p.s+=d*.9}V.smoke=V.smoke.filter(p=>p.life>0);
@@ -964,6 +964,8 @@ function drawAnimal(a,sh,late){
     else if(a.cheer||a.relief>0||a.shock>0||du){rz=sg*(.5+Math.sin(G.t*14+sg)*.25);rx=-Math.PI*.92}
     else if(a.mood==='scared'){rz=sg*.3;rx=-2.3-Math.sin(ph*1.5)*.5}
     const am=M4.mulN(body,M4.T(sg*R.ax,R.ay,.06),M4.RZ(rz),M4.RX(rx));E.draw(F.arm,am,op);sh.push([BLOB,M4.mulN(am,M4.T(0,-.3,0),M4.S(.17,.34,.17))])}
+  for(const tr of V.trunks){if(tr.from!==a.i)continue;const o=G.animals[tr.to],u=1-tr.life/.55,ext=Math.min(1,Math.sin(Math.PI*u)*1.5),p=M4.pt(head,[0,.95,.9]),q=[o.p[0],o.y+1.3*o.sc,o.p[1]];
+    for(let j=0;j<=14;j++){const v=j/14*ext,r=(.26-.11*j/14)*a.sc;E.draw(j===14?trunkTip:trunkBall,M4.mulN(M4.T(lerp(p[0],q[0],v),lerp(p[1],q[1],v)+Math.sin(Math.PI*v)*1.4*ext,lerp(p[2],q[2],v)),M4.S(r)),op)}}
   for(const tg of V.tongues){if(tg.from!==a.i)continue;const o=G.animals[tg.to],u=1-tg.life/.5,ext=Math.min(1,Math.sin(Math.PI*u)*1.6),p=M4.pt(head,[.12,1.05,.62]),q=[o.p[0],o.y+1.15*o.sc,o.p[1]],
       dx=q[0]-p[0],dy=q[1]-p[1],dz=q[2]-p[2],L=Math.hypot(dx,dy,dz)*ext,hz=Math.hypot(dx,dz);
     if(L>.05){const m=M4.mulN(M4.T(p[0],p[1],p[2]),M4.RY(Math.atan2(dx,dz)),M4.RX(-Math.atan2(dy,hz)));E.draw(tongueM,M4.mul(m,M4.S(.12,.12,L)),op);E.draw(tongueTip,M4.mulN(m,M4.T(0,0,L),M4.S(.22)),op)}}
