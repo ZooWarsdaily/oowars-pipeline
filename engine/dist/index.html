@@ -10,10 +10,17 @@ button{font:700 16px Inter,system-ui,sans-serif;background:#ffd23f;color:#1a1400
 button.ghost{background:transparent;color:#f3e9ee;border:1px solid #5a3a48}button:disabled{opacity:.6;cursor:default}
 p{margin:0;color:#c9b3bd;font-weight:700;min-height:1.4em;text-align:center}
 select{font:700 15px Inter,system-ui,sans-serif;background:#1c1016;color:#f3e9ee;border:1px solid #5a3a48;border-radius:10px;padding:10px}.sel{display:flex;align-items:center;gap:8px}
-select:focus-visible,button:focus-visible{outline:3px solid #fff;outline-offset:3px}</style></head>
+select:focus-visible,button:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.team{max-width:min(92vw,620px);display:flex;flex-direction:column;align-items:center;gap:8px}.team h2{margin:0;font-size:15px;color:#ffd23f}
+.chips{display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
+.chip{display:flex;align-items:center;gap:6px;padding:4px 10px 4px 4px;font-size:13px;background:#1c1016;color:#f3e9ee;border:2px solid #5a3a48;border-radius:999px}
+.chip img{width:30px;height:30px;border-radius:50%;background:#2a1420}.chip[aria-pressed="true"]{border-color:var(--c);background:#3a1f2c}.chip[aria-pressed="false"] img{opacity:.45}
+.team .small{display:flex;gap:8px}.team .small button{font-size:13px;padding:6px 12px}</style></head>
 <body><div class="wrap"><canvas id="cv" width="1080" height="1920" aria-label="Simulation Hot Potato en 3D"></canvas>
 <div class="row"><button id="again" type="button">Lancer une partie</button><button id="same" class="ghost" type="button" disabled>Rejouer la même</button><button id="sound" class="ghost" type="button" aria-pressed="true">Son : activé</button><label class="sel">Décor <select id="theme"><option value="">Au hasard</option><option value="volcano">Volcan</option><option value="ice">Banquise</option><option value="jungle">Jungle</option><option value="space">Espace</option></select></label></div>
-<p id="state" role="status">Clique sur « Lancer une partie ».</p></div><script>
+<p id="state" role="status">Clique sur « Lancer une partie ».</p>
+<section class="team" aria-label="Choix des participants"><h2 id="tcount">Participants : 8 / 8</h2><div class="chips" id="chips"></div>
+<div class="small"><button type="button" class="ghost" id="tdef">Équipe d’origine</button><button type="button" class="ghost" id="trnd">8 au hasard</button></div></section></div><script>
 /* ============ Tiny 3D engine (WebGL1, no dependency) ============ */
 const TAU=Math.PI*2;
 function RNG(s){s>>>=0;return()=>{s=s+0x6D2B79F5|0;let t=Math.imul(s^s>>>15,1|s);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
@@ -631,7 +638,7 @@ function candidateFigure(k) {
   }
   return { body: m.build(gl), head: h.build(gl), foot: foot.build(gl), arm: arm.build(gl), rig: R, face: faces(R, h.pre) };
 }
-const FIG={};for(const k of KINDS)FIG[k]=CAND[k]?candidateFigure(k):figure(k);
+const FIG={};for(const k of ALL_KINDS)FIG[k]=CAND[k]?candidateFigure(k):figure(k);
 const tongueM=new Mesh().s('sphere',0,0,.5,1,1,.5,'#ff5a7a').build(gl),tongueTip=new Mesh().s('sphere',0,0,0,1,1,1,'#ff7a95').build(gl);
 const bombMesh=new Mesh().s('sphere',0,0,0,.46,.46,.46,'#15151b').s('cyl',0,.36,0,.17,.16,.17,'#3c3c48').s('cyl',0,.5,0,.04,.26,.04,'#d2ab70',0,M4.RZ(-.25)).build(gl);
 const FUSE_TIP=[.07,.76,0];
@@ -702,7 +709,7 @@ function getTheme(name){
 }
 /* ---- portraits for the bottom row ---- */
 const PORT={};
-(function(){E.shR=0;for(const k of KINDS){E.begin([0,1.62,11.5],[0,1.52,0],.5);const F=FIG[k],m=M4.id();E.draw(F.body,m,{spec:.25,outline:.03});E.draw(F.head,m,{spec:.25,outline:.03});E.draw(F.face.normal,m);
+(function(){E.shR=0;for(const k of ALL_KINDS){E.begin([0,1.62,11.5],[0,1.52,0],.5);const F=FIG[k],m=M4.id();E.draw(F.body,m,{spec:.25,outline:.03});E.draw(F.head,m,{spec:.25,outline:.03});E.draw(F.face.normal,m);
     const c=document.createElement('canvas');c.width=c.height=200;c.getContext('2d').drawImage(glc,(W/2-420)*RS,(H/2-455)*RS,840*RS,840*RS,0,0,200,200);PORT[k]=c}})();
 
 /* ---- sound ---- */
@@ -1064,9 +1071,21 @@ if(!navigator.webdriver){let last=performance.now(),lastA=-1,acc=0,playing=false
     if(playing){acc+=dt;let n=0;while(acc>=DT&&n++<150&&!V.G.done){HP.step();acc-=DT}render();
       if(V.G.done)stop('Partie n° '+lastSeed+' ('+FR[lastTheme]+') terminée. Gagnant : '+SPEC[V.G.winner.k].n+'.')}
     requestAnimationFrame(loop)};
+  // team picker: exactly 8 of the 15 animals
+  const pick=new Set(KINDS),chips=$('chips'),tc=$('tcount');
+  const applyTeam=()=>{const ok=pick.size===8;tc.textContent='Participants : '+pick.size+' / 8'+(ok?'':' (choisis-en exactement 8)');
+    for(const b of chips.children)b.setAttribute('aria-pressed',String(pick.has(b.dataset.k)));
+    if(!playing){bPlay.disabled=!ok||(!MUSIC.ready&&!MUSIC.failed);bSame.disabled=!ok||lastSeed===null}
+    if(ok){const t=ALL_KINDS.filter(k=>pick.has(k));if(t.join()!==KINDS.join()){KINDS.splice(0,KINDS.length,...t);if(!playing)HP.start(lastSeed===null?undefined:lastSeed,sel.value||undefined)}}};
+  for(const k of ALL_KINDS){const b=document.createElement('button');b.type='button';b.className='chip';b.dataset.k=k;b.style.setProperty('--c',SPEC[k].c);b.title=SPEC[k].nick+' : '+SPEC[k].fr;
+    const im=document.createElement('img');im.alt='';im.src=PORT[k].toDataURL();b.append(im,SPEC[k].n);
+    b.addEventListener('click',()=>{if(playing)return;if(pick.has(k))pick.delete(k);else if(pick.size<8)pick.add(k);else return;applyTeam()});chips.append(b)}
+  $('tdef').addEventListener('click',()=>{if(playing)return;pick.clear();DEFAULT_KINDS.forEach(k=>pick.add(k));applyTeam()});
+  $('trnd').addEventListener('click',()=>{if(playing)return;pick.clear();ALL_KINDS.slice().sort(()=>Math.random()-.5).slice(0,8).forEach(k=>pick.add(k));applyTeam()});
+  applyTeam();
   requestAnimationFrame(loop);
   bPlay.disabled=true;bPlay.textContent='Chargement de la musique…';
-  (async()=>{for(let i=0;i<200&&!MUSIC.ready&&!MUSIC.failed;i++)await new Promise(r=>setTimeout(r,100));bPlay.disabled=false;bPlay.textContent='Lancer une partie';if(!MUSIC.ready)st.textContent='La musique n’a pas pu être chargée : la partie se jouera avec la musique de secours.'})();
+  (async()=>{for(let i=0;i<200&&!MUSIC.ready&&!MUSIC.failed;i++)await new Promise(r=>setTimeout(r,100));bPlay.disabled=pick.size!==8;bPlay.textContent='Lancer une partie';if(!MUSIC.ready)st.textContent='La musique n’a pas pu être chargée : la partie se jouera avec la musique de secours.'})();
   bPlay.addEventListener('click',()=>{if(playing)stop('Partie arrêtée.');else launch(undefined,sel.value||undefined)});
   bSame.addEventListener('click',()=>{if(!playing&&lastSeed!==null)launch(lastSeed,sel.value||lastTheme)});
   sel.addEventListener('change',()=>{if(!playing){HP.start(lastSeed===null?undefined:lastSeed,sel.value||undefined)}});

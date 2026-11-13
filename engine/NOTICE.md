@@ -4,7 +4,7 @@ Cette notice permet à n'importe quelle conversation du projet de fabriquer des 
 
 ## Le jeu
 
-8 animaux-personnages par partie, choisis parmi 15, chacun avec son accessoire, sa façon de jouer et son geste. L'équipe par défaut est lion, tiger, bear, wolf, gorilla, fox, bull, panda. Une autre équipe se passe par l'adresse : `index.html?roster=elephant,penguin,kangaroo,turtle,crocodile,frog,rabbit,panda` (8 animaux différents, sinon l'équipe par défaut). Pour les vidéos, la variable `ROSTER` de `grender.js` fait la même chose.
+8 animaux-personnages par partie, choisis parmi 15, chacun avec son accessoire, sa façon de jouer et son geste. L'équipe par défaut est lion, tiger, bear, wolf, gorilla, fox, bull, panda. Une autre équipe se passe par l'adresse : `index.html?roster=elephant,penguin,kangaroo,turtle,crocodile,frog,rabbit,panda` (8 animaux différents, sinon l'équipe par défaut). Sur la page en direct, la rangée « Participants » sous les boutons permet de cocher les 8 animaux, de revenir à l'équipe d'origine ou d'en tirer 8 au hasard. Pour les vidéos, la variable `ROSTER` de `grender.js` fait la même chose.
 
 Les 7 animaux ajoutés le 13/11/2026 :
 - **Elephant** (The Wall) : lent, mais touche de loin avec sa trompe.
