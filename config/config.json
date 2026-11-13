@@ -37,7 +37,7 @@
   "production": {
     "game": "hot-potato-3d",
     "fps": 30,
-    "quality": "fast",
+    "quality": "full",
     "candidatesPerVideo": 600,
     "animals": [
       "lion",
@@ -63,7 +63,8 @@
       ],
       "candidates": 6,
       "_help": "1 video 2D par jour, en rotation Territory War / Color War / Hot Potato 2D (Big Eats Small exclu) ; le jeu le moins recemment utilise passe en premier"
-    }
+    },
+    "_quality_help": "full = 3D rendu a pleine resolution (plus net, environ 24 min par video) ; fast = 2/3 de la resolution puis agrandi (environ 15 min). Choisi : full, le 13/11/2026, pour reduire le flou apres publication."
   },
   "qc": {
     "width": 1080,
