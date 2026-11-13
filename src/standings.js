@@ -26,16 +26,19 @@ function standings(before, reg) {
   const season = seasonOf(before - 1); if (!season) return null;
   // week = Monday 00:00 to Sunday 23:59 (Paris) containing `before`
   const d = dateOf(before - 1), wd = (new Date(d + 'T12:00:00Z').getUTCDay() + 6) % 7, weekStart = new Date(L.dueAtFor(L.addDays(d, -wd), '00:00')).getTime();
-  const rows = Object.fromEntries(ANIMALS.map(a => [a, { animal: a, wins: 0, weekWins: 0, games: 0, posSum: 0 }]));
+  // rows: the current team, plus any animal that played this season (roster changes after the votes)
+  const rows = {}, row = a => rows[a] || (rows[a] = { animal: a, wins: 0, weekWins: 0, games: 0, posSum: 0 }); ANIMALS.forEach(row);
   for (const v of Object.values(reg.videos)) {
     if (!counts(v)) continue; const t = pubTime(v); if (t < season.start || t >= before) continue;
     const w = winnerOf(v), order = (v.render && v.render.info && v.render.info.order) || [];
-    rows[w].wins++; if (t >= weekStart) rows[w].weekWins++;
-    for (const a of ANIMALS) { const i = order.indexOf(a); rows[a].games++; rows[a].posSum += a === w ? ANIMALS.length : i >= 0 ? i + 1 : ANIMALS.length / 2; }
+    const team = (v.plan && v.plan.roster) || ['lion', 'tiger', 'bear', 'wolf', 'gorilla', 'fox', 'bull', 'panda'], n = team.length;
+    row(w).wins++; if (t >= weekStart) rows[w].weekWins++;
+    for (const a of team) { const i = order.indexOf(a); row(a).games++; rows[a].posSum += a === w ? n : i >= 0 ? i + 1 : n / 2; }
   }
-  const table = Object.values(rows).map(r => ({ animal: r.animal, wins: r.wins, weekWins: r.weekWins, avgPos: r.games ? +(r.posSum / r.games).toFixed(2) : 0 }))
-    .sort((a, b) => b.wins - a.wins || b.avgPos - a.avgPos || ANIMALS.indexOf(a.animal) - ANIMALS.indexOf(b.animal));
-  const weekTable = [...table].sort((a, b) => b.weekWins - a.weekWins || b.avgPos - a.avgPos || ANIMALS.indexOf(a.animal) - ANIMALS.indexOf(b.animal));
+  const rank = a => ANIMALS.indexOf(a) < 0 ? 99 : ANIMALS.indexOf(a);
+  const table = Object.values(rows).filter(r => ANIMALS.includes(r.animal) || r.wins).map(r => ({ animal: r.animal, wins: r.wins, weekWins: r.weekWins, avgPos: r.games ? +(r.posSum / r.games).toFixed(2) : 0 }))
+    .sort((a, b) => b.wins - a.wins || b.avgPos - a.avgPos || rank(a.animal) - rank(b.animal));
+  const weekTable = [...table].sort((a, b) => b.weekWins - a.weekWins || b.avgPos - a.avgPos || rank(a.animal) - rank(b.animal));
   return { season: season.n, seasonStart: dateOf(season.start), seasonEnd: dateOf(season.end - 1), weekStart: dateOf(weekStart), asOf: new Date(before).toISOString(),
     games: table.reduce((a, r) => a + r.wins, 0), weekGames: table.reduce((a, r) => a + r.weekWins, 0), table, weekTable, leader: table[0].wins ? table[0] : null };
 }

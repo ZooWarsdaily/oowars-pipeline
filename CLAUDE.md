@@ -19,7 +19,7 @@ Cela fait 22 vidéos uniques et 44 publications par semaine.
 Claude est l'orchestrateur. Il lance les trois agents, dans `.claude/agents/`, dans l'ordre ci-dessous. Les scripts de `src/` font tout le travail déterministe. Seuls les appels Buffer passent par le connecteur MCP Buffer officiel.
 
 ## Règles absolues
-1. **Ne jamais modifier les jeux** (`engine/`, `engine2d/arena.html`), ni inventer un mode de jeu, sans autorisation écrite du propriétaire. Seule modification autorisée à ce jour (13/11/2026) : la ligne de classement sur l'écran de fin du jeu 3D.
+1. **Ne jamais modifier les jeux** (`engine/`, `engine2d/arena.html`), ni inventer un mode de jeu, sans autorisation écrite du propriétaire. Modifications autorisées à ce jour (13/11/2026) : la ligne de classement sur l'écran de fin du jeu 3D, et les 7 nouveaux animaux du jeu 3D (éléphant, pingouin, kangourou, tortue, crocodile, grenouille, lapin) avec le choix des 8 animaux d'une partie (`production.animals`, transmis au jeu par `?roster=`). Les valeurs d'équilibre (`BAL`) ne se changent qu'après un test sur des milliers de parties.
 2. **Une vidéo non validée n'est jamais publiée.** `publisher.js payload` refuse tout ce qui n'est pas `uploaded` avec un contrôle qualité réussi. Ne jamais contourner ce refus.
 3. **Une publication n'est « scheduled » qu'avec l'identifiant renvoyé par Buffer**, enregistré par `publisher.js record`.
 4. **Jamais deux fois la même vidéo sur le même canal.** Avant chaque `create_post`, lister les posts Buffer du canal et passer le fichier à `payload --existing`. S'il refuse avec DUPLICATE BLOCKED, ne rien créer.

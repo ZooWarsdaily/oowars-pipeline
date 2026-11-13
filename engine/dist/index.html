@@ -149,7 +149,12 @@ class Engine{
 }
 
 /* ============ HOT POTATO – game simulation (no DOM, deterministic from a seed) ============ */
-const KINDS=['lion','tiger','bear','wolf','gorilla','fox','bull','panda'];
+/* roster (13/11/2026, with the owner's approval): 15 animals exist, 8 play in each game. The default team is the original 8;
+   another team is given as ?roster=a,b,c,d,e,f,g,h (8 different known animals), anything else falls back to the default. */
+const ALL_KINDS=['lion','tiger','bear','wolf','gorilla','fox','bull','panda','elephant','penguin','kangaroo','turtle','crocodile','frog','rabbit'];
+const DEFAULT_KINDS=['lion','tiger','bear','wolf','gorilla','fox','bull','panda'];
+const KINDS=(()=>{try{const q=new URLSearchParams(location.search).get('roster');if(!q)return DEFAULT_KINDS.slice();const r=q.toLowerCase().split(',').map(x=>x.trim()).filter(Boolean);
+  return r.length===8&&new Set(r).size===8&&r.every(k=>ALL_KINDS.includes(k))?r:DEFAULT_KINDS.slice()}catch(e){return DEFAULT_KINDS.slice()}})();
 const RINGS=[2.2,4.0,5.6,7.0];            // core, then three rings of tiles (outer radius of each)
 const ROCKS=[[2.9,1.58,.62],[-2.9,-1.58,.66]]; // opposite sides of the platform, clear of the team photo
 /* play styles: what makes each animal recognisable in the chase */
@@ -162,24 +167,31 @@ const TRAIT={
   fox:{dodgeCd:.5,dodgeR:2.25,dodgeP:1.15},          // The Trickster: dodges twice as often
   bull:{charge:1},                                   // The Hothead: builds speed in a straight line, skids in turns
   panda:{spd:.88,dodgeP:1.85,dodgeR:2.45,dodgeCd:.8,roll:.55}, // The Lucky One: slow, but rolls very far
+  elephant:{spd:.86,reach:1.55},                     // The Wall: slow, but tags from far with his trunk
+  penguin:{slide:1},                                 // The Slider: belly-slides fast in a straight line, turns badly
+  kangaroo:{hop:1},                                  // The Hopper: moves in hops, jumps over the rocks
+  turtle:{spd:.82,shell:1},                          // The Shell: hides in his shell for 2 s (can't be tagged, can't move)
+  crocodile:{lunge:1,lurk:1},                        // The Ambusher: lurks by the rocks, lunges at whoever is close
+  frog:{tongue:1},                                   // The Tongue: passes the bomb from a distance with his tongue
+  rabbit:{zig:1},                                    // The Zigzag: zigzags away very fast, but gets tired
 };
-const BAL={lion:.954,tiger:.952,bear:.93,wolf:.983,gorilla:1.2,fox:.991,bull:.915,panda:1.096}; // speed handicaps tuned so that everyone wins about as often
-const SIZE={lion:1.04,tiger:1,bear:1.1,wolf:.98,gorilla:1.14,fox:.9,bull:1.06,panda:1.02};
+const BAL={lion:.954,tiger:.952,bear:.93,wolf:.983,gorilla:1.2,fox:.991,bull:.915,panda:1.096,elephant:1.056,penguin:1.044,kangaroo:1.06,turtle:.701,crocodile:.975,frog:.9,rabbit:1.022}; // speed handicaps tuned so that everyone wins about as often
+const SIZE={lion:1.04,tiger:1,bear:1.1,wolf:.98,gorilla:1.14,fox:.9,bull:1.06,panda:1.02,elephant:1.22,penguin:.92,kangaroo:1.1,turtle:.94,crocodile:1.06,frog:.9,rabbit:.9};
 const CAM0=-.5; // camera direction at the start: the team photo faces it
 const FUSE={8:5.7,7:5.1,6:4.7,5:4.3,4:4.0,3:3.7,2:5.2};
 const INTRO=2.2,WIN_T=3.5,DT=1/60;
 function createGame(seed,opts){opts=opts||{};
-  const rnd=RNG(seed),N=KINDS.length;
+  const rnd=RNG(seed),KS=opts.kinds||KINDS,N=KS.length;
   const G={seed,t:0,vt:0,pt:0,phase:'intro',animals:[],carrier:-1,R:RINGS[3],Rc:RINGS[3],ev:[],order:[],tags:0,roundTags:[],winner:null,done:false,
     bomb:{on:false,pos:[0,20,0],phase:0,hop:null,fuse:0,max:1},rings:[null,{k:1,alive:true,warn:0,ft:-1},{k:2,alive:true,warn:0,ft:-1},{k:3,alive:true,warn:0,ft:-1}],pend:0,round:0};
-  const kinds=KINDS.slice();for(let i=N-1;i>0;i--){const j=rnd()*(i+1)|0;[kinds[i],kinds[j]]=[kinds[j],kinds[i]]}
+  const kinds=KS.slice();for(let i=N-1;i>0;i--){const j=rnd()*(i+1)|0;[kinds[i],kinds[j]]=[kinds[j],kinds[i]]}
   const fx=Math.sin(CAM0),fz=Math.cos(CAM0),rx=fz,rz=-fx;
   for(let i=0;i<N;i++){const row=i<4?0:1,c=(i%4-1.5)*1.2+(row?.6:0)-.3,dp=row?-1.45:1.0;G.animals.push({k:kinds[i],i,row,sc:SIZE[kinds[i]],p:[fx*dp+rx*c,fz*dp+rz*c],v:[0,0],yaw:CAM0,ph:rnd()*6,sq:1,y:0,alive:true,out:null,
-    T:TRAIT[kinds[i]],spd:4.55*(TRAIT[kinds[i]].spd||1)*((opts.bal||BAL)[kinds[i]])*(.97+rnd()*.06),off:rnd()*3,chg:0,rest:false,leap:null,leapCd:1.5,slam:0,grudge:-1,da:0,dd:1,shock:0,relief:0,cd:0,dodge:rnd()*1.5,wa:rnd()*TAU,roll:0,jump:-1,target:-1,speed:0,fear:0,mood:'normal',place:0})}
+    T:TRAIT[kinds[i]],spd:4.55*(TRAIT[kinds[i]].spd||1)*((opts.bal||BAL)[kinds[i]])*(.97+rnd()*.06),off:rnd()*3,chg:0,rest:false,leap:null,leapCd:1.5,slam:0,grudge:-1,da:0,dd:1,shock:0,relief:0,cd:0,dodge:rnd()*1.5,wa:rnd()*TAU,roll:0,jump:-1,target:-1,speed:0,fear:0,mood:'normal',place:0,shell:0,shellCd:0,tongueCd:0,tg:null,reachT:0,sl:0,hopP:0,hy:0,air:false,zs:1,zigT:0,stam:1,tired:0})}
   const emit=(type,o)=>G.ev.push(Object.assign({type},o));
   const head=a=>[a.p[0],a.y+2.8*a.sq*a.sc,a.p[1]];G.head=head;
   const alive=()=>G.animals.filter(a=>a.alive);
-  function startDrop(){const al=alive();if(al.length===2&&!G.duel){G.duel=true;emit('duel',{})}G.carrier=al[rnd()*al.length|0].i;G.phase='drop';G.pt=0;G.bomb.on=true;G.bomb.hop=null;G.bomb.phase=0;G.bomb.fuse=0;G.round++;emit('drop',{i:G.carrier})}
+  function startDrop(){const al=alive();if(al.length===2&&!G.duel){G.duel=true;emit('duel',{})}G.carrier=al[rnd()*al.length|0].i;G.animals[G.carrier].shell=0;G.phase='drop';G.pt=0;G.bomb.on=true;G.bomb.hop=null;G.bomb.phase=0;G.bomb.fuse=0;G.round++;emit('drop',{i:G.carrier})}
   function boom(){const C=G.animals[G.carrier],p=head(C),l=Math.hypot(C.p[0],C.p[1])||1;
     C.alive=false;C.place=alive().length+1;let kind=rnd()*3|0;if(opts.void&&kind===0)kind=2;
     C.out={kind,t:0,p:[C.p[0],C.y,C.p[1]],p0:[C.p[0],C.y+1,C.p[1]],v:kind===2?[0,9,0]:[C.p[0]/l*6.5,13,C.p[1]/l*6.5],r:0,rv:7+rnd()*4,splash:0,sx:(rnd()-.5)*.5,sy:rnd()*.3,gone:false};
@@ -197,8 +209,10 @@ function createGame(seed,opts){opts=opts||{};
     else if(G.phase==='chase'){const C=A[G.carrier];B.fuse+=d;const f=clamp(B.fuse/B.max,0,1),p0=B.phase;B.phase+=d*lerp(5,40,f*f);
       if(Math.floor(B.phase/TAU)!==Math.floor(p0/TAU))emit('tick',{f});
       if(B.hop){B.hop.u+=d/.2;const u=Math.min(1,B.hop.u);B.pos=add(lerp3(B.hop.from,head(C),u),[0,Math.sin(Math.PI*u)*.9,0]);if(u>=1)B.hop=null}else B.pos=head(C);
-      if(C.cd<=0&&!B.hop&&f<1){const duel=alive().length===2;for(const o of A){if(o===C||!o.alive||o.cd>0)continue;
-        if(!C.leap&&Math.hypot(o.p[0]-C.p[0],o.p[1]-C.p[1])<(C.slam>0?1.7:C.T.reach||1.0)){B.hop={from:head(C),u:0};C.cd=duel?.95:1.3;C.sq=1.15;const kx=C.p[0]-o.p[0],kz=C.p[1]-o.p[1],kl=Math.hypot(kx,kz)||1;C.v=[kx*5,kz*5];o.cd=.5;o.sq=.7;o.v=[0,0];o.grudge=C.i;
+      if(C.cd<=0&&!B.hop&&f<1){const duel=alive().length===2;for(const o of A){if(o===C||!o.alive||o.cd>0||o.shell>0)continue;const od=Math.hypot(o.p[0]-C.p[0],o.p[1]-C.p[1]);
+        if(!C.leap&&od<(C.slam>0?1.7:C.T.tongue&&C.tongueCd<=0?2.15:C.T.reach||1.0)){B.hop={from:head(C),u:0};
+          if(C.T.tongue&&od>1.05){C.tongueCd=3.4;C.tg={to:o.i,t:.3};emit('tongue',{from:C.i,to:o.i})}
+          if(C.T.reach>1.3&&od>1.05){C.reachT=.4;emit('trunk',{i:C.i})}C.cd=duel?.95:1.3;C.sq=1.15;const kx=C.p[0]-o.p[0],kz=C.p[1]-o.p[1],kl=Math.hypot(kx,kz)||1;C.v=[kx*5,kz*5];o.cd=.5;o.sq=.7;o.v=[0,0];o.grudge=C.i;
           if(C.T.bump){o.cd=1.0;o.v=[-kx/kl*7,-kz/kl*7];o.sq=.6;emit('bump',{i:o.i})}
           o.shock=.5;C.relief=.8;G.carrier=o.i;G.tags++;G.rt=(G.rt||0)+1;emit('tag',{from:C.i,to:o.i});break}}}
       if(f>=1&&!B.hop)boom()}
@@ -219,35 +233,45 @@ function createGame(seed,opts){opts=opts||{};
       a.cd=Math.max(0,a.cd-d);a.dodge=Math.max(0,a.dodge-d);a.da=Math.max(0,a.da-d);a.shock=Math.max(0,a.shock-d);a.relief=Math.max(0,a.relief-d);a.sq+=(1-a.sq)*Math.min(1,d*11);
       let dx=0,dz=0,sp=0;const r=Math.hypot(a.p[0],a.p[1]);a.fear=0;
       if((chase||drop)&&a===C){
-        if(chase){let best=null,bs=1e9;for(const o of A){if(!o.alive||o===a)continue;const dd=Math.hypot(o.p[0]-a.p[0],o.p[1]-a.p[1]),sc=dd+(o.i===a.target?-1.2:0)+(o.cd>0?6:0)+(a.T.grudge&&o.i===a.grudge?-3.5:0);if(sc<bs){bs=sc;best=o}}
+        if(chase){let best=null,bs=1e9;for(const o of A){if(!o.alive||o===a)continue;const dd=Math.hypot(o.p[0]-a.p[0],o.p[1]-a.p[1]),sc=dd+(o.i===a.target?-1.2:0)+(o.cd>0||o.shell>0?6:0)+(a.T.grudge&&o.i===a.grudge?-3.5:0);if(sc<bs){bs=sc;best=o}}
           if(best){a.target=best.i;dx=best.p[0]+best.v[0]*.25-a.p[0];dz=best.p[1]+best.v[1]*.25-a.p[1]}
           sp=a.spd*(a.cd>0?.25:(1.17+.14*B.fuse/B.max)*(a.T.carry||1));
           if(a.T.leap&&best&&a.cd<=0&&a.leapCd<=0&&!a.leap&&!B.hop){const bd=Math.hypot(best.p[0]-a.p[0],best.p[1]-a.p[1]);
-            if(bd>1.8&&bd<3.9){let tx=best.p[0]+best.v[0]*.34,tz=best.p[1]+best.v[1]*.34;const tr=Math.hypot(tx,tz),lm=G.Rc-.8;if(tr>lm){tx*=lm/tr;tz*=lm/tr}a.leap={t:0,dur:.4,from:a.p.slice(),to:[tx,tz]};a.leapCd=2.6;emit('leap',{i:a.i})}}}
+            if(bd>1.8&&bd<3.9){let tx=best.p[0]+best.v[0]*.34,tz=best.p[1]+best.v[1]*.34;const tr=Math.hypot(tx,tz),lm=G.Rc-.8;if(tr>lm){tx*=lm/tr;tz*=lm/tr}a.leap={t:0,dur:.4,from:a.p.slice(),to:[tx,tz]};a.leapCd=2.6;emit('leap',{i:a.i})}}
+          if(a.T.lunge&&best&&a.cd<=0&&a.leapCd<=0&&!a.leap&&!B.hop){const bd=Math.hypot(best.p[0]-a.p[0],best.p[1]-a.p[1]);
+            if(bd>1.3&&bd<3.3){let tx=best.p[0]+best.v[0]*.2,tz=best.p[1]+best.v[1]*.2;const tr=Math.hypot(tx,tz),lm=G.Rc-.8;if(tr>lm){tx*=lm/tr;tz*=lm/tr}a.leap={t:0,dur:.26,from:a.p.slice(),to:[tx,tz],flat:1};a.leapCd=2.3;emit('lunge',{i:a.i})}}}
       }else if((chase||drop)&&C){
         const cx=a.p[0]-C.p[0],cz=a.p[1]-C.p[1],cd=Math.hypot(cx,cz)||1,fear=clamp(1.5-cd/4.4,0,1.3);a.fear=fear;
         const cpx=C.p[0]+C.v[0]*.35,cpz=C.p[1]+C.v[1]*.35,vl=Math.hypot(a.v[0],a.v[1])||1;let bs=-1e9;a.wa+=(rnd()-.5)*d*4;
         for(let j=0;j<12;j++){const an=j/12*TAU,ux=Math.cos(an),uz=Math.sin(an),px=a.p[0]+ux*1.7,pz=a.p[1]+uz*1.7,pr=Math.hypot(px,pz);
           let sc=Math.hypot(px-cpx,pz-cpz)*(.35+fear)+(ux*a.v[0]+uz*a.v[1])/vl*.5+Math.cos(an-a.wa)*.35;
           if(pr>AR-1)sc-=(pr-(AR-1))*4.5;sc-=pr*.12;
-          for(const[x,z,rr]of ROCKS){if(Math.hypot(px-x,pz-z)<rr+.9)sc-=3}
+          for(const[x,z,rr]of ROCKS){const kd=Math.hypot(px-x,pz-z);if(kd<rr+.9)sc-=3;else if(a.T.lurk&&kd<rr+2.4)sc+=.7}
           for(const o of A){if(o===a||!o.alive||o===C)continue;const od=Math.hypot(px-o.p[0],pz-o.p[1]);if(od<2.2)sc-=(2.2-od)*.9}
           if(sc>bs){bs=sc;dx=ux;dz=uz}}
         sp=a.spd*clamp(.4+fear*.8,.4,1.06)*(drop?(G.round===1?1.1:.8):1);
         if(chase&&!a.T.noDodge&&cd<(a.T.dodgeR||1.9)&&a.dodge<=0&&a.cd<=0){const s=rnd()<.5?1:-1,pw=5.5*(a.T.dodgeP||1);a.v[0]+=-cz/cd*s*pw;a.v[1]+=cx/cd*s*pw;a.dodge=(2.2+rnd()*1.5)*(a.T.dodgeCd||1);a.sq=.82;a.da=a.T.roll||.38;a.dam=a.da;a.dd=s;emit('dodge',{i:a.i})}
+        if(a.T.shell&&chase&&a.shell<=0&&a.shellCd<=0&&a.shellR!==G.round&&a.cd<=0&&cd<1.6){a.shell=2;a.shellCd=4;a.shellR=G.round;a.sq=.7;emit('shell',{i:a.i})}
+        if(a.T.zig){if(a.tired>0)sp*=.5;else{sp*=1.16;if(fear>.25){a.zigT-=d;if(a.zigT<=0){a.zigT=.34;a.zs=-a.zs}const l=Math.hypot(dx,dz)||1,qx=-dz/l*a.zs*.85,qz=dx/l*a.zs*.85;dx+=qx;dz+=qz}
+          a.stam+=fear>.45?-d*.42:d*.3;if(a.stam<=0){a.stam=.6;a.tired=1.5}a.stam=Math.min(1,a.stam)}}
       }else{ // idle: only leave a collapsing ring and keep some room
         if(r>AR-1.1){dx-=a.p[0]/r;dz-=a.p[1]/r;sp=3.8}
         if(G.phase!=='intro')for(const o of A){if(o===a||!o.alive)continue;const ox=a.p[0]-o.p[0],oz=a.p[1]-o.p[1],od=Math.hypot(ox,oz)||1;if(od<1.5){dx+=ox/od;dz+=oz/od;sp=Math.max(sp,2)}}
       }
-      for(const[x,z,rr]of ROCKS){const ox=a.p[0]-x,oz=a.p[1]-z,od=Math.hypot(ox,oz)||1,lim=rr+1.5;if(od<lim&&sp>0){const k=(lim-od)/1.2;dx+=(ox/od-oz/od*.8)*k*2.5;dz+=(oz/od+ox/od*.8)*k*2.5}}
+      if(!(a.air&&a.hy>.25))for(const[x,z,rr]of ROCKS){const ox=a.p[0]-x,oz=a.p[1]-z,od=Math.hypot(ox,oz)||1,lim=rr+1.5;if(od<lim&&sp>0){const k=(lim-od)/1.2;dx+=(ox/od-oz/od*.8)*k*2.5;dz+=(oz/od+ox/od*.8)*k*2.5}}
       const dl=Math.hypot(dx,dz);if(dl>.001){dx/=dl;dz/=dl}
       a.leapCd=Math.max(0,a.leapCd-d);a.slam=Math.max(0,a.slam-d);let kk=7;
+      if(a.T.shell){a.shellCd=Math.max(0,a.shellCd-d);if(a.shell>0){a.shell-=d;sp=0;dx=dz=0;kk=14}}
+      if(a.T.tongue){a.tongueCd=Math.max(0,a.tongueCd-d);if(a.tg){a.tg.t-=d;if(a.tg.t<=0)a.tg=null}}
+      a.reachT=Math.max(0,a.reachT-d);a.tired=Math.max(0,a.tired-d);
+      if(a.T.slide){const vl=Math.hypot(a.v[0],a.v[1])||1,al=(a.v[0]*dx+a.v[1]*dz)/vl;if(sp>2&&al>.88)a.sl=Math.min(1,a.sl+d*1.3);else a.sl=Math.max(0,a.sl-d*(al<.5?3:1));sp*=.86+.48*a.sl;kk=7-5.4*a.sl}
+      if(a.T.hop){if(sp>1||a.air){a.hopP+=d/.5;const u=a.hopP%1;a.air=u<.64;a.hy=a.air?Math.sin(Math.PI*u/.64)*.8:0;sp*=a.air?1.24:.42}else{a.air=false;a.hy=0}}
       if(a.T.sprint){a.rest=(G.t+a.off)%2.9>1.6;sp*=a.rest?.72:1.28}
       if(a.T.charge){const vl=Math.hypot(a.v[0],a.v[1])||1,al=(a.v[0]*dx+a.v[1]*dz)/vl;if(sp>2&&al>.9)a.chg=Math.min(1,a.chg+d*.75);else a.chg=Math.max(0,a.chg-d*(al<.5?2.5:.8));sp*=.9+.5*a.chg;kk=7-4.6*a.chg}
-      if(a.leap){const L=a.leap;L.t+=d;const u=Math.min(1,L.t/L.dur);a.p=[lerp(L.from[0],L.to[0],u),lerp(L.from[1],L.to[1],u)];a.v=[(L.to[0]-L.from[0])/L.dur,(L.to[1]-L.from[1])/L.dur];a.ly=Math.sin(Math.PI*u)*1.9;
-        if(u>=1){a.leap=null;a.ly=0;a.slam=.22;a.sq=.6;a.v=[a.v[0]*.5,a.v[1]*.5];emit('slam',{i:a.i})}}
+      if(a.leap){const L=a.leap;L.t+=d;const u=Math.min(1,L.t/L.dur);a.p=[lerp(L.from[0],L.to[0],u),lerp(L.from[1],L.to[1],u)];a.v=[(L.to[0]-L.from[0])/L.dur,(L.to[1]-L.from[1])/L.dur];a.ly=Math.sin(Math.PI*u)*(L.flat?.25:1.9);
+        if(u>=1){a.leap=null;a.ly=0;a.slam=L.flat?.16:.22;a.sq=L.flat?.8:.6;a.v=[a.v[0]*.5,a.v[1]*.5];emit(L.flat?'chomp':'slam',{i:a.i})}}
       else{const k=Math.min(1,d*kk);a.v[0]+=(dx*sp-a.v[0])*k;a.v[1]+=(dz*sp-a.v[1])*k;a.p[0]+=a.v[0]*d;a.p[1]+=a.v[1]*d}
-      for(const[x,z,rr]of ROCKS){const ox=a.p[0]-x,oz=a.p[1]-z,od=Math.hypot(ox,oz)||1,lim=rr+.5;if(od<lim){a.p[0]=x+ox/od*lim;a.p[1]=z+oz/od*lim}}
+      if(!(a.air&&a.hy>.25))for(const[x,z,rr]of ROCKS){const ox=a.p[0]-x,oz=a.p[1]-z,od=Math.hypot(ox,oz)||1,lim=rr+.5;if(od<lim){a.p[0]=x+ox/od*lim;a.p[1]=z+oz/od*lim}}
       const r2=Math.hypot(a.p[0],a.p[1]),lim=G.Rc-.6;if(r2>lim){a.p[0]*=lim/r2;a.p[1]*=lim/r2}
       const v=Math.hypot(a.v[0],a.v[1]);a.speed=v;a.ph+=v*d*2.9;
       if(v>.4){const want=Math.atan2(a.v[0],a.v[1]),df=((want-a.yaw+Math.PI*3)%TAU)-Math.PI;a.yaw+=df*Math.min(1,d*12);a.roll+=(clamp(-df*1.2,-.35,.35)-a.roll)*Math.min(1,d*8)}
@@ -257,8 +281,8 @@ function createGame(seed,opts){opts=opts||{};
       let y=Math.abs(Math.sin(a.ph))*.1*clamp(v/3,0,1)+(v<.5?Math.abs(Math.sin(G.t*5+a.i))*.06:0),cheer=false;
       if(G.phase==='boom'&&a.jump>=0&&G.pt>a.jump&&G.pt<a.jump+1.25){const u=(G.pt-a.jump)*2.2;y=Math.abs(Math.sin(u*Math.PI))*.22;cheer=true}
       if(G.phase==='win'){y=Math.abs(Math.sin(G.pt*5.5))*(G.pt<1.4?.25:1.0);cheer=true}
-      if(a.leap)y=a.ly;
-      a.y+=(y-a.y)*Math.min(1,d*(a.leap?60:30));
+      if(a.leap)y=a.ly;else if(a.hy>0&&G.phase!=='win')y=Math.max(y,a.hy);
+      a.y+=(y-a.y)*Math.min(1,d*(a.leap||a.T.hop?60:30));
       a.mood=cheer||a.relief>0?'happy':a.shock>0?'scared':a===C&&chase?(G.bomb.fuse/G.bomb.max>.88?'uhoh':G.bomb.fuse/G.bomb.max>.6?'scared':'evil'):(a===C&&drop)||a.fear>.75?'scared':'normal';a.cheer=cheer;
     }
   };
@@ -393,6 +417,13 @@ const SPEC={ // body, belly, snout, feet, arms, label colour
   gorilla:{nick:'THE BULLY',fr:"Bondit pour toucher de loin",n:'GORILLA',c:'#b9a0ff',B:'#4a4d55',L:'#a08a7c',S:'#a08a7c',D:'#2e3036'},
   fox:{nick:'THE TRICKSTER',fr:"Meilleur esquiveur, fait des feintes",n:'FOX',c:'#ff7a45',B:'#f0691c',L:'#ffffff',S:'#ffffff',D:'#2a1a14'},
   bull:{nick:'THE HOTHEAD',fr:"Charge en ligne droite, dérape dans les virages",n:'BULL',c:'#ff9a8a',B:'#8a4a2c',L:'#b0714e',S:'#f0a6a0',D:'#4a2414'},
+  elephant:{nick:'THE WALL',fr:"Lent, mais touche de loin avec sa trompe",n:'ELEPHANT',c:'#a9c4d6'},
+  penguin:{nick:'THE SLIDER',fr:"Glisse sur le ventre en ligne droite, tourne mal",n:'PENGUIN',c:'#7fd0ff'},
+  kangaroo:{nick:'THE HOPPER',fr:"Avance par bonds et saute par-dessus les rochers",n:'KANGAROO',c:'#f0a868'},
+  turtle:{nick:'THE SHELL',fr:"Se cache dans sa carapace : intouchable 2 secondes",n:'TURTLE',c:'#d9b06a'},
+  crocodile:{nick:'THE AMBUSHER',fr:"Guette près des rochers et bondit sur sa proie",n:'CROCODILE',c:'#5fbf5a'},
+  frog:{nick:'THE TONGUE',fr:"Passe la bombe à distance avec sa langue",n:'FROG',c:'#7dff5a'},
+  rabbit:{nick:'THE ZIGZAG',fr:"Zigzague très vite, mais s’essouffle",n:'RABBIT',c:'#ffd6e6'},
   panda:{nick:'THE LUCKY ONE',fr:"Lent et distrait, mais roule très loin",n:'PANDA',c:'#ffffff',B:'#f4f4f0',L:'#ffffff',S:'#ffffff',D:'#1d1d22',A:'#1d1d22'},
 };
 /* a figurine = torso + head (turns on its own) + two feet + two arms; every species has its own build */
@@ -504,7 +535,104 @@ function faces(R,pre){const WH='#ffffff',BK='#141014',BR=R.brow,MO='#3a0d12',F={
   m=mk();eyes(m,.185,.03);brow(m,1.83,.4,.12,.03,0);m.s('sphere',0,1.16,.61,.11,.025,.03,MO);F.uhoh=m.build(gl);
   m=mk();for(const s of[-1,1]){m.s('sphere',s*.2,1.5,.39,.155,.165,.1,WH);for(const r of[-.8,.8])m.s('box',s*.2,1.5,.49,.22,.045,.03,BK,0,M4.RZ(r))}m.s('sphere',0,1.15,.6,.09,.12,.05,MO).s('sphere',.02,1.07,.62,.06,.08,.03,'#ff7a8a');F.dead=m.build(gl);
   return F}
-const FIG={};for(const k of KINDS)FIG[k]=figure(k);
+/* the 7 animals added on 13/11/2026 (owner's approval): same building blocks and proportions as figure() */
+const CAND = {
+  elephant: { n: 'ELEPHANT', nick: 'THE WALL', c: '#a9c4d6', size: 1.22, rig: { hs: 1.14, ax: .74, ay: 1.0, fx: .34, iris: '#4a5a6a', brow: '#4f6272' } },
+  penguin: { n: 'PENGUIN', nick: 'THE SLIDER', c: '#7fd0ff', size: .92, rig: { hs: 1.08, ax: .52, ay: .98, fx: .2, iris: '#2a3a5a', brow: '#11161e' } },
+  kangaroo: { n: 'KANGAROO', nick: 'THE HOPPER', c: '#f0a868', size: 1.1, rig: { hs: 1.04, ax: .5, ay: 1.02, fx: .26, iris: '#6a3a14', brow: '#5a2e10' } },
+  turtle: { n: 'TURTLE', nick: 'THE SHELL', c: '#d9b06a', size: .94, rig: { hs: 1.06, ax: .66, ay: .96, fx: .32, iris: '#2f6a1e', brow: '#2c4a1c' } },
+  crocodile: { n: 'CROCODILE', nick: 'THE AMBUSHER', c: '#5fbf5a', size: 1.06, rig: { hs: 1.0, ax: .6, ay: 1.0, fx: .3, iris: '#e8c81a', brow: '#1f4a1a' } },
+  frog: { n: 'FROG', nick: 'THE TONGUE', c: '#7dff5a', size: .9, rig: { hs: 1.18, ax: .58, ay: .96, fx: .3, iris: '#ff8a00', brow: '#1f6a1c' } },
+  rabbit: { n: 'RABBIT', nick: 'THE ZIGZAG', c: '#ffd6e6', size: .9, rig: { hs: 1.1, ax: .5, ay: 1.0, fx: .22, iris: '#c0306a', brow: '#9a8a84' } },
+};
+function candidateFigure(k) {
+  const R = CAND[k].rig, m = new Mesh(), h = new Mesh(), arm = new Mesh(), foot = new Mesh(), PI = Math.PI;
+  h.pre = M4.mulN(M4.T(0, 1, 0), M4.S(R.hs), M4.T(0, -1, 0));
+  const blush = () => { for (const s of [-1, 1]) h.s('sphere', s * .37, 1.31, .37, .1, .065, .04, '#ff9aa8', .08); };
+  const nose = (y, z, rx, ry, c) => h.s('sphere', 0, y, z, rx, ry, rx * .7, c || '#1b1414').s('sphere', -rx * .3, y + ry * .35, z + rx * .5, rx * .25, ry * .25, .012, '#ffffff', .5);
+  const chain = (mesh, pts, c) => { for (const [x, y, z, r] of pts) mesh.s('sphere', x, y, z, r, r, r, c); };
+  if (k === 'elephant') { const B = '#93abbd', L = '#c4d4df', P = '#f2a9b6', N = '#24407a';
+    m.s('sphere', 0, .64, 0, .7, .64, .6, B).s('sphere', 0, .55, .26, .48, .44, .38, L);
+    chain(m, [[0, .5, -.6, .09], [0, .42, -.72, .07]], B); m.s('sphere', 0, .36, -.8, .08, .1, .08, '#4f6272');
+    h.s('sphere', 0, 1.38, -.06, .62, .54, .48, B);
+    for (const s of [-1, 1]) { h.s('sphere', s * .72, 1.42, -.06, .42, .46, .1, B, 0, M4.RY(s * .5)).s('sphere', s * .74, 1.42, -.02, .3, .34, .06, P, 0, M4.RY(s * .5));
+      h.add(PRIM.cone, M4.mulN(M4.T(s * .2, 1.06, .5), M4.RX(1.9), M4.RZ(s * .3), M4.S(.06, .26, .06)), '#fff8e8'); }
+    chain(h, [[0, 1.26, .44, .19], [0, 1.16, .6, .16], [0, 1.04, .7, .14], [0, .92, .74, .12], [0, .84, .78, .11], [0, .8, .86, .1], [0, .82, .94, .095]], B);
+    h.s('sphere', 0, .86, 1.0, .09, .06, .05, '#7d93a4');
+    h.s('cyl', 0, 1.9, -.08, .44, .14, .42, N).s('cyl', 0, 1.98, -.08, .4, .05, .38, '#ffffff').s('box', 0, 1.84, .3, .3, .04, .16, N, 0, M4.RX(.25)).s('sphere', 0, 1.93, .32, .06, .06, .03, '#f2c21a', .3);
+    blush(); arm.s('sphere', 0, -.28, 0, .2, .34, .21, B).s('cyl', 0, -.58, 0, .18, .1, .19, L); foot.s('cyl', 0, -.02, .04, .26, .16, .28, B).s('sphere', 0, .0, .26, .2, .08, .06, L);
+  } else if (k === 'penguin') { const B = '#1f2733', W = '#f7f8fa', O = '#ff9a1e', R2 = '#e0303c';
+    m.s('sphere', 0, .62, 0, .56, .64, .5, B).s('sphere', 0, .56, .2, .44, .54, .36, W);
+    m.s('cyl', 0, .98, .02, .46, .14, .44, R2).s('box', -.24, .74, .44, .14, .4, .06, R2, 0, M4.RZ(.12));
+    for (let i = 0; i < 3; i++) m.s('box', -.25 + i * .02, .6 - i * .1, .47, .15, .02, .02, '#ffffff');
+    h.s('sphere', 0, 1.38, .02, .56, .5, .5, B);
+    for (const s of [-1, 1]) h.s('sphere', s * .2, 1.42, .3, .24, .26, .2, W);
+    h.s('sphere', 0, 1.24, .38, .2, .14, .18, W);
+    h.add(PRIM.cone, M4.mulN(M4.T(0, 1.3, .52), M4.RX(PI / 2), M4.S(.12, .3, .08)), O);
+    h.s('sphere', 0, 1.7, .32, .16, .05, .06, '#ffd23f', .1);
+    arm.s('sphere', 0, -.28, 0, .1, .36, .2, B, 0, M4.RZ(.15)); foot.s('sphere', 0, 0, .12, .2, .07, .3, O);
+  } else if (k === 'kangaroo') { const B = '#c8834a', L = '#f1d2a8', D = '#8a5226', G = '#e0303c';
+    m.s('sphere', 0, .64, 0, .5, .64, .46, B).s('sphere', 0, .52, .2, .36, .44, .32, L).s('sphere', 0, .42, .4, .24, .16, .06, D);
+    chain(m, [[0, .38, -.5, .2], [0, .26, -.72, .18], [0, .16, -.94, .16], [0, .09, -1.14, .13], [0, .06, -1.3, .1]], B);
+    h.s('sphere', 0, 1.38, .0, .5, .5, .46, B);
+    for (const s of [-1, 1]) h.s('cone', s * .24, 1.8, -.06, .14, .62, .09, B, 0, M4.RZ(-s * .12)).s('cone', s * .24, 1.8, .0, .08, .44, .04, '#f2b8b0', 0, M4.RZ(-s * .12));
+    h.s('sphere', 0, 1.24, .4, .28, .22, .32, L); nose(1.32, .7, .08, .06); blush();
+    arm.s('sphere', 0, -.24, 0, .12, .28, .13, B).s('sphere', 0, -.52, .04, .19, .19, .2, G).s('cyl', 0, -.38, .02, .15, .06, .15, '#ffffff');
+    foot.s('sphere', 0, 0, .18, .17, .12, .42, D);
+  } else if (k === 'turtle') { const B = '#b5cf7a', S = '#8a5e2e', S2 = '#b07a3e', RIM = '#e2c27a', Y = '#f2e2a4';
+    m.s('sphere', 0, .58, -.3, .78, .72, .62, S);
+    for (const [x, y, z] of [[0, 1.18, -.38], [-.44, .98, -.5], [.44, .98, -.5], [-.58, .58, -.42], [.58, .58, -.42], [0, .9, -.82], [-.3, .5, -.86], [.3, .5, -.86]]) m.s('sphere', x, y, z, .22, .2, .14, S2);
+    m.s('cyl', 0, .5, -.22, .82, .08, .66, RIM);
+    m.s('sphere', 0, .56, .1, .5, .56, .42, B).s('sphere', 0, .54, .3, .4, .46, .28, Y);
+    for (let i = 0; i < 3; i++) m.s('box', 0, .36 + i * .2, .56, .3, .015, .04, '#c8a85a');
+    h.s('sphere', 0, 1.38, .1, .5, .47, .47, B).s('sphere', 0, 1.22, .44, .26, .16, .2, '#cfe39a');
+    nose(1.3, .68, .05, .035, '#3f5a1c'); blush();
+    h.s('sphere', 0, 1.78, .08, .4, .2, .38, '#2d6fd8').s('cyl', 0, 1.97, .08, .03, .1, .03, '#f2c21a');
+    for (const s of [-1, 1]) h.s('sphere', s * .18, 2.04, .08, .2, .03, .06, s < 0 ? '#ff5a3c' : '#ffd23f', 0, M4.RY(.6));
+    arm.s('sphere', 0, -.26, 0, .16, .3, .17, B).s('sphere', 0, -.52, 0, .15, .11, .16, '#cfe39a'); foot.s('cyl', 0, -.02, .06, .22, .14, .26, B);
+  } else if (k === 'crocodile') { const B = '#3f7a3a', L = '#d8e6a8', D = '#24502a', T = '#ffffff';
+    m.s('sphere', 0, .6, 0, .56, .6, .5, B).s('sphere', 0, .54, .22, .38, .46, .32, L);
+    for (let i = 0; i < 4; i++) m.add(PRIM.cone, M4.mulN(M4.T(0, 1.0 - i * .02, -.3 - i * .14), M4.S(.07, .16, .07)), D);
+    for (const [y, z, r] of [[.4, -.56, .26], [.3, -.82, .22], [.22, -1.06, .18], [.16, -1.28, .14], [.12, -1.46, .1]]) m.s('sphere', 0, y, z, r, r, r, B);
+    for (let i = 0; i < 4; i++) m.add(PRIM.cone, M4.mulN(M4.T(0, .56 - i * .09, -.6 - i * .24), M4.S(.06, .14, .06)), D);
+    h.s('sphere', 0, 1.42, -.04, .54, .5, .46, B);
+    for (const s of [-1, 1]) h.s('sphere', s * .24, 1.74, .18, .17, .14, .16, B);
+    h.s('sphere', 0, 1.2, .5, .36, .2, .5, B, 0, M4.RX(.35)).s('sphere', 0, 1.02, .52, .34, .1, .44, L, 0, M4.RX(.35));
+    h.s('sphere', 0, 1.0, .9, .26, .14, .14, B);
+    for (const s of [-1, 1]) h.s('sphere', s * .09, 1.09, 1.0, .04, .03, .03, '#1b1414');
+    for (let i = 0; i < 6; i++) for (const s of [-1, 1]) h.add(PRIM.cone, M4.mulN(M4.T(s * (.31 - i * .035), 1.06 - i * .015, .32 + i * .11), M4.RX(PI), M4.S(.035, .09, .035)), T);
+    h.s('box', 0, 1.98, .02, .5, .09, .06, '#141414', 0, M4.RX(-.6)).s('sphere', -.14, 1.98, .06, .13, .09, .03, '#ff8a1e', .2, M4.RX(-.6)).s('sphere', .14, 1.98, .06, .13, .09, .03, '#ff8a1e', .2, M4.RX(-.6));
+    arm.s('sphere', 0, -.26, 0, .16, .3, .17, B).s('sphere', 0, -.52, 0, .15, .1, .16, D); foot.s('sphere', 0, 0, .12, .22, .12, .34, D);
+  } else if (k === 'frog') { const B = '#3fd23a', L = '#ffe86a', D = '#1f8a2a', P = '#ff4f8a', T = '#ff5a7a';
+    m.s('sphere', 0, .56, 0, .64, .56, .56, B).s('sphere', 0, .5, .26, .48, .44, .34, L);
+    for (const [x, y, z] of [[-.42, .8, -.28], [.32, .62, -.44], [-.08, 1.0, -.38], [.46, .92, -.1], [-.3, .4, -.48]]) m.s('sphere', x, y, z, .13, .11, .07, '#ff8a00');
+    m.s('cyl', 0, .96, .02, .5, .08, .48, '#ffffff').s('cyl', 0, .96, .02, .51, .03, .49, '#e0303c');
+    m.s('box', 0, .96, .5, .12, .1, .06, '#e0303c');
+    h.s('sphere', 0, 1.28, .04, .76, .4, .54, B);
+    for (const s of [-1, 1]) h.s('sphere', s * .22, 1.5, .2, .27, .27, .24, B).s('sphere', s * .22, 1.5, .26, .24, .24, .2, '#ffffff');
+    h.s('sphere', 0, 1.14, .4, .44, .12, .2, L);
+    h.s('sphere', .16, 1.06, .62, .09, .16, .04, T, 0, M4.RZ(-.2)).s('sphere', .17, .94, .63, .08, .06, .04, T);
+    h.s('cyl', .06, 1.8, -.06, .42, .03, .42, '#2fa83a').s('sphere', .3, 1.88, .06, .14, .1, .14, P).s('sphere', .3, 1.93, .06, .06, .06, .06, '#ffd23f', .3).s('sphere', -.2, 1.84, .16, .06, .06, .06, '#7ad8ff', .3);
+    blush();
+    arm.s('sphere', 0, -.26, 0, .14, .3, .15, B).s('sphere', 0, -.52, .04, .17, .07, .19, D); foot.s('sphere', 0, 0, .18, .28, .08, .38, D);
+  } else if (k === 'rabbit') { const B = '#ece6df', L = '#ffffff', P = '#ff9ab6', O = '#ff6a2a';
+    m.s('sphere', 0, .62, 0, .5, .6, .46, B).s('sphere', 0, .54, .2, .34, .42, .3, L).s('sphere', 0, .48, -.52, .2, .2, .2, L);
+    h.s('sphere', 0, 1.38, .04, .56, .5, .5, B);
+    for (const s of [-1, 1]) h.s('sphere', s * .2, 2.1, -.04, .13, .5, .09, B, 0, M4.RZ(-s * .14)).s('sphere', s * .2, 2.1, .02, .07, .38, .05, P, 0, M4.RZ(-s * .14));
+    h.s('sphere', 0, 1.24, .42, .26, .18, .2, L); nose(1.33, .62, .07, .05, P);
+    for (const s of [-1, 1]) h.s('box', s * .04, 1.08, .58, .07, .1, .03, '#ffffff');
+    // carrot: the tip in the mouth, the thick end and its leaves out to the side
+    h.add(PRIM.cone, M4.mulN(M4.T(.36, 1.06, .64), M4.RZ(PI / 2 + .3), M4.S(.14, .6, .14)), '#ff8a1e');
+    for (let i = 0; i < 3; i++) h.s('sphere', .22 + i * .14, 1.04 - i * .04, .64 + .01, .015, .1 - i * .02, .1 - i * .02, '#d8661a', 0, M4.RZ(.3));
+    for (const t of [-.45, 0, .45]) h.s('sphere', .72, 1.0 + t * .1, .64, .045, .2, .045, '#3fa83a', 0, M4.RZ(-.9 + t));
+    blush();
+    arm.s('sphere', 0, -.26, 0, .13, .3, .14, B).s('sphere', 0, -.5, 0, .13, .11, .14, L);
+    foot.s('sphere', 0, .0, .12, .2, .13, .34, O).s('sphere', 0, -.07, .12, .21, .05, .35, '#ffffff').s('box', 0, .05, .2, .14, .02, .1, '#ffffff');
+  }
+  return { body: m.build(gl), head: h.build(gl), foot: foot.build(gl), arm: arm.build(gl), rig: R, face: faces(R, h.pre) };
+}
+const FIG={};for(const k of KINDS)FIG[k]=CAND[k]?candidateFigure(k):figure(k);
+const tongueM=new Mesh().s('sphere',0,0,.5,1,1,.5,'#ff5a7a').build(gl),tongueTip=new Mesh().s('sphere',0,0,0,1,1,1,'#ff7a95').build(gl);
 const bombMesh=new Mesh().s('sphere',0,0,0,.46,.46,.46,'#15151b').s('cyl',0,.36,0,.17,.16,.17,'#3c3c48').s('cyl',0,.5,0,.04,.26,.04,'#d2ab70',0,M4.RZ(-.25)).build(gl);
 const FUSE_TIP=[.07,.76,0];
 const ringM=new Mesh().add(sector(.78,1,0,TAU,.03,48),M4.id(),'#fff0c0',1).build(gl);
@@ -606,6 +734,13 @@ const SND={
     else if(type==='crunch'){for(let i=0;i<4;i++)Z(.05,.3,t+i*.16,'highpass',3500)}
     else if(type==='heh'){for(let i=0;i<3;i++)N(900-i*90,.09,'triangle',.14,t+i*.12,700-i*90)}
     else if(type==='flex'){Z(.2,.2,t,'bandpass',700,2400);N(330,.12,'square',.1,t+.18,660)}
+    else if(type==='trumpet'){N(440,.55,'sawtooth',.2,t,660);N(446,.55,'square',.07,t,672);Z(.45,.1,t,'bandpass',1300)}
+    else if(type==='squawk'){for(let i=0;i<3;i++)N(780,.08,'square',.13,t+i*.12,520)}
+    else if(type==='boing'){N(180,.4,'sine',.35,t,640);N(360,.3,'triangle',.1,t+.05,900)}
+    else if(type==='pop'){N(600,.09,'sine',.4,t,180);Z(.06,.2,t,'bandpass',1500)}
+    else if(type==='chomp'){Z(.08,.4,t,'lowpass',1500,400);N(160,.1,'square',.18,t,90);Z(.08,.35,t+.16,'lowpass',1500,400)}
+    else if(type==='ribbit'){for(let i=0;i<2;i++)N(260,.12,'sawtooth',.18,t+i*.18,180)}
+    else if(type==='slurp'){N(300,.25,'sine',.25,t,1200);Z(.2,.12,t,'bandpass',2200,900)}
     else if(type==='pat'){for(let i=0;i<4;i++)N(180,.07,'sine',.4,t+i*.15,110)}
     else if(type==='bump'){N(90,.25,'sine',.8,t,40);Z(.1,.4,t,'lowpass',800)}
     else if(type==='leap'){N(260,.45,'sine',.2,t,720)}
@@ -657,7 +792,7 @@ const AUD={ctx:null,out:null,log:[],m0:0,m1:-1,md:-1,sched:0,G:null,cd:null,orig
 
 /* ---------------- view state ---------------- */
 let V=null;
-const GEST={lion:'roar',tiger:'flex',bear:'pat',wolf:'howl',gorilla:'pound',fox:'heh',bull:'snort',panda:'crunch'};
+const GEST={lion:'roar',tiger:'flex',bear:'pat',wolf:'howl',gorilla:'pound',fox:'heh',bull:'snort',panda:'crunch',elephant:'trumpet',penguin:'squawk',kangaroo:'boing',turtle:'pop',crocodile:'chomp',frog:'ribbit',rabbit:'crunch'};
 // season standing line under 'X WINS!' (Zoo Wars standings, added 13/11/2026 with the owner's approval): given by the video maker as ?st=..., empty in the live page
 const ST_LINE=(()=>{try{const v=new URLSearchParams(location.search).get('st');return v?String(v).toUpperCase().slice(0,40):''}catch(e){return ''}})();
 const END_Q=['WHO WINS NEXT ROUND?','WHO WAS YOUR PICK?','DID YOU CALL IT?','WHO SHOULD WIN NEXT?'];
@@ -681,7 +816,11 @@ function fxStep(dt){
     else if(e.type==='dodge'){const a=A[e.i];for(let i=0;i<6;i++)V.smoke.push({p:[a.p[0],.2,a.p[1]],v:[(fr()-.5)*2.4,.6+fr(),(fr()-.5)*2.4],life:.5,max:.5,s:.3,sh:.85,al:.3});AUD.play('dodge')}
     else if(e.type==='tick')AUD.play('tick',{f:e.f});
     else if(e.type==='bump'){const a=A[e.i];AUD.play('bump');V.shake=Math.max(V.shake,.45);for(let i=0;i<10;i++)V.smoke.push({p:[a.p[0],.4,a.p[1]],v:[(fr()-.5)*4,.8+fr(),(fr()-.5)*4],life:.5,max:.5,s:.35,sh:.9,al:.35})}
-    else if(e.type==='leap')AUD.play('leap');
+    else if(e.type==='leap'||e.type==='lunge')AUD.play('leap');
+    else if(e.type==='tongue')AUD.play('slurp');
+    else if(e.type==='trunk')AUD.play('trumpet');
+    else if(e.type==='chomp'){const a=A[e.i];AUD.play('chomp');V.shake=Math.max(V.shake,.3);for(let i=0;i<8;i++)V.smoke.push({p:[a.p[0],.2,a.p[1]],v:[(fr()-.5)*3,.6+fr(),(fr()-.5)*3],life:.45,max:.45,s:.3,sh:.9,al:.3})}
+    else if(e.type==='shell'){const a=A[e.i];AUD.play('pop');for(let i=0;i<8;i++)V.smoke.push({p:[a.p[0],.5,a.p[1]],v:[(fr()-.5)*2.4,.8+fr(),(fr()-.5)*2.4],life:.5,max:.5,s:.3,sh:.9,al:.3})}
     else if(e.type==='slam'){const a=A[e.i];AUD.play('slam');V.shake=Math.max(V.shake,.6);V.pops.push({p:[a.p[0],.4,a.p[1]],life:.7});for(let i=0;i<16;i++){const an=i/16*TAU;V.smoke.push({p:[a.p[0],.15,a.p[1]],v:[Math.cos(an)*4,.5,Math.sin(an)*4],life:.55,max:.55,s:.35,sh:.9,al:.4})}}
     else if(e.type==='boom'){const p=e.p;V.shake=1;V.flash=1;AUD.play('boom',{left:e.left});AUD.play(e.kind===2?'whistle':'fly');
       const big=e.left===1?2:1;if(big>1){V.shake=1.5;V.flash=1.8}
@@ -720,7 +859,7 @@ function fxStep(dt){
     if(a.speed>3.2&&fr()<.25)V.smoke.push({p:[a.p[0]-a.v[0]*.08,.12,a.p[1]-a.v[1]*.08],v:[(fr()-.5)*.8,.5+fr()*.6,(fr()-.5)*.8],life:.45,max:.45,s:.16+fr()*.12,sh:.85,al:.22});
     if(Math.abs(a.roll)>.22&&a.speed>3)for(let j=0;j<2;j++)V.smoke.push({p:[a.p[0],.1,a.p[1]],v:[-a.v[0]*.25+(fr()-.5),.4+fr()*.5,-a.v[1]*.25+(fr()-.5)],life:.4,max:.4,s:.2+fr()*.15,sh:.9,al:.3});
     if(a.k==='bull'&&(a.chg>.5||a.cheer&&G.phase==='boom')&&fr()<.6){const h=G.head(a),fx=Math.sin(a.yaw),fz=Math.cos(a.yaw);V.smoke.push({p:[h[0]+fx*.7,h[1]-1.55*a.sc,h[2]+fz*.7],v:[fx*2+(fr()-.5),.4,fz*2+(fr()-.5)],life:.4,max:.4,s:.14,sh:.95,al:.5})}
-    if((a===C&&f>.55||a.fear>1||a.rest&&a.speed>1.5)&&fr()<.35){const h=G.head(a),an=fr()*TAU;V.drops.push({p:[h[0]+Math.cos(an)*.5,h[1]-.7,h[2]+Math.sin(an)*.5],v:[Math.cos(an)*2,2.5+fr()*1.5,Math.sin(an)*2],life:.5})}
+    if((a===C&&f>.55||a.fear>1||a.rest&&a.speed>1.5||a.tired>0)&&fr()<.35){const h=G.head(a),an=fr()*TAU;V.drops.push({p:[h[0]+Math.cos(an)*.5,h[1]-.7,h[2]+Math.sin(an)*.5],v:[Math.cos(an)*2,2.5+fr()*1.5,Math.sin(an)*2],life:.5})}
   });
   if(B.on){const tip=M4.pt(bombMatrix(),FUSE_TIP);for(let i=0;i<3;i++)V.parts.push({p:tip.slice(),v:[(fr()-.5)*2.4,1+fr()*2.6,(fr()-.5)*2.4],life:.2+fr()*.3,max:.5,s:.06+fr()*.07,c:[1,.8+fr()*.2,.3],drag:1,g:-9,grow:0})}
   // living scenery
@@ -774,17 +913,21 @@ function drawAnimal(a,sh,late){
   const k=clamp(a.speed/4.2,0,1.2),q=1/Math.sqrt(a.sq),chase=G.phase==='chase',carry=G.bomb.on&&G.carrier===a.i&&chase&&!G.bomb.hop,f=chase?clamp(G.bomb.fuse/G.bomb.max,0,1):0;
   const win=G.phase==='win',du=a.da>0?1-a.da/(a.dam||.38):0,hopY=(du?Math.sin(Math.PI*du)*.55:0)+(a.shock>0?Math.sin(Math.PI*(1-a.shock/.5))*.5:0)+(a.relief>0?Math.abs(Math.sin(a.relief*9))*.18:0);
   const cower=G.phase==='drop'&&G.carrier===a.i,shk=(carry?.03+.05*f:a.fear>1?.03:0)*Math.sin(G.t*38+a.i);
+  if(a.shell>0){ // the turtle hides: only the spinning shell is left
+    const bm=M4.mulN(M4.T(a.p[0],a.y,a.p[1]),M4.RY(a.yaw+G.t*5),M4.S(a.sc),M4.T(0,.25,.3),M4.S(1.08,.72,1.08));E.draw(F.body,bm,{spec:.35,outline:.028});
+    sh.push([BLOB,M4.mulN(bm,M4.T(0,.62,-.3),M4.S(.8,.6,.7))]);return}
   const base=M4.mulN(M4.T(a.p[0]+shk,a.y+hopY,a.p[1]),M4.RY(a.yaw),M4.S(a.sc));
-  const body=M4.mulN(base,M4.T(0,.9,0),M4.RZ(a.roll*1.5+(du?a.dd*TAU*du*(a.k==='panda'?2:1):0)+(win?Math.sin(G.pt*5.5)*.22:0)),M4.T(0,-.9,0),M4.RX(.28*k+(a.chg||0)*.25+(a.fear>.9&&!carry?-.12:0)+(win?0:a.cheer&&(a.k==='lion'||a.k==='wolf')?-.22:a.cheer&&a.k==='bull'?.2:0)),M4.S(q,a.sq*(cower?.82:1),q)),op={spec:.25,outline:.028};
-  const head=M4.mulN(body,M4.T(0,1.0,0),M4.RY(s.look),M4.RX(s.nod+Math.sin(a.ph*2)*.05*k),M4.T(0,-1.0,0));
+  const body=M4.mulN(base,M4.T(0,.9,0),M4.RZ(a.roll*1.5+(du?a.dd*TAU*du*(a.k==='panda'?2:1):0)+(win?Math.sin(G.pt*5.5)*.22:0)),M4.T(0,-.9,0),M4.RX(.28*k+(a.chg||0)*.25+(a.sl||0)*1.05+(a.leap&&a.leap.flat?.55:0)+(a.fear>.9&&!carry?-.12:0)+(win?0:a.cheer&&(a.k==='lion'||a.k==='wolf')?-.22:a.cheer&&a.k==='bull'?.2:0)),M4.S(q,a.sq*(cower?.82:1),q)),op={spec:.25,outline:.028};
+  const head=M4.mulN(body,M4.T(0,1.0,0),M4.RY(s.look),M4.RX(s.nod+Math.sin(a.ph*2)*.05*k+(a.reachT>0?Math.sin(Math.PI*a.reachT/.4)*.55:0)),M4.T(0,-1.0,0));
   const face=a.mood==='normal'&&s.blink<0?F.face.blink:F.face[a.mood]||F.face.normal;
   E.draw(F.body,body,op);E.draw(F.head,head,op);E.draw(face,head);sh.push([BLOB,M4.mulN(body,M4.T(0,.62,0),M4.S(.62,.62,.54))],[BLOB,M4.mulN(head,M4.T(0,1.42,0),M4.S(.68,.6,.6))]);
-  for(const sg of[-1,1]){const ph=a.ph+(sg>0?Math.PI:0),air=hopY>.05||win&&a.y>.3;
+  for(const sg of[-1,1]){const ph=a.ph+(sg>0?Math.PI:0),air=hopY>.05||win&&a.y>.3||a.hy>.1;
     const scrape=a.k==='bull'&&a.cheer&&sg>0?Math.sin(G.t*16)*.3:0,fm=air?M4.mul(body,M4.T(sg*(R.fx+.03),.05,.1+sg*.12)):M4.mul(base,M4.T(sg*R.fx,.1-(a.y+hopY)*.6/a.sc+Math.max(0,Math.cos(ph))*.26*k,.1+Math.sin(ph)*.4*k+scrape));E.draw(F.foot,fm,op);
     let rz=sg*.35,rx=-Math.sin(ph)*1.0*k;
     if(carry){rz=-sg*.3;rx=-Math.PI*.95+Math.sin(G.t*24+sg)*.12*f}
     else if(cower){rz=-sg*.5;rx=-Math.PI*.8}
-    else if(a.leap){rz=sg*.4;rx=-Math.PI*.9}
+    else if(a.leap){rz=sg*.4;rx=a.leap.flat?-Math.PI*.55:-Math.PI*.9}
+    else if(a.sl>.5){rz=sg*1.25;rx=.2}
     else if(a.cheer&&!(win&&G.pt>1.4)){const t=G.t; // signature gestures
       if(a.k==='lion'){rz=sg*1.0;rx=.5}
       else if(a.k==='tiger'){rz=sg*2.0+Math.sin(t*12)*.12;rx=-.2}
@@ -793,10 +936,20 @@ function drawAnimal(a,sh,late){
       else if(a.k==='gorilla'){rz=-sg*.85;rx=-1.25+Math.sin(t*28+(sg>0?Math.PI:0))*.5}
       else if(a.k==='fox'){if(sg>0){rz=.5+Math.sin(t*18)*.45;rx=-Math.PI*.95}else{rz=-.9;rx=-.3}}
       else if(a.k==='bull'){rz=sg*.5;rx=-.3}
+      else if(a.k==='elephant'){rz=sg*1.2+Math.sin(t*10+sg)*.25;rx=-.5}
+      else if(a.k==='penguin'){rz=sg*(1.3+Math.sin(t*30)*.45);rx=0}
+      else if(a.k==='kangaroo'){rz=-sg*.25;rx=-1.5+Math.sin(t*20+(sg>0?Math.PI:0))*.6}
+      else if(a.k==='turtle'){rz=sg*.9+Math.sin(t*14)*.2;rx=-.4}
+      else if(a.k==='crocodile'){rz=-sg*.9;rx=-1.4+Math.sin(t*18)*.25}
+      else if(a.k==='frog'){rz=sg*1.45;rx=-.3+Math.sin(t*16+sg)*.3}
+      else if(a.k==='rabbit'){if(sg>0){rz=-.6;rx=-2.2+Math.sin(t*24)*.15}else{rz=-.4;rx=-.4}}
       else{rz=-sg*.75;rx=-1.75+Math.sin(t*22)*.1}}
     else if(a.cheer||a.relief>0||a.shock>0||du){rz=sg*(.5+Math.sin(G.t*14+sg)*.25);rx=-Math.PI*.92}
     else if(a.mood==='scared'){rz=sg*.3;rx=-2.3-Math.sin(ph*1.5)*.5}
     const am=M4.mulN(body,M4.T(sg*R.ax,R.ay,.06),M4.RZ(rz),M4.RX(rx));E.draw(F.arm,am,op);sh.push([BLOB,M4.mulN(am,M4.T(0,-.3,0),M4.S(.17,.34,.17))])}
+  if(a.tg){const o=G.animals[a.tg.to],u=1-a.tg.t/.3,ext=Math.min(1,Math.sin(Math.PI*u)*1.6),p=M4.pt(head,[.12,1.05,.62]),q=[o.p[0],o.y+1.15*o.sc,o.p[1]],
+      dx=q[0]-p[0],dy=q[1]-p[1],dz=q[2]-p[2],L=Math.hypot(dx,dy,dz)*ext,hz=Math.hypot(dx,dz);
+    if(L>.05){const m=M4.mulN(M4.T(p[0],p[1],p[2]),M4.RY(Math.atan2(dx,dz)),M4.RX(-Math.atan2(dy,hz)));E.draw(tongueM,M4.mul(m,M4.S(.075,.075,L)),op);E.draw(tongueTip,M4.mulN(m,M4.T(0,0,L),M4.S(.15)),op)}}
 }
 function txt(s,x,y,size,fill,sw){g.font=(LIL?'400 ':'900 ')+size+'px '+FONT;g.textAlign='center';g.textBaseline='middle';g.lineJoin='round';
   if(sw!==0){g.lineWidth=size*(sw||.2);g.strokeStyle='#14060c';g.strokeText(s,x,y)}g.fillStyle=fill||'#fff';g.fillText(s,x,y)}

@@ -74,9 +74,34 @@
       "lion": 12.6,
       "panda": 11.5,
       "tiger": 13.0,
-      "wolf": 13.4
+      "wolf": 13.4,
+      "elephant": 12.5,
+      "penguin": 12.5,
+      "kangaroo": 12.5,
+      "turtle": 12.5,
+      "crocodile": 12.5,
+      "frog": 12.5,
+      "rabbit": 12.5
     },
-    "_winOdds_help": "chances naturelles de victoire mesurees sur 4000 parties (13/11/2026) ; le gagnant de chaque video 3D est tire au sort avec ces chances"
+    "_winOdds_help": "chances naturelles de victoire mesurees sur 4000 parties (13/11/2026) ; le gagnant de chaque video 3D est tire au sort avec ces chances",
+    "pool": [
+      "lion",
+      "tiger",
+      "bear",
+      "wolf",
+      "gorilla",
+      "fox",
+      "bull",
+      "panda",
+      "elephant",
+      "penguin",
+      "kangaroo",
+      "turtle",
+      "crocodile",
+      "frog",
+      "rabbit"
+    ],
+    "rosterNote": "animals = the 8 that play (frozen in each video's plan). Any 8 of pool; balanced so each wins ~1/8 in any team (tested 13/11/2026)."
   },
   "qc": {
     "width": 1080,

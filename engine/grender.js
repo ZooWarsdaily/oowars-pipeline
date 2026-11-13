@@ -15,7 +15,7 @@ const ARGS=['--no-sandbox','--use-angle=swiftshader','--enable-unsafe-swiftshade
 (async()=>{
   let seed=process.argv[2]||'auto';const outFile=process.argv[3]||'out.mp4',fps=+(process.argv[4]||30),skip=Math.round(60/fps);
   const pick=v=>v&&v!=='any'?v:null,winner=pick(process.argv[5]),theme=pick(process.argv[6]),rs=process.argv[7]==='full'?1:0.6667,PARTS=+(process.env.PARTS||2);
-  const srv=await serve(),url='http://localhost:'+srv.address().port+'/index.html?rs='+rs+(process.env.STANDING?'&st='+encodeURIComponent(process.env.STANDING):''),t0=Date.now();
+  const srv=await serve(),url='http://localhost:'+srv.address().port+'/index.html?rs='+rs+(process.env.STANDING?'&st='+encodeURIComponent(process.env.STANDING):'')+(process.env.ROSTER?'&roster='+encodeURIComponent(process.env.ROSTER):''),t0=Date.now();
   const open=async()=>{const b=await chromium.launch({executablePath:'/usr/bin/google-chrome',args:ARGS});const p=await b.newPage({viewport:{width:600,height:1000}});
     await p.route(/googleapis|gstatic/,r=>r.abort());await p.goto(url);
     let m='loading';for(let i=0;i<150&&m==='loading';i++){m=await p.evaluate(()=>HP.musicReady());if(m==='loading')await p.waitForTimeout(200)}

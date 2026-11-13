@@ -9,7 +9,7 @@ html,body{margin:0;background:#0d1f17}canvas{width:540px;height:960px;display:bl
 // Weekly standings video (1080x1920). draw(t) is a pure function of the time t (s) and window.DATA, so frames
 // can be rendered one by one. DATA = {season, weekLabel, weekTable:[{animal,weekWins}], table:[{animal,wins}], cta}
 const cv = document.getElementById('cv'), g = cv.getContext('2d'), W = 1080, H = 1920;
-const COL = { lion: '#f5b82e', tiger: '#f08a24', bear: '#b9773e', wolf: '#9aa7c7', gorilla: '#8f7ad6', fox: '#ee6a2c', bull: '#e0624e', panda: '#e8e8e8', elephant: '#8fa7b8', penguin: '#4b6a8f' };
+const COL = { lion: '#f5b82e', tiger: '#f08a24', bear: '#b9773e', wolf: '#9aa7c7', gorilla: '#8f7ad6', fox: '#ee6a2c', bull: '#e0624e', panda: '#e8e8e8', elephant: '#a9c4d6', penguin: '#7fd0ff', kangaroo: '#f0a868', turtle: '#d9b06a', crocodile: '#5fbf5a', frog: '#7dff5a', rabbit: '#ffd6e6' };
 const IMG = {}; let ready = 0;
 window.loadImages = names => Promise.all(names.map(n => new Promise(ok => { const i = new Image(); i.onload = () => { IMG[n] = i; ok(); }; i.onerror = ok; i.src = 'assets/' + n + '.png'; })));
 const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));

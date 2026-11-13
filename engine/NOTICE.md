@@ -4,7 +4,18 @@ Cette notice permet à n'importe quelle conversation du projet de fabriquer des 
 
 ## Le jeu
 
-8 animaux-personnages (lion, tiger, bear, wolf, gorilla, fox, bull, panda), chacun avec son accessoire, sa façon de jouer et son geste. Ils courent sur un plateau suspendu. Celui qui porte la bombe doit toucher un autre animal pour la lui passer, et le porteur explose quand la mèche arrive au bout. Il y a 7 explosions et un seul gagnant. Une partie dure environ 64 s.
+8 animaux-personnages par partie, choisis parmi 15, chacun avec son accessoire, sa façon de jouer et son geste. L'équipe par défaut est lion, tiger, bear, wolf, gorilla, fox, bull, panda. Une autre équipe se passe par l'adresse : `index.html?roster=elephant,penguin,kangaroo,turtle,crocodile,frog,rabbit,panda` (8 animaux différents, sinon l'équipe par défaut). Pour les vidéos, la variable `ROSTER` de `grender.js` fait la même chose.
+
+Les 7 animaux ajoutés le 13/11/2026 :
+- **Elephant** (The Wall) : lent, mais touche de loin avec sa trompe.
+- **Penguin** (The Slider) : glisse sur le ventre en ligne droite et tourne mal.
+- **Kangaroo** (The Hopper) : avance par bonds et saute par-dessus les rochers.
+- **Turtle** (The Shell) : une fois par bombe, se cache 2 s dans sa carapace. Pendant ce temps, il est intouchable et immobile.
+- **Crocodile** (The Ambusher) : guette près des rochers et bondit à ras du sol sur sa proie.
+- **Frog** (The Tongue) : passe la bombe à distance avec sa langue.
+- **Rabbit** (The Zigzag) : fuit en zigzag très vite, mais s'essouffle.
+
+Équilibre mesuré sur 4 000 parties avec des équipes tirées au hasard parmi les 15 : chaque animal gagne entre 11,4 % et 13,9 % des parties qu'il joue. L'équipe par défaut joue exactement comme avant. Ils courent sur un plateau suspendu. Celui qui porte la bombe doit toucher un autre animal pour la lui passer, et le porteur explose quand la mèche arrive au bout. Il y a 7 explosions et un seul gagnant. Une partie dure environ 64 s.
 
 Quatre décors : volcano, ice, jungle, space. Tout le texte à l'écran est en anglais. La photo d'équipe « PICK YOUR ANIMAL! » ouvre la partie, et la question de fin invite à commenter.
 

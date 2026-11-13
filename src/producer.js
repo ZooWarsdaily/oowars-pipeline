@@ -14,8 +14,10 @@ const AG = 'producer';
 const cfg = L.config();
 
 // ---------- plan ----------
+// the 8 animals of a 3D video: frozen in the plan (older plans: the original 8)
+function rosterOf(v) { return (v.plan && v.plan.roster) || ['lion', 'tiger', 'bear', 'wolf', 'gorilla', 'fox', 'bull', 'panda']; }
 function drawWinner() {
-  const odds = cfg.production.winOdds || {}, a = cfg.production.animals, w = a.map(x => odds[x] || 1), tot = w.reduce((p, q) => p + q, 0);
+  const odds = cfg.production.winOdds || {}, a = cfg.production.animals, w = a.map(x => odds[x] || 12.5), tot = w.reduce((p, q) => p + q, 0);
   let r = crypto.randomBytes(4).readUInt32BE(0) / 2 ** 32 * tot;
   for (let i = 0; i < a.length; i++) { r -= w[i]; if (r < 0) return a[i]; }
   return a[a.length - 1];
@@ -53,7 +55,7 @@ function plan(date) {
         || cfg.production.animals.sort((a, b) => wc[a] - wc[b])[0];
       // natural winners (owner's choice, 13/11/2026): the simulation decides who wins, the best game is kept whoever wins
       const theme = cfg.production.themes.filter(t => !sameDay.some(v => v.plan.theme === t)).sort((a, b) => tc[a] - tc[b] || Math.random() - .5)[0];
-      reg.videos[id] = { id, date, slot: s, time: sl.time, game: cfg.production.game, status: 'planned', plan: { winner, theme }, posts: {}, history: [{ at: L.nowParisISO(), to: 'planned' }] };
+      reg.videos[id] = { id, date, slot: s, time: sl.time, game: cfg.production.game, status: 'planned', plan: { winner, theme, roster: cfg.production.animals.slice() }, posts: {}, history: [{ at: L.nowParisISO(), to: 'planned' }] };
       L.log(AG, `planned ${id}`, { slot: sl.time, theme, winner: cfg.production.naturalWinners ? 'random draw' : winner });
     }
     return ids;
@@ -95,7 +97,9 @@ async function select(id) {
   const { chromium } = require('/opt/npm-tools/node_modules/playwright');
   const srv = await serve(), br = await chromium.launch({ executablePath: '/usr/bin/google-chrome', args: ['--no-sandbox', '--use-angle=swiftshader', '--enable-unsafe-swiftshader'] });
   const p = await br.newPage(); await p.route(/googleapis|gstatic/, r => r.abort());
-  await p.goto(`http://localhost:${srv.address().port}/index.html`); await p.waitForFunction(() => typeof createGame === 'function');
+  await p.goto(`http://localhost:${srv.address().port}/index.html?roster=${rosterOf(v).join(',')}`); await p.waitForFunction(() => typeof createGame === 'function');
+  const okRoster = await p.evaluate(r => KINDS.join(',') === r, rosterOf(v).join(','));
+  if (!okRoster) { await br.close(); srv.close(); L.die(`${id}: the game refused the roster ${rosterOf(v).join(',')}`); }
   const N = cfg.production.candidatesPerVideo, base = crypto.randomBytes(4).readUInt32BE(0), isVoid = v.plan.theme === 'space';
   const seeds = Array.from({ length: N }, (_, i) => (base + i * 2654435761) >>> 0).filter(s => !used.has(s));
   const t0 = Date.now(); let res = [];
@@ -137,7 +141,7 @@ function render(id) {
       ? spawn('node', [path.join(L.P.root, 'engine2d/render2d.js'), 'render', v.plan.theme, String(v.selection.seed), out, String(cfg.production.fps)], { cwd: path.join(L.P.root, 'engine2d') })
       : v.game === 'standings'
       ? spawn('node', [path.join(L.P.root, 'standings/render-standings.js'), id, out, String(cfg.production.fps)], { cwd: path.join(L.P.root, 'standings') })
-      : spawn('node', [path.join(L.P.engine, 'grender.js'), String(v.selection.seed), out, String(cfg.production.fps), v.plan.winner || v.selection.metrics.winner, v.plan.theme, cfg.production.quality], { cwd: L.P.engine, env: { ...process.env, GAME: DIST, STANDING: standingLine(v) } });
+      : spawn('node', [path.join(L.P.engine, 'grender.js'), String(v.selection.seed), out, String(cfg.production.fps), v.plan.winner || v.selection.metrics.winner, v.plan.theme, cfg.production.quality], { cwd: L.P.engine, env: { ...process.env, GAME: DIST, STANDING: standingLine(v), ROSTER: rosterOf(v).join(',') } });
     let done = null, buf = '';
     const eat = d => { buf += d; const lines = buf.split('\n'); buf = lines.pop(); for (const l of lines) { if (l.startsWith('DONE')) done = l; if (/frame|DONE|MUSIC|NO GAME|seed/.test(l)) L.log(AG, `${id} | ${l.slice(0, 300)}`); } };
     ch.stdout.on('data', eat); ch.stderr.on('data', eat);
