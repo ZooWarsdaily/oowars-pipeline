@@ -1,0 +1,38 @@
+{
+  "id": "ZW-20261116-3",
+  "game": "Color War",
+  "publishDate": "2026-11-16",
+  "slot": 3,
+  "time": "16:00",
+  "timezone": "Europe/Paris",
+  "seed": 3507600052,
+  "winner": "Gorilla",
+  "highlights": {
+    "eliminations": 5,
+    "finalMargin": null,
+    "videoSeconds": 66.9,
+    "score": 15,
+    "gamesPreviewed": 6
+  },
+  "file": {
+    "name": "ZW-20261116-3.mp4",
+    "at": "2026-11-13T22:25:00+01:00",
+    "ok": true,
+    "problems": [],
+    "duration": 66.87,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "sizeMB": 10.62,
+    "sha256": "e8f098553913d79bee8939d4c0777a0cab937d19ce4a90dc5774d473af5aa3e2",
+    "luminance": [
+      95.7,
+      89.1,
+      83.9,
+      83.7,
+      27
+    ]
+  }
+}
