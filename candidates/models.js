@@ -8,7 +8,7 @@ const CAND = {
   kangaroo: { n: 'KANGAROO', nick: 'THE HOPPER', c: '#f0a868', size: 1.1, rig: { hs: 1.04, ax: .5, ay: 1.02, fx: .26, iris: '#6a3a14', brow: '#5a2e10' } },
   turtle: { n: 'TURTLE', nick: 'THE SHELL', c: '#d9b06a', size: .94, rig: { hs: 1.06, ax: .66, ay: .96, fx: .32, iris: '#2f6a1e', brow: '#2c4a1c' } },
   crocodile: { n: 'CROCODILE', nick: 'THE AMBUSHER', c: '#5fbf5a', size: 1.06, rig: { hs: 1.0, ax: .6, ay: 1.0, fx: .3, iris: '#e8c81a', brow: '#1f4a1a' } },
-  frog: { n: 'FROG', nick: 'THE TONGUE', c: '#b8f05a', size: .88, rig: { hs: 1.16, ax: .56, ay: .96, fx: .3, iris: '#d8a010', brow: '#2c6a1c' } },
+  frog: { n: 'FROG', nick: 'THE TONGUE', c: '#7dff5a', size: .9, rig: { hs: 1.18, ax: .58, ay: .96, fx: .3, iris: '#ff8a00', brow: '#1f6a1c' } },
   rabbit: { n: 'RABBIT', nick: 'THE ZIGZAG', c: '#ffd6e6', size: .9, rig: { hs: 1.1, ax: .5, ay: 1.0, fx: .22, iris: '#c0306a', brow: '#9a8a84' } },
 };
 function candidateFigure(k) {
@@ -20,12 +20,12 @@ function candidateFigure(k) {
   if (k === 'elephant') { const B = '#93abbd', L = '#c4d4df', P = '#f2a9b6', N = '#24407a';
     m.s('sphere', 0, .64, 0, .7, .64, .6, B).s('sphere', 0, .55, .26, .48, .44, .38, L);
     chain(m, [[0, .5, -.6, .09], [0, .42, -.72, .07]], B); m.s('sphere', 0, .36, -.8, .08, .1, .08, '#4f6272');
-    h.s('sphere', 0, 1.38, .02, .62, .54, .54, B);
+    h.s('sphere', 0, 1.38, -.06, .62, .54, .48, B);
     for (const s of [-1, 1]) { h.s('sphere', s * .72, 1.42, -.06, .42, .46, .1, B, 0, M4.RY(s * .5)).s('sphere', s * .74, 1.42, -.02, .3, .34, .06, P, 0, M4.RY(s * .5));
       h.add(PRIM.cone, M4.mulN(M4.T(s * .2, 1.06, .5), M4.RX(1.9), M4.RZ(s * .3), M4.S(.06, .26, .06)), '#fff8e8'); }
-    chain(h, [[0, 1.3, .5, .19], [0, 1.18, .62, .16], [0, 1.04, .7, .14], [0, .92, .74, .12], [0, .84, .78, .11], [0, .8, .86, .1], [0, .82, .94, .095]], B);
+    chain(h, [[0, 1.26, .44, .19], [0, 1.16, .6, .16], [0, 1.04, .7, .14], [0, .92, .74, .12], [0, .84, .78, .11], [0, .8, .86, .1], [0, .82, .94, .095]], B);
     h.s('sphere', 0, .86, 1.0, .09, .06, .05, '#7d93a4');
-    h.s('cyl', 0, 1.86, -.02, .44, .14, .42, N).s('cyl', 0, 1.94, -.02, .4, .05, .38, '#ffffff').s('box', 0, 1.8, .38, .3, .04, .18, N, 0, M4.RX(.15)).s('sphere', 0, 1.88, .38, .06, .06, .03, '#f2c21a', .3);
+    h.s('cyl', 0, 1.9, -.08, .44, .14, .42, N).s('cyl', 0, 1.98, -.08, .4, .05, .38, '#ffffff').s('box', 0, 1.84, .3, .3, .04, .16, N, 0, M4.RX(.25)).s('sphere', 0, 1.93, .32, .06, .06, .03, '#f2c21a', .3);
     blush(); arm.s('sphere', 0, -.28, 0, .2, .34, .21, B).s('cyl', 0, -.58, 0, .18, .1, .19, L); foot.s('cyl', 0, -.02, .04, .26, .16, .28, B).s('sphere', 0, .0, .26, .2, .08, .06, L);
   } else if (k === 'penguin') { const B = '#1f2733', W = '#f7f8fa', O = '#ff9a1e', R2 = '#e0303c';
     m.s('sphere', 0, .62, 0, .56, .64, .5, B).s('sphere', 0, .56, .2, .44, .54, .36, W);
@@ -69,20 +69,28 @@ function candidateFigure(k) {
     for (let i = 0; i < 6; i++) for (const s of [-1, 1]) h.add(PRIM.cone, M4.mulN(M4.T(s * (.31 - i * .035), 1.06 - i * .015, .32 + i * .11), M4.RX(PI), M4.S(.035, .09, .035)), T);
     h.s('box', 0, 1.98, .02, .5, .09, .06, '#141414', 0, M4.RX(-.6)).s('sphere', -.14, 1.98, .06, .13, .09, .03, '#ff8a1e', .2, M4.RX(-.6)).s('sphere', .14, 1.98, .06, .13, .09, .03, '#ff8a1e', .2, M4.RX(-.6));
     arm.s('sphere', 0, -.26, 0, .16, .3, .17, B).s('sphere', 0, -.52, 0, .15, .1, .16, D); foot.s('sphere', 0, 0, .12, .22, .12, .34, D);
-  } else if (k === 'frog') { const B = '#86e03a', L = '#fff3a0', D = '#4aa82a', P = '#ff7ab0';
-    m.s('sphere', 0, .56, 0, .62, .56, .54, B).s('sphere', 0, .5, .24, .46, .44, .34, L);
-    for (const [x, y, z] of [[-.4, .8, -.3], [.3, .6, -.42], [-.1, 1.0, -.36], [.44, .9, -.1]]) m.s('sphere', x, y, z, .12, .1, .06, '#ff9a2a');
-    h.s('sphere', 0, 1.32, .04, .66, .44, .52, B);
-    for (const s of [-1, 1]) h.s('sphere', s * .22, 1.58, .22, .24, .24, .22, B);
-    h.s('sphere', 0, 1.16, .38, .4, .12, .22, L);
-    h.s('cyl', .08, 1.92, .0, .4, .03, .4, '#3f9a3a').s('sphere', .26, 1.98, .1, .1, .08, .1, P).s('sphere', .26, 2.02, .1, .05, .05, .05, '#ffd23f', .2);
-    arm.s('sphere', 0, -.26, 0, .14, .3, .15, B).s('sphere', 0, -.52, .04, .16, .07, .18, D); foot.s('sphere', 0, 0, .16, .26, .08, .36, D);
+  } else if (k === 'frog') { const B = '#3fd23a', L = '#ffe86a', D = '#1f8a2a', P = '#ff4f8a', T = '#ff5a7a';
+    m.s('sphere', 0, .56, 0, .64, .56, .56, B).s('sphere', 0, .5, .26, .48, .44, .34, L);
+    for (const [x, y, z] of [[-.42, .8, -.28], [.32, .62, -.44], [-.08, 1.0, -.38], [.46, .92, -.1], [-.3, .4, -.48]]) m.s('sphere', x, y, z, .13, .11, .07, '#ff8a00');
+    m.s('cyl', 0, .96, .02, .5, .08, .48, '#ffffff').s('cyl', 0, .96, .02, .51, .03, .49, '#e0303c');
+    m.s('box', 0, .96, .5, .12, .1, .06, '#e0303c');
+    h.s('sphere', 0, 1.28, .04, .76, .4, .54, B);
+    for (const s of [-1, 1]) h.s('sphere', s * .22, 1.5, .2, .27, .27, .24, B).s('sphere', s * .22, 1.5, .26, .24, .24, .2, '#ffffff');
+    h.s('sphere', 0, 1.14, .4, .44, .12, .2, L);
+    h.s('sphere', .16, 1.06, .62, .09, .16, .04, T, 0, M4.RZ(-.2)).s('sphere', .17, .94, .63, .08, .06, .04, T);
+    h.s('cyl', .06, 1.8, -.06, .42, .03, .42, '#2fa83a').s('sphere', .3, 1.88, .06, .14, .1, .14, P).s('sphere', .3, 1.93, .06, .06, .06, .06, '#ffd23f', .3).s('sphere', -.2, 1.84, .16, .06, .06, .06, '#7ad8ff', .3);
+    blush();
+    arm.s('sphere', 0, -.26, 0, .14, .3, .15, B).s('sphere', 0, -.52, .04, .17, .07, .19, D); foot.s('sphere', 0, 0, .18, .28, .08, .38, D);
   } else if (k === 'rabbit') { const B = '#ece6df', L = '#ffffff', P = '#ff9ab6', O = '#ff6a2a';
     m.s('sphere', 0, .62, 0, .5, .6, .46, B).s('sphere', 0, .54, .2, .34, .42, .3, L).s('sphere', 0, .48, -.52, .2, .2, .2, L);
     h.s('sphere', 0, 1.38, .04, .56, .5, .5, B);
     for (const s of [-1, 1]) h.s('sphere', s * .2, 2.1, -.04, .13, .5, .09, B, 0, M4.RZ(-s * .14)).s('sphere', s * .2, 2.1, .02, .07, .38, .05, P, 0, M4.RZ(-s * .14));
     h.s('sphere', 0, 1.24, .42, .26, .18, .2, L); nose(1.33, .62, .07, .05, P);
     for (const s of [-1, 1]) h.s('box', s * .04, 1.08, .58, .07, .1, .03, '#ffffff');
+    // carrot: the tip in the mouth, the thick end and its leaves out to the side
+    h.add(PRIM.cone, M4.mulN(M4.T(.36, 1.06, .64), M4.RZ(PI / 2 + .3), M4.S(.14, .6, .14)), '#ff8a1e');
+    for (let i = 0; i < 3; i++) h.s('sphere', .22 + i * .14, 1.04 - i * .04, .64 + .01, .015, .1 - i * .02, .1 - i * .02, '#d8661a', 0, M4.RZ(.3));
+    for (const t of [-.45, 0, .45]) h.s('sphere', .72, 1.0 + t * .1, .64, .045, .2, .045, '#3fa83a', 0, M4.RZ(-.9 + t));
     blush();
     arm.s('sphere', 0, -.26, 0, .13, .3, .14, B).s('sphere', 0, -.5, 0, .13, .11, .14, L);
     foot.s('sphere', 0, .0, .12, .2, .13, .34, O).s('sphere', 0, -.07, .12, .21, .05, .35, '#ffffff').s('box', 0, .05, .2, .14, .02, .1, '#ffffff');
