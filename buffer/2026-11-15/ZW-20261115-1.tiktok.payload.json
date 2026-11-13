@@ -1,0 +1,18 @@
+{
+  "channelId": "6af60dc162b70b94b00d05a1",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "dueAt": "2026-11-15T12:30:00+01:00",
+  "text": "This bomb changed hands way too fast 😳\nHot potato battle on a floating volcano.\n\nDid you guess the winner?\n\n#zoowars #hotpotato #simulation #whowouldwin #satisfying",
+  "assets": [
+    {
+      "video": {
+        "url": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-15/ZW-20261115-1.mp4",
+        "metadata": {
+          "thumbnailOffset": 3000
+        }
+      }
+    }
+  ],
+  "metadata": {}
+}

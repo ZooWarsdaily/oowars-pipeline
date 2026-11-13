@@ -1087,7 +1087,7 @@
       "slot": 1,
       "time": "12:30",
       "game": "hot-potato-3d",
-      "status": "validated",
+      "status": "scheduled",
       "plan": {
         "winner": "bear",
         "theme": "volcano",
@@ -1102,7 +1102,30 @@
           "panda"
         ]
       },
-      "posts": {},
+      "posts": {
+        "tiktok": {
+          "status": "scheduled",
+          "dueAt": "2026-11-15T11:30:00.000Z",
+          "payload": "buffer/2026-11-15/ZW-20261115-1.tiktok.payload.json",
+          "mode": "live",
+          "at": "2026-11-13T21:37:04+01:00",
+          "bufferPostId": "6af7750578196a0a971c4036",
+          "bufferStatus": "scheduled",
+          "recordedAt": "2026-11-13T21:37:38+01:00",
+          "simulated": false
+        },
+        "youtube": {
+          "status": "scheduled",
+          "dueAt": "2026-11-15T11:30:00.000Z",
+          "payload": "buffer/2026-11-15/ZW-20261115-1.youtube.payload.json",
+          "mode": "live",
+          "at": "2026-11-13T21:37:04+01:00",
+          "bufferPostId": "6af775069257ce33980c97f3",
+          "bufferStatus": "scheduled",
+          "recordedAt": "2026-11-13T21:37:38+01:00",
+          "simulated": false
+        }
+      },
       "history": [
         {
           "at": "2026-11-13T20:44:52+01:00",
@@ -1119,6 +1142,18 @@
           "from": "produced",
           "to": "validated",
           "note": "qc ok"
+        },
+        {
+          "at": "2026-11-13T21:36:51+01:00",
+          "from": "validated",
+          "to": "uploaded",
+          "note": "git blob ok (229b4a7557)"
+        },
+        {
+          "at": "2026-11-13T21:37:38+01:00",
+          "from": "uploaded",
+          "to": "scheduled",
+          "note": "tiktok 6af7750578196a0a971c4036 / youtube 6af775069257ce33980c97f3"
         }
       ],
       "selection": {
@@ -1220,7 +1255,19 @@
         ]
       },
       "approvedFile": "approved/2026-11-15/ZW-20261115-1.mp4",
-      "fiche": "approved/2026-11-15/ZW-20261115-1.json"
+      "fiche": "approved/2026-11-15/ZW-20261115-1.json",
+      "publicUrl": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-15/ZW-20261115-1.mp4",
+      "uploadCheck": "git blob ok (229b4a7557)",
+      "captions": {
+        "tiktok": {
+          "text": "This bomb changed hands way too fast 😳\nHot potato battle on a floating volcano.\n\nDid you guess the winner?\n\n#zoowars #hotpotato #simulation #whowouldwin #satisfying"
+        },
+        "youtube": {
+          "title": "The Bomb Keeps Moving… Who Survives?",
+          "text": "The bomb drops, the chase begins on a floating volcano. Seven explosions, one survivor.\nDid your pick make it to the final duel?\n\n#shorts #zoowars #hotpotato #simulation"
+        },
+        "at": "2026-11-13T21:36:51+01:00"
+      }
     },
     "ZW-20261115-2": {
       "id": "ZW-20261115-2",
@@ -1228,7 +1275,7 @@
       "slot": 2,
       "time": "19:00",
       "game": "hot-potato-3d",
-      "status": "validated",
+      "status": "scheduled",
       "plan": {
         "winner": "bull",
         "theme": "space",
@@ -1243,7 +1290,30 @@
           "panda"
         ]
       },
-      "posts": {},
+      "posts": {
+        "tiktok": {
+          "status": "scheduled",
+          "dueAt": "2026-11-15T18:00:00.000Z",
+          "payload": "buffer/2026-11-15/ZW-20261115-2.tiktok.payload.json",
+          "mode": "live",
+          "at": "2026-11-13T21:37:04+01:00",
+          "bufferPostId": "6af7750778196a0a971c4093",
+          "bufferStatus": "scheduled",
+          "recordedAt": "2026-11-13T21:37:38+01:00",
+          "simulated": false
+        },
+        "youtube": {
+          "status": "scheduled",
+          "dueAt": "2026-11-15T18:00:00.000Z",
+          "payload": "buffer/2026-11-15/ZW-20261115-2.youtube.payload.json",
+          "mode": "live",
+          "at": "2026-11-13T21:37:04+01:00",
+          "bufferPostId": "6af7750881e1228421c17063",
+          "bufferStatus": "scheduled",
+          "recordedAt": "2026-11-13T21:37:38+01:00",
+          "simulated": false
+        }
+      },
       "history": [
         {
           "at": "2026-11-13T20:44:52+01:00",
@@ -1260,6 +1330,18 @@
           "from": "produced",
           "to": "validated",
           "note": "qc ok"
+        },
+        {
+          "at": "2026-11-13T21:36:52+01:00",
+          "from": "validated",
+          "to": "uploaded",
+          "note": "git blob ok (4d07016373)"
+        },
+        {
+          "at": "2026-11-13T21:37:38+01:00",
+          "from": "uploaded",
+          "to": "scheduled",
+          "note": "tiktok 6af7750778196a0a971c4093 / youtube 6af7750881e1228421c17063"
         }
       ],
       "selection": {
@@ -1361,7 +1443,19 @@
         ]
       },
       "approvedFile": "approved/2026-11-15/ZW-20261115-2.mp4",
-      "fiche": "approved/2026-11-15/ZW-20261115-2.json"
+      "fiche": "approved/2026-11-15/ZW-20261115-2.json",
+      "publicUrl": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-15/ZW-20261115-2.mp4",
+      "uploadCheck": "git blob ok (4d07016373)",
+      "captions": {
+        "tiktok": {
+          "text": "Hot potato, but the potato explodes 💥\nHot potato battle in outer space.\n\nRate this final from 1 to 10 👇\n\n#zoowars #hotpotato #animalbattle #whowouldwin #simulation"
+        },
+        "youtube": {
+          "title": "Animal Hot Potato Battle – Last One Standing Wins",
+          "text": "The bomb drops, the chase begins in outer space. Seven explosions, one survivor.\nWho did you pick? Tell us in the comments!\n\n#shorts #zoowars #hotpotato #animalbattle"
+        },
+        "at": "2026-11-13T21:36:52+01:00"
+      }
     },
     "ZW-20261115-3": {
       "id": "ZW-20261115-3",
@@ -1369,12 +1463,35 @@
       "slot": 3,
       "time": "16:00",
       "game": "arena2d",
-      "status": "validated",
+      "status": "scheduled",
       "plan": {
         "winner": null,
         "theme": "hot"
       },
-      "posts": {},
+      "posts": {
+        "tiktok": {
+          "status": "scheduled",
+          "dueAt": "2026-11-15T15:00:00.000Z",
+          "payload": "buffer/2026-11-15/ZW-20261115-3.tiktok.payload.json",
+          "mode": "live",
+          "at": "2026-11-13T21:37:04+01:00",
+          "bufferPostId": "6af77509bb36d00909c82ced",
+          "bufferStatus": "scheduled",
+          "recordedAt": "2026-11-13T21:37:38+01:00",
+          "simulated": false
+        },
+        "youtube": {
+          "status": "scheduled",
+          "dueAt": "2026-11-15T15:00:00.000Z",
+          "payload": "buffer/2026-11-15/ZW-20261115-3.youtube.payload.json",
+          "mode": "live",
+          "at": "2026-11-13T21:37:04+01:00",
+          "bufferPostId": "6af7750a78196a0a971c4116",
+          "bufferStatus": "scheduled",
+          "recordedAt": "2026-11-13T21:37:38+01:00",
+          "simulated": false
+        }
+      },
       "history": [
         {
           "at": "2026-11-13T20:44:52+01:00",
@@ -1391,6 +1508,18 @@
           "from": "produced",
           "to": "validated",
           "note": "qc ok"
+        },
+        {
+          "at": "2026-11-13T21:36:52+01:00",
+          "from": "validated",
+          "to": "uploaded",
+          "note": "git blob ok (e02c2b73ba)"
+        },
+        {
+          "at": "2026-11-13T21:37:38+01:00",
+          "from": "uploaded",
+          "to": "scheduled",
+          "note": "tiktok 6af77509bb36d00909c82ced / youtube 6af7750a78196a0a971c4116"
         }
       ],
       "selection": {
@@ -1453,7 +1582,19 @@
         ]
       },
       "approvedFile": "approved/2026-11-15/ZW-20261115-3.mp4",
-      "fiche": "approved/2026-11-15/ZW-20261115-3.json"
+      "fiche": "approved/2026-11-15/ZW-20261115-3.json",
+      "publicUrl": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-15/ZW-20261115-3.mp4",
+      "uploadCheck": "git blob ok (e02c2b73ba)",
+      "captions": {
+        "tiktok": {
+          "text": "Tag, run, explode 💥\n\nWho deserved to win?\n\n#zoowars #hotpotato #animalbattle #whowouldwin #simulation"
+        },
+        "youtube": {
+          "title": "Animal Hot Potato – Run From the Bomb",
+          "text": "The bomb keeps changing hands until only one animal is left standing.\nNew Zoo Wars battle every day.\n\n#shorts #zoowars #hotpotato #animalbattle"
+        },
+        "at": "2026-11-13T21:36:52+01:00"
+      }
     }
   },
   "captionsUsed": [
@@ -1492,7 +1633,23 @@
     "2h|Watch the map change hands 👀",
     "ttq|Which animal are you rooting for next time?",
     "2t|Paint the Map! Animal Territory War",
-    "yte|Comment your animal for the next battle!"
+    "yte|Comment your animal for the next battle!",
+    "tt|This bomb changed hands way too fast 😳|Did you guess the winner?",
+    "tth|This bomb changed hands way too fast 😳",
+    "ttq|Did you guess the winner?",
+    "yt|The Bomb Keeps Moving… Who Survives?|The bomb drops, the chase begins {theme}. Seven explosions, one survivor.",
+    "ytt|The Bomb Keeps Moving… Who Survives?",
+    "yte|Did your pick make it to the final duel?",
+    "tt|Hot potato, but the potato explodes 💥|Rate this final from 1 to 10 👇",
+    "tth|Hot potato, but the potato explodes 💥",
+    "ttq|Rate this final from 1 to 10 👇",
+    "yt|Animal Hot Potato Battle – Last One Standing Wins|The bomb drops, the chase begins {theme}. Seven explosions, one survivor.",
+    "ytt|Animal Hot Potato Battle – Last One Standing Wins",
+    "yte|Who did you pick? Tell us in the comments!",
+    "2h|Tag, run, explode 💥",
+    "ttq|Who deserved to win?",
+    "2t|Animal Hot Potato – Run From the Bomb",
+    "yte|New Zoo Wars battle every day."
   ],
-  "updatedAt": "2026-11-13T21:36:18+01:00"
+  "updatedAt": "2026-11-13T21:37:38+01:00"
 }
