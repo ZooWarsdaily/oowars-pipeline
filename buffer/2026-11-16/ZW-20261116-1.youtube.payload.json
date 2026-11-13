@@ -1,0 +1,24 @@
+{
+  "channelId": "6af611d662b70b94b00d5648",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "dueAt": "2026-11-16T12:30:00+01:00",
+  "text": "Zoo Wars simulation on the jungle stage: the bomb carrier has to catch someone before it explodes.\nDid your pick make it to the final duel?\n\n#shorts #zoowars #simulation #hotpotato",
+  "assets": [
+    {
+      "video": {
+        "url": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-16/ZW-20261116-1.mp4",
+        "metadata": {}
+      }
+    }
+  ],
+  "metadata": {
+    "youtube": {
+      "title": "One Bomb, Eight Animals, One Winner",
+      "categoryId": "24",
+      "madeForKids": false,
+      "privacy": "public",
+      "notifySubscribers": true
+    }
+  }
+}

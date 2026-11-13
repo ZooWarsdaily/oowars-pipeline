@@ -1,0 +1,18 @@
+{
+  "channelId": "6af60dc162b70b94b00d05a1",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "dueAt": "2026-11-16T12:30:00+01:00",
+  "text": "Pass it or blow up 💣\nHot potato battle on the jungle stage.\n\nCall your winner in the comments 👇\n\n#zoowars #simulation #hotpotato #animalbattle #whowouldwin",
+  "assets": [
+    {
+      "video": {
+        "url": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-16/ZW-20261116-1.mp4",
+        "metadata": {
+          "thumbnailOffset": 3000
+        }
+      }
+    }
+  ],
+  "metadata": {}
+}

@@ -112,3 +112,24 @@ Require stack:
 2026-11-13T22:24:53+01:00 [producer] ZW-20261116-3: rendered in 2 min
 2026-11-13T22:25:00+01:00 [producer] ZW-20261116-3: VALIDATED (66.87s, 10.62 MB)
 2026-11-13T22:25:00+01:00 [producer] run 2026-11-16 finished: ZW-20261116-1=validated ZW-20261116-2=validated ZW-20261116-3=validated
+2026-11-13T22:27:18+01:00 [orchestrator] ZW-20261116-1: pushed to media branch
+2026-11-13T22:27:18+01:00 [publisher] ZW-20261116-1: uploaded (git blob ok (c34376ca17)) https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-16/ZW-20261116-1.mp4
+2026-11-13T22:27:19+01:00 [publisher] ZW-20261116-1: captions written
+2026-11-13T22:27:27+01:00 [orchestrator] ZW-20261116-2: pushed to media branch
+2026-11-13T22:27:28+01:00 [publisher] ZW-20261116-2: uploaded (git blob ok (a5f60d0a9d)) https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-16/ZW-20261116-2.mp4
+2026-11-13T22:27:28+01:00 [publisher] ZW-20261116-2: captions written
+2026-11-13T22:27:31+01:00 [orchestrator] ZW-20261116-3: pushed to media branch
+2026-11-13T22:27:32+01:00 [publisher] ZW-20261116-3: uploaded (git blob ok (e5c9f66d4b)) https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-16/ZW-20261116-3.mp4
+2026-11-13T22:27:32+01:00 [publisher] ZW-20261116-3: captions written
+2026-11-13T22:27:42+01:00 [publisher] ZW-20261116-1: tiktok payload ready (live)
+2026-11-13T22:27:42+01:00 [publisher] ZW-20261116-1: youtube payload ready (live)
+2026-11-13T22:27:42+01:00 [publisher] ZW-20261116-2: tiktok payload ready (live)
+2026-11-13T22:27:42+01:00 [publisher] ZW-20261116-2: youtube payload ready (live)
+2026-11-13T22:27:42+01:00 [publisher] ZW-20261116-3: tiktok payload ready (live)
+2026-11-13T22:27:43+01:00 [publisher] ZW-20261116-3: youtube payload ready (live)
+2026-11-13T22:28:16+01:00 [publisher] ZW-20261116-1: tiktok confirmed by Buffer, post 6af780e49257ce339810ebd7 (scheduled)
+2026-11-13T22:28:16+01:00 [publisher] ZW-20261116-1: youtube confirmed by Buffer, post 6af780e5bb36d00909cc6347 (scheduled)
+2026-11-13T22:28:16+01:00 [publisher] ZW-20261116-2: tiktok confirmed by Buffer, post 6af780e69257ce339810ec50 (scheduled)
+2026-11-13T22:28:16+01:00 [publisher] ZW-20261116-2: youtube confirmed by Buffer, post 6af780e778196a0a9720a706 (scheduled)
+2026-11-13T22:28:16+01:00 [publisher] ZW-20261116-3: tiktok confirmed by Buffer, post 6af780e84b28296eb117cd43 (scheduled)
+2026-11-13T22:28:16+01:00 [publisher] ZW-20261116-3: youtube confirmed by Buffer, post 6af780e881e1228421c5e1ac (scheduled)
