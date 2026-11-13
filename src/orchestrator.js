@@ -101,7 +101,7 @@ function pruneMedia() {
 }
 
 function save(msg) {
-  git(['add', '-A', 'data', 'reports', 'buffer', 'approved', 'config', 'archives']);
+  git(['add', '-A']); // everything (code included); videos are kept out by .gitignore
   try { git(['commit', '-m', msg || 'zoo wars run ' + L.nowParisISO()]); } catch (e) { console.log('nothing to commit'); }
   if (cfg.mode !== 'test') git(['push', 'origin', 'HEAD']);
   console.log('saved');
