@@ -64,7 +64,19 @@
       "candidates": 6,
       "_help": "1 video 2D par jour, en rotation Territory War / Color War / Hot Potato 2D (Big Eats Small exclu) ; le jeu le moins recemment utilise passe en premier"
     },
-    "_quality_help": "full = 3D rendu a pleine resolution (plus net, environ 24 min par video) ; fast = 2/3 de la resolution puis agrandi (environ 15 min). Choisi : full, le 13/11/2026, pour reduire le flou apres publication."
+    "_quality_help": "full = 3D rendu a pleine resolution (plus net, environ 24 min par video) ; fast = 2/3 de la resolution puis agrandi (environ 15 min). Choisi : full, le 13/11/2026, pour reduire le flou apres publication.",
+    "naturalWinners": true,
+    "winOdds": {
+      "bear": 12.2,
+      "bull": 13.6,
+      "fox": 12.5,
+      "gorilla": 11.3,
+      "lion": 12.6,
+      "panda": 11.5,
+      "tiger": 13.0,
+      "wolf": 13.4
+    },
+    "_winOdds_help": "chances naturelles de victoire mesurees sur 4000 parties (13/11/2026) ; le gagnant de chaque video 3D est tire au sort avec ces chances"
   },
   "qc": {
     "width": 1080,
@@ -101,5 +113,19 @@
     "youtube": "https://studio.youtube.com/channel/UCSpSNPtpl-3rwvnmnQglhoA",
     "tiktok": "https://www.tiktok.com/tiktokstudio/content",
     "_help": "lus en lecture seule par channel-analyst via le navigateur integre (connexion faite par le proprietaire le 12/11/2026)"
+  },
+  "weeklySlots": [
+    {
+      "weekday": 0,
+      "time": "18:00",
+      "game": "standings",
+      "_help": "dimanche 18:00 : video Classement (4e video du dimanche)"
+    }
+  ],
+  "standings": {
+    "season1Start": "2026-11-16",
+    "seasonWeeks": 4,
+    "weekStartsOn": "Monday",
+    "_help": "saisons de 4 semaines a partir du lundi 16/11/2026 ; seules les victoires Hot Potato 3D publiees a partir de cette date comptent ; gagnants choisis par la simulation (plus imposes) depuis le 13/11/2026"
   }
 }

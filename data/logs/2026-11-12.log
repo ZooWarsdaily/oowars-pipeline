@@ -161,3 +161,4 @@
 2026-11-12T22:32:47+01:00 [orchestrator] plan: D+1 2026-11-13 complete | D+2 2026-11-14 complete | D+3 2026-11-15 not complete -> produce nothing
 2026-11-12T22:39:05+01:00 [analytics] snapshot: 23 posts with metrics stored
 2026-11-12T22:39:05+01:00 [analytics] dataset 2026-11-06..2026-11-12: 23 posts this week, 23 in history
+2026-11-13T13:50:26+01:00 [orchestrator] plan: D+1 2026-11-13 complete | D+2 2026-11-14 complete | D+3 2026-11-15 not complete -> produce nothing
