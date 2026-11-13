@@ -1,0 +1,38 @@
+{
+  "id": "ZW-20261115-3",
+  "game": "Hot Potato 2D",
+  "publishDate": "2026-11-15",
+  "slot": 3,
+  "time": "16:00",
+  "timezone": "Europe/Paris",
+  "seed": 3675191823,
+  "winner": "Crocodile",
+  "highlights": {
+    "eliminations": 5,
+    "finalMargin": null,
+    "videoSeconds": 61.4,
+    "score": 15,
+    "gamesPreviewed": 6
+  },
+  "file": {
+    "name": "ZW-20261115-3.mp4",
+    "at": "2026-11-13T21:36:18+01:00",
+    "ok": true,
+    "problems": [],
+    "duration": 61.43,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "sizeMB": 10.27,
+    "sha256": "75895646bff84063f4ec54c8d0fdd48f9ba16cec5529ee5b7b29468d1c311144",
+    "luminance": [
+      34.4,
+      37,
+      39.8,
+      44.1,
+      21
+    ]
+  }
+}

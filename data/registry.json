@@ -1080,6 +1080,380 @@
         },
         "at": "2026-11-12T22:12:26+01:00"
       }
+    },
+    "ZW-20261115-1": {
+      "id": "ZW-20261115-1",
+      "date": "2026-11-15",
+      "slot": 1,
+      "time": "12:30",
+      "game": "hot-potato-3d",
+      "status": "validated",
+      "plan": {
+        "winner": "bear",
+        "theme": "volcano",
+        "roster": [
+          "lion",
+          "tiger",
+          "bear",
+          "wolf",
+          "gorilla",
+          "fox",
+          "bull",
+          "panda"
+        ]
+      },
+      "posts": {},
+      "history": [
+        {
+          "at": "2026-11-13T20:44:52+01:00",
+          "to": "planned"
+        },
+        {
+          "at": "2026-11-13T21:07:08+01:00",
+          "from": "planned",
+          "to": "produced",
+          "note": "render ok"
+        },
+        {
+          "at": "2026-11-13T21:07:24+01:00",
+          "from": "produced",
+          "to": "validated",
+          "note": "qc ok"
+        }
+      ],
+      "selection": {
+        "seed": 348990360,
+        "metrics": {
+          "seed": 348990360,
+          "winner": "bear",
+          "dur": 65.05,
+          "tags": 20,
+          "minTags": 2,
+          "roundTags": [
+            2,
+            2,
+            2,
+            4,
+            3,
+            3,
+            4
+          ],
+          "clutch": 7,
+          "dodges": 19,
+          "finalTags": 4,
+          "finalDur": 8.02,
+          "order": [
+            "bull",
+            "fox",
+            "gorilla",
+            "wolf",
+            "lion",
+            "tiger",
+            "panda"
+          ],
+          "score": 62.98
+        },
+        "simulated": 600,
+        "runnersUp": [
+          {
+            "seed": 545177854,
+            "score": 61.98
+          },
+          {
+            "seed": 588340752,
+            "score": 60.47
+          },
+          {
+            "seed": 1642264258,
+            "score": 60.37
+          }
+        ]
+      },
+      "render": {
+        "file": "production/2026-11-15/ZW-20261115-1.mp4",
+        "seconds": 1273,
+        "info": {
+          "seed": 348990360,
+          "theme": "volcano",
+          "vt": 65.06666666666426,
+          "phase": "win",
+          "tags": 20,
+          "winner": "bear",
+          "order": [
+            "bull",
+            "fox",
+            "gorilla",
+            "wolf",
+            "lion",
+            "tiger",
+            "panda"
+          ],
+          "kinds": [
+            0,
+            0,
+            1,
+            2,
+            2,
+            2,
+            2
+          ]
+        }
+      },
+      "qc": {
+        "at": "2026-11-13T21:07:23+01:00",
+        "ok": true,
+        "problems": [],
+        "duration": 65.07,
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "videoCodec": "h264",
+        "audioCodec": "aac",
+        "sizeMB": 65.94,
+        "sha256": "dd09f82401903f4e0543e4602ddc112759298261223d0a304f8e9980ee673cf7",
+        "luminance": [
+          136.9,
+          142.6,
+          136.8,
+          129.3,
+          129.7
+        ]
+      },
+      "approvedFile": "approved/2026-11-15/ZW-20261115-1.mp4",
+      "fiche": "approved/2026-11-15/ZW-20261115-1.json"
+    },
+    "ZW-20261115-2": {
+      "id": "ZW-20261115-2",
+      "date": "2026-11-15",
+      "slot": 2,
+      "time": "19:00",
+      "game": "hot-potato-3d",
+      "status": "validated",
+      "plan": {
+        "winner": "bull",
+        "theme": "space",
+        "roster": [
+          "lion",
+          "tiger",
+          "bear",
+          "wolf",
+          "gorilla",
+          "fox",
+          "bull",
+          "panda"
+        ]
+      },
+      "posts": {},
+      "history": [
+        {
+          "at": "2026-11-13T20:44:52+01:00",
+          "to": "planned"
+        },
+        {
+          "at": "2026-11-13T21:33:06+01:00",
+          "from": "planned",
+          "to": "produced",
+          "note": "render ok"
+        },
+        {
+          "at": "2026-11-13T21:33:20+01:00",
+          "from": "produced",
+          "to": "validated",
+          "note": "qc ok"
+        }
+      ],
+      "selection": {
+        "seed": 2013994764,
+        "metrics": {
+          "seed": 2013994764,
+          "winner": "bull",
+          "dur": 65.95,
+          "tags": 22,
+          "minTags": 2,
+          "roundTags": [
+            3,
+            2,
+            2,
+            4,
+            3,
+            3,
+            5
+          ],
+          "clutch": 6,
+          "dodges": 20,
+          "finalTags": 5,
+          "finalDur": 7.95,
+          "order": [
+            "bear",
+            "lion",
+            "wolf",
+            "gorilla",
+            "tiger",
+            "panda",
+            "fox"
+          ],
+          "score": 63.52
+        },
+        "simulated": 600,
+        "runnersUp": [
+          {
+            "seed": 1056593196,
+            "score": 63.44
+          },
+          {
+            "seed": 2831711496,
+            "score": 63.29
+          },
+          {
+            "seed": 1457209873,
+            "score": 62.66
+          }
+        ]
+      },
+      "render": {
+        "file": "production/2026-11-15/ZW-20261115-2.mp4",
+        "seconds": 1484,
+        "info": {
+          "seed": 2013994764,
+          "theme": "space",
+          "vt": 65.96666666666421,
+          "phase": "win",
+          "tags": 22,
+          "winner": "bull",
+          "order": [
+            "bear",
+            "lion",
+            "wolf",
+            "gorilla",
+            "tiger",
+            "panda",
+            "fox"
+          ],
+          "kinds": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        }
+      },
+      "qc": {
+        "at": "2026-11-13T21:33:20+01:00",
+        "ok": true,
+        "problems": [],
+        "duration": 65.97,
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "videoCodec": "h264",
+        "audioCodec": "aac",
+        "sizeMB": 63.3,
+        "sha256": "999c97ab47a6ef5ffef6172dc2090ccee48238bcaf234bc5e8d8bb4a9a099262",
+        "luminance": [
+          80.5,
+          82.4,
+          79.8,
+          76,
+          78.7
+        ]
+      },
+      "approvedFile": "approved/2026-11-15/ZW-20261115-2.mp4",
+      "fiche": "approved/2026-11-15/ZW-20261115-2.json"
+    },
+    "ZW-20261115-3": {
+      "id": "ZW-20261115-3",
+      "date": "2026-11-15",
+      "slot": 3,
+      "time": "16:00",
+      "game": "arena2d",
+      "status": "validated",
+      "plan": {
+        "winner": null,
+        "theme": "hot"
+      },
+      "posts": {},
+      "history": [
+        {
+          "at": "2026-11-13T20:44:52+01:00",
+          "to": "planned"
+        },
+        {
+          "at": "2026-11-13T21:36:11+01:00",
+          "from": "planned",
+          "to": "produced",
+          "note": "render ok"
+        },
+        {
+          "at": "2026-11-13T21:36:18+01:00",
+          "from": "produced",
+          "to": "validated",
+          "note": "qc ok"
+        }
+      ],
+      "selection": {
+        "seed": 3675191823,
+        "metrics": {
+          "game": "hot",
+          "seed": 3675191823,
+          "frames": 1843,
+          "seconds": 61.43333333333333,
+          "winner": "Crocodile",
+          "out": 5,
+          "gameT": 54.588888888891674,
+          "finalMargin": null,
+          "score": 15
+        },
+        "simulated": 6,
+        "runnersUp": [
+          {
+            "seed": 2963375185,
+            "score": 15
+          },
+          {
+            "seed": 3496343039,
+            "score": 15
+          }
+        ]
+      },
+      "render": {
+        "file": "production/2026-11-15/ZW-20261115-3.mp4",
+        "seconds": 93,
+        "info": {
+          "game": "hot",
+          "seed": 3675191823,
+          "frames": 1843,
+          "seconds": 61.43333333333333,
+          "winner": "Crocodile",
+          "out": 5,
+          "gameT": 54.588888888891674,
+          "finalMargin": null
+        }
+      },
+      "qc": {
+        "at": "2026-11-13T21:36:18+01:00",
+        "ok": true,
+        "problems": [],
+        "duration": 61.43,
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "videoCodec": "h264",
+        "audioCodec": "aac",
+        "sizeMB": 10.27,
+        "sha256": "75895646bff84063f4ec54c8d0fdd48f9ba16cec5529ee5b7b29468d1c311144",
+        "luminance": [
+          34.4,
+          37,
+          39.8,
+          44.1,
+          21
+        ]
+      },
+      "approvedFile": "approved/2026-11-15/ZW-20261115-3.mp4",
+      "fiche": "approved/2026-11-15/ZW-20261115-3.json"
     }
   },
   "captionsUsed": [
@@ -1120,5 +1494,5 @@
     "2t|Paint the Map! Animal Territory War",
     "yte|Comment your animal for the next battle!"
   ],
-  "updatedAt": "2026-11-12T22:12:45+01:00"
+  "updatedAt": "2026-11-13T21:36:18+01:00"
 }
