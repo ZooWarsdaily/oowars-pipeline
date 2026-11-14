@@ -35,7 +35,7 @@ Crée le document « Zoo Wars – rapport semaine du <dimanche> au <samedi> », 
 2. **Tableau de bord** : un graphique des vues par jour et par plateforme, et un graphique des vues médianes par jeu.
 3. **Top 3 et flop 3**, avec ce qui les distingue : jeu, horaire, décor, accroche, rétention.
 4. **Analyse détaillée** :
-   - par jeu (Hot Potato 3D, Territory War, Color War, Hot Potato 2D) ;
+   - par jeu (Hot Potato 3D, Musical Chairs 3D, Infection 3D, Territory War, Color War, Hot Potato 2D) ;
    - par horaire et par jour ;
    - par plateforme ;
    - par décor (3D) ;

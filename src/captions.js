@@ -71,22 +71,51 @@ function make2d(video, cfg, used, rnd) {
   void usedSet; return { tiktok, youtube, signatures: ['2h|' + h, 'ttq|' + q, '2t|' + t, 'yte|' + e] };
 }
 
+// the other 3D games (added 14/11/2026): same structure as the 2D captions, plus the decor line
+const G3 = {
+  'musical-chairs-3d': {
+    name: 'Musical Chairs', tag: '#musicalchairs', line: 'Musical chairs',
+    hooks: ['When the music stops… RUN 🎵', '8 animals, 7 cushions 🪑', 'One cushion too few 😬', 'Wait for the STOP 🛑', 'Musical chairs, animal edition 🎶', 'Who gets left standing? 👀', 'The last cushion is a war zone 😤', 'Dance… dance… STOP! 🎵', 'Every round, one animal is out 🎶', 'Zoo Wars: musical chairs edition 🪑'],
+    titles: ['Animal Musical Chairs – Who Gets Left Standing?', '8 Animals, 7 Cushions – Musical Chairs Battle', 'When the Music Stops… Animal Musical Chairs', 'Musical Chairs: Last Animal Sitting Wins', 'Zoo Wars: Musical Chairs Showdown', 'One Cushion Too Few! Animal Battle', 'Animal Musical Chairs – Pick Your Fighter'],
+    desc: ['Eight animals dance around the cushions {theme}. When the music stops, the one left standing is out.', 'A Zoo Wars musical chairs battle {theme}: one cushion too few every round, one winner at the end.', 'Dance, wait for the stop, grab a cushion {theme}. Seven rounds, one animal left sitting.'],
+  },
+  'infection-3d': {
+    name: 'Infection', tag: '#infection', line: 'Infection chase',
+    hooks: ['One touch and you turn green 🟢', 'Run from the pack 🏃💨', 'The pack keeps growing 😱', 'Last one clean wins 🏆', "Don't let them touch you 🟢", '1 infected… then 2… then 7 😳', 'Zoo Wars: infection edition 🟢', 'Who stays clean the longest? 👀', 'The final escape is insane 😤', 'Everyone is turning green 🟢'],
+    titles: ['Animal Infection – Last One Clean Wins', 'One Touch and You Turn Green!', 'Run From the Pack – Animal Infection Battle', 'Who Stays Clean the Longest?', 'Zoo Wars: Infection Showdown', '7 Against 1 – Animal Infection Chase', 'Animal Infection – Pick Your Survivor'],
+    desc: ['One animal is infected {theme}. Every animal it touches turns green and joins the pack. The last clean animal wins.', 'A Zoo Wars infection chase {theme}: the pack grows with every catch until only one animal is left clean.', 'Run, dodge and hide {theme}: who will be the last animal standing against the green pack?'],
+  },
+};
+function make3(video, cfg, used, rnd) {
+  const g = G3[video.game], recent = new Set((used || []).slice(-20)), base = cfg.captions.hashtags.filter(t => t !== '#hotpotato' && t !== g.tag), thLine = pick(THEME[video.plan.theme] || [''], rnd);
+  let h, q, t, d, e;
+  for (let i = 0; i < 400; i++) { h = pick(g.hooks, rnd); q = pick(TT_QUESTION, rnd); if (!recent.has('3h|' + h) && !recent.has('ttq|' + q)) break; }
+  for (let i = 0; i < 400; i++) { t = pick(g.titles, rnd); d = pick(g.desc, rnd); e = pick(YT_END, rnd); if (!recent.has('3t|' + t) && !recent.has('yte|' + e)) break; }
+  const rest = base.slice(1).sort(() => rnd() - .5);
+  const tiktok = { text: `${h}\n${g.line} ${thLine}.\n\n${q}\n\n${[base[0], g.tag, ...rest.slice(0, cfg.captions.tiktokHashtagCount - 2)].join(' ')}` };
+  const youtube = { title: t.slice(0, 100), text: `${d.replace('{theme}', thLine)}\n${e}\n\n${['#shorts', base[0], g.tag, ...rest.slice(0, cfg.captions.youtubeHashtagCount - 2)].join(' ')}` };
+  const w = video.plan.winner || (video.selection && video.selection.metrics && video.selection.metrics.winner);
+  for (const s of [tiktok.text, youtube.title, youtube.text]) if (w && new RegExp('\\b' + w + '\\b', 'i').test(s)) throw new Error('caption reveals the winner');
+  return { tiktok, youtube, signatures: ['3h|' + h, 'ttq|' + q, '3t|' + t, 'yte|' + e] };
+}
+
 function pick(arr, rnd) { return arr[Math.floor(rnd() * arr.length)]; }
 function rng(seed) { let s = seed >>> 0; return () => { s = (s * 1664525 + 1013904223) >>> 0; return s / 2 ** 32; }; }
 
 function makeStandings(video, cfg) {
   const i = (video.render && video.render.info) || {}, lead = i.leader ? i.leader.charAt(0).toUpperCase() + i.leader.slice(1) : null;
   const top = lead ? `${lead} leads Season ${i.season}! 👑` : `Season ${i.season} standings 🏆`;
-  const tags = ['#zoowars', '#hotpotato', '#animalbattle', '#leaderboard', '#whowouldwin'];
+  const tags = ['#zoowars', '#animalbattle', '#leaderboard', '#whowouldwin', '#simulation'];
   return {
     tiktok: { text: `${top}\nThis week's wins and the full season ranking.\n\nWho wins next week? Comment your animal 👇\n\n${tags.join(' ')}` },
-    youtube: { title: `Zoo Wars Season ${i.season} Standings${lead ? ' – ' + lead + ' on Top!' : ''}`.slice(0, 100), text: `Weekly Zoo Wars standings: every Hot Potato win of the week and the season ranking.\nWho wins next week? Comment your animal!\n\n#shorts #zoowars #hotpotato #leaderboard` },
+    youtube: { title: `Zoo Wars Season ${i.season} Standings${lead ? ' – ' + lead + ' on Top!' : ''}`.slice(0, 100), text: `Weekly Zoo Wars standings: every win of the week (Hot Potato, Musical Chairs, Infection) and the season ranking.\nWho wins next week? Comment your animal!\n\n#shorts #zoowars #animalbattle #leaderboard` },
     signatures: [],
   };
 }
 function make(video, cfg, used) {
   if (video.game === 'standings') return makeStandings(video, cfg);
   if (video.game === 'arena2d') return make2d(video, cfg, used, rng(video.selection ? video.selection.seed : Date.now()));
+  if (G3[video.game]) return make3(video, cfg, used, rng(video.selection ? video.selection.seed : Date.now()));
   const usedSet = new Set(used || []), recent = new Set((used || []).slice(-20)), rnd = rng(video.selection ? video.selection.seed : Date.now());
   const theme = video.plan.theme, tags = cfg.captions.hashtags;
   let tt, yt;

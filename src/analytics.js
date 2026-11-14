@@ -36,13 +36,13 @@ function describe(postId, text) {
   for (const v of Object.values(reg.videos)) for (const ch of ['tiktok', 'youtube']) {
     const p = v.posts && v.posts[ch]; if (p && p.bufferPostId === postId) {
       const c = v.captions && v.captions[ch];
-      return { videoId: v.id, auto: true, game: v.game === 'arena2d' ? { terr: 'territory', color: 'colorwar', hot: 'hotpotato2d' }[v.plan.theme] : 'hotpotato3d', decor: v.game === 'arena2d' ? '' : v.plan.theme,
+      return { videoId: v.id, auto: true, game: v.game === 'arena2d' ? { terr: 'territory', color: 'colorwar', hot: 'hotpotato2d' }[v.plan.theme] : ({ 'musical-chairs-3d': 'musicalchairs3d', 'infection-3d': 'infection3d' }[v.game] || 'hotpotato3d'), decor: v.game === 'arena2d' ? '' : v.plan.theme,
         winner: v.plan.winner || (v.selection && v.selection.metrics.winner), slot: v.time, hook: c ? (c.title || c.text.split('\n')[0]) : '', question: c && !c.title ? (c.text.split('\n\n')[1] || '') : '',
         intensity: v.selection && v.selection.metrics ? (v.selection.metrics.score || null) : null, duration: v.qc ? v.qc.duration : null };
     }
   }
   const t = (text || '').toLowerCase();
-  const game = t.includes('#territorywar') ? 'territory' : t.includes('#colorwar') ? 'colorwar' : t.includes('#bigeatssmall') ? 'bigeatssmall' : t.includes('#hotpotato') ? 'hotpotato2d' : 'unknown';
+  const game = t.includes('#musicalchairs') ? 'musicalchairs3d' : t.includes('#infection') ? 'infection3d' : t.includes('#territorywar') ? 'territory' : t.includes('#colorwar') ? 'colorwar' : t.includes('#bigeatssmall') ? 'bigeatssmall' : t.includes('#hotpotato') ? 'hotpotato2d' : 'unknown';
   return { videoId: '', auto: false, game, decor: '', winner: '', slot: '', hook: (text || '').split(/\n|#/)[0].trim(), question: '', intensity: null, duration: null };
 }
 

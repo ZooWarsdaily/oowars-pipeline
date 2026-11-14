@@ -49,7 +49,7 @@ function check(date) {
       if (sha !== v.qc.sha256) { issues.push(`${id} : fichier validé modifié (empreinte différente)`); actions.push({ type: 'alert', msg: `${id} : le fichier ne correspond plus à la version validée` }); continue; }
     }
     if (!v.publicUrl) { issues.push(`${id} : pas encore en ligne`); actions.push({ type: 'upload', safe: true, id }); continue; }
-    ok.push(`${id} (${time}, ${v.game === 'hot-potato-3d' ? 'décor ' : ''}${v.plan.theme}) : vidéo validée, ${v.qc.duration} s, ${v.qc.sizeMB} Mo`);
+    ok.push(`${id} (${time}, ${v.game !== 'arena2d' && v.game !== 'standings' ? 'décor ' : ''}${v.plan.theme}) : vidéo validée, ${v.qc.duration} s, ${v.qc.sizeMB} Mo`);
 
     for (const c of CH) {
       const chanId = cfg.buffer.channels[c].id, p = (v.posts || {})[c] || {};

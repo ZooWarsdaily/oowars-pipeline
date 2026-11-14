@@ -101,7 +101,82 @@
       "frog",
       "rabbit"
     ],
-    "rosterNote": "animals = the 8 that play (frozen in each video's plan). Any 8 of pool; balanced so each wins ~1/8 in any team (tested 13/11/2026)."
+    "rosterNote": "animals = the 8 that play (frozen in each video's plan). Any 8 of pool; balanced so each wins ~1/8 in any team (tested 13/11/2026).",
+    "games": {
+      "hot-potato-3d": {
+        "name": "Hot Potato 3D",
+        "dir": "engine/dist",
+        "_winOdds": "production.winOdds",
+        "winOdds": {
+          "bear": 12.2,
+          "bull": 13.6,
+          "fox": 12.5,
+          "gorilla": 11.3,
+          "lion": 12.6,
+          "panda": 11.5,
+          "tiger": 13.0,
+          "wolf": 13.4,
+          "elephant": 12.5,
+          "penguin": 12.5,
+          "kangaroo": 12.5,
+          "turtle": 12.5,
+          "crocodile": 12.5,
+          "frog": 12.5,
+          "rabbit": 12.5
+        }
+      },
+      "musical-chairs-3d": {
+        "name": "Musical Chairs 3D",
+        "dir": "games/musical-chairs",
+        "winOdds": {
+          "lion": 13.2,
+          "tiger": 12.9,
+          "bear": 11.8,
+          "wolf": 12.8,
+          "gorilla": 10.6,
+          "fox": 11.5,
+          "bull": 13.2,
+          "panda": 14.0,
+          "elephant": 12.5,
+          "penguin": 12.5,
+          "kangaroo": 12.5,
+          "turtle": 12.5,
+          "crocodile": 12.5,
+          "frog": 12.5,
+          "rabbit": 12.5
+        },
+        "_help": "chances mesurees sur 5000 parties avec les 8 animaux d'origine (14/11/2026)"
+      },
+      "infection-3d": {
+        "name": "Infection 3D",
+        "dir": "games/infection",
+        "winOdds": {
+          "lion": 12.3,
+          "tiger": 12.6,
+          "bear": 10.8,
+          "wolf": 13.6,
+          "gorilla": 11.9,
+          "fox": 12.1,
+          "bull": 12.0,
+          "panda": 14.8,
+          "elephant": 12.5,
+          "penguin": 12.5,
+          "kangaroo": 12.5,
+          "turtle": 12.5,
+          "crocodile": 12.5,
+          "frog": 12.5,
+          "rabbit": 12.5
+        },
+        "_help": "chances mesurees sur 1600 parties de 55 a 68 s (les seules utilisables) avec les 8 animaux d'origine (14/11/2026)"
+      }
+    },
+    "alt3d": {
+      "rotation": [
+        "musical-chairs-3d",
+        "infection-3d"
+      ],
+      "_help": "creneau alt3d : le jeu utilise le moins recemment passe en premier"
+    }
   },
   "qc": {
     "width": 1080,
@@ -128,11 +203,11 @@
   },
   "startDate": "2026-11-13",
   "slotGames": [
-    "hot-potato-3d",
+    "alt3d",
     "hot-potato-3d",
     "arena2d"
   ],
-  "_slots_help": "un creneau par video du jour (heure de Paris) ; slotGames dit quel jeu va dans chaque creneau",
+  "_slots_help": "un creneau par video du jour (heure de Paris) ; slotGames dit quel jeu va dans chaque creneau. alt3d = Musical Chairs 3D et Infection 3D a tour de role (choix du proprietaire, 14/11/2026 : une des deux Hot Potato du jour remplacee, la 2D gardee)",
   "productionRule": "J+1 et J+2 complets : rien ; seul J+1 complet : produire J+2 et J+3 ; seul J+2 complet : J+1 et J+3 ; aucun : J+1, J+2, J+3 (voir orchestrator.js plan-today)",
   "studio": {
     "youtube": "https://studio.youtube.com/channel/UCSpSNPtpl-3rwvnmnQglhoA",
@@ -151,6 +226,11 @@
     "season1Start": "2026-11-16",
     "seasonWeeks": 4,
     "weekStartsOn": "Monday",
-    "_help": "saisons de 4 semaines a partir du lundi 16/11/2026 ; seules les victoires Hot Potato 3D publiees a partir de cette date comptent ; gagnants choisis par la simulation (plus imposes) depuis le 13/11/2026"
+    "_help": "saisons de 4 semaines a partir du lundi 16/11/2026 ; depuis le 14/11/2026 (choix du proprietaire) les victoires des 3 jeux 3D comptent pareil : Hot Potato 3D, Musical Chairs 3D, Infection 3D ; gagnants tires au sort avec les vraies chances de chaque jeu",
+    "games": [
+      "hot-potato-3d",
+      "musical-chairs-3d",
+      "infection-3d"
+    ]
   }
 }

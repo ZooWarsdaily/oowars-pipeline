@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-// Zoo Wars standings (Hot Potato 3D only). Wins are read from the registry: every 3D video whose winner is known and
+// Zoo Wars standings. Since 14/11/2026 (owner's choice) the wins of the three 3D games count the same:
+// Hot Potato 3D, Musical Chairs 3D and Infection 3D (config.standings.games). Wins are read from the registry: every such video whose winner is known and
 // that is (or will be) published counts at its publication time. Seasons = 4 weeks from config.standings.season1Start.
 //   node src/standings.js [before=YYYY-MM-DDTHH:MM]   -> JSON standings of the season, as of that moment (default now)
 'use strict';
@@ -10,7 +11,8 @@ const DAY = 86400000;
 
 const pubTime = v => new Date(L.dueAtFor(v.date, v.time)).getTime();
 const winnerOf = v => v.plan.winner || (v.selection && v.selection.metrics && v.selection.metrics.winner) || null;
-const counts = v => v.game === cfg.production.game && v.status !== 'error' && v.qc && v.qc.ok && winnerOf(v);
+const GAMES = (cfg.standings && cfg.standings.games) || [cfg.production.game];
+const counts = v => GAMES.includes(v.game) && v.status !== 'error' && v.qc && v.qc.ok && winnerOf(v);
 
 function seasonOf(t) {
   const s1 = new Date(L.dueAtFor(cfg.standings.season1Start, '00:00')).getTime(), len = cfg.standings.seasonWeeks * 7 * DAY;
@@ -50,7 +52,7 @@ function captionLine(v) {
   const tied = s.table.filter(r => r.wins === s.leader.wins);
   return tie ? (tied.length > 3 ? `🏆 Season ${s.season}: ${tied.length} animals tied at the top (${s.leader.wins} wins)` : `🏆 Season ${s.season}: ${tied.map(r => cap(r.animal)).join(' & ')} tied at the top (${s.leader.wins} wins)`) : `🏆 Season ${s.season} leader: ${cap(s.leader.animal)} (${s.leader.wins} win${s.leader.wins > 1 ? 's' : ''})`;
 }
-module.exports = { standings, captionLine, seasonOf, winnerOf, pubTime, cap };
+module.exports = { standings, captionLine, seasonOf, winnerOf, pubTime, cap, GAMES };
 
 if (require.main === module) {
   const a = process.argv[2], t = a ? new Date(a.length <= 10 ? L.dueAtFor(a, '23:59') : a).getTime() : Date.now();

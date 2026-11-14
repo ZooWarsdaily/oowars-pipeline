@@ -1,10 +1,11 @@
 # Zoo Wars : pipeline automatique
 
-3 vidéos par jour (2 Hot Potato 3D à 12:30 et 19:00, 1 Territory War, Color War ou Hot Potato 2D à 16:00), programmées sur TikTok et YouTube Shorts via Buffer, contrôlées chaque soir.
+3 vidéos par jour (12:30 Musical Chairs 3D ou Infection 3D à partir du 17/11/2026, 19:00 Hot Potato 3D, 16:00 Territory War, Color War ou Hot Potato 2D), programmées sur TikTok et YouTube Shorts via Buffer, contrôlées chaque soir.
 
 | Dossier | Contenu |
 |---|---|
 | `engine/` | Hot Potato 3D tel quel (moteur, musique, `grender.js`, notice) : **ne pas modifier sans accord** |
+| `games/` | Musical Chairs 3D et Infection 3D (même moteur, même `grender.js`), avec leurs notices : **ne pas modifier sans accord** |
 | `engine2d/` | l'arène 2D telle quelle (`arena.html`), son enregistreur `render2d.js` et ses polices (SIL OFL) |
 | `src/` | `producer.js`, `publisher.js`, `monitor.js`, `orchestrator.js`, `captions.js`, `lib.js` |
 | `.claude/agents/` | les 3 sous-agents (video-producer, social-publisher, daily-monitor) |
