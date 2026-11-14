@@ -1,1 +1,12 @@
 2026-11-12T22:32:47+01:00 [orchestrator] plan: D+1 2026-11-15 NOT complete | D+2 2026-11-16 NOT complete | D+3 2026-11-17 not complete -> produce 2026-11-15, 2026-11-16, 2026-11-17
+2026-11-14T20:44:31+01:00 [orchestrator] plan: D+1 2026-11-15 complete | D+2 2026-11-16 complete | D+3 2026-11-17 not complete -> produce nothing
+2026-11-14T20:44:35+01:00 [monitor] check 2026-11-15: OK (6/6) {"issues":0,"actions":0}
+2026-11-14T20:44:38+01:00 [monitor] check 2026-11-15: OK (6/6) {"issues":0,"actions":0}
+2026-11-14T20:44:47+01:00 [publisher] ZW-20261114-1: tiktok published
+2026-11-14T20:44:47+01:00 [publisher] ZW-20261114-1: youtube published
+2026-11-14T20:44:47+01:00 [publisher] ZW-20261114-2: tiktok published
+2026-11-14T20:44:47+01:00 [publisher] ZW-20261114-2: youtube published
+2026-11-14T20:44:47+01:00 [publisher] ZW-20261114-3: tiktok published
+2026-11-14T20:44:47+01:00 [publisher] ZW-20261114-3: youtube published
+2026-11-14T20:45:17+01:00 [analytics] snapshot: 35 posts with metrics stored
+2026-11-14T20:45:20+01:00 [orchestrator] media pruned: ZW-20261114-1, ZW-20261114-2, ZW-20261114-3

@@ -1,0 +1,121 @@
+{
+ "edges": [
+  {
+   "node": {
+    "id": "6af775069257ce33980c97f3",
+    "status": "scheduled",
+    "text": "The bomb drops, the chase begins on a floating volcano. Seven explosions, one survivor.\nDid your pick make it to the final duel?\n\n#shorts #zoowars #hotpotato #simulation",
+    "dueAt": "2026-11-15T11:30:00.000Z",
+    "sentAt": null,
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "error": null,
+    "assets": [
+     {
+      "type": "video",
+      "mimeType": "video/mp4",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-15/ZW-20261115-1.mp4"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af7750578196a0a971c4036",
+    "status": "scheduled",
+    "text": "This bomb changed hands way too fast 😳\nHot potato battle on a floating volcano.\n\nDid you guess the winner?\n\n#zoowars #hotpotato #simulation #whowouldwin #satisfying",
+    "dueAt": "2026-11-15T11:30:00.000Z",
+    "sentAt": null,
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "error": null,
+    "assets": [
+     {
+      "type": "video",
+      "mimeType": "video/mp4",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-15/ZW-20261115-1.mp4"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af7750a78196a0a971c4116",
+    "status": "scheduled",
+    "text": "The bomb keeps changing hands until only one animal is left standing.\nNew Zoo Wars battle every day.\n\n#shorts #zoowars #hotpotato #animalbattle",
+    "dueAt": "2026-11-15T15:00:00.000Z",
+    "sentAt": null,
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "error": null,
+    "assets": [
+     {
+      "type": "video",
+      "mimeType": "video/mp4",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-15/ZW-20261115-3.mp4"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af77509bb36d00909c82ced",
+    "status": "scheduled",
+    "text": "Tag, run, explode 💥\n\nWho deserved to win?\n\n#zoowars #hotpotato #animalbattle #whowouldwin #simulation",
+    "dueAt": "2026-11-15T15:00:00.000Z",
+    "sentAt": null,
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "error": null,
+    "assets": [
+     {
+      "type": "video",
+      "mimeType": "video/mp4",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-15/ZW-20261115-3.mp4"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af7750881e1228421c17063",
+    "status": "scheduled",
+    "text": "The bomb drops, the chase begins in outer space. Seven explosions, one survivor.\nWho did you pick? Tell us in the comments!\n\n#shorts #zoowars #hotpotato #animalbattle",
+    "dueAt": "2026-11-15T18:00:00.000Z",
+    "sentAt": null,
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "error": null,
+    "assets": [
+     {
+      "type": "video",
+      "mimeType": "video/mp4",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-15/ZW-20261115-2.mp4"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af7750778196a0a971c4093",
+    "status": "scheduled",
+    "text": "Hot potato, but the potato explodes 💥\nHot potato battle in outer space.\n\nRate this final from 1 to 10 👇\n\n#zoowars #hotpotato #animalbattle #whowouldwin #simulation",
+    "dueAt": "2026-11-15T18:00:00.000Z",
+    "sentAt": null,
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "error": null,
+    "assets": [
+     {
+      "type": "video",
+      "mimeType": "video/mp4",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-15/ZW-20261115-2.mp4"
+     }
+    ]
+   }
+  }
+ ],
+ "pageInfo": {
+  "hasNextPage": false
+ }
+}
