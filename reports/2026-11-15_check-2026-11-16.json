@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-16",
+  "mode": "live",
+  "verdict": "OK",
+  "confirmed": 6,
+  "expected": 6,
+  "ok": [
+    "ZW-20261116-1 (12:30, décor jungle) : vidéo validée, 64.77 s, 62.1 Mo",
+    "ZW-20261116-1 tiktok : programmée 16/11/2026 12:30:00 — post 6af780e49257ce339810ebd7",
+    "ZW-20261116-1 youtube : programmée 16/11/2026 12:30:00 — post 6af780e5bb36d00909cc6347",
+    "ZW-20261116-2 (19:00, décor ice) : vidéo validée, 64.13 s, 62.57 Mo",
+    "ZW-20261116-2 tiktok : programmée 16/11/2026 19:00:00 — post 6af780e69257ce339810ec50",
+    "ZW-20261116-2 youtube : programmée 16/11/2026 19:00:00 — post 6af780e778196a0a9720a706",
+    "ZW-20261116-3 (16:00, color) : vidéo validée, 66.87 s, 10.62 Mo",
+    "ZW-20261116-3 tiktok : programmée 16/11/2026 16:00:00 — post 6af780e84b28296eb117cd43",
+    "ZW-20261116-3 youtube : programmée 16/11/2026 16:00:00 — post 6af780e881e1228421c5e1ac"
+  ],
+  "issues": [],
+  "actions": [],
+  "manual": [],
+  "at": "2026-11-15T21:25:53+01:00"
+}

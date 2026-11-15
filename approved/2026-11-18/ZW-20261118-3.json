@@ -1,0 +1,38 @@
+{
+  "id": "ZW-20261118-3",
+  "game": "Hot Potato 2D",
+  "publishDate": "2026-11-18",
+  "slot": 3,
+  "time": "16:00",
+  "timezone": "Europe/Paris",
+  "seed": 494015916,
+  "winner": "Tiger",
+  "highlights": {
+    "eliminations": 5,
+    "finalMargin": null,
+    "videoSeconds": 61.8,
+    "score": 15,
+    "gamesPreviewed": 6
+  },
+  "file": {
+    "name": "ZW-20261118-3.mp4",
+    "at": "2026-11-15T22:09:25+01:00",
+    "ok": true,
+    "problems": [],
+    "duration": 61.8,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "sizeMB": 10.05,
+    "sha256": "9ca743d092e3b22949142780f3a55a984ebe6fd692b7a95b504c0aa5992cbe66",
+    "luminance": [
+      34.5,
+      36.9,
+      39.4,
+      43.4,
+      19.9
+    ]
+  }
+}

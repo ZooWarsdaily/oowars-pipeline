@@ -1,0 +1,41 @@
+2026-11-15T21:25:26+01:00 [producer] planned ZW-20261118-1 {"slot":"12:30","game":"infection-3d","theme":"ice","winner":"random draw"}
+2026-11-15T21:25:26+01:00 [producer] planned ZW-20261118-2 {"slot":"19:00","game":"hot-potato-3d","theme":"space","winner":"random draw"}
+2026-11-15T21:25:26+01:00 [producer] planned ZW-20261118-3 {"slot":"16:00","game":"hot"}
+2026-11-15T21:26:38+01:00 [producer] ZW-20261118-1: 600 games simulated in 67s, 34 valid with the planned winner
+2026-11-15T21:26:38+01:00 [producer] ZW-20261118-1: best seed 707787821 score 30.4 {"tags":7,"dur":59.9}
+2026-11-15T21:26:38+01:00 [producer] ZW-20261118-1: render starts (seed 707787821, ice)
+2026-11-15T21:26:45+01:00 [producer] ZW-20261118-1 | seed 707787821 frames 1797
+2026-11-15T21:32:47+01:00 [producer] ZW-20261118-1 | part 1 frame 300 / 898
+2026-11-15T21:32:51+01:00 [producer] ZW-20261118-1 | part 0 frame 300 / 899
+2026-11-15T21:38:31+01:00 [producer] ZW-20261118-1 | part 0 frame 600 / 899
+2026-11-15T21:38:49+01:00 [producer] ZW-20261118-1 | part 1 frame 600 / 898
+2026-11-15T21:44:54+01:00 [producer] ZW-20261118-1 | DONE /home/claude/oowars-pipeline/production/2026-11-18/ZW-20261118-1.mp4 in 1096 s {"seed":707787821,"theme":"ice","vt":59.89999999999788,"phase":"win","tags":7,"winner":"wolf","order":["lion","tiger","panda","bull","fox","bear","gorilla"],"kinds":[-1,-1,-1,-1,-1,-1,-1]}
+2026-11-15T21:44:54+01:00 [producer] ZW-20261118-1: rendered in 18 min
+2026-11-15T21:45:07+01:00 [producer] ZW-20261118-1: VALIDATED (59.9s, 66.18 MB)
+2026-11-15T21:45:57+01:00 [producer] ZW-20261118-2: 600 games simulated in 44s, 74 valid with the planned winner
+2026-11-15T21:45:57+01:00 [producer] ZW-20261118-2: best seed 3904972729 score 64.78 {"tags":19,"clutch":9,"final":4,"dur":63.43}
+2026-11-15T21:45:57+01:00 [producer] ZW-20261118-2: render starts (seed 3904972729, space)
+2026-11-15T21:46:03+01:00 [producer] ZW-20261118-2 | seed 3904972729 frames 1903
+2026-11-15T21:52:45+01:00 [producer] ZW-20261118-2 | part 1 frame 300 / 951
+2026-11-15T21:53:26+01:00 [producer] ZW-20261118-2 | part 0 frame 300 / 952
+2026-11-15T21:58:11+01:00 [producer] ZW-20261118-2 | part 1 frame 600 / 951
+2026-11-15T22:00:20+01:00 [producer] ZW-20261118-2 | part 0 frame 600 / 952
+2026-11-15T22:03:29+01:00 [producer] ZW-20261118-2 | part 1 frame 900 / 951
+2026-11-15T22:05:43+01:00 [producer] ZW-20261118-2 | part 0 frame 900 / 952
+2026-11-15T22:06:23+01:00 [producer] ZW-20261118-2 | DONE /home/claude/oowars-pipeline/production/2026-11-18/ZW-20261118-2.mp4 in 1226 s {"seed":3904972729,"theme":"space","vt":63.433333333331014,"phase":"win","tags":19,"winner":"wolf","order":["bear","fox","gorilla","panda","bull","lion","tiger"],"kinds":[2,1,2,1,2,2,2]}
+2026-11-15T22:06:23+01:00 [producer] ZW-20261118-2: rendered in 20 min
+2026-11-15T22:06:36+01:00 [producer] ZW-20261118-2: VALIDATED (63.43s, 62.02 MB)
+2026-11-15T22:07:54+01:00 [producer] ZW-20261118-3: 6 hot games previewed in 78s
+2026-11-15T22:07:54+01:00 [producer] ZW-20261118-3: best seed 494015916 score 15
+2026-11-15T22:07:54+01:00 [producer] ZW-20261118-3: render starts (seed 494015916, hot)
+2026-11-15T22:08:07+01:00 [producer] ZW-20261118-3 | frame 300
+2026-11-15T22:08:19+01:00 [producer] ZW-20261118-3 | frame 600
+2026-11-15T22:08:32+01:00 [producer] ZW-20261118-3 | frame 900
+2026-11-15T22:08:44+01:00 [producer] ZW-20261118-3 | frame 1200
+2026-11-15T22:08:56+01:00 [producer] ZW-20261118-3 | frame 1500
+2026-11-15T22:09:09+01:00 [producer] ZW-20261118-3 | frame 1800
+2026-11-15T22:09:20+01:00 [producer] ZW-20261118-3 | DONE /home/claude/oowars-pipeline/production/2026-11-18/ZW-20261118-3.mp4 in 86 s {"game":"hot","seed":494015916,"frames":1854,"seconds":61.8,"winner":"Tiger","out":5,"gameT":54.977777777780624,"finalMargin":null}
+2026-11-15T22:09:20+01:00 [producer] ZW-20261118-3: rendered in 1 min
+2026-11-15T22:09:25+01:00 [producer] ZW-20261118-3: VALIDATED (61.8s, 10.05 MB)
+2026-11-15T22:09:25+01:00 [producer] run 2026-11-18 finished: ZW-20261118-1=validated ZW-20261118-2=validated ZW-20261118-3=validated
+PRODUCER_RESULT ZW-20261118-1=validated ZW-20261118-2=validated ZW-20261118-3=validated
