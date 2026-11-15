@@ -1,0 +1,18 @@
+{
+  "channelId": "6af60dc162b70b94b00d05a1",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "dueAt": "2026-11-17T19:00:00+01:00",
+  "text": "Last one standing wins 🏆\nHot potato battle between the jungle trees.\n\nWho deserved to win?\n🏆 Season 1 leader: Fox (2 wins)\n\n#zoowars #whowouldwin #simulation #satisfying #animalbattle",
+  "assets": [
+    {
+      "video": {
+        "url": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-17/ZW-20261117-2.mp4",
+        "metadata": {
+          "thumbnailOffset": 3000
+        }
+      }
+    }
+  ],
+  "metadata": {}
+}

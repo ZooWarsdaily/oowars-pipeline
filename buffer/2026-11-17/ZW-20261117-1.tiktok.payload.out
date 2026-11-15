@@ -1,0 +1,3 @@
+2026-11-15T21:24:48+01:00 [publisher] ZW-20261117-1: tiktok payload ready (live)
+MODE=live  -> call Buffer create_post with exactly this JSON, save the answer to a file, then run record
+CREATE_POST_ARGS {"channelId":"6af60dc162b70b94b00d05a1","schedulingType":"automatic","mode":"customScheduled","dueAt":"2026-11-17T12:30:00+01:00","text":"8 animals, 7 cushions 🪑\nMusical chairs on a floating volcano.\n\nWhich animal should get a rematch?\n🏆 Season 1: Fox & Bear tied at the top (1 wins)\n\n#zoowars #musicalchairs #whowouldwin #satisfying #animalbattle","assets":[{"video":{"url":"https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-17/ZW-20261117-1.mp4","metadata":{"thumbnailOffset":3000}}}],"metadata":{}}
