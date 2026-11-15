@@ -1,0 +1,24 @@
+{
+  "channelId": "6af611d662b70b94b00d5648",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "dueAt": "2026-11-18T19:00:00+01:00",
+  "text": "Eight animals run around a floating arena among the stars. Whoever holds the bomb must tag someone else before the fuse runs out.\nComment your animal for the next battle!\n🏆 Season 1 leader: Fox (2 wins)\n\n#shorts #zoowars #whowouldwin #hotpotato",
+  "assets": [
+    {
+      "video": {
+        "url": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-18/ZW-20261118-2.mp4",
+        "metadata": {}
+      }
+    }
+  ],
+  "metadata": {
+    "youtube": {
+      "title": "Hot Potato: that final duel 😱",
+      "categoryId": "24",
+      "madeForKids": false,
+      "privacy": "public",
+      "notifySubscribers": true
+    }
+  }
+}

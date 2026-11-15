@@ -1,0 +1,3 @@
+2026-11-15T22:10:05+01:00 [publisher] ZW-20261118-2: tiktok payload ready (live)
+MODE=live  -> call Buffer create_post with exactly this JSON, save the answer to a file, then run record
+CREATE_POST_ARGS {"channelId":"6af60dc162b70b94b00d05a1","schedulingType":"automatic","mode":"customScheduled","dueAt":"2026-11-18T19:00:00+01:00","text":"Zoo Wars: Hot Potato edition 💣\nHot potato battle among the stars.\n\nRate this final from 1 to 10 👇\n🏆 Season 1 leader: Fox (2 wins)\n\n#zoowars #whowouldwin #hotpotato #animalbattle #satisfying","assets":[{"video":{"url":"https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-18/ZW-20261118-2.mp4","metadata":{"thumbnailOffset":3000}}}],"metadata":{}}

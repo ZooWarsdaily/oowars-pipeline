@@ -1,0 +1,18 @@
+{
+  "channelId": "6af60dc162b70b94b00d05a1",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "dueAt": "2026-11-18T12:30:00+01:00",
+  "text": "1 infected… then 2… then 7 😳\nInfection chase on the frozen arena.\n\nDid you guess the winner?\n🏆 Season 1 leader: Fox (2 wins)\n\n#zoowars #infection #animalbattle #whowouldwin #satisfying",
+  "assets": [
+    {
+      "video": {
+        "url": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-18/ZW-20261118-1.mp4",
+        "metadata": {
+          "thumbnailOffset": 3000
+        }
+      }
+    }
+  ],
+  "metadata": {}
+}
