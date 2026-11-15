@@ -1,0 +1,38 @@
+{
+  "id": "ZW-20261117-3",
+  "game": "Territory War",
+  "publishDate": "2026-11-17",
+  "slot": 3,
+  "time": "16:00",
+  "timezone": "Europe/Paris",
+  "seed": 2811475256,
+  "winner": "Lion",
+  "highlights": {
+    "eliminations": 5,
+    "finalMargin": null,
+    "videoSeconds": 66.9,
+    "score": 15,
+    "gamesPreviewed": 6
+  },
+  "file": {
+    "name": "ZW-20261117-3.mp4",
+    "at": "2026-11-15T21:23:56+01:00",
+    "ok": true,
+    "problems": [],
+    "duration": 66.87,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "sizeMB": 11.9,
+    "sha256": "d7dd9efdb00c0e30db197ace42965dcef39140dca49f4666acbb0e8993fdaa9a",
+    "luminance": [
+      50.7,
+      90.4,
+      96.8,
+      95.2,
+      29.4
+    ]
+  }
+}

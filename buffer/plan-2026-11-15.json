@@ -1,0 +1,97 @@
+{
+ "edges": [
+  {
+   "node": {
+    "id": "6af780e5bb36d00909cc6347",
+    "status": "scheduled",
+    "dueAt": "2026-11-16T11:30:00.000Z",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-16/ZW-20261116-1.mp4"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af780e49257ce339810ebd7",
+    "status": "scheduled",
+    "dueAt": "2026-11-16T11:30:00.000Z",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-16/ZW-20261116-1.mp4"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af780e881e1228421c5e1ac",
+    "status": "scheduled",
+    "dueAt": "2026-11-16T15:00:00.000Z",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-16/ZW-20261116-3.mp4"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af780e84b28296eb117cd43",
+    "status": "scheduled",
+    "dueAt": "2026-11-16T15:00:00.000Z",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-16/ZW-20261116-3.mp4"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af780e778196a0a9720a706",
+    "status": "scheduled",
+    "dueAt": "2026-11-16T18:00:00.000Z",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-16/ZW-20261116-2.mp4"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af780e69257ce339810ec50",
+    "status": "scheduled",
+    "dueAt": "2026-11-16T18:00:00.000Z",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-16/ZW-20261116-2.mp4"
+     }
+    ]
+   }
+  }
+ ],
+ "pageInfo": {
+  "hasNextPage": false
+ }
+}
