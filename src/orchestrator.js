@@ -27,16 +27,18 @@ function status(days) {
 //   only D+2 complete     -> produce D+1 and D+3
 //   neither               -> produce D+1, D+2 and D+3 (start-up case)
 // "complete" = every video of the day scheduled on both channels in Buffer (3 videos x 2 = 6 posts).
+// A manual slot (config.buffer.channels.<ch>.manualSlots, test T1) counts when the registry holds it as prepared for the owner.
 // A partly scheduled day is "not complete": producing it only fills what is missing (every step is idempotent).
 function planToday() {
   const t = L.todayParis(), reg = L.loadRegistry(), f = arg('--buffer');
   if (!f) L.die('--buffer <list_posts.json> required: all posts of both channels due from D+1 00:00 to D+3 23:59');
   const posts = postsFrom(L.readJSON(f)).filter(p => !['error', 'draft'].includes(p.status));
-  const chans = Object.values(cfg.buffer.channels).map(c => c.id);
   const complete = d => {
     for (const sl of L.daySlots(d)) {
       const id = L.videoId(d, sl.slot), due = new Date(L.dueAtFor(d, sl.time)).getTime();
-      for (const ch of chans) {
+      for (const [name, c] of Object.entries(cfg.buffer.channels)) {
+        const ch = c.id;
+        if (L.isManual(name, d, sl.time)) { const x = reg.videos[id]; if (x && x.posts && x.posts[name] && ['manual', 'published'].includes(x.posts[name].status)) continue; return false; } // test T1: prepared for the owner, not in Buffer
         const ok = posts.some(p => (p.channelId || (p.channel && p.channel.id)) === ch && p.dueAt && Math.abs(new Date(p.dueAt).getTime() - due) < 60000 && JSON.stringify(p.assets || '').includes(id + '.mp4'));
         if (!ok) return false;
       }

@@ -9,6 +9,7 @@
 //   record <id> <channel> <create_post_response.json>   checks Buffer's answer and stores the post id -> scheduled
 //   record <id> <channel> --simulate      (test mode only) fake Buffer answer
 //   sync <list_posts.json>                update post statuses from Buffer (sent -> published, error -> error)
+//   manual-done <id> <channel>            the owner published a manual slot by hand (test T1) -> published
 'use strict';
 const fs = require('fs'), path = require('path'), crypto = require('crypto');
 const { execFileSync } = require('child_process');
@@ -91,6 +92,7 @@ function payload(id, ch) {
   const post = (v.posts || {})[ch];
   if (post && post.bufferPostId) L.die(`DUPLICATE BLOCKED: ${id} already has ${ch} post ${post.bufferPostId} (${post.status})`);
   const chan = cfg.buffer.channels[ch], dueAt = L.dueAtFor(v.date, v.time);
+  if (L.isManual(ch, v.date, v.time)) return manualSlot(v, ch, dueAt);
   if (new Date(dueAt) <= new Date(Date.now() + 15 * 60000)) L.die(`${id}: ${dueAt} is too close or in the past`);
   if (cfg.mode !== 'test') {
     const ex = arg('--existing'); if (!ex) L.die('--existing <list_posts.json> is required: list the channel posts in Buffer first');
@@ -124,8 +126,35 @@ function payload(id, ch) {
   console.log('CREATE_POST_ARGS ' + JSON.stringify(req));
 }
 
+// manual slot (test T1): no Buffer post. The owner publishes this video by hand from the app at the slot time,
+// with the prepared caption. The daily run sends him the file link and the caption.
+function manualSlot(v, ch, dueAt) {
+  const m = cfg.buffer.channels[ch].manualSlots, f = path.join(bufDir(v.date), `${v.id}.${ch}.manual.json`);
+  const todo = { id: v.id, channel: ch, experiment: m.experiment || null, dueAt, time: v.time, videoUrl: v.publicUrl, caption: v.captions[ch].text };
+  L.writeJSON(f, todo);
+  L.withRegistry(r => { const x = r.videos[v.id]; x.posts = x.posts || {}; if (!(x.posts[ch] && x.posts[ch].status === 'published')) x.posts[ch] = { status: 'manual', dueAt, experiment: todo.experiment, file: path.relative(L.P.root, f), at: L.nowParisISO() };
+    if (x.status === 'uploaded' && CHANNELS.every(c => done(x, c, 'scheduled'))) L.setVideoStatus(r, v.id, 'scheduled', 'manual ' + ch + ' + buffer'); });
+  L.log(AG, `${v.id}: ${ch} is a MANUAL slot (${todo.experiment}) — no Buffer post`);
+  console.log(`MANUAL_SLOT ${v.id} ${ch} ${dueAt} -> do NOT call Buffer. The owner publishes it by hand: ${path.relative(L.P.root, f)}`);
+}
+// a channel counts as done when its post reached the status, or when it is a manual slot (published by the owner)
+function done(x, c, st) {
+  const p = x.posts && x.posts[c]; if (!p) return false;
+  if (p.status === 'manual' || p.status === 'published') return true;
+  return st === 'scheduled' ? p.status === 'scheduled' : false;
+}
+// the owner confirms he published a manual slot: manual-done <id> <channel>
+function manualDone(id, ch) {
+  L.withRegistry(r => { const x = r.videos[id], p = x && x.posts && x.posts[ch];
+    if (!p || p.status !== 'manual') L.die(`${id} ${ch}: not a manual slot (${p && p.status})`);
+    p.status = 'published'; p.manual = true; p.confirmedAt = L.nowParisISO();
+    if (x.status === 'scheduled' && CHANNELS.every(c => x.posts[c] && x.posts[c].status === 'published')) L.setVideoStatus(r, id, 'published', 'both channels sent (one by hand)'); });
+  L.log(AG, `${id}: ${ch} published by hand (confirmed)`);
+}
+
 function record(id, ch, src) {
   const reg = L.loadRegistry(), v = reg.videos[id]; if (!v) L.die('unknown ' + id);
+  if (L.isManual(ch, v.date, v.time)) L.die(`${id} ${ch}: manual slot (test), nothing to record from Buffer`);
   const chan = cfg.buffer.channels[ch], expDue = L.dueAtFor(v.date, v.time);
   let resp;
   if (src === '--simulate') {
@@ -150,8 +179,8 @@ function record(id, ch, src) {
     const p = x.posts[ch] = { ...(x.posts[ch] || {}), bufferPostId: resp && resp.id, bufferStatus: resp && resp.status, dueAt: (resp && resp.dueAt) || expDue, recordedAt: L.nowParisISO(), simulated: !!(resp && resp.simulated) };
     if (problems.length) { p.status = resp && HEX24.test(resp.id || '') ? 'needs_review' : 'error'; p.problems = problems; }
     else p.status = cfg.mode === 'draft' ? 'draft' : 'scheduled';
-    const both = CHANNELS.every(c => x.posts[c] && x.posts[c].status === 'scheduled');
-    if (both && x.status === 'uploaded') L.setVideoStatus(r, id, 'scheduled', 'tiktok ' + x.posts.tiktok.bufferPostId + ' / youtube ' + x.posts.youtube.bufferPostId);
+    const both = CHANNELS.every(c => done(x, c, 'scheduled'));
+    if (both && x.status === 'uploaded') L.setVideoStatus(r, id, 'scheduled', 'tiktok ' + (x.posts.tiktok.bufferPostId || x.posts.tiktok.status) + ' / youtube ' + (x.posts.youtube.bufferPostId || x.posts.youtube.status));
   });
   if (problems.length) { L.log(AG, `${id}: ${ch} NOT confirmed`, problems); process.exit(2); }
   L.log(AG, `${id}: ${ch} confirmed by Buffer, post ${resp.id} (${resp.status})`);
@@ -189,5 +218,6 @@ try {
   else if (cmd === 'record') record(a1, a2, a3);
   else if (cmd === 'sync') sync(a1);
   else if (cmd === 'reset-post') resetPost(a1, a2);
+  else if (cmd === 'manual-done') manualDone(a1, a2);
   else console.log('usage: see header of src/publisher.js');
 } catch (e) { L.log(AG, 'FATAL ' + e.message); process.exit(1); }

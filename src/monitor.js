@@ -21,7 +21,7 @@ const vidOf = p => { const m = urls(p).join(' ').match(/ZW-\d{8}-\d+/); return m
 const paris = iso => iso ? new Date(iso).toLocaleString('fr-FR', { timeZone: 'Europe/Paris' }) : '?';
 
 function check(date) {
-  const reg = L.loadRegistry(), ok = [], issues = [], actions = [];
+  const reg = L.loadRegistry(), ok = [], issues = [], actions = [], manual = [];
   let bufferPosts;
   if (process.argv.includes('--simulate-buffer')) {
     if (cfg.mode !== 'test') L.die('--simulate-buffer only in test mode');
@@ -63,6 +63,11 @@ function check(date) {
         }
       }
       const b = live.find(x => x.id === p.bufferPostId) || live[0];
+      if (!b && L.isManual(c, date, time)) {
+        if (['manual', 'published'].includes(p.status)) { ok.push(`${id} ${c} : publication MANUELLE (test ${cfg.buffer.channels[c].manualSlots.experiment}) à ${time}, à faire par le propriétaire depuis l'app — ${p.file}`); manual.push({ id, channel: c, time, file: p.file, videoUrl: v.publicUrl, caption: v.captions && v.captions[c] && v.captions[c].text }); }
+        else { issues.push(`${id} ${c} : créneau manuel pas encore préparé`); actions.push({ type: 'schedule', safe: true, id, channel: c, note: 'manual slot: payload prepares the file for the owner, no Buffer call' }); }
+        continue;
+      }
       if (!b) {
         const err = inBuf.find(x => x.status === 'error');
         if (err) { issues.push(`${id} ${c} : publication en erreur chez Buffer (${JSON.stringify(err.error || '').slice(0, 120)})`); actions.push({ type: 'reschedule', safe: true, id, channel: c, failedPostId: err.id }); }
@@ -80,7 +85,7 @@ function check(date) {
   // posts of that day that belong to no known video
   for (const b of onDay) if (!vidOf(b) || !reg.videos[vidOf(b)]) issues.push(`post inconnu ${b.id} (${b.status}, ${paris(b.dueAt)}) : non créé par le système, laissé tel quel`);
 
-  const expected = slots.length * CH.length, good = ok.filter(x => /programmée|déjà publiée/.test(x)).length;
+  const expected = slots.length * CH.length, good = ok.filter(x => /programmée|déjà publiée|MANUELLE/.test(x)).length;
   const verdict = good === expected && !issues.length ? 'OK' : actions.some(a => !a.safe) ? 'ALERTE' : 'À CORRIGER';
   const now = L.todayParis(), stamp = L.nowParisISO();
   const md = [`# Rapport Zoo Wars du ${now} — contrôle du ${date}`, '', `Mode : **${cfg.mode}**. Verdict : **${verdict}** (${good}/${expected} publications confirmées).`, '',
@@ -88,9 +93,10 @@ function check(date) {
     '## Actions', ...(actions.length ? actions.map(a => `- ${a.safe ? 'correction sûre' : 'ALERTE'} : ${a.type} ${a.id || ''} ${a.channel || ''} ${a.msg || a.why || a.postId || ''}`) : ['- aucune']), '',
     `Généré le ${stamp}.`].join('\n');
   const base = path.join(L.P.reports, `${now}_check-${date}`);
-  fs.writeFileSync(base + '.md', md + '\n'); L.writeJSON(base + '.json', { date, mode: cfg.mode, verdict, confirmed: good, expected, ok, issues, actions, at: stamp });
+  fs.writeFileSync(base + '.md', md + '\n'); L.writeJSON(base + '.json', { date, mode: cfg.mode, verdict, confirmed: good, expected, ok, issues, actions, manual, at: stamp });
   L.log(AG, `check ${date}: ${verdict} (${good}/${expected})`, { issues: issues.length, actions: actions.length });
   console.log(md); console.log('MONITOR_ACTIONS ' + JSON.stringify(actions));
+  if (manual.length) console.log('MANUAL_TODO ' + JSON.stringify(manual)); // to send to the owner (link + caption)
   return verdict;
 }
 

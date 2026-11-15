@@ -15,7 +15,16 @@
     "channels": {
       "tiktok": {
         "id": "6af60dc162b70b94b00d05a1",
-        "name": "zoowarsdaily"
+        "name": "zoowarsdaily",
+        "manualSlots": {
+          "experiment": "T1-tiktok-native-19h",
+          "from": "2026-11-17",
+          "to": "2026-11-23",
+          "times": [
+            "19:00"
+          ],
+          "_help": "test T1 valide le 15/11/2026 : la video TikTok de 19:00 est publiee a la main par le proprietaire depuis l'app (pas de post Buffer). publisher.js payload prepare buffer/<date>/<id>.tiktok.manual.json ; le run quotidien lui envoie le lien et la legende."
+        }
       },
       "youtube": {
         "id": "6af611d662b70b94b00d5648",
@@ -199,7 +208,18 @@
       "#satisfying"
     ],
     "tiktokHashtagCount": 5,
-    "youtubeHashtagCount": 3
+    "youtubeHashtagCount": 3,
+    "youtubeTitleTest": {
+      "experiment": "T2-youtube-titres-emoji",
+      "from": "2026-11-17",
+      "to": "2026-11-30",
+      "times": [
+        "16:00",
+        "19:00"
+      ],
+      "days": "even",
+      "_help": "test T2 valide le 15/11/2026 : titres YouTube 'Jeu: accroche + emoji' les jours pairs aux creneaux 16:00 et 19:00, titres normaux les jours impairs (temoin). Legendes TikTok inchangees."
+    }
   },
   "startDate": "2026-11-13",
   "slotGames": [

@@ -17,6 +17,7 @@ Pour chaque vidéo `<id>` validée de la date demandée :
    2. Lance `node src/publisher.js payload <id> <canal> --existing buffer/<date>/<id>.<canal>.existing.json`.
       - S'il refuse, n'appelle **pas** Buffer.
       - Sur un refus `DUPLICATE BLOCKED` avec un post existant, lance `record` avec ce post (copie-le dans un fichier).
+      - Sur `MANUAL_SLOT` (test T1, TikTok 19:00) : n'appelle **pas** Buffer et ne lance pas `record`. Le fichier `buffer/<date>/<id>.tiktok.manual.json` est prêt pour le propriétaire ; passe au canal suivant.
    3. **Mode test** : lance `node src/publisher.js record <id> <canal> --simulate`, sans aucun appel Buffer.
    4. **Mode draft ou live** :
       - appelle `create_post` avec **exactement** le JSON de la ligne `CREATE_POST_ARGS` ;
@@ -25,4 +26,4 @@ Pour chaque vidéo `<id>` validée de la date demandée :
    5. Si `create_post` renvoie une erreur ou rien : ne réessaie pas tout de suite. Refais l'étape 3.1. Si le post existe, lance `record`. Sinon, une seule nouvelle tentative, puis signale l'échec.
 4. Termine par `node src/orchestrator.js save "publisher <date>"`.
 
-Ne considère jamais une publication comme programmée sans `record` réussi (code de sortie 0). Réponds par le tableau `id / canal / post Buffer / statut`.
+Ne considère jamais une publication comme programmée sans `record` réussi (code de sortie 0). Réponds par le tableau `id / canal / post Buffer / statut` (statut `manual` pour un créneau publié à la main).

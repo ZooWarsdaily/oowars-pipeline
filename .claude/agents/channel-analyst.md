@@ -19,7 +19,7 @@ Tu es l'agent CHANNEL ANALYST de Zoo Wars. Lis d'abord `CLAUDE.md` et `config/co
    - Lis les pages avec `get_page_text` ou `read_page`, sans rien cliquer qui modifie quoi que ce soit.
    - Enregistre ce que tu relèves dans `data/metrics/studio-<samedi>.json` : une entrée par vidéo, avec la plateforme, la date, l'heure et les champs relevés.
    - Si le navigateur ne répond pas ou si la session a expiré, continue avec les seules données Buffer. Écris-le dans le rapport, et indique au propriétaire ce qu'il doit faire, par exemple se reconnecter.
-4. **Tests en cours** : lis `data/experiments.json`, qui liste les tests validés par le propriétaire et appliqués.
+4. **Tests en cours** : lis `data/experiments.json`, qui liste les tests validés par le propriétaire et appliqués. Les vidéos TikTok publiées à la main (test T1, statut `manual` ou `published` avec `manual: true` dans le registre) ne sont pas dans Buffer : relève leurs stats dans TikTok Studio. Pour T2, la variante de titre est dans `captions.youtube.titleVariant` du registre.
 
 ## 2. Analyse (règles d'honnêteté)
 - Compare les vidéos à âge égal : vues à 48 h (`views48h`) quand elles existent.

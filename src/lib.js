@@ -86,8 +86,14 @@ function daySlots(date) {
   for (const w of cfg.weeklySlots || []) if (w.weekday === wd && !(w.game === 'standings' && cfg.standings && date < addDays(cfg.standings.season1Start, 6))) out.push({ slot: out.length + 1, time: w.time, game: w.game });
   return out;
 }
+// test T1 (validated by the owner on 15/11/2026): some slots of a channel are published by hand from the app, not via Buffer
+// config.buffer.channels.<ch>.manualSlots = { from, to, times: ["HH:MM"], experiment }
+function isManual(ch, date, time) {
+  const c = config().buffer.channels[ch], m = c && c.manualSlots;
+  return !!(m && date >= m.from && date <= m.to && (m.times || []).includes(time));
+}
 const videoId = (date, slot) => `ZW-${date.replace(/-/g, '')}-${slot}`;
 
 function die(msg) { console.error('ERROR: ' + msg); process.exit(1); }
 
-module.exports = { daySlots, P, readJSON, writeJSON, config, todayParis, nowParisISO, addDays, dueAtFor, offsetFor, log, withRegistry, loadRegistry, setVideoStatus, videoId, die };
+module.exports = { daySlots, P, readJSON, writeJSON, config, todayParis, nowParisISO, addDays, dueAtFor, offsetFor, log, withRegistry, loadRegistry, setVideoStatus, videoId, die, isManual };

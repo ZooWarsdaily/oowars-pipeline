@@ -21,6 +21,10 @@ Cela fait 22 vidéos uniques et 44 publications par semaine.
 
 Claude est l'orchestrateur. Il lance les trois agents, dans `.claude/agents/`, dans l'ordre ci-dessous. Les scripts de `src/` font tout le travail déterministe. Seuls les appels Buffer passent par le connecteur MCP Buffer officiel.
 
+### Tests en cours (validés par le propriétaire le 15/11/2026, détail dans `data/experiments.json`)
+- **T1, TikTok, du 17 au 23/11** : la vidéo TikTok de **19:00** n'est pas envoyée par Buffer. `publisher.js payload` répond `MANUAL_SLOT` : ne pas appeler `create_post` pour ce créneau. Le propriétaire la publie à la main depuis l'app. Chaque soir, le compte rendu lui envoie, pour la vidéo manuelle de J+1 (ligne `MANUAL_TODO` du moniteur), le lien du fichier et la légende TikTok à copier. Quand il confirme, lancer `node src/publisher.js manual-done <id> tiktok`. Un jour reste « complet » avec 5 posts Buffer + 1 créneau manuel préparé.
+- **T2, YouTube, du 17 au 30/11** : titres YouTube « Jeu : accroche + emoji » les jours pairs aux créneaux 16:00 et 19:00 (`captions.youtubeTitleTest`), titres normaux les jours impairs. Automatique, rien à faire.
+
 ## Règles absolues
 1. **Ne jamais modifier les jeux** (`engine/`, `engine2d/arena.html`), ni inventer un mode de jeu, sans autorisation écrite du propriétaire. Modifications autorisées à ce jour (13/11/2026) : la ligne de classement sur l'écran de fin du jeu 3D, et les 7 nouveaux animaux du jeu 3D (éléphant, pingouin, kangourou, tortue, crocodile, grenouille, lapin) avec le choix des 8 animaux d'une partie (`production.animals`, transmis au jeu par `?roster=`). Le 14/11/2026, le propriétaire a validé deux nouveaux jeux 3D construits sur le même moteur : `games/musical-chairs/` et `games/infection/` (leur dossier `music/` est un lien vers celui d'`engine/dist`). Ils suivent la même règle : on ne les modifie pas sans accord. Les valeurs d'équilibre (`BAL`) ne se changent qu'après un test sur des milliers de parties.
 2. **Une vidéo non validée n'est jamais publiée.** `publisher.js payload` refuse tout ce qui n'est pas `uploaded` avec un contrôle qualité réussi. Ne jamais contourner ce refus.
@@ -76,7 +80,8 @@ Chaque soir, on regarde dans Buffer si les jours J+1 et J+2 sont **complets**. U
    - `node src/orchestrator.js save "daily run"`.
 6. **Compte rendu** :
    - si le verdict est OK, un court message suffit ;
-   - s'il y a une ALERTE ou une étape impossible, envoyer une notification claire au propriétaire : quoi, quelle vidéo ou publication, ce qui a été tenté, ce qu'il doit faire.
+   - s'il y a une ALERTE ou une étape impossible, envoyer une notification claire au propriétaire : quoi, quelle vidéo ou publication, ce qui a été tenté, ce qu'il doit faire ;
+   - pendant le test T1, s'il y a une ligne `MANUAL_TODO`, envoyer **toujours** une notification au propriétaire : date et heure, lien de la vidéo, légende TikTok à copier.
 
 ## Rapport hebdomadaire (tâche planifiée du dimanche)
 L'agent `channel-analyst` analyse la semaine, du dimanche au samedi. Il croise les stats Buffer et, si le Mac est allumé, les données fines de TikTok Studio et YouTube Studio. Il rédige un document et propose 2 à 3 tests. **Aucun test n'est appliqué sans l'accord du propriétaire.** Les tests validés sont notés dans `data/experiments.json`.

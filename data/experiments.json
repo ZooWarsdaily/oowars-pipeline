@@ -1,1 +1,32 @@
-{"experiments":[],"_help":"tests valides par le proprietaire : {id, debut, fin_prevue, changement, indicateur, seuil, statut}"}
+{
+  "experiments": [
+    {
+      "id": "T1-tiktok-native-19h",
+      "plateforme": "tiktok",
+      "valide_le": "2026-11-15",
+      "debut": "2026-11-17",
+      "fin_prevue": "2026-11-23",
+      "hypothese": "les videos envoyees par Buffer depuis un compte neuf (0 abonne) ne sont pas poussees dans Pour toi ; une video publiee a la main depuis l'app le serait",
+      "changement": "config.buffer.channels.tiktok.manualSlots : video TikTok de 19:00 publiee a la main depuis l'app (lien + legende envoyes chaque soir), 12:30 et 16:00 restent via Buffer",
+      "prealable": "verifier Statut du compte et la mention 'Non eligible pour Pour toi' dans l'app TikTok",
+      "indicateur": "vues a 48 h et part du trafic Pour toi (TikTok Studio), videos manuelles contre videos Buffer",
+      "seuil": "mediane des videos manuelles > 100 vues a 48 h et > 50 % Pour toi sur au moins 5 videos -> revoir tout l'envoi TikTok ; si elles restent a 0 -> blocage du compte (support TikTok ou nouveau compte)",
+      "mesure": "les videos manuelles ne sont pas dans Buffer : relever leurs stats dans TikTok Studio",
+      "statut": "en_cours"
+    },
+    {
+      "id": "T2-youtube-titres-emoji",
+      "plateforme": "youtube",
+      "valide_le": "2026-11-15",
+      "debut": "2026-11-17",
+      "fin_prevue": "2026-11-30",
+      "hypothese": "un titre 'Jeu: accroche + emoji' fait plus de vues que les titres descriptifs actuels",
+      "changement": "config.captions.youtubeTitleTest + banque EMOJI_TITLES de src/captions.js : jours pairs = titres emoji, jours impairs = titres normaux (temoin), creneaux 16:00 et 19:00 seulement",
+      "indicateur": "mediane des vues a 48 h YouTube et part 'ont continue de regarder'",
+      "seuil": "on garde les titres emoji si leur mediane a 48 h depasse de plus de 25 % celle des titres normaux, sur au moins 5 videos par variante",
+      "mesure": "variante notee dans le registre : captions.youtube.titleVariant",
+      "statut": "en_cours"
+    }
+  ],
+  "_help": "tests valides par le proprietaire : {id, debut, fin_prevue, changement, indicateur, seuil, statut}"
+}

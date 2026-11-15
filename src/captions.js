@@ -112,7 +112,30 @@ function makeStandings(video, cfg) {
     signatures: [],
   };
 }
-function make(video, cfg, used) {
+// test T2 (validated by the owner on 15/11/2026): YouTube titles "Game: hook + emoji" on even days, slots 16:00 and 19:00.
+// config.captions.youtubeTitleTest = { experiment, from, to, times, days: "even" }. Odd days in the window = control (normal titles).
+const EMOJI_TITLES = {
+  'hot-potato-3d': ["Hot Potato: pass it or BOOM 💣", "Hot Potato: who's holding the bomb? 💣", 'Hot Potato: the fuse is burning 🔥', 'Hot Potato: last one standing wins 🏆', "Hot Potato: don't blink at the end 👀", 'Hot Potato: one bomb, eight animals 💥', 'Hot Potato: that final duel 😱'],
+  terr: ['Territory War: who owns the map? 🎨', 'Territory War: paint it or lose it 🖌️', 'Territory War: the map keeps shrinking 😳', 'Territory War: every tile counts 🟩', 'Territory War: biggest map wins 🗺️'],
+  color: ['Color War: every hit steals a tile 🟥', 'Color War: only one color survives 🎨', 'Color War: which color takes over? 🟦', 'Color War: bounce, steal, survive 🔵', 'Color War: six colors, one winner 🏆'],
+  hot: ['Hot Potato: run, the bomb is coming 🏃', 'Hot Potato: nobody wants this bomb 😬', 'Hot Potato: six animals, one bomb 💥', 'Hot Potato: tag, run, explode 💥', 'Hot Potato: who survives the last boom? 💣'],
+};
+function titleTest(video, cfg, used, out) {
+  const t = cfg.captions && cfg.captions.youtubeTitleTest;
+  if (!t || !video.date || video.date < t.from || video.date > t.to || !(t.times || []).includes(video.time)) return out;
+  const even = +video.date.slice(8, 10) % 2 === 0, variant = (t.days === 'odd' ? !even : even) ? 'emoji' : 'control';
+  out.youtube.titleVariant = variant; out.youtube.experiment = t.experiment || null;
+  if (variant !== 'emoji') return out;
+  const bank = EMOJI_TITLES[video.game === 'arena2d' ? video.plan.theme : video.game]; if (!bank) { out.youtube.titleVariant = 'control'; return out; }
+  const recent = new Set((used || []).slice(-40)), rnd = rng((video.selection ? video.selection.seed : Date.now()) + 7);
+  let title = pick(bank, rnd); for (let i = 0; i < 200 && recent.has('emt|' + title); i++) title = pick(bank, rnd);
+  const w = video.plan.winner || (video.selection && video.selection.metrics && video.selection.metrics.winner);
+  if (w && new RegExp('\\b' + w + '\\b', 'i').test(title)) throw new Error('caption reveals the winner');
+  out.youtube.title = title.slice(0, 100); out.signatures = (out.signatures || []).concat('emt|' + title);
+  return out;
+}
+function make(video, cfg, used) { return titleTest(video, cfg, used, make0(video, cfg, used)); }
+function make0(video, cfg, used) {
   if (video.game === 'standings') return makeStandings(video, cfg);
   if (video.game === 'arena2d') return make2d(video, cfg, used, rng(video.selection ? video.selection.seed : Date.now()));
   if (G3[video.game]) return make3(video, cfg, used, rng(video.selection ? video.selection.seed : Date.now()));
