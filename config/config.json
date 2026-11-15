@@ -15,16 +15,7 @@
     "channels": {
       "tiktok": {
         "id": "6af60dc162b70b94b00d05a1",
-        "name": "zoowarsdaily",
-        "manualSlots": {
-          "experiment": "T1-tiktok-native-19h",
-          "from": "2026-11-17",
-          "to": "2026-11-23",
-          "times": [
-            "19:00"
-          ],
-          "_help": "test T1 valide le 15/11/2026 : la video TikTok de 19:00 est publiee a la main par le proprietaire depuis l'app (pas de post Buffer). publisher.js payload prepare buffer/<date>/<id>.tiktok.manual.json ; le run quotidien lui envoie le lien et la legende."
-        }
+        "name": "zoowarsdaily"
       },
       "youtube": {
         "id": "6af611d662b70b94b00d5648",

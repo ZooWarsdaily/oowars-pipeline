@@ -12,7 +12,9 @@
       "indicateur": "vues a 48 h et part du trafic Pour toi (TikTok Studio), videos manuelles contre videos Buffer",
       "seuil": "mediane des videos manuelles > 100 vues a 48 h et > 50 % Pour toi sur au moins 5 videos -> revoir tout l'envoi TikTok ; si elles restent a 0 -> blocage du compte (support TikTok ou nouveau compte)",
       "mesure": "les videos manuelles ne sont pas dans Buffer : relever leurs stats dans TikTok Studio",
-      "statut": "en_cours"
+      "statut": "abandonne",
+      "abandonne_le": "2026-11-15",
+      "raison": "publication manuelle trop contraignante pour le proprietaire ; remplacee par le controle du Statut du compte TikTok"
     },
     {
       "id": "T2-youtube-titres-emoji",
