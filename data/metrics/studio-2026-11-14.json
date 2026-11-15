@@ -1,0 +1,26 @@
+{
+  "capturedAt": "2026-11-15T13:00:00+01:00",
+  "source": "navigateur integre, lecture seule",
+  "tiktok": {
+    "account": {"followers": 0, "likes": 0, "period": "7 derniers jours", "videoViews": 14, "profileViews": 1,
+      "trafficSources": {"profil": 0.909, "recherche": 0.091, "suivis": 0, "pourToi": 0, "son": 0}},
+    "contentListVisible": 7,
+    "note": "Les 7 videos visibles (13-15/11) sont publiques (Tout le monde) avec 0 a 4 vues. Les publications TikTok du 10 au 12/11 marquees sent dans Buffer n'apparaissent pas dans la liste du Studio.",
+    "videos": [
+      {"platform":"tiktok","date":"2026-11-15","time":"12:31","views":0,"likes":0,"comments":0,"privacy":"Tout le monde"},
+      {"platform":"tiktok","date":"2026-11-14","time":"19:03","views":0,"likes":0,"comments":0,"privacy":"Tout le monde"},
+      {"platform":"tiktok","date":"2026-11-14","time":"16:02","views":0,"likes":0,"comments":0,"privacy":"Tout le monde"},
+      {"platform":"tiktok","date":"2026-11-14","time":"12:30","views":0,"likes":0,"comments":0,"privacy":"Tout le monde"},
+      {"platform":"tiktok","date":"2026-11-13","time":"19:02","views":0,"likes":0,"comments":0,"privacy":"Tout le monde"},
+      {"platform":"tiktok","date":"2026-11-13","time":"16:03","views":0,"likes":0,"comments":0,"privacy":"Tout le monde"},
+      {"platform":"tiktok","date":"2026-11-13","time":"12:30","views":4,"likes":0,"comments":0,"privacy":"Tout le monde"}
+    ]
+  },
+  "youtube": {
+    "channel": {"period": "28 derniers jours (18/10-14/11)", "views": 12700, "engagedViews": 6700, "watchHours": 70.0, "subscribersGained": 8, "totalSubscribers": 5,
+      "stayedToWatch": 0.502, "swipedAway": 0.498, "newViewers": 0.99,
+      "trafficSources": {"fluxShorts": 0.966, "rechercheYouTube": 0.019, "pagesChaine": 0.011, "autres": 0.003, "navigation": 0.001},
+      "demographics": "Homme, 25-34 ans"},
+    "note": "Retention par video non relevee (pages Analytics par Short non chargees en lecture texte)."
+  }
+}
