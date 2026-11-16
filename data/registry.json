@@ -23,7 +23,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-12T21:20:12+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-15T20:45:27+01:00",
+          "syncedAt": "2026-11-16T20:44:53+01:00",
           "sentAt": "2026-11-14T11:32:41.532Z"
         },
         "youtube": {
@@ -36,7 +36,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-12T21:20:36+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-15T20:45:27+01:00",
+          "syncedAt": "2026-11-16T20:44:54+01:00",
           "sentAt": "2026-11-14T11:30:27.729Z"
         }
       },
@@ -257,7 +257,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-12T21:21:01+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-15T20:45:27+01:00",
+          "syncedAt": "2026-11-16T20:44:54+01:00",
           "sentAt": "2026-11-14T18:04:37.511Z"
         },
         "youtube": {
@@ -270,7 +270,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-12T21:21:22+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-15T20:45:27+01:00",
+          "syncedAt": "2026-11-16T20:44:54+01:00",
           "sentAt": "2026-11-14T18:02:09.103Z"
         }
       },
@@ -1019,7 +1019,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-12T22:12:45+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-15T20:45:27+01:00",
+          "syncedAt": "2026-11-16T20:44:54+01:00",
           "sentAt": "2026-11-14T15:05:21.303Z"
         },
         "youtube": {
@@ -1032,7 +1032,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-12T22:12:45+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-15T20:45:27+01:00",
+          "syncedAt": "2026-11-16T20:44:54+01:00",
           "sentAt": "2026-11-14T15:02:21.366Z"
         }
       },
@@ -1179,7 +1179,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-13T21:37:38+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-15T20:45:27+01:00",
+          "syncedAt": "2026-11-16T20:44:54+01:00",
           "sentAt": "2026-11-15T11:32:20.033Z"
         },
         "youtube": {
@@ -1192,7 +1192,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-13T21:37:38+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-15T20:45:27+01:00",
+          "syncedAt": "2026-11-16T20:44:54+01:00",
           "sentAt": "2026-11-15T11:30:34.202Z"
         }
       },
@@ -1378,7 +1378,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-13T21:37:38+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-15T20:45:27+01:00",
+          "syncedAt": "2026-11-16T20:44:54+01:00",
           "sentAt": "2026-11-15T18:04:44.147Z"
         },
         "youtube": {
@@ -1391,7 +1391,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-13T21:37:38+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-15T20:45:27+01:00",
+          "syncedAt": "2026-11-16T20:44:54+01:00",
           "sentAt": "2026-11-15T18:02:07.408Z"
         }
       },
@@ -1567,7 +1567,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-13T21:37:38+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-15T20:45:27+01:00",
+          "syncedAt": "2026-11-16T20:44:54+01:00",
           "sentAt": "2026-11-15T15:06:13.168Z"
         },
         "youtube": {
@@ -1580,7 +1580,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-13T21:37:38+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-15T20:45:27+01:00",
+          "syncedAt": "2026-11-16T20:44:54+01:00",
           "sentAt": "2026-11-15T15:02:22.896Z"
         }
       },
@@ -1701,7 +1701,7 @@
       "slot": 1,
       "time": "12:30",
       "game": "hot-potato-3d",
-      "status": "scheduled",
+      "status": "published",
       "plan": {
         "winner": "bear",
         "theme": "jungle",
@@ -1718,26 +1718,30 @@
       },
       "posts": {
         "tiktok": {
-          "status": "scheduled",
+          "status": "published",
           "dueAt": "2026-11-16T11:30:00.000Z",
           "payload": "buffer/2026-11-16/ZW-20261116-1.tiktok.payload.json",
           "mode": "live",
           "at": "2026-11-13T22:27:42+01:00",
           "bufferPostId": "6af780e49257ce339810ebd7",
-          "bufferStatus": "scheduled",
+          "bufferStatus": "sent",
           "recordedAt": "2026-11-13T22:28:16+01:00",
-          "simulated": false
+          "simulated": false,
+          "syncedAt": "2026-11-16T20:44:54+01:00",
+          "sentAt": "2026-11-16T11:32:46.167Z"
         },
         "youtube": {
-          "status": "scheduled",
+          "status": "published",
           "dueAt": "2026-11-16T11:30:00.000Z",
           "payload": "buffer/2026-11-16/ZW-20261116-1.youtube.payload.json",
           "mode": "live",
           "at": "2026-11-13T22:27:42+01:00",
           "bufferPostId": "6af780e5bb36d00909cc6347",
-          "bufferStatus": "scheduled",
+          "bufferStatus": "sent",
           "recordedAt": "2026-11-13T22:28:16+01:00",
-          "simulated": false
+          "simulated": false,
+          "syncedAt": "2026-11-16T20:44:54+01:00",
+          "sentAt": "2026-11-16T11:30:39.120Z"
         }
       },
       "history": [
@@ -1768,6 +1772,12 @@
           "from": "uploaded",
           "to": "scheduled",
           "note": "tiktok 6af780e49257ce339810ebd7 / youtube 6af780e5bb36d00909cc6347"
+        },
+        {
+          "at": "2026-11-16T20:44:54+01:00",
+          "from": "scheduled",
+          "to": "published",
+          "note": "both channels sent"
         }
       ],
       "selection": {
@@ -1881,7 +1891,8 @@
           "text": "Zoo Wars simulation on the jungle stage: the bomb carrier has to catch someone before it explodes.\nDid your pick make it to the final duel?\n\n#shorts #zoowars #simulation #hotpotato"
         },
         "at": "2026-11-13T22:27:19+01:00"
-      }
+      },
+      "mediaPruned": "2026-11-16T20:45:07+01:00"
     },
     "ZW-20261116-2": {
       "id": "ZW-20261116-2",
@@ -1889,7 +1900,7 @@
       "slot": 2,
       "time": "19:00",
       "game": "hot-potato-3d",
-      "status": "scheduled",
+      "status": "published",
       "plan": {
         "winner": "fox",
         "theme": "ice",
@@ -1906,26 +1917,30 @@
       },
       "posts": {
         "tiktok": {
-          "status": "scheduled",
+          "status": "published",
           "dueAt": "2026-11-16T18:00:00.000Z",
           "payload": "buffer/2026-11-16/ZW-20261116-2.tiktok.payload.json",
           "mode": "live",
           "at": "2026-11-13T22:27:42+01:00",
           "bufferPostId": "6af780e69257ce339810ec50",
-          "bufferStatus": "scheduled",
+          "bufferStatus": "sent",
           "recordedAt": "2026-11-13T22:28:16+01:00",
-          "simulated": false
+          "simulated": false,
+          "syncedAt": "2026-11-16T20:44:54+01:00",
+          "sentAt": "2026-11-16T18:07:34.760Z"
         },
         "youtube": {
-          "status": "scheduled",
+          "status": "published",
           "dueAt": "2026-11-16T18:00:00.000Z",
           "payload": "buffer/2026-11-16/ZW-20261116-2.youtube.payload.json",
           "mode": "live",
           "at": "2026-11-13T22:27:42+01:00",
           "bufferPostId": "6af780e778196a0a9720a706",
-          "bufferStatus": "scheduled",
+          "bufferStatus": "sent",
           "recordedAt": "2026-11-13T22:28:16+01:00",
-          "simulated": false
+          "simulated": false,
+          "syncedAt": "2026-11-16T20:44:54+01:00",
+          "sentAt": "2026-11-16T18:05:16.322Z"
         }
       },
       "history": [
@@ -1956,6 +1971,12 @@
           "from": "uploaded",
           "to": "scheduled",
           "note": "tiktok 6af780e69257ce339810ec50 / youtube 6af780e778196a0a9720a706"
+        },
+        {
+          "at": "2026-11-16T20:44:54+01:00",
+          "from": "scheduled",
+          "to": "published",
+          "note": "both channels sent"
         }
       ],
       "selection": {
@@ -2069,7 +2090,8 @@
           "text": "A new Zoo Wars hot potato battle on slippery ice: tag, dodge and survive until only one animal is left.\nComment your animal for the next battle!\n🏆 Season 1 leader: Bear (1 win)\n\n#shorts #zoowars #hotpotato #satisfying"
         },
         "at": "2026-11-13T22:27:28+01:00"
-      }
+      },
+      "mediaPruned": "2026-11-16T20:45:07+01:00"
     },
     "ZW-20261116-3": {
       "id": "ZW-20261116-3",
@@ -2077,33 +2099,37 @@
       "slot": 3,
       "time": "16:00",
       "game": "arena2d",
-      "status": "scheduled",
+      "status": "published",
       "plan": {
         "winner": null,
         "theme": "color"
       },
       "posts": {
         "tiktok": {
-          "status": "scheduled",
+          "status": "published",
           "dueAt": "2026-11-16T15:00:00.000Z",
           "payload": "buffer/2026-11-16/ZW-20261116-3.tiktok.payload.json",
           "mode": "live",
           "at": "2026-11-13T22:27:42+01:00",
           "bufferPostId": "6af780e84b28296eb117cd43",
-          "bufferStatus": "scheduled",
+          "bufferStatus": "sent",
           "recordedAt": "2026-11-13T22:28:16+01:00",
-          "simulated": false
+          "simulated": false,
+          "syncedAt": "2026-11-16T20:44:54+01:00",
+          "sentAt": "2026-11-16T15:06:11.349Z"
         },
         "youtube": {
-          "status": "scheduled",
+          "status": "published",
           "dueAt": "2026-11-16T15:00:00.000Z",
           "payload": "buffer/2026-11-16/ZW-20261116-3.youtube.payload.json",
           "mode": "live",
           "at": "2026-11-13T22:27:42+01:00",
           "bufferPostId": "6af780e881e1228421c5e1ac",
-          "bufferStatus": "scheduled",
+          "bufferStatus": "sent",
           "recordedAt": "2026-11-13T22:28:16+01:00",
-          "simulated": false
+          "simulated": false,
+          "syncedAt": "2026-11-16T20:44:54+01:00",
+          "sentAt": "2026-11-16T15:04:09.193Z"
         }
       },
       "history": [
@@ -2134,6 +2160,12 @@
           "from": "uploaded",
           "to": "scheduled",
           "note": "tiktok 6af780e84b28296eb117cd43 / youtube 6af780e881e1228421c5e1ac"
+        },
+        {
+          "at": "2026-11-16T20:44:54+01:00",
+          "from": "scheduled",
+          "to": "published",
+          "note": "both channels sent"
         }
       ],
       "selection": {
@@ -2208,7 +2240,8 @@
           "text": "A Zoo Wars color battle: every hit steals a tile, only one color survives.\nDid your pick survive the cuts?\n\n#shorts #zoowars #colorwar #animalbattle"
         },
         "at": "2026-11-13T22:27:32+01:00"
-      }
+      },
+      "mediaPruned": "2026-11-16T20:45:07+01:00"
     },
     "ZW-20261117-1": {
       "id": "ZW-20261117-1",
@@ -3334,5 +3367,5 @@
     "yte|Who did you pick? Tell us in the comments!",
     "emt|Hot Potato: nobody wants this bomb 😬"
   ],
-  "updatedAt": "2026-11-15T22:10:41+01:00"
+  "updatedAt": "2026-11-16T20:45:07+01:00"
 }

@@ -1,0 +1,188 @@
+{
+ "edges": [
+  {
+   "node": {
+    "id": "6af780e881e1228421c5e1ac",
+    "status": "sent",
+    "dueAt": "2026-11-16T15:00:00.000Z",
+    "sentAt": "2026-11-16T15:04:09.193Z",
+    "channelId": "6af611d662b70b94b00d5648",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6af780e84b28296eb117cd43",
+    "status": "sent",
+    "dueAt": "2026-11-16T15:00:00.000Z",
+    "sentAt": "2026-11-16T15:06:11.349Z",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6af780e778196a0a9720a706",
+    "status": "sent",
+    "dueAt": "2026-11-16T18:00:00.000Z",
+    "sentAt": "2026-11-16T18:05:16.322Z",
+    "channelId": "6af611d662b70b94b00d5648",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6af780e69257ce339810ec50",
+    "status": "sent",
+    "dueAt": "2026-11-16T18:00:00.000Z",
+    "sentAt": "2026-11-16T18:07:34.760Z",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6af780e5bb36d00909cc6347",
+    "status": "sent",
+    "dueAt": "2026-11-16T11:30:00.000Z",
+    "sentAt": "2026-11-16T11:30:39.120Z",
+    "channelId": "6af611d662b70b94b00d5648",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6af780e49257ce339810ebd7",
+    "status": "sent",
+    "dueAt": "2026-11-16T11:30:00.000Z",
+    "sentAt": "2026-11-16T11:32:46.167Z",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6af7750a78196a0a971c4116",
+    "status": "sent",
+    "dueAt": "2026-11-15T15:00:00.000Z",
+    "sentAt": "2026-11-15T15:02:22.896Z",
+    "channelId": "6af611d662b70b94b00d5648",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6af77509bb36d00909c82ced",
+    "status": "sent",
+    "dueAt": "2026-11-15T15:00:00.000Z",
+    "sentAt": "2026-11-15T15:06:13.168Z",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6af7750881e1228421c17063",
+    "status": "sent",
+    "dueAt": "2026-11-15T18:00:00.000Z",
+    "sentAt": "2026-11-15T18:02:07.408Z",
+    "channelId": "6af611d662b70b94b00d5648",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6af7750778196a0a971c4093",
+    "status": "sent",
+    "dueAt": "2026-11-15T18:00:00.000Z",
+    "sentAt": "2026-11-15T18:04:44.147Z",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6af775069257ce33980c97f3",
+    "status": "sent",
+    "dueAt": "2026-11-15T11:30:00.000Z",
+    "sentAt": "2026-11-15T11:30:34.202Z",
+    "channelId": "6af611d662b70b94b00d5648",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6af7750578196a0a971c4036",
+    "status": "sent",
+    "dueAt": "2026-11-15T11:30:00.000Z",
+    "sentAt": "2026-11-15T11:32:20.033Z",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6af62bc4f8f0d4b8329f320b",
+    "status": "sent",
+    "dueAt": "2026-11-14T15:00:00.000Z",
+    "sentAt": "2026-11-14T15:02:21.366Z",
+    "channelId": "6af611d662b70b94b00d5648",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6af62bc4446d978be7e9a25d",
+    "status": "sent",
+    "dueAt": "2026-11-14T15:00:00.000Z",
+    "sentAt": "2026-11-14T15:05:21.303Z",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6af61fbd8a13f5efaaf8c682",
+    "status": "sent",
+    "dueAt": "2026-11-14T18:00:00.000Z",
+    "sentAt": "2026-11-14T18:02:09.103Z",
+    "channelId": "6af611d662b70b94b00d5648",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6af61fa77d05892ccea5646f",
+    "status": "sent",
+    "dueAt": "2026-11-14T18:00:00.000Z",
+    "sentAt": "2026-11-14T18:04:37.511Z",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6af61f8c76b8df0929bcae25",
+    "status": "sent",
+    "dueAt": "2026-11-14T11:30:00.000Z",
+    "sentAt": "2026-11-14T11:30:27.729Z",
+    "channelId": "6af611d662b70b94b00d5648",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6af61f5bad1ba188ea6c7a0a",
+    "status": "sent",
+    "dueAt": "2026-11-14T11:30:00.000Z",
+    "sentAt": "2026-11-14T11:32:41.532Z",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "error": null
+   }
+  }
+ ],
+ "pageInfo": {
+  "hasNextPage": false
+ },
+ "_note": "list_posts sent|error, dueAt 2026-11-14..16 Paris; 18 sent, 0 error; texts/assets omitted"
+}
