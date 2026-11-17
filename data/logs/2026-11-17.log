@@ -41,3 +41,24 @@
 2026-11-17T21:20:44+01:00 [producer] ZW-20261119-3: rendered in 1 min
 2026-11-17T21:20:49+01:00 [producer] ZW-20261119-3: VALIDATED (66.87s, 11.44 MB)
 2026-11-17T21:20:49+01:00 [producer] run 2026-11-19 finished: ZW-20261119-1=validated ZW-20261119-2=validated ZW-20261119-3=validated
+2026-11-17T21:24:31+01:00 [orchestrator] ZW-20261119-1: pushed to media branch
+2026-11-17T21:24:39+01:00 [orchestrator] ZW-20261119-2: pushed to media branch
+2026-11-17T21:24:42+01:00 [orchestrator] ZW-20261119-3: pushed to media branch
+2026-11-17T21:24:45+01:00 [publisher] ZW-20261119-1: uploaded (git blob ok (f935cac1bf)) https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-19/ZW-20261119-1.mp4
+2026-11-17T21:24:45+01:00 [publisher] ZW-20261119-1: captions written
+2026-11-17T21:24:46+01:00 [publisher] ZW-20261119-2: uploaded (git blob ok (973c50360f)) https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-19/ZW-20261119-2.mp4
+2026-11-17T21:24:46+01:00 [publisher] ZW-20261119-2: captions written
+2026-11-17T21:24:47+01:00 [publisher] ZW-20261119-3: uploaded (git blob ok (dffca10884)) https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-19/ZW-20261119-3.mp4
+2026-11-17T21:24:48+01:00 [publisher] ZW-20261119-3: captions written
+2026-11-17T21:24:57+01:00 [publisher] ZW-20261119-1: tiktok payload ready (live)
+2026-11-17T21:24:57+01:00 [publisher] ZW-20261119-1: youtube payload ready (live)
+2026-11-17T21:24:57+01:00 [publisher] ZW-20261119-2: tiktok payload ready (live)
+2026-11-17T21:24:57+01:00 [publisher] ZW-20261119-2: youtube payload ready (live)
+2026-11-17T21:24:57+01:00 [publisher] ZW-20261119-3: tiktok payload ready (live)
+2026-11-17T21:24:57+01:00 [publisher] ZW-20261119-3: youtube payload ready (live)
+2026-11-17T21:25:29+01:00 [publisher] ZW-20261119-1: tiktok confirmed by Buffer, post 6afcb82d700b9ade62f321c1 (scheduled)
+2026-11-17T21:25:29+01:00 [publisher] ZW-20261119-1: youtube confirmed by Buffer, post 6afcb82e700b9ade62f3222c (scheduled)
+2026-11-17T21:25:29+01:00 [publisher] ZW-20261119-2: tiktok confirmed by Buffer, post 6afcb82f57c8fecbcd1b6583 (scheduled)
+2026-11-17T21:25:29+01:00 [publisher] ZW-20261119-2: youtube confirmed by Buffer, post 6afcb830dfbe5d51e1ebf9d4 (scheduled)
+2026-11-17T21:25:29+01:00 [publisher] ZW-20261119-3: tiktok confirmed by Buffer, post 6afcb8317847359f57af53a4 (scheduled)
+2026-11-17T21:25:29+01:00 [publisher] ZW-20261119-3: youtube confirmed by Buffer, post 6afcb832a4d3be4123fc3cab (scheduled)

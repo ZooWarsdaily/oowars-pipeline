@@ -1,0 +1,18 @@
+{
+  "channelId": "6af60dc162b70b94b00d05a1",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "dueAt": "2026-11-19T19:00:00+01:00",
+  "text": "The bomb never stays still for long 💣\nHot potato battle between the jungle trees.\n\nWho did you pick? 👇\n🏆 Season 1: Wolf & Fox tied at the top (2 wins)\n\n#zoowars #whowouldwin #simulation #satisfying #animalbattle",
+  "assets": [
+    {
+      "video": {
+        "url": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-19/ZW-20261119-2.mp4",
+        "metadata": {
+          "thumbnailOffset": 3000
+        }
+      }
+    }
+  ],
+  "metadata": {}
+}
