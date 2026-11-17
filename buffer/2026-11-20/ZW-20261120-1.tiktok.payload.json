@@ -1,0 +1,18 @@
+{
+  "channelId": "6af60dc162b70b94b00d05a1",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "dueAt": "2026-11-20T12:30:00+01:00",
+  "text": "Don't let them touch you 🟢\nInfection chase over the lava.\n\nCall your winner in the comments 👇\n🏆 Season 1 leader: Wolf (3 wins)\n\n#zoowars #infection #simulation #satisfying #whowouldwin",
+  "assets": [
+    {
+      "video": {
+        "url": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-20/ZW-20261120-1.mp4",
+        "metadata": {
+          "thumbnailOffset": 3000
+        }
+      }
+    }
+  ],
+  "metadata": {}
+}

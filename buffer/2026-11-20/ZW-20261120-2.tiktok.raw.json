@@ -1,0 +1,17 @@
+{
+ "id": "6afcc11dbbe886f1b511b6a5",
+ "status": "scheduled",
+ "channelId": "6af60dc162b70b94b00d05a1",
+ "channelService": "tiktok",
+ "dueAt": "2026-11-20T18:00:00.000Z",
+ "sentAt": null,
+ "shareMode": "customScheduled",
+ "error": null,
+ "assets": [
+  {
+   "type": "video",
+   "mimeType": "video/mp4",
+   "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-20/ZW-20261120-2.mp4"
+  }
+ ]
+}

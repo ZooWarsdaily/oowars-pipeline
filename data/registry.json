@@ -3826,7 +3826,7 @@
       "slot": 1,
       "time": "12:30",
       "game": "infection-3d",
-      "status": "validated",
+      "status": "scheduled",
       "plan": {
         "winner": "panda",
         "theme": "volcano",
@@ -3841,7 +3841,30 @@
           "panda"
         ]
       },
-      "posts": {},
+      "posts": {
+        "tiktok": {
+          "status": "scheduled",
+          "dueAt": "2026-11-20T11:30:00.000Z",
+          "payload": "buffer/2026-11-20/ZW-20261120-1.tiktok.payload.json",
+          "mode": "live",
+          "at": "2026-11-17T22:03:03+01:00",
+          "bufferPostId": "6afcc11a9b0477630c930d6b",
+          "bufferStatus": "scheduled",
+          "recordedAt": "2026-11-17T22:03:35+01:00",
+          "simulated": false
+        },
+        "youtube": {
+          "status": "scheduled",
+          "dueAt": "2026-11-20T11:30:00.000Z",
+          "payload": "buffer/2026-11-20/ZW-20261120-1.youtube.payload.json",
+          "mode": "live",
+          "at": "2026-11-17T22:03:03+01:00",
+          "bufferPostId": "6afcc11b843fae727bb52cbc",
+          "bufferStatus": "scheduled",
+          "recordedAt": "2026-11-17T22:03:35+01:00",
+          "simulated": false
+        }
+      },
       "history": [
         {
           "at": "2026-11-17T21:25:36+01:00",
@@ -3858,6 +3881,18 @@
           "from": "produced",
           "to": "validated",
           "note": "qc ok"
+        },
+        {
+          "at": "2026-11-17T22:02:41+01:00",
+          "from": "validated",
+          "to": "uploaded",
+          "note": "git blob ok (a05c2c35e9)"
+        },
+        {
+          "at": "2026-11-17T22:03:35+01:00",
+          "from": "uploaded",
+          "to": "scheduled",
+          "note": "tiktok 6afcc11a9b0477630c930d6b / youtube 6afcc11b843fae727bb52cbc"
         }
       ],
       "selection": {
@@ -3955,7 +3990,19 @@
         ]
       },
       "approvedFile": "approved/2026-11-20/ZW-20261120-1.mp4",
-      "fiche": "approved/2026-11-20/ZW-20261120-1.json"
+      "fiche": "approved/2026-11-20/ZW-20261120-1.json",
+      "publicUrl": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-20/ZW-20261120-1.mp4",
+      "uploadCheck": "git blob ok (a05c2c35e9)",
+      "captions": {
+        "tiktok": {
+          "text": "Don't let them touch you 🟢\nInfection chase over the lava.\n\nCall your winner in the comments 👇\n🏆 Season 1 leader: Wolf (3 wins)\n\n#zoowars #infection #simulation #satisfying #whowouldwin"
+        },
+        "youtube": {
+          "title": "7 Against 1 – Animal Infection Chase",
+          "text": "Run, dodge and hide over the lava: who will be the last animal standing against the green pack?\nComment your animal for the next battle!\n🏆 Season 1 leader: Wolf (3 wins)\n\n#shorts #zoowars #infection #simulation"
+        },
+        "at": "2026-11-17T22:02:41+01:00"
+      }
     },
     "ZW-20261120-2": {
       "id": "ZW-20261120-2",
@@ -3963,7 +4010,7 @@
       "slot": 2,
       "time": "19:00",
       "game": "hot-potato-3d",
-      "status": "validated",
+      "status": "scheduled",
       "plan": {
         "winner": "panda",
         "theme": "ice",
@@ -3978,7 +4025,30 @@
           "panda"
         ]
       },
-      "posts": {},
+      "posts": {
+        "tiktok": {
+          "status": "scheduled",
+          "dueAt": "2026-11-20T18:00:00.000Z",
+          "payload": "buffer/2026-11-20/ZW-20261120-2.tiktok.payload.json",
+          "mode": "live",
+          "at": "2026-11-17T22:03:03+01:00",
+          "bufferPostId": "6afcc11dbbe886f1b511b6a5",
+          "bufferStatus": "scheduled",
+          "recordedAt": "2026-11-17T22:03:35+01:00",
+          "simulated": false
+        },
+        "youtube": {
+          "status": "scheduled",
+          "dueAt": "2026-11-20T18:00:00.000Z",
+          "payload": "buffer/2026-11-20/ZW-20261120-2.youtube.payload.json",
+          "mode": "live",
+          "at": "2026-11-17T22:03:03+01:00",
+          "bufferPostId": "6afcc11ea739830f97444160",
+          "bufferStatus": "scheduled",
+          "recordedAt": "2026-11-17T22:03:35+01:00",
+          "simulated": false
+        }
+      },
       "history": [
         {
           "at": "2026-11-17T21:25:36+01:00",
@@ -3995,6 +4065,18 @@
           "from": "produced",
           "to": "validated",
           "note": "qc ok"
+        },
+        {
+          "at": "2026-11-17T22:02:49+01:00",
+          "from": "validated",
+          "to": "uploaded",
+          "note": "git blob ok (11650980a5)"
+        },
+        {
+          "at": "2026-11-17T22:03:35+01:00",
+          "from": "uploaded",
+          "to": "scheduled",
+          "note": "tiktok 6afcc11dbbe886f1b511b6a5 / youtube 6afcc11ea739830f97444160"
         }
       ],
       "selection": {
@@ -4096,7 +4178,21 @@
         ]
       },
       "approvedFile": "approved/2026-11-20/ZW-20261120-2.mp4",
-      "fiche": "approved/2026-11-20/ZW-20261120-2.json"
+      "fiche": "approved/2026-11-20/ZW-20261120-2.json",
+      "publicUrl": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-20/ZW-20261120-2.mp4",
+      "uploadCheck": "git blob ok (11650980a5)",
+      "captions": {
+        "tiktok": {
+          "text": "The chase is real 🏃💨\nHot potato battle on a frozen lake.\n\nWhich animal should get a rematch?\n🏆 Season 1 leader: Wolf (3 wins)\n\n#zoowars #hotpotato #animalbattle #simulation #whowouldwin"
+        },
+        "youtube": {
+          "title": "Hot Potato: pass it or BOOM 💣",
+          "text": "Pick your animal at the start and see if it survives the hot potato battle on a frozen lake.\nDid your pick make it to the final duel?\n🏆 Season 1 leader: Wolf (3 wins)\n\n#shorts #zoowars #hotpotato #animalbattle",
+          "titleVariant": "emoji",
+          "experiment": "T2-youtube-titres-emoji"
+        },
+        "at": "2026-11-17T22:02:49+01:00"
+      }
     },
     "ZW-20261120-3": {
       "id": "ZW-20261120-3",
@@ -4104,12 +4200,35 @@
       "slot": 3,
       "time": "16:00",
       "game": "arena2d",
-      "status": "validated",
+      "status": "scheduled",
       "plan": {
         "winner": null,
         "theme": "terr"
       },
-      "posts": {},
+      "posts": {
+        "tiktok": {
+          "status": "scheduled",
+          "dueAt": "2026-11-20T15:00:00.000Z",
+          "payload": "buffer/2026-11-20/ZW-20261120-3.tiktok.payload.json",
+          "mode": "live",
+          "at": "2026-11-17T22:03:03+01:00",
+          "bufferPostId": "6afcc11f843fae727bb52e98",
+          "bufferStatus": "scheduled",
+          "recordedAt": "2026-11-17T22:03:35+01:00",
+          "simulated": false
+        },
+        "youtube": {
+          "status": "scheduled",
+          "dueAt": "2026-11-20T15:00:00.000Z",
+          "payload": "buffer/2026-11-20/ZW-20261120-3.youtube.payload.json",
+          "mode": "live",
+          "at": "2026-11-17T22:03:03+01:00",
+          "bufferPostId": "6afcc11fbbe886f1b511b7e8",
+          "bufferStatus": "scheduled",
+          "recordedAt": "2026-11-17T22:03:35+01:00",
+          "simulated": false
+        }
+      },
       "history": [
         {
           "at": "2026-11-17T21:25:36+01:00",
@@ -4126,6 +4245,18 @@
           "from": "produced",
           "to": "validated",
           "note": "qc ok"
+        },
+        {
+          "at": "2026-11-17T22:02:53+01:00",
+          "from": "validated",
+          "to": "uploaded",
+          "note": "git blob ok (e2cf3d76de)"
+        },
+        {
+          "at": "2026-11-17T22:03:35+01:00",
+          "from": "uploaded",
+          "to": "scheduled",
+          "note": "tiktok 6afcc11f843fae727bb52e98 / youtube 6afcc11fbbe886f1b511b7e8"
         }
       ],
       "selection": {
@@ -4188,26 +4319,24 @@
         ]
       },
       "approvedFile": "approved/2026-11-20/ZW-20261120-3.mp4",
-      "fiche": "approved/2026-11-20/ZW-20261120-3.json"
+      "fiche": "approved/2026-11-20/ZW-20261120-3.json",
+      "publicUrl": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-20/ZW-20261120-3.mp4",
+      "uploadCheck": "git blob ok (e2cf3d76de)",
+      "captions": {
+        "tiktok": {
+          "text": "Every tile counts 🟩\n\nWhich animal are you rooting for next time?\n\n#zoowars #territorywar #simulation #whowouldwin #satisfying"
+        },
+        "youtube": {
+          "title": "Territory War: every tile counts 🟩",
+          "text": "A Zoo Wars territory battle: grab tiles, survive the cuts, own the map.\nNew Zoo Wars battle every day.\n\n#shorts #zoowars #territorywar #simulation",
+          "titleVariant": "emoji",
+          "experiment": "T2-youtube-titres-emoji"
+        },
+        "at": "2026-11-17T22:02:53+01:00"
+      }
     }
   },
   "captionsUsed": [
-    "ytt|Last Animal Standing – Hot Potato Battle",
-    "yte|New Zoo Wars battle every day.",
-    "2h|Every hit steals a tile 🟥",
-    "ttq|Who did you pick? 👇",
-    "2t|Color War: Last Color Standing",
-    "yte|Did your pick make it to the final duel?",
-    "2h|Bounce, steal, survive 🔵",
-    "ttq|Call your winner in the comments 👇",
-    "2t|Six Colors, One Winner – Animal Color War",
-    "yte|Did your pick survive the cuts?",
-    "2h|Watch the map change hands 👀",
-    "ttq|Which animal are you rooting for next time?",
-    "2t|Paint the Map! Animal Territory War",
-    "yte|Comment your animal for the next battle!",
-    "tt|This bomb changed hands way too fast 😳|Did you guess the winner?",
-    "tth|This bomb changed hands way too fast 😳",
     "ttq|Did you guess the winner?",
     "yt|The Bomb Keeps Moving… Who Survives?|The bomb drops, the chase begins {theme}. Seven explosions, one survivor.",
     "ytt|The Bomb Keeps Moving… Who Survives?",
@@ -4281,7 +4410,23 @@
     "2h|Bounce, steal, survive 🔵",
     "ttq|Did you guess the winner?",
     "2t|Animal Color Battle – Pick Your Color",
-    "yte|Did your pick survive the cuts?"
+    "yte|Did your pick survive the cuts?",
+    "3h|Don't let them touch you 🟢",
+    "ttq|Call your winner in the comments 👇",
+    "3t|7 Against 1 – Animal Infection Chase",
+    "yte|Comment your animal for the next battle!",
+    "tt|The chase is real 🏃💨|Which animal should get a rematch?",
+    "tth|The chase is real 🏃💨",
+    "ttq|Which animal should get a rematch?",
+    "yt|Animal Hot Potato Battle – Last One Standing Wins|Pick your animal at the start and see if it survives the hot potato battle {theme}.",
+    "ytt|Animal Hot Potato Battle – Last One Standing Wins",
+    "yte|Did your pick make it to the final duel?",
+    "emt|Hot Potato: pass it or BOOM 💣",
+    "2h|Every tile counts 🟩",
+    "ttq|Which animal are you rooting for next time?",
+    "2t|Paint the Map! Animal Territory War",
+    "yte|New Zoo Wars battle every day.",
+    "emt|Territory War: every tile counts 🟩"
   ],
-  "updatedAt": "2026-11-17T21:59:35+01:00"
+  "updatedAt": "2026-11-17T22:03:35+01:00"
 }
