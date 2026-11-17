@@ -1,0 +1,51 @@
+{
+  "id": "ZW-20261120-2",
+  "game": "Hot Potato 3D",
+  "publishDate": "2026-11-20",
+  "slot": 2,
+  "time": "19:00",
+  "timezone": "Europe/Paris",
+  "seed": 2136598293,
+  "theme": "ice",
+  "winner": "panda",
+  "eliminationOrder": [
+    "lion",
+    "gorilla",
+    "bear",
+    "fox",
+    "tiger",
+    "wolf",
+    "bull"
+  ],
+  "highlights": {
+    "passes": 20,
+    "lastSecondPasses": 7,
+    "passesInFinalDuel": 5,
+    "finalDuelSeconds": 6.95,
+    "dodges": 18,
+    "gameSeconds": 63.32,
+    "score": 65.84,
+    "gamesSimulated": 600
+  },
+  "file": {
+    "name": "ZW-20261120-2.mp4",
+    "at": "2026-11-17T21:56:48+01:00",
+    "ok": true,
+    "problems": [],
+    "duration": 63.33,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "sizeMB": 61.25,
+    "sha256": "5d7811df569d4450f7195ed1c844e7a2b6d93a89b11c42ca6eb993fa31fa25df",
+    "luminance": [
+      156.5,
+      162,
+      154.2,
+      148.5,
+      161.8
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "ZW-20261120-1",
+  "game": "Infection 3D",
+  "publishDate": "2026-11-20",
+  "slot": 1,
+  "time": "12:30",
+  "timezone": "Europe/Paris",
+  "seed": 2898673713,
+  "theme": "volcano",
+  "winner": "panda",
+  "eliminationOrder": [
+    "fox",
+    "bear",
+    "bull",
+    "lion",
+    "wolf",
+    "gorilla",
+    "tiger"
+  ],
+  "highlights": {
+    "secondsBetweenCatches": [
+      10.78,
+      8.14,
+      7.27,
+      8.99,
+      10.98,
+      6.91
+    ],
+    "gameSeconds": 62.58,
+    "score": 32.37,
+    "gamesSimulated": 600
+  },
+  "file": {
+    "name": "ZW-20261120-1.mp4",
+    "at": "2026-11-17T21:42:03+01:00",
+    "ok": true,
+    "problems": [],
+    "duration": 62.6,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "sizeMB": 69.16,
+    "sha256": "3b1c57879dae85f3d7a032d7c2a33aad9a47c30d5f09f64baf49035bf2e70e09",
+    "luminance": [
+      137.1,
+      152.4,
+      145.6,
+      134,
+      165.4
+    ]
+  }
+}
