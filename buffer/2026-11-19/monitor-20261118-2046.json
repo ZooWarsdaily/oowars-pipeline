@@ -1,0 +1,76 @@
+{
+ "posts": [
+  {
+   "id": "6afcb82e700b9ade62f3222c",
+   "status": "scheduled",
+   "dueAt": "2026-11-19T11:30:00.000Z",
+   "channelId": "6af611d662b70b94b00d5648",
+   "channelService": "youtube",
+   "assets": [
+    {
+     "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-19/ZW-20261119-1.mp4"
+    }
+   ]
+  },
+  {
+   "id": "6afcb82d700b9ade62f321c1",
+   "status": "scheduled",
+   "dueAt": "2026-11-19T11:30:00.000Z",
+   "channelId": "6af60dc162b70b94b00d05a1",
+   "channelService": "tiktok",
+   "assets": [
+    {
+     "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-19/ZW-20261119-1.mp4"
+    }
+   ]
+  },
+  {
+   "id": "6afcb832a4d3be4123fc3cab",
+   "status": "scheduled",
+   "dueAt": "2026-11-19T15:00:00.000Z",
+   "channelId": "6af611d662b70b94b00d5648",
+   "channelService": "youtube",
+   "assets": [
+    {
+     "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-19/ZW-20261119-3.mp4"
+    }
+   ]
+  },
+  {
+   "id": "6afcb8317847359f57af53a4",
+   "status": "scheduled",
+   "dueAt": "2026-11-19T15:00:00.000Z",
+   "channelId": "6af60dc162b70b94b00d05a1",
+   "channelService": "tiktok",
+   "assets": [
+    {
+     "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-19/ZW-20261119-3.mp4"
+    }
+   ]
+  },
+  {
+   "id": "6afcb830dfbe5d51e1ebf9d4",
+   "status": "scheduled",
+   "dueAt": "2026-11-19T18:00:00.000Z",
+   "channelId": "6af611d662b70b94b00d5648",
+   "channelService": "youtube",
+   "assets": [
+    {
+     "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-19/ZW-20261119-2.mp4"
+    }
+   ]
+  },
+  {
+   "id": "6afcb82f57c8fecbcd1b6583",
+   "status": "scheduled",
+   "dueAt": "2026-11-19T18:00:00.000Z",
+   "channelId": "6af60dc162b70b94b00d05a1",
+   "channelService": "tiktok",
+   "assets": [
+    {
+     "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-19/ZW-20261119-2.mp4"
+    }
+   ]
+  }
+ ]
+}
