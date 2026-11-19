@@ -1,0 +1,37 @@
+{
+  "id": "ZW-20261122-4",
+  "game": "Weekly standings",
+  "publishDate": "2026-11-22",
+  "time": "18:00",
+  "timezone": "Europe/Paris",
+  "standings": {
+    "game": "standings",
+    "theme": "standings",
+    "season": 1,
+    "week": "2026-11-16",
+    "leader": "panda",
+    "games": 12,
+    "weekGames": 12
+  },
+  "file": {
+    "name": "ZW-20261122-4.mp4",
+    "at": "2026-11-19T23:50:30+01:00",
+    "ok": true,
+    "problems": [],
+    "duration": 18,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "sizeMB": 3.04,
+    "sha256": "79e019b29f0d19477d1cd41c8269beb0e0a77f20f4e4451b71dc07bdd071c4a1",
+    "luminance": [
+      51.8,
+      43.7,
+      null,
+      null,
+      43.7
+    ]
+  }
+}

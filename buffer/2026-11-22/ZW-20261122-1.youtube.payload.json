@@ -1,0 +1,24 @@
+{
+  "channelId": "6af611d662b70b94b00d5648",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "dueAt": "2026-11-22T12:30:00+01:00",
+  "text": "A Zoo Wars infection chase on the jungle stage: the pack grows with every catch until only one animal is left clean.\nComment your animal for the next battle!\n🏆 Season 1: Wolf & Panda tied at the top (3 wins)\n\n#shorts #zoowars #infection #animalbattle",
+  "assets": [
+    {
+      "video": {
+        "url": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-22/ZW-20261122-1.mp4",
+        "metadata": {}
+      }
+    }
+  ],
+  "metadata": {
+    "youtube": {
+      "title": "7 Against 1 – Animal Infection Chase",
+      "categoryId": "24",
+      "madeForKids": false,
+      "privacy": "public",
+      "notifySubscribers": true
+    }
+  }
+}

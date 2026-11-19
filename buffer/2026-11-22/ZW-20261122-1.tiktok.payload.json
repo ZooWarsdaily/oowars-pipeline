@@ -1,0 +1,18 @@
+{
+  "channelId": "6af60dc162b70b94b00d05a1",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "dueAt": "2026-11-22T12:30:00+01:00",
+  "text": "Run from the pack 🏃💨\nInfection chase on the jungle stage.\n\nDid your animal survive? 👇\n🏆 Season 1: Wolf & Panda tied at the top (3 wins)\n\n#zoowars #infection #animalbattle #whowouldwin #satisfying",
+  "assets": [
+    {
+      "video": {
+        "url": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-22/ZW-20261122-1.mp4",
+        "metadata": {
+          "thumbnailOffset": 3000
+        }
+      }
+    }
+  ],
+  "metadata": {}
+}

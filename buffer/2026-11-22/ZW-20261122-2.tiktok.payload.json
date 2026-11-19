@@ -1,0 +1,18 @@
+{
+  "channelId": "6af60dc162b70b94b00d05a1",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "dueAt": "2026-11-22T19:00:00+01:00",
+  "text": "Chaos in the arena 🌀\nHot potato battle on the frozen arena.\n\nDid you guess the winner?\n🏆 Season 1 leader: Panda (4 wins)\n\n#zoowars #hotpotato #satisfying #animalbattle #simulation",
+  "assets": [
+    {
+      "video": {
+        "url": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-22/ZW-20261122-2.mp4",
+        "metadata": {
+          "thumbnailOffset": 3000
+        }
+      }
+    }
+  ],
+  "metadata": {}
+}

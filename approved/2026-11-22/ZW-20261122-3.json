@@ -1,0 +1,38 @@
+{
+  "id": "ZW-20261122-3",
+  "game": "Color War",
+  "publishDate": "2026-11-22",
+  "slot": 3,
+  "time": "16:00",
+  "timezone": "Europe/Paris",
+  "seed": 245413080,
+  "winner": "Snake",
+  "highlights": {
+    "eliminations": 5,
+    "finalMargin": null,
+    "videoSeconds": 66.9,
+    "score": 15,
+    "gamesPreviewed": 6
+  },
+  "file": {
+    "name": "ZW-20261122-3.mp4",
+    "at": "2026-11-19T23:50:05+01:00",
+    "ok": true,
+    "problems": [],
+    "duration": 66.87,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "sizeMB": 17.29,
+    "sha256": "92d46b2f43f4b34851a9f3c12854a10d5517f9b69e077c5600a881285a09ed92",
+    "luminance": [
+      95.7,
+      88.8,
+      89.5,
+      86.1,
+      29.9
+    ]
+  }
+}
