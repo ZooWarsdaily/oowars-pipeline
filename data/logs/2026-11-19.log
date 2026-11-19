@@ -107,3 +107,19 @@
 2026-11-19T22:47:34+01:00 [producer] ZW-20261121-2: QC FAILED ["size 96.0 MB"]
 2026-11-19T22:47:34+01:00 [producer] ZW-20261121-3 already scheduled
 2026-11-19T22:47:34+01:00 [producer] run 2026-11-21 finished: ZW-20261121-1=scheduled ZW-20261121-2=error ZW-20261121-3=scheduled
+2026-11-19T22:47:47+01:00 [orchestrator] FATAL To https://github.com/ZooWarsdaily/oowars-pipeline
+ ! [rejected]        HEAD -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/ZooWarsdaily/oowars-pipeline'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+2026-11-19T22:47:47+01:00 [producer] planned ZW-20261122-1 {"slot":"12:30","game":"infection-3d","theme":"jungle","winner":"random draw"}
+2026-11-19T22:47:47+01:00 [producer] planned ZW-20261122-2 {"slot":"19:00","game":"hot-potato-3d","theme":"ice","winner":"random draw"}
+2026-11-19T22:47:47+01:00 [producer] planned ZW-20261122-3 {"slot":"16:00","game":"color"}
+2026-11-19T22:47:47+01:00 [producer] planned ZW-20261122-4 {"slot":"18:00","game":"standings"}
+2026-11-19T22:49:16+01:00 [producer] ZW-20261122-1: 600 games simulated in 83s, 31 valid with the planned winner
+2026-11-19T22:49:16+01:00 [producer] ZW-20261122-1: best seed 4151815124 score 33.2 {"tags":7,"dur":60.43}
+2026-11-19T22:49:16+01:00 [producer] ZW-20261122-1: render starts (seed 4151815124, jungle)
+2026-11-19T22:49:23+01:00 [producer] ZW-20261122-1 | seed 4151815124 frames 1813
