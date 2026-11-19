@@ -1,0 +1,18 @@
+{
+ "id": "6aff64696e3094bf7109e14b",
+ "status": "scheduled",
+ "channelId": "6af611d662b70b94b00d5648",
+ "channelService": "youtube",
+ "dueAt": "2026-11-21T11:30:00.000Z",
+ "sentAt": null,
+ "schedulingType": "automatic",
+ "shareMode": "customScheduled",
+ "error": null,
+ "assets": [
+  {
+   "type": "video",
+   "mimeType": "video/mp4",
+   "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-21/ZW-20261121-1.mp4"
+  }
+ ]
+}
