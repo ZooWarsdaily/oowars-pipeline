@@ -3729,7 +3729,8 @@
           "experiment": "T2-youtube-titres-emoji"
         },
         "at": "2026-11-17T21:24:46+01:00"
-      }
+      },
+      "mediaPruned": "2026-11-19T23:52:03+01:00"
     },
     "ZW-20261119-3": {
       "id": "ZW-20261119-3",
@@ -5639,5 +5640,5 @@
     "yte|New Zoo Wars battle every day.",
     "emt|Color War: bounce, steal, survive 🔵"
   ],
-  "updatedAt": "2026-11-19T23:51:44+01:00"
+  "updatedAt": "2026-11-19T23:52:03+01:00"
 }
