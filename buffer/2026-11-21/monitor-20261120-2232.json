@@ -1,0 +1,67 @@
+{
+ "edges": [
+  {
+   "node": {
+    "id": "6aff646bd606779a4df954f1",
+    "status": "scheduled",
+    "dueAt": "2026-11-21T15:00:00.000Z",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-21/ZW-20261121-3.mp4"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6aff646a373c7db3cb52a5ce",
+    "status": "scheduled",
+    "dueAt": "2026-11-21T15:00:00.000Z",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-21/ZW-20261121-3.mp4"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6aff64696e3094bf7109e14b",
+    "status": "scheduled",
+    "dueAt": "2026-11-21T11:30:00.000Z",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-21/ZW-20261121-1.mp4"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6aff6468d606779a4df953b1",
+    "status": "scheduled",
+    "dueAt": "2026-11-21T11:30:00.000Z",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-21/ZW-20261121-1.mp4"
+     }
+    ]
+   }
+  }
+ ],
+ "pageInfo": {
+  "hasNextPage": false
+ }
+}
