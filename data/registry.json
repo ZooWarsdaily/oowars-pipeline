@@ -5604,13 +5604,446 @@
         },
         "at": "2026-11-19T23:51:00+01:00"
       }
+    },
+    "ZW-20261123-1": {
+      "id": "ZW-20261123-1",
+      "date": "2026-11-23",
+      "slot": 1,
+      "time": "12:30",
+      "game": "musical-chairs-3d",
+      "status": "scheduled",
+      "plan": {
+        "winner": "bear",
+        "theme": "ice",
+        "roster": [
+          "lion",
+          "tiger",
+          "bear",
+          "wolf",
+          "gorilla",
+          "fox",
+          "bull",
+          "panda"
+        ]
+      },
+      "posts": {
+        "tiktok": {
+          "status": "scheduled",
+          "dueAt": "2026-11-23T11:30:00.000Z",
+          "payload": "buffer/2026-11-23/ZW-20261123-1.tiktok.payload.json",
+          "mode": "live",
+          "at": "2026-11-20T21:50:43+01:00",
+          "bufferPostId": "6b00b2acdd205ed77995b7bf",
+          "bufferStatus": "scheduled",
+          "recordedAt": "2026-11-20T21:50:58+01:00",
+          "simulated": false
+        },
+        "youtube": {
+          "status": "scheduled",
+          "dueAt": "2026-11-23T11:30:00.000Z",
+          "payload": "buffer/2026-11-23/ZW-20261123-1.youtube.payload.json",
+          "mode": "live",
+          "at": "2026-11-20T21:50:43+01:00",
+          "bufferPostId": "6b00b2ad861298c9b150cf11",
+          "bufferStatus": "scheduled",
+          "recordedAt": "2026-11-20T21:50:58+01:00",
+          "simulated": false
+        }
+      },
+      "history": [
+        {
+          "at": "2026-11-20T21:29:16+01:00",
+          "to": "planned"
+        },
+        {
+          "at": "2026-11-20T21:48:07+01:00",
+          "from": "planned",
+          "to": "produced",
+          "note": "render ok"
+        },
+        {
+          "at": "2026-11-20T21:48:23+01:00",
+          "from": "produced",
+          "to": "validated",
+          "note": "qc ok"
+        },
+        {
+          "at": "2026-11-20T21:50:35+01:00",
+          "from": "validated",
+          "to": "uploaded",
+          "note": "git blob ok (aa9cb765ed)"
+        },
+        {
+          "at": "2026-11-20T21:50:58+01:00",
+          "from": "uploaded",
+          "to": "scheduled",
+          "note": "tiktok 6b00b2acdd205ed77995b7bf / youtube 6b00b2ad861298c9b150cf11"
+        }
+      ],
+      "selection": {
+        "seed": 2840041181,
+        "metrics": {
+          "seed": 2840041181,
+          "winner": "bear",
+          "dur": 62.95,
+          "tags": 11,
+          "roundTags": [
+            3,
+            3,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "gaps": [],
+          "calmHits": 0,
+          "order": [
+            "bull",
+            "fox",
+            "panda",
+            "tiger",
+            "gorilla",
+            "wolf",
+            "lion"
+          ],
+          "score": 34.02
+        },
+        "simulated": 600,
+        "runnersUp": [
+          {
+            "seed": 2923223359,
+            "score": 33.9
+          },
+          {
+            "seed": 250349767,
+            "score": 32.69
+          },
+          {
+            "seed": 1151248677,
+            "score": 32.61
+          }
+        ]
+      },
+      "render": {
+        "file": "production/2026-11-23/ZW-20261123-1.mp4",
+        "seconds": 1119,
+        "info": {
+          "seed": 2840041181,
+          "theme": "ice",
+          "vt": 62.96666666666437,
+          "phase": "win",
+          "tags": 11,
+          "winner": "bear",
+          "order": [
+            "bull",
+            "fox",
+            "panda",
+            "tiger",
+            "gorilla",
+            "wolf",
+            "lion"
+          ],
+          "kinds": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        }
+      },
+      "qc": {
+        "at": "2026-11-20T21:48:23+01:00",
+        "ok": true,
+        "problems": [],
+        "duration": 62.97,
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "videoCodec": "h264",
+        "audioCodec": "aac",
+        "sizeMB": 81.08,
+        "sha256": "59d49994e2125bc692f47a0fb5fb3b70ef8801470b5534c277ddf2b575e8f90b",
+        "luminance": [
+          152.4,
+          156.9,
+          156,
+          161.1,
+          174.7
+        ]
+      },
+      "approvedFile": "approved/2026-11-23/ZW-20261123-1.mp4",
+      "fiche": "approved/2026-11-23/ZW-20261123-1.json",
+      "publicUrl": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-23/ZW-20261123-1.mp4",
+      "uploadCheck": "git blob ok (aa9cb765ed)",
+      "captions": {
+        "tiktok": {
+          "text": "The last cushion is a war zone 😤\nMusical chairs on the frozen arena.\n\nWhich animal are you rooting for next time?\n🏆 Season 1 leader: Panda (4 wins)\n\n#zoowars #musicalchairs #animalbattle #satisfying #whowouldwin"
+        },
+        "youtube": {
+          "title": "8 Animals, 7 Cushions – Musical Chairs Battle",
+          "text": "Eight animals dance around the cushions on the frozen arena. When the music stops, the one left standing is out.\nDid your pick make it to the final duel?\n🏆 Season 1 leader: Panda (4 wins)\n\n#shorts #zoowars #musicalchairs #animalbattle"
+        },
+        "at": "2026-11-20T21:50:36+01:00"
+      }
+    },
+    "ZW-20261123-2": {
+      "id": "ZW-20261123-2",
+      "date": "2026-11-23",
+      "slot": 2,
+      "time": "19:00",
+      "game": "hot-potato-3d",
+      "status": "error",
+      "plan": {
+        "winner": "gorilla",
+        "theme": "volcano",
+        "roster": [
+          "lion",
+          "tiger",
+          "bear",
+          "wolf",
+          "gorilla",
+          "fox",
+          "bull",
+          "panda"
+        ]
+      },
+      "posts": {},
+      "history": [
+        {
+          "at": "2026-11-20T21:29:16+01:00",
+          "to": "planned"
+        },
+        {
+          "at": "2026-11-20T22:08:45+01:00",
+          "from": "planned",
+          "to": "produced",
+          "note": "render ok"
+        },
+        {
+          "at": "2026-11-20T22:09:01+01:00",
+          "from": "produced",
+          "to": "error",
+          "note": "qc failed"
+        },
+        {
+          "at": "2026-11-20T22:09:01+01:00",
+          "from": "error",
+          "to": "planned",
+          "note": "retry 2"
+        },
+        {
+          "at": "2026-11-20T22:27:11+01:00",
+          "from": "planned",
+          "to": "produced",
+          "note": "render ok"
+        },
+        {
+          "at": "2026-11-20T22:27:26+01:00",
+          "from": "produced",
+          "to": "error",
+          "note": "qc failed"
+        }
+      ],
+      "lastError": "qc: size 100.4 MB",
+      "selection": {
+        "seed": 3754014417,
+        "metrics": {
+          "seed": 3754014417,
+          "winner": "gorilla",
+          "dur": 63.85,
+          "tags": 22,
+          "minTags": 2,
+          "roundTags": [
+            3,
+            3,
+            2,
+            3,
+            3,
+            3,
+            5
+          ],
+          "clutch": 8,
+          "dodges": 19,
+          "finalTags": 5,
+          "finalDur": 7.35,
+          "order": [
+            "lion",
+            "panda",
+            "fox",
+            "bear",
+            "wolf",
+            "bull",
+            "tiger"
+          ],
+          "score": 70.58
+        },
+        "simulated": 600,
+        "runnersUp": [
+          {
+            "seed": 2248069647,
+            "score": 64.97
+          },
+          {
+            "seed": 4275878099,
+            "score": 62.97
+          },
+          {
+            "seed": 2460740519,
+            "score": 62.4
+          }
+        ]
+      },
+      "render": {
+        "file": "production/2026-11-23/ZW-20261123-2.mp4",
+        "seconds": 1038,
+        "info": {
+          "seed": 3754014417,
+          "theme": "volcano",
+          "vt": 63.86666666666432,
+          "phase": "win",
+          "tags": 22,
+          "winner": "gorilla",
+          "order": [
+            "lion",
+            "panda",
+            "fox",
+            "bear",
+            "wolf",
+            "bull",
+            "tiger"
+          ],
+          "kinds": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            0
+          ]
+        }
+      },
+      "qc": {
+        "at": "2026-11-20T22:27:26+01:00",
+        "ok": false,
+        "problems": [
+          "size 100.4 MB"
+        ],
+        "duration": 63.87,
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "videoCodec": "h264",
+        "audioCodec": "aac",
+        "sizeMB": 100.37,
+        "sha256": "3f21ec0437c6fd0ffc2a0328550bec4a080cd9afeb41576c7518f3bdf5097ca7",
+        "luminance": [
+          136.5,
+          142.8,
+          135.2,
+          127,
+          132.1
+        ]
+      }
+    },
+    "ZW-20261123-3": {
+      "id": "ZW-20261123-3",
+      "date": "2026-11-23",
+      "slot": 3,
+      "time": "16:00",
+      "game": "arena2d",
+      "status": "validated",
+      "plan": {
+        "winner": null,
+        "theme": "terr"
+      },
+      "posts": {},
+      "history": [
+        {
+          "at": "2026-11-20T21:29:16+01:00",
+          "to": "planned"
+        },
+        {
+          "at": "2026-11-20T22:30:22+01:00",
+          "from": "planned",
+          "to": "produced",
+          "note": "render ok"
+        },
+        {
+          "at": "2026-11-20T22:30:29+01:00",
+          "from": "produced",
+          "to": "validated",
+          "note": "qc ok"
+        }
+      ],
+      "selection": {
+        "seed": 3070534979,
+        "metrics": {
+          "game": "terr",
+          "seed": 3070534979,
+          "frames": 2006,
+          "seconds": 66.86666666666666,
+          "winner": "Shark",
+          "out": 5,
+          "gameT": 60.02222222222586,
+          "finalMargin": null,
+          "score": 15
+        },
+        "simulated": 6,
+        "runnersUp": [
+          {
+            "seed": 2175075768,
+            "score": 15
+          },
+          {
+            "seed": 1886526913,
+            "score": 15
+          }
+        ]
+      },
+      "render": {
+        "file": "production/2026-11-23/ZW-20261123-3.mp4",
+        "seconds": 92,
+        "info": {
+          "game": "terr",
+          "seed": 3070534979,
+          "frames": 2006,
+          "seconds": 66.86666666666666,
+          "winner": "Shark",
+          "out": 5,
+          "gameT": 60.02222222222586,
+          "finalMargin": null
+        }
+      },
+      "qc": {
+        "at": "2026-11-20T22:30:29+01:00",
+        "ok": true,
+        "problems": [],
+        "duration": 66.87,
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "videoCodec": "h264",
+        "audioCodec": "aac",
+        "sizeMB": 17.62,
+        "sha256": "7c76c3d3c035c4cdb81678269727bb885e0846d79a3990efeeacfc3e500e5997",
+        "luminance": [
+          52.9,
+          92,
+          82.1,
+          92.9,
+          31.1
+        ]
+      },
+      "approvedFile": "approved/2026-11-23/ZW-20261123-3.mp4",
+      "fiche": "approved/2026-11-23/ZW-20261123-3.json"
     }
   },
   "captionsUsed": [
-    "ytt|Hot Potato Survival: Which Animal Wins?",
-    "yte|Comment your animal for the next battle!",
-    "2h|Every hit steals a tile 🟥",
-    "ttq|Who was the sneakiest player?",
     "2t|Color War: Last Color Standing",
     "yte|Did your pick survive the cuts?",
     "3h|8 animals, 7 cushions 🪑",
@@ -5696,7 +6129,11 @@
     "ttq|Who was the sneakiest player?",
     "2t|Color War: Which Color Takes the Board?",
     "yte|New Zoo Wars battle every day.",
-    "emt|Color War: bounce, steal, survive 🔵"
+    "emt|Color War: bounce, steal, survive 🔵",
+    "3h|The last cushion is a war zone 😤",
+    "ttq|Which animal are you rooting for next time?",
+    "3t|8 Animals, 7 Cushions – Musical Chairs Battle",
+    "yte|Did your pick make it to the final duel?"
   ],
-  "updatedAt": "2026-11-20T21:29:11+01:00"
+  "updatedAt": "2026-11-20T22:30:29+01:00"
 }

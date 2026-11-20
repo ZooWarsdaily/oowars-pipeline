@@ -1,0 +1,38 @@
+{
+  "id": "ZW-20261123-3",
+  "game": "Territory War",
+  "publishDate": "2026-11-23",
+  "slot": 3,
+  "time": "16:00",
+  "timezone": "Europe/Paris",
+  "seed": 3070534979,
+  "winner": "Shark",
+  "highlights": {
+    "eliminations": 5,
+    "finalMargin": null,
+    "videoSeconds": 66.9,
+    "score": 15,
+    "gamesPreviewed": 6
+  },
+  "file": {
+    "name": "ZW-20261123-3.mp4",
+    "at": "2026-11-20T22:30:29+01:00",
+    "ok": true,
+    "problems": [],
+    "duration": 66.87,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "sizeMB": 17.62,
+    "sha256": "7c76c3d3c035c4cdb81678269727bb885e0846d79a3990efeeacfc3e500e5997",
+    "luminance": [
+      52.9,
+      92,
+      82.1,
+      92.9,
+      31.1
+    ]
+  }
+}

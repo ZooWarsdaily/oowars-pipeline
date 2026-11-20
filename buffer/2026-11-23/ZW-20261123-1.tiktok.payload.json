@@ -1,0 +1,18 @@
+{
+  "channelId": "6af60dc162b70b94b00d05a1",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "dueAt": "2026-11-23T12:30:00+01:00",
+  "text": "The last cushion is a war zone 😤\nMusical chairs on the frozen arena.\n\nWhich animal are you rooting for next time?\n🏆 Season 1 leader: Panda (4 wins)\n\n#zoowars #musicalchairs #animalbattle #satisfying #whowouldwin",
+  "assets": [
+    {
+      "video": {
+        "url": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-23/ZW-20261123-1.mp4",
+        "metadata": {
+          "thumbnailOffset": 3000
+        }
+      }
+    }
+  ],
+  "metadata": {}
+}

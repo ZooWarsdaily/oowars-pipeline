@@ -1,0 +1,24 @@
+{
+  "channelId": "6af611d662b70b94b00d5648",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "dueAt": "2026-11-23T12:30:00+01:00",
+  "text": "Eight animals dance around the cushions on the frozen arena. When the music stops, the one left standing is out.\nDid your pick make it to the final duel?\n🏆 Season 1 leader: Panda (4 wins)\n\n#shorts #zoowars #musicalchairs #animalbattle",
+  "assets": [
+    {
+      "video": {
+        "url": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-23/ZW-20261123-1.mp4",
+        "metadata": {}
+      }
+    }
+  ],
+  "metadata": {
+    "youtube": {
+      "title": "8 Animals, 7 Cushions – Musical Chairs Battle",
+      "categoryId": "24",
+      "madeForKids": false,
+      "privacy": "public",
+      "notifySubscribers": true
+    }
+  }
+}
