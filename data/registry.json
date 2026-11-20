@@ -2275,7 +2275,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-15T21:25:21+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-19T20:47:20+01:00",
+          "syncedAt": "2026-11-20T20:47:29+01:00",
           "sentAt": "2026-11-17T11:32:25.369Z"
         },
         "youtube": {
@@ -2288,7 +2288,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-15T21:25:21+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-19T20:47:20+01:00",
+          "syncedAt": "2026-11-20T20:47:29+01:00",
           "sentAt": "2026-11-17T11:31:17.941Z"
         }
       },
@@ -2471,7 +2471,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-15T21:25:21+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-19T20:47:20+01:00",
+          "syncedAt": "2026-11-20T20:47:29+01:00",
           "sentAt": "2026-11-17T18:06:56.405Z"
         },
         "youtube": {
@@ -2484,7 +2484,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-15T21:25:22+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-19T20:47:20+01:00",
+          "syncedAt": "2026-11-20T20:47:29+01:00",
           "sentAt": "2026-11-17T18:04:38.008Z"
         }
       },
@@ -2662,7 +2662,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-15T21:25:22+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-19T20:47:20+01:00",
+          "syncedAt": "2026-11-20T20:47:29+01:00",
           "sentAt": "2026-11-17T15:08:43.371Z"
         },
         "youtube": {
@@ -2675,7 +2675,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-15T21:25:22+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-19T20:47:20+01:00",
+          "syncedAt": "2026-11-20T20:47:29+01:00",
           "sentAt": "2026-11-17T15:04:56.501Z"
         }
       },
@@ -2824,7 +2824,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-15T22:10:35+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-19T20:47:20+01:00",
+          "syncedAt": "2026-11-20T20:47:29+01:00",
           "sentAt": "2026-11-18T11:33:31.000Z"
         },
         "youtube": {
@@ -2837,7 +2837,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-15T22:10:35+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-19T20:47:20+01:00",
+          "syncedAt": "2026-11-20T20:47:29+01:00",
           "sentAt": "2026-11-18T11:31:11.658Z"
         }
       },
@@ -3019,7 +3019,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-15T22:10:35+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-19T20:47:20+01:00",
+          "syncedAt": "2026-11-20T20:47:29+01:00",
           "sentAt": "2026-11-18T18:07:18.085Z"
         },
         "youtube": {
@@ -3032,7 +3032,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-15T22:10:35+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-19T20:47:20+01:00",
+          "syncedAt": "2026-11-20T20:47:29+01:00",
           "sentAt": "2026-11-18T18:04:50.581Z"
         }
       },
@@ -3210,7 +3210,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-15T22:10:36+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-19T20:47:20+01:00",
+          "syncedAt": "2026-11-20T20:47:29+01:00",
           "sentAt": "2026-11-18T15:07:55.733Z"
         },
         "youtube": {
@@ -3223,7 +3223,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-15T22:10:36+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-19T20:47:20+01:00",
+          "syncedAt": "2026-11-20T20:47:29+01:00",
           "sentAt": "2026-11-18T15:04:59.814Z"
         }
       },
@@ -3372,7 +3372,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-17T21:25:29+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-19T20:47:20+01:00",
+          "syncedAt": "2026-11-20T20:47:29+01:00",
           "sentAt": "2026-11-19T11:32:44.821Z"
         },
         "youtube": {
@@ -3385,7 +3385,7 @@
           "bufferStatus": "error",
           "recordedAt": "2026-11-17T21:25:29+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-19T20:47:20+01:00",
+          "syncedAt": "2026-11-20T20:47:29+01:00",
           "problems": [
             "{\"message\":\"The daily posting limit for this channel has been reached! Please try reducing the amount of times per day in your schedule and try again later.\"}"
           ]
@@ -3563,7 +3563,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-17T21:25:29+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-19T20:47:20+01:00",
+          "syncedAt": "2026-11-20T20:47:29+01:00",
           "sentAt": "2026-11-19T18:06:40.708Z"
         },
         "youtube": {
@@ -3576,7 +3576,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-17T21:25:29+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-19T20:47:20+01:00",
+          "syncedAt": "2026-11-20T20:47:29+01:00",
           "sentAt": "2026-11-19T18:05:13.392Z"
         }
       },
@@ -3754,7 +3754,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-17T21:25:29+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-19T20:47:20+01:00",
+          "syncedAt": "2026-11-20T20:47:29+01:00",
           "sentAt": "2026-11-19T15:07:13.092Z"
         },
         "youtube": {
@@ -3767,7 +3767,7 @@
           "bufferStatus": "error",
           "recordedAt": "2026-11-17T21:25:29+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-19T20:47:20+01:00",
+          "syncedAt": "2026-11-20T20:47:29+01:00",
           "problems": [
             "{\"message\":\"The daily posting limit for this channel has been reached! Please try reducing the amount of times per day in your schedule and try again later.\"}"
           ]
@@ -3885,7 +3885,7 @@
       "slot": 1,
       "time": "12:30",
       "game": "infection-3d",
-      "status": "scheduled",
+      "status": "published",
       "plan": {
         "winner": "panda",
         "theme": "volcano",
@@ -3902,26 +3902,30 @@
       },
       "posts": {
         "tiktok": {
-          "status": "scheduled",
+          "status": "published",
           "dueAt": "2026-11-20T11:30:00.000Z",
           "payload": "buffer/2026-11-20/ZW-20261120-1.tiktok.payload.json",
           "mode": "live",
           "at": "2026-11-17T22:03:03+01:00",
           "bufferPostId": "6afcc11a9b0477630c930d6b",
-          "bufferStatus": "scheduled",
+          "bufferStatus": "sent",
           "recordedAt": "2026-11-17T22:03:35+01:00",
-          "simulated": false
+          "simulated": false,
+          "syncedAt": "2026-11-20T20:47:29+01:00",
+          "sentAt": "2026-11-20T11:32:23.301Z"
         },
         "youtube": {
-          "status": "scheduled",
+          "status": "published",
           "dueAt": "2026-11-20T11:30:00.000Z",
           "payload": "buffer/2026-11-20/ZW-20261120-1.youtube.payload.json",
           "mode": "live",
           "at": "2026-11-17T22:03:03+01:00",
           "bufferPostId": "6afcc11b843fae727bb52cbc",
-          "bufferStatus": "scheduled",
+          "bufferStatus": "sent",
           "recordedAt": "2026-11-17T22:03:35+01:00",
-          "simulated": false
+          "simulated": false,
+          "syncedAt": "2026-11-20T20:47:29+01:00",
+          "sentAt": "2026-11-20T11:31:33.468Z"
         }
       },
       "history": [
@@ -3952,6 +3956,12 @@
           "from": "uploaded",
           "to": "scheduled",
           "note": "tiktok 6afcc11a9b0477630c930d6b / youtube 6afcc11b843fae727bb52cbc"
+        },
+        {
+          "at": "2026-11-20T20:47:29+01:00",
+          "from": "scheduled",
+          "to": "published",
+          "note": "both channels sent"
         }
       ],
       "selection": {
@@ -4086,26 +4096,32 @@
       },
       "posts": {
         "tiktok": {
-          "status": "scheduled",
+          "status": "published",
           "dueAt": "2026-11-20T18:00:00.000Z",
           "payload": "buffer/2026-11-20/ZW-20261120-2.tiktok.payload.json",
           "mode": "live",
           "at": "2026-11-17T22:03:03+01:00",
           "bufferPostId": "6afcc11dbbe886f1b511b6a5",
-          "bufferStatus": "scheduled",
+          "bufferStatus": "sent",
           "recordedAt": "2026-11-17T22:03:35+01:00",
-          "simulated": false
+          "simulated": false,
+          "syncedAt": "2026-11-20T20:47:29+01:00",
+          "sentAt": "2026-11-20T18:07:14.666Z"
         },
         "youtube": {
-          "status": "scheduled",
+          "status": "error",
           "dueAt": "2026-11-20T18:00:00.000Z",
           "payload": "buffer/2026-11-20/ZW-20261120-2.youtube.payload.json",
           "mode": "live",
           "at": "2026-11-17T22:03:03+01:00",
           "bufferPostId": "6afcc11ea739830f97444160",
-          "bufferStatus": "scheduled",
+          "bufferStatus": "error",
           "recordedAt": "2026-11-17T22:03:35+01:00",
-          "simulated": false
+          "simulated": false,
+          "syncedAt": "2026-11-20T20:47:29+01:00",
+          "problems": [
+            "{\"message\":\"The daily posting limit for this channel has been reached! Please try reducing the amount of times per day in your schedule and try again later.\"}"
+          ]
         }
       },
       "history": [
@@ -4266,26 +4282,32 @@
       },
       "posts": {
         "tiktok": {
-          "status": "scheduled",
+          "status": "published",
           "dueAt": "2026-11-20T15:00:00.000Z",
           "payload": "buffer/2026-11-20/ZW-20261120-3.tiktok.payload.json",
           "mode": "live",
           "at": "2026-11-17T22:03:03+01:00",
           "bufferPostId": "6afcc11f843fae727bb52e98",
-          "bufferStatus": "scheduled",
+          "bufferStatus": "sent",
           "recordedAt": "2026-11-17T22:03:35+01:00",
-          "simulated": false
+          "simulated": false,
+          "syncedAt": "2026-11-20T20:47:29+01:00",
+          "sentAt": "2026-11-20T15:06:59.190Z"
         },
         "youtube": {
-          "status": "scheduled",
+          "status": "error",
           "dueAt": "2026-11-20T15:00:00.000Z",
           "payload": "buffer/2026-11-20/ZW-20261120-3.youtube.payload.json",
           "mode": "live",
           "at": "2026-11-17T22:03:03+01:00",
           "bufferPostId": "6afcc11fbbe886f1b511b7e8",
-          "bufferStatus": "scheduled",
+          "bufferStatus": "error",
           "recordedAt": "2026-11-17T22:03:35+01:00",
-          "simulated": false
+          "simulated": false,
+          "syncedAt": "2026-11-20T20:47:29+01:00",
+          "problems": [
+            "{\"message\":\"The daily posting limit for this channel has been reached! Please try reducing the amount of times per day in your schedule and try again later.\"}"
+          ]
         }
       },
       "history": [
@@ -4671,107 +4693,143 @@
           "from": "produced",
           "to": "error",
           "note": "qc failed"
+        },
+        {
+          "at": "2026-11-20T20:46:40+01:00",
+          "from": "error",
+          "to": "planned",
+          "note": "retry 1"
+        },
+        {
+          "at": "2026-11-20T21:07:34+01:00",
+          "from": "planned",
+          "to": "produced",
+          "note": "render ok"
+        },
+        {
+          "at": "2026-11-20T21:07:50+01:00",
+          "from": "produced",
+          "to": "error",
+          "note": "qc failed"
+        },
+        {
+          "at": "2026-11-20T21:07:50+01:00",
+          "from": "error",
+          "to": "planned",
+          "note": "retry 2"
+        },
+        {
+          "at": "2026-11-20T21:28:29+01:00",
+          "from": "planned",
+          "to": "produced",
+          "note": "render ok"
+        },
+        {
+          "at": "2026-11-20T21:28:46+01:00",
+          "from": "produced",
+          "to": "error",
+          "note": "qc failed"
         }
       ],
-      "lastError": "qc: size 96.0 MB",
+      "lastError": "qc: size 100.5 MB",
       "selection": {
-        "seed": 95051968,
+        "seed": 3131267997,
         "metrics": {
-          "seed": 95051968,
+          "seed": 3131267997,
           "winner": "lion",
-          "dur": 62.35,
-          "tags": 20,
+          "dur": 63.63,
+          "tags": 19,
           "minTags": 2,
           "roundTags": [
-            2,
             3,
             2,
-            3,
+            2,
+            2,
             2,
             3,
             5
           ],
-          "clutch": 7,
-          "dodges": 16,
+          "clutch": 8,
+          "dodges": 18,
           "finalTags": 5,
-          "finalDur": 6.43,
+          "finalDur": 6.77,
           "order": [
-            "bear",
             "wolf",
-            "tiger",
-            "bull",
             "fox",
             "gorilla",
-            "panda"
+            "bull",
+            "panda",
+            "bear",
+            "tiger"
           ],
-          "score": 66.33
+          "score": 67.69
         },
         "simulated": 600,
         "runnersUp": [
           {
-            "seed": 4024323796,
-            "score": 65.16
+            "seed": 3626452159,
+            "score": 67.26
           },
           {
-            "seed": 2679645311,
-            "score": 63.59
+            "seed": 646340210,
+            "score": 67.15
           },
           {
-            "seed": 1827007370,
-            "score": 63.51
+            "seed": 315565951,
+            "score": 65.65
           }
         ]
       },
       "render": {
         "file": "production/2026-11-21/ZW-20261121-2.mp4",
-        "seconds": 1228,
+        "seconds": 1179,
         "info": {
-          "seed": 95051968,
+          "seed": 3131267997,
           "theme": "volcano",
-          "vt": 62.36666666666441,
+          "vt": 63.633333333331,
           "phase": "win",
-          "tags": 20,
+          "tags": 19,
           "winner": "lion",
           "order": [
-            "bear",
             "wolf",
-            "tiger",
-            "bull",
             "fox",
             "gorilla",
-            "panda"
+            "bull",
+            "panda",
+            "bear",
+            "tiger"
           ],
           "kinds": [
             1,
-            0,
-            1,
             1,
             0,
+            0,
+            2,
             1,
-            2
+            1
           ]
         }
       },
       "qc": {
-        "at": "2026-11-19T22:47:34+01:00",
+        "at": "2026-11-20T21:28:46+01:00",
         "ok": false,
         "problems": [
-          "size 96.0 MB"
+          "size 100.5 MB"
         ],
-        "duration": 62.37,
+        "duration": 63.63,
         "width": 1080,
         "height": 1920,
         "fps": 30,
         "videoCodec": "h264",
         "audioCodec": "aac",
-        "sizeMB": 95.96,
-        "sha256": "771ae4572d46041e3d5efb0054a98f5f0e37a532bd8ffa4c25f56e1249145962",
+        "sizeMB": 100.53,
+        "sha256": "59adaaf7701d9bdb8ae89da42cb3c6635d20d0d755cdfe9db0eb4f147c5767d6",
         "luminance": [
-          135.8,
-          144.2,
           137.2,
-          129.5,
-          151.5
+          147.8,
+          133.4,
+          129.3,
+          122.5
         ]
       }
     },
@@ -5336,7 +5394,7 @@
           "dueAt": "2026-11-22T16:00:00+01:00",
           "payload": "buffer/2026-11-22/ZW-20261122-3.youtube.payload.json",
           "mode": "live",
-          "at": "2026-11-19T23:51:11+01:00"
+          "at": "2026-11-20T20:46:55+01:00"
         }
       },
       "history": [
@@ -5467,7 +5525,7 @@
           "dueAt": "2026-11-22T18:00:00+01:00",
           "payload": "buffer/2026-11-22/ZW-20261122-4.youtube.payload.json",
           "mode": "live",
-          "at": "2026-11-19T23:51:11+01:00"
+          "at": "2026-11-20T20:46:55+01:00"
         }
       },
       "history": [
@@ -5640,5 +5698,5 @@
     "yte|New Zoo Wars battle every day.",
     "emt|Color War: bounce, steal, survive 🔵"
   ],
-  "updatedAt": "2026-11-19T23:52:03+01:00"
+  "updatedAt": "2026-11-20T21:28:46+01:00"
 }

@@ -1,0 +1,255 @@
+{
+ "edges": [
+  {
+   "node": {
+    "id": "6afcc11fbbe886f1b511b7e8",
+    "status": "error",
+    "dueAt": "2026-11-20T15:00:00.000Z",
+    "sentAt": null,
+    "channelId": "6af611d662b70b94b00d5648",
+    "error": {
+     "message": "The daily posting limit for this channel has been reached! Please try reducing the amount of times per day in your schedule and try again later."
+    }
+   }
+  },
+  {
+   "node": {
+    "id": "6afcc11f843fae727bb52e98",
+    "status": "sent",
+    "dueAt": "2026-11-20T15:00:00.000Z",
+    "sentAt": "2026-11-20T15:06:59.190Z",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6afcc11ea739830f97444160",
+    "status": "error",
+    "dueAt": "2026-11-20T18:00:00.000Z",
+    "sentAt": null,
+    "channelId": "6af611d662b70b94b00d5648",
+    "error": {
+     "message": "The daily posting limit for this channel has been reached! Please try reducing the amount of times per day in your schedule and try again later."
+    }
+   }
+  },
+  {
+   "node": {
+    "id": "6afcc11dbbe886f1b511b6a5",
+    "status": "sent",
+    "dueAt": "2026-11-20T18:00:00.000Z",
+    "sentAt": "2026-11-20T18:07:14.666Z",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6afcc11b843fae727bb52cbc",
+    "status": "sent",
+    "dueAt": "2026-11-20T11:30:00.000Z",
+    "sentAt": "2026-11-20T11:31:33.468Z",
+    "channelId": "6af611d662b70b94b00d5648",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6afcc11a9b0477630c930d6b",
+    "status": "sent",
+    "dueAt": "2026-11-20T11:30:00.000Z",
+    "sentAt": "2026-11-20T11:32:23.301Z",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6afcb832a4d3be4123fc3cab",
+    "status": "error",
+    "dueAt": "2026-11-19T15:00:00.000Z",
+    "sentAt": null,
+    "channelId": "6af611d662b70b94b00d5648",
+    "error": {
+     "message": "The daily posting limit for this channel has been reached! Please try reducing the amount of times per day in your schedule and try again later."
+    }
+   }
+  },
+  {
+   "node": {
+    "id": "6afcb8317847359f57af53a4",
+    "status": "sent",
+    "dueAt": "2026-11-19T15:00:00.000Z",
+    "sentAt": "2026-11-19T15:07:13.092Z",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6afcb830dfbe5d51e1ebf9d4",
+    "status": "sent",
+    "dueAt": "2026-11-19T18:00:00.000Z",
+    "sentAt": "2026-11-19T18:05:13.392Z",
+    "channelId": "6af611d662b70b94b00d5648",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6afcb82f57c8fecbcd1b6583",
+    "status": "sent",
+    "dueAt": "2026-11-19T18:00:00.000Z",
+    "sentAt": "2026-11-19T18:06:40.708Z",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6afcb82e700b9ade62f3222c",
+    "status": "error",
+    "dueAt": "2026-11-19T11:30:00.000Z",
+    "sentAt": null,
+    "channelId": "6af611d662b70b94b00d5648",
+    "error": {
+     "message": "The daily posting limit for this channel has been reached! Please try reducing the amount of times per day in your schedule and try again later."
+    }
+   }
+  },
+  {
+   "node": {
+    "id": "6afcb82d700b9ade62f321c1",
+    "status": "sent",
+    "dueAt": "2026-11-19T11:30:00.000Z",
+    "sentAt": "2026-11-19T11:32:44.821Z",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6afa1fc406e1675856a6ac61",
+    "status": "sent",
+    "dueAt": "2026-11-18T15:00:00.000Z",
+    "sentAt": "2026-11-18T15:04:59.814Z",
+    "channelId": "6af611d662b70b94b00d5648",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6afa1fc3a869c35e5b978aa0",
+    "status": "sent",
+    "dueAt": "2026-11-18T15:00:00.000Z",
+    "sentAt": "2026-11-18T15:07:55.733Z",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6afa1fc28e87c256a3903235",
+    "status": "sent",
+    "dueAt": "2026-11-18T18:00:00.000Z",
+    "sentAt": "2026-11-18T18:04:50.581Z",
+    "channelId": "6af611d662b70b94b00d5648",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6afa1fc1daa378ad68923e1d",
+    "status": "sent",
+    "dueAt": "2026-11-18T18:00:00.000Z",
+    "sentAt": "2026-11-18T18:07:18.085Z",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6afa1fc0daa378ad68923d45",
+    "status": "sent",
+    "dueAt": "2026-11-18T11:30:00.000Z",
+    "sentAt": "2026-11-18T11:31:11.658Z",
+    "channelId": "6af611d662b70b94b00d5648",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6afa1fbfa869c35e5b9789ca",
+    "status": "sent",
+    "dueAt": "2026-11-18T11:30:00.000Z",
+    "sentAt": "2026-11-18T11:33:31.000Z",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6afa1529ff465c57daadbae2",
+    "status": "sent",
+    "dueAt": "2026-11-17T15:00:00.000Z",
+    "sentAt": "2026-11-17T15:04:56.501Z",
+    "channelId": "6af611d662b70b94b00d5648",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6afa1528cc27d16d7fbaaa7c",
+    "status": "sent",
+    "dueAt": "2026-11-17T18:00:00.000Z",
+    "sentAt": "2026-11-17T18:04:38.008Z",
+    "channelId": "6af611d662b70b94b00d5648",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6afa1528a869c35e5b942f99",
+    "status": "sent",
+    "dueAt": "2026-11-17T15:00:00.000Z",
+    "sentAt": "2026-11-17T15:08:43.371Z",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6afa152706e1675856a2e4cc",
+    "status": "sent",
+    "dueAt": "2026-11-17T18:00:00.000Z",
+    "sentAt": "2026-11-17T18:06:56.405Z",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6afa1525a869c35e5b942ece",
+    "status": "sent",
+    "dueAt": "2026-11-17T11:30:00.000Z",
+    "sentAt": "2026-11-17T11:31:17.941Z",
+    "channelId": "6af611d662b70b94b00d5648",
+    "error": null
+   }
+  },
+  {
+   "node": {
+    "id": "6afa15248e87c256a38c630c",
+    "status": "sent",
+    "dueAt": "2026-11-17T11:30:00.000Z",
+    "sentAt": "2026-11-17T11:32:25.369Z",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "error": null
+   }
+  }
+ ],
+ "pageInfo": {
+  "hasNextPage": false
+ }
+}
