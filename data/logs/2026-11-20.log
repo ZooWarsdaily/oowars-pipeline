@@ -35,3 +35,8 @@
 2026-11-20T21:28:46+01:00 [producer] ZW-20261121-2: QC FAILED ["size 100.5 MB"]
 2026-11-20T21:28:46+01:00 [producer] ZW-20261121-3 already scheduled
 2026-11-20T21:28:46+01:00 [producer] run 2026-11-21 finished: ZW-20261121-1=scheduled ZW-20261121-2=error ZW-20261121-3=scheduled
+2026-11-20T21:29:11+01:00 [producer] ZW-20261122-1 already scheduled
+2026-11-20T21:29:11+01:00 [producer] ZW-20261122-2 already scheduled
+2026-11-20T21:29:11+01:00 [producer] ZW-20261122-3 already uploaded
+2026-11-20T21:29:11+01:00 [producer] ZW-20261122-4 already uploaded
+2026-11-20T21:29:11+01:00 [producer] run 2026-11-22 finished: ZW-20261122-1=scheduled ZW-20261122-2=scheduled ZW-20261122-3=uploaded ZW-20261122-4=uploaded
