@@ -5956,12 +5956,35 @@
       "slot": 3,
       "time": "16:00",
       "game": "arena2d",
-      "status": "validated",
+      "status": "scheduled",
       "plan": {
         "winner": null,
         "theme": "terr"
       },
-      "posts": {},
+      "posts": {
+        "tiktok": {
+          "status": "scheduled",
+          "dueAt": "2026-11-23T15:00:00.000Z",
+          "payload": "buffer/2026-11-23/ZW-20261123-3.tiktok.payload.json",
+          "mode": "live",
+          "at": "2026-11-20T22:31:31+01:00",
+          "bufferPostId": "6b00bc3cd9cbb430a1fa5724",
+          "bufferStatus": "scheduled",
+          "recordedAt": "2026-11-20T22:31:47+01:00",
+          "simulated": false
+        },
+        "youtube": {
+          "status": "scheduled",
+          "dueAt": "2026-11-23T15:00:00.000Z",
+          "payload": "buffer/2026-11-23/ZW-20261123-3.youtube.payload.json",
+          "mode": "live",
+          "at": "2026-11-20T22:31:31+01:00",
+          "bufferPostId": "6b00bc3cd9cbb430a1fa5762",
+          "bufferStatus": "scheduled",
+          "recordedAt": "2026-11-20T22:31:47+01:00",
+          "simulated": false
+        }
+      },
       "history": [
         {
           "at": "2026-11-20T21:29:16+01:00",
@@ -5978,6 +6001,18 @@
           "from": "produced",
           "to": "validated",
           "note": "qc ok"
+        },
+        {
+          "at": "2026-11-20T22:31:31+01:00",
+          "from": "validated",
+          "to": "uploaded",
+          "note": "git blob ok (9b2c07d06d)"
+        },
+        {
+          "at": "2026-11-20T22:31:47+01:00",
+          "from": "uploaded",
+          "to": "scheduled",
+          "note": "tiktok 6b00bc3cd9cbb430a1fa5724 / youtube 6b00bc3cd9cbb430a1fa5762"
         }
       ],
       "selection": {
@@ -6040,14 +6075,24 @@
         ]
       },
       "approvedFile": "approved/2026-11-23/ZW-20261123-3.mp4",
-      "fiche": "approved/2026-11-23/ZW-20261123-3.json"
+      "fiche": "approved/2026-11-23/ZW-20261123-3.json",
+      "publicUrl": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-23/ZW-20261123-3.mp4",
+      "uploadCheck": "git blob ok (9b2c07d06d)",
+      "captions": {
+        "tiktok": {
+          "text": "Who will own the map? 🎨\n\nComment your animal before the end 👀\n\n#zoowars #territorywar #animalbattle #whowouldwin #simulation"
+        },
+        "youtube": {
+          "title": "Paint the Map! Animal Territory War",
+          "text": "Power-ups, freezes and paint bombs: who will control the whole map?\nWho did you pick? Tell us in the comments!\n\n#shorts #zoowars #territorywar #animalbattle",
+          "titleVariant": "control",
+          "experiment": "T2-youtube-titres-emoji"
+        },
+        "at": "2026-11-20T22:31:31+01:00"
+      }
     }
   },
   "captionsUsed": [
-    "2t|Color War: Last Color Standing",
-    "yte|Did your pick survive the cuts?",
-    "3h|8 animals, 7 cushions 🪑",
-    "ttq|Which animal should get a rematch?",
     "3t|When the Music Stops… Animal Musical Chairs",
     "yte|Who did you pick? Tell us in the comments!",
     "tt|Last one standing wins 🏆|Who deserved to win?",
@@ -6133,7 +6178,11 @@
     "3h|The last cushion is a war zone 😤",
     "ttq|Which animal are you rooting for next time?",
     "3t|8 Animals, 7 Cushions – Musical Chairs Battle",
-    "yte|Did your pick make it to the final duel?"
+    "yte|Did your pick make it to the final duel?",
+    "2h|Who will own the map? 🎨",
+    "ttq|Comment your animal before the end 👀",
+    "2t|Paint the Map! Animal Territory War",
+    "yte|Who did you pick? Tell us in the comments!"
   ],
-  "updatedAt": "2026-11-20T22:30:29+01:00"
+  "updatedAt": "2026-11-20T22:31:47+01:00"
 }

@@ -102,3 +102,10 @@
 2026-11-20T22:30:22+01:00 [producer] ZW-20261123-3: rendered in 2 min
 2026-11-20T22:30:29+01:00 [producer] ZW-20261123-3: VALIDATED (66.87s, 17.62 MB)
 2026-11-20T22:30:29+01:00 [producer] run 2026-11-23 finished: ZW-20261123-1=scheduled ZW-20261123-2=error ZW-20261123-3=validated
+2026-11-20T22:31:30+01:00 [orchestrator] ZW-20261123-3: pushed to media branch
+2026-11-20T22:31:31+01:00 [publisher] ZW-20261123-3: uploaded (git blob ok (9b2c07d06d)) https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-23/ZW-20261123-3.mp4
+2026-11-20T22:31:31+01:00 [publisher] ZW-20261123-3: captions written
+2026-11-20T22:31:31+01:00 [publisher] ZW-20261123-3: tiktok payload ready (live)
+2026-11-20T22:31:31+01:00 [publisher] ZW-20261123-3: youtube payload ready (live)
+2026-11-20T22:31:47+01:00 [publisher] ZW-20261123-3: tiktok confirmed by Buffer, post 6b00bc3cd9cbb430a1fa5724 (scheduled)
+2026-11-20T22:31:47+01:00 [publisher] ZW-20261123-3: youtube confirmed by Buffer, post 6b00bc3cd9cbb430a1fa5762 (scheduled)
