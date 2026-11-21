@@ -1,0 +1,303 @@
+{
+ "edges": [
+  {
+   "node": {
+    "id": "6aff646bd606779a4df954f1",
+    "status": "sent",
+    "dueAt": "2026-11-21T15:00:00.000Z",
+    "sentAt": "2026-11-21T15:02:46.701Z",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "error": null,
+    "assets": [
+     {
+      "type": "video",
+      "mimeType": "video/mp4",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-21/ZW-20261121-3.mp4"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6aff646a373c7db3cb52a5ce",
+    "status": "sent",
+    "dueAt": "2026-11-21T15:00:00.000Z",
+    "sentAt": "2026-11-21T15:05:14.009Z",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "error": null,
+    "assets": [
+     {
+      "type": "video",
+      "mimeType": "video/mp4",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-21/ZW-20261121-3.mp4"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6aff64696e3094bf7109e14b",
+    "status": "sent",
+    "dueAt": "2026-11-21T11:30:00.000Z",
+    "sentAt": "2026-11-21T11:30:30.727Z",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "error": null,
+    "assets": [
+     {
+      "type": "video",
+      "mimeType": "video/mp4",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-21/ZW-20261121-1.mp4"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6aff6468d606779a4df953b1",
+    "status": "sent",
+    "dueAt": "2026-11-21T11:30:00.000Z",
+    "sentAt": "2026-11-21T11:33:18.812Z",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "error": null,
+    "assets": [
+     {
+      "type": "video",
+      "mimeType": "video/mp4",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-21/ZW-20261121-1.mp4"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6afcc11fbbe886f1b511b7e8",
+    "status": "error",
+    "dueAt": "2026-11-20T15:00:00.000Z",
+    "sentAt": null,
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "error": {
+     "message": "The daily posting limit for this channel has been reached! Please try reducing the amount of times per day in your schedule and try again later."
+    },
+    "assets": [
+     {
+      "type": "video",
+      "mimeType": "video/mp4",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-20/ZW-20261120-3.mp4"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6afcc11f843fae727bb52e98",
+    "status": "sent",
+    "dueAt": "2026-11-20T15:00:00.000Z",
+    "sentAt": "2026-11-20T15:06:59.190Z",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "error": null,
+    "assets": [
+     {
+      "type": "video",
+      "mimeType": "video/mp4",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-20/ZW-20261120-3.mp4"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6afcc11ea739830f97444160",
+    "status": "error",
+    "dueAt": "2026-11-20T18:00:00.000Z",
+    "sentAt": null,
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "error": {
+     "message": "The daily posting limit for this channel has been reached! Please try reducing the amount of times per day in your schedule and try again later."
+    },
+    "assets": [
+     {
+      "type": "video",
+      "mimeType": "video/mp4",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-20/ZW-20261120-2.mp4"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6afcc11dbbe886f1b511b6a5",
+    "status": "sent",
+    "dueAt": "2026-11-20T18:00:00.000Z",
+    "sentAt": "2026-11-20T18:07:14.666Z",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "error": null,
+    "assets": [
+     {
+      "type": "video",
+      "mimeType": "video/mp4",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-20/ZW-20261120-2.mp4"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6afcc11b843fae727bb52cbc",
+    "status": "sent",
+    "dueAt": "2026-11-20T11:30:00.000Z",
+    "sentAt": "2026-11-20T11:31:33.468Z",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "error": null,
+    "assets": [
+     {
+      "type": "video",
+      "mimeType": "video/mp4",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-20/ZW-20261120-1.mp4"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6afcc11a9b0477630c930d6b",
+    "status": "sent",
+    "dueAt": "2026-11-20T11:30:00.000Z",
+    "sentAt": "2026-11-20T11:32:23.301Z",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "error": null,
+    "assets": [
+     {
+      "type": "video",
+      "mimeType": "video/mp4",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-20/ZW-20261120-1.mp4"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6afcb832a4d3be4123fc3cab",
+    "status": "error",
+    "dueAt": "2026-11-19T15:00:00.000Z",
+    "sentAt": null,
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "error": {
+     "message": "The daily posting limit for this channel has been reached! Please try reducing the amount of times per day in your schedule and try again later."
+    },
+    "assets": [
+     {
+      "type": "video",
+      "mimeType": "video/mp4",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-19/ZW-20261119-3.mp4"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6afcb8317847359f57af53a4",
+    "status": "sent",
+    "dueAt": "2026-11-19T15:00:00.000Z",
+    "sentAt": "2026-11-19T15:07:13.092Z",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "error": null,
+    "assets": [
+     {
+      "type": "video",
+      "mimeType": "video/mp4",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-19/ZW-20261119-3.mp4"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6afcb830dfbe5d51e1ebf9d4",
+    "status": "sent",
+    "dueAt": "2026-11-19T18:00:00.000Z",
+    "sentAt": "2026-11-19T18:05:13.392Z",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "error": null,
+    "assets": [
+     {
+      "type": "video",
+      "mimeType": "video/mp4",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-19/ZW-20261119-2.mp4"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6afcb82f57c8fecbcd1b6583",
+    "status": "sent",
+    "dueAt": "2026-11-19T18:00:00.000Z",
+    "sentAt": "2026-11-19T18:06:40.708Z",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "error": null,
+    "assets": [
+     {
+      "type": "video",
+      "mimeType": "video/mp4",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-19/ZW-20261119-2.mp4"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6afcb82e700b9ade62f3222c",
+    "status": "error",
+    "dueAt": "2026-11-19T11:30:00.000Z",
+    "sentAt": null,
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "error": {
+     "message": "The daily posting limit for this channel has been reached! Please try reducing the amount of times per day in your schedule and try again later."
+    },
+    "assets": [
+     {
+      "type": "video",
+      "mimeType": "video/mp4",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-19/ZW-20261119-1.mp4"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6afcb82d700b9ade62f321c1",
+    "status": "sent",
+    "dueAt": "2026-11-19T11:30:00.000Z",
+    "sentAt": "2026-11-19T11:32:44.821Z",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "error": null,
+    "assets": [
+     {
+      "type": "video",
+      "mimeType": "video/mp4",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-19/ZW-20261119-1.mp4"
+     }
+    ]
+   }
+  }
+ ],
+ "pageInfo": {
+  "hasNextPage": false
+ }
+}

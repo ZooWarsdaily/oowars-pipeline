@@ -1,0 +1,3719 @@
+{
+  "edges": [
+    {
+      "node": {
+        "id": "6aff646bd606779a4df954f1",
+        "status": "sent",
+        "text": "Six animals run from the bomb. The carrier has to tag someone before the fuse runs out.\nDid your pick survive the cuts?\n\n#shorts #zoowars #hotpotato #satisfying",
+        "dueAt": "2026-11-21T15:00:00.000Z",
+        "sentAt": "2026-11-21T15:02:46.701Z",
+        "channelId": "6af611d662b70b94b00d5648",
+        "channelService": "youtube",
+        "metricsUpdatedAt": "2026-11-21T17:27:35.445Z",
+        "assets": [
+          {
+            "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-21/ZW-20261121-3.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 9,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 1,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 1.45,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 689,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6aff646a373c7db3cb52a5ce",
+        "status": "sent",
+        "text": "Don't get caught holding the bomb 💣\n\nComment your animal before the end 👀\n\n#zoowars #hotpotato #satisfying #simulation #whowouldwin",
+        "dueAt": "2026-11-21T15:00:00.000Z",
+        "sentAt": "2026-11-21T15:05:14.009Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-19T21:04:42.670Z",
+        "assets": [
+          {
+            "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6aff646a373c7db3cb52a5ce_video.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 0,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6aff64696e3094bf7109e14b",
+        "status": "sent",
+        "text": "A Zoo Wars musical chairs battle floating in space: one cushion too few every round, one winner at the end.\nWho did you pick? Tell us in the comments!\n🏆 Season 1 leader: Wolf (3 wins)\n\n#shorts #zoowars #musicalchairs #animalbattle",
+        "dueAt": "2026-11-21T11:30:00.000Z",
+        "sentAt": "2026-11-21T11:30:30.727Z",
+        "channelId": "6af611d662b70b94b00d5648",
+        "channelService": "youtube",
+        "metricsUpdatedAt": "2026-11-21T17:27:35.445Z",
+        "assets": [
+          {
+            "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-21/ZW-20261121-1.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 11,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 1.27,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 869,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6aff6468d606779a4df953b1",
+        "status": "sent",
+        "text": "The last cushion is a war zone 😤\nMusical chairs floating in space.\n\nRate this final from 1 to 10 👇\n🏆 Season 1 leader: Wolf (3 wins)\n\n#zoowars #musicalchairs #animalbattle #whowouldwin #simulation",
+        "dueAt": "2026-11-21T11:30:00.000Z",
+        "sentAt": "2026-11-21T11:33:18.812Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-19T21:04:40.313Z",
+        "assets": [
+          {
+            "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6aff6468d606779a4df953b1_video.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 0,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6afcc11dbbe886f1b511b6a5",
+        "status": "sent",
+        "text": "The chase is real 🏃💨\nHot potato battle on a frozen lake.\n\nWhich animal should get a rematch?\n🏆 Season 1 leader: Wolf (3 wins)\n\n#zoowars #hotpotato #animalbattle #simulation #whowouldwin",
+        "dueAt": "2026-11-20T18:00:00.000Z",
+        "sentAt": "2026-11-20T18:07:14.666Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.630Z",
+        "assets": [
+          {
+            "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6afcc11dbbe886f1b511b6a5_video.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 221,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 12.73,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 3.03,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6afcc11f843fae727bb52e98",
+        "status": "sent",
+        "text": "Every tile counts 🟩\n\nWhich animal are you rooting for next time?\n\n#zoowars #territorywar #simulation #whowouldwin #satisfying",
+        "dueAt": "2026-11-20T15:00:00.000Z",
+        "sentAt": "2026-11-20T15:06:59.190Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.630Z",
+        "assets": [
+          {
+            "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6afcc11f843fae727bb52e98_video.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 1,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0.46,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 216,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 34.8,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 8.46,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6afcc11b843fae727bb52cbc",
+        "status": "sent",
+        "text": "Run, dodge and hide over the lava: who will be the last animal standing against the green pack?\nComment your animal for the next battle!\n🏆 Season 1 leader: Wolf (3 wins)\n\n#shorts #zoowars #infection #simulation",
+        "dueAt": "2026-11-20T11:30:00.000Z",
+        "sentAt": "2026-11-20T11:31:33.468Z",
+        "channelId": "6af611d662b70b94b00d5648",
+        "channelService": "youtube",
+        "metricsUpdatedAt": "2026-11-21T17:27:35.445Z",
+        "assets": [
+          {
+            "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-20/ZW-20261120-1.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 1,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0.7,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 142,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6afcc11a9b0477630c930d6b",
+        "status": "sent",
+        "text": "Don't let them touch you 🟢\nInfection chase over the lava.\n\nCall your winner in the comments 👇\n🏆 Season 1 leader: Wolf (3 wins)\n\n#zoowars #infection #simulation #satisfying #whowouldwin",
+        "dueAt": "2026-11-20T11:30:00.000Z",
+        "sentAt": "2026-11-20T11:32:23.301Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.630Z",
+        "assets": [
+          {
+            "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6afcc11a9b0477630c930d6b_video.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 221,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 24.43,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 5.77,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6afcb830dfbe5d51e1ebf9d4",
+        "status": "sent",
+        "text": "Pick your animal at the start and see if it survives the hot potato battle between the jungle trees.\nDid your pick make it to the final duel?\n🏆 Season 1: Wolf & Fox tied at the top (2 wins)\n\n#shorts #zoowars #whowouldwin #simulation",
+        "dueAt": "2026-11-19T18:00:00.000Z",
+        "sentAt": "2026-11-19T18:05:13.392Z",
+        "channelId": "6af611d662b70b94b00d5648",
+        "channelService": "youtube",
+        "metricsUpdatedAt": "2026-11-21T17:27:35.445Z",
+        "assets": [
+          {
+            "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-19/ZW-20261119-2.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 13,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 1.15,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 1134,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6afcb82f57c8fecbcd1b6583",
+        "status": "sent",
+        "text": "The bomb never stays still for long 💣 Hot potato battle between the jungle trees. Who did you pick? 👇 🏆 Season 1: Wolf & Fox tied at the top (2 wins) #zoowars #whowouldwin #simulation #satisfying #animalbattle",
+        "dueAt": "2026-11-19T18:00:00.000Z",
+        "sentAt": "2026-11-19T18:06:40.708Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.630Z",
+        "assets": [
+          {
+            "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6afcb82f57c8fecbcd1b6583_video.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 219,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 124,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 23.52,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 5.58,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6afcb8317847359f57af53a4",
+        "status": "sent",
+        "text": "Bounce, steal, survive 🔵 Did you guess the winner? #zoowars #colorwar #satisfying #animalbattle #whowouldwin",
+        "dueAt": "2026-11-19T15:00:00.000Z",
+        "sentAt": "2026-11-19T15:07:13.092Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.630Z",
+        "assets": [
+          {
+            "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6afcb8317847359f57af53a4_video.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 206,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 146,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 23.95,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 6.02,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6afcb82d700b9ade62f321c1",
+        "status": "sent",
+        "text": "The last cushion is a war zone 😤 Musical chairs floating in space. Did your animal survive? 👇 🏆 Season 1: Wolf & Fox tied at the top (2 wins) #zoowars #musicalchairs #satisfying #whowouldwin #animalbattle",
+        "dueAt": "2026-11-19T11:30:00.000Z",
+        "sentAt": "2026-11-19T11:32:44.821Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.630Z",
+        "assets": [
+          {
+            "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6afcb82d700b9ade62f321c1_video.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 200,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 200,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 18.72,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 4.6,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6afa1fc28e87c256a3903235",
+        "status": "sent",
+        "text": "Eight animals run around a floating arena among the stars. Whoever holds the bomb must tag someone else before the fuse runs out.\nComment your animal for the next battle!\n🏆 Season 1 leader: Fox (2 wins)\n\n#shorts #zoowars #whowouldwin #hotpotato",
+        "dueAt": "2026-11-18T18:00:00.000Z",
+        "sentAt": "2026-11-18T18:04:50.581Z",
+        "channelId": "6af611d662b70b94b00d5648",
+        "channelService": "youtube",
+        "metricsUpdatedAt": "2026-11-21T17:27:35.445Z",
+        "assets": [
+          {
+            "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-18/ZW-20261118-2.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 2,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0.55,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 362,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6afa1fc1daa378ad68923e1d",
+        "status": "sent",
+        "text": "Zoo Wars: Hot Potato edition 💣 Hot potato battle among the stars. Rate this final from 1 to 10 👇 🏆 Season 1 leader: Fox (2 wins) #zoowars #whowouldwin #hotpotato #animalbattle #satisfying",
+        "dueAt": "2026-11-18T18:00:00.000Z",
+        "sentAt": "2026-11-18T18:07:18.085Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.630Z",
+        "assets": [
+          {
+            "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6afa1fc1daa378ad68923e1d_video.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 1,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0.44,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 226,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 216,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 17.37,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 4.38,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6afa1fc406e1675856a6ac61",
+        "status": "sent",
+        "text": "Six animals run from the bomb. The carrier has to tag someone before the fuse runs out.\nWho did you pick? Tell us in the comments!\n\n#shorts #zoowars #hotpotato #animalbattle",
+        "dueAt": "2026-11-18T15:00:00.000Z",
+        "sentAt": "2026-11-18T15:04:59.814Z",
+        "channelId": "6af611d662b70b94b00d5648",
+        "channelService": "youtube",
+        "metricsUpdatedAt": "2026-11-21T17:27:35.445Z",
+        "assets": [
+          {
+            "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-18/ZW-20261118-3.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 222,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6afa1fc3a869c35e5b978aa0",
+        "status": "sent",
+        "text": "Pass it or BOOM 💣 Comment your animal before the end 👀 #zoowars #hotpotato #animalbattle #whowouldwin #simulation",
+        "dueAt": "2026-11-18T15:00:00.000Z",
+        "sentAt": "2026-11-18T15:07:55.733Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.631Z",
+        "assets": [
+          {
+            "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6afa1fc3a869c35e5b978aa0_video.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 1,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0.4,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 247,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 230,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 30.95,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 7.17,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6afa1fc0daa378ad68923d45",
+        "status": "sent",
+        "text": "Run, dodge and hide on the frozen arena: who will be the last animal standing against the green pack?\nDid your pick make it to the final duel?\n🏆 Season 1 leader: Fox (2 wins)\n\n#shorts #zoowars #infection #animalbattle",
+        "dueAt": "2026-11-18T11:30:00.000Z",
+        "sentAt": "2026-11-18T11:31:11.658Z",
+        "channelId": "6af611d662b70b94b00d5648",
+        "channelService": "youtube",
+        "metricsUpdatedAt": "2026-11-21T17:27:35.445Z",
+        "assets": [
+          {
+            "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-18/ZW-20261118-1.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 10,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 1.04,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 961,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6afa1fbfa869c35e5b9789ca",
+        "status": "sent",
+        "text": "1 infected… then 2… then 7 😳 Infection chase on the frozen arena. Did you guess the winner? 🏆 Season 1 leader: Fox (2 wins) #zoowars #infection #animalbattle #whowouldwin #satisfying",
+        "dueAt": "2026-11-18T11:30:00.000Z",
+        "sentAt": "2026-11-18T11:33:31.000Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.631Z",
+        "assets": [
+          {
+            "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6afa1fbfa869c35e5b9789ca_video.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 1,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0.41,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 246,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 230,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 26.07,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 6.09,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6afa1528cc27d16d7fbaaa7c",
+        "status": "sent",
+        "text": "Pick your animal at the start and see if it survives the hot potato battle between the jungle trees.\nNew Zoo Wars battle every day.\n🏆 Season 1 leader: Fox (2 wins)\n\n#shorts #zoowars #whowouldwin #simulation",
+        "dueAt": "2026-11-17T18:00:00.000Z",
+        "sentAt": "2026-11-17T18:04:38.008Z",
+        "channelId": "6af611d662b70b94b00d5648",
+        "channelService": "youtube",
+        "metricsUpdatedAt": "2026-11-21T17:27:35.445Z",
+        "assets": [
+          {
+            "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-17/ZW-20261117-2.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 11,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 1,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 1.15,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 1047,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6afa152706e1675856a2e4cc",
+        "status": "sent",
+        "text": "Last one standing wins 🏆 Hot potato battle between the jungle trees. Who deserved to win? 🏆 Season 1 leader: Fox (2 wins) #zoowars #whowouldwin #simulation #satisfying #animalbattle",
+        "dueAt": "2026-11-17T18:00:00.000Z",
+        "sentAt": "2026-11-17T18:06:56.405Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.631Z",
+        "assets": [
+          {
+            "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6afa152706e1675856a2e4cc_video.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 236,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 222,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 16.68,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 4,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6afa1529ff465c57daadbae2",
+        "status": "sent",
+        "text": "A Zoo Wars territory battle: grab tiles, survive the cuts, own the map.\nDid your pick survive the cuts?\n\n#shorts #zoowars #territorywar #animalbattle",
+        "dueAt": "2026-11-17T15:00:00.000Z",
+        "sentAt": "2026-11-17T15:04:56.501Z",
+        "channelId": "6af611d662b70b94b00d5648",
+        "channelService": "youtube",
+        "metricsUpdatedAt": "2026-11-21T17:27:35.445Z",
+        "assets": [
+          {
+            "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-17/ZW-20261117-3.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 4,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0.89,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 451,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6afa1528a869c35e5b942f99",
+        "status": "sent",
+        "text": "Who will own the map? 🎨 Who did you pick? 👇 #zoowars #territorywar #animalbattle #whowouldwin #simulation",
+        "dueAt": "2026-11-17T15:00:00.000Z",
+        "sentAt": "2026-11-17T15:08:43.371Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.631Z",
+        "assets": [
+          {
+            "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6afa1528a869c35e5b942f99_video.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 218,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 218,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 27.63,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 7.18,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6afa1525a869c35e5b942ece",
+        "status": "sent",
+        "text": "Eight animals dance around the cushions on a floating volcano. When the music stops, the one left standing is out.\nWho did you pick? Tell us in the comments!\n🏆 Season 1: Fox & Bear tied at the top (1 wins)\n\n#shorts #zoowars #musicalchairs #whowouldwin",
+        "dueAt": "2026-11-17T11:30:00.000Z",
+        "sentAt": "2026-11-17T11:31:17.941Z",
+        "channelId": "6af611d662b70b94b00d5648",
+        "channelService": "youtube",
+        "metricsUpdatedAt": "2026-11-21T17:27:35.445Z",
+        "assets": [
+          {
+            "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-17/ZW-20261117-1.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 14,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 1.23,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 1137,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6afa15248e87c256a38c630c",
+        "status": "sent",
+        "text": "8 animals, 7 cushions 🪑 Musical chairs on a floating volcano. Which animal should get a rematch? 🏆 Season 1: Fox & Bear tied at the top (1 wins) #zoowars #musicalchairs #whowouldwin #satisfying #animalbattle",
+        "dueAt": "2026-11-17T11:30:00.000Z",
+        "sentAt": "2026-11-17T11:32:25.369Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.631Z",
+        "assets": [
+          {
+            "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6afa15248e87c256a38c630c_video.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 3,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 1.13,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 265,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 232,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 23.3,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 5.2,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af780e778196a0a9720a706",
+        "status": "sent",
+        "text": "A new Zoo Wars hot potato battle on slippery ice: tag, dodge and survive until only one animal is left.\nComment your animal for the next battle!\n🏆 Season 1 leader: Bear (1 win)\n\n#shorts #zoowars #hotpotato #satisfying",
+        "dueAt": "2026-11-16T18:00:00.000Z",
+        "sentAt": "2026-11-16T18:05:16.322Z",
+        "channelId": "6af611d662b70b94b00d5648",
+        "channelService": "youtube",
+        "metricsUpdatedAt": "2026-11-21T17:27:35.445Z",
+        "assets": [
+          {
+            "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-16/ZW-20261116-2.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 5,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0.64,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 786,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af780e69257ce339810ec50",
+        "status": "sent",
+        "text": "Who will be the last animal standing? 🐾 Hot potato battle on slippery ice. Did your animal survive? 👇 🏆 Season 1 leader: Bear (1 win) #zoowars #hotpotato #satisfying #simulation #animalbattle",
+        "dueAt": "2026-11-16T18:00:00.000Z",
+        "sentAt": "2026-11-16T18:07:34.760Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.631Z",
+        "assets": [
+          {
+            "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6af780e69257ce339810ec50_video.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 1,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0.4,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 248,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 241,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 14.08,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 3.25,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af780e881e1228421c5e1ac",
+        "status": "sent",
+        "text": "A Zoo Wars color battle: every hit steals a tile, only one color survives.\nDid your pick survive the cuts?\n\n#shorts #zoowars #colorwar #animalbattle",
+        "dueAt": "2026-11-16T15:00:00.000Z",
+        "sentAt": "2026-11-16T15:04:09.193Z",
+        "channelId": "6af611d662b70b94b00d5648",
+        "channelService": "youtube",
+        "metricsUpdatedAt": "2026-11-21T17:27:35.445Z",
+        "assets": [
+          {
+            "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-16/ZW-20261116-3.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 5,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0.56,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 897,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af780e84b28296eb117cd43",
+        "status": "sent",
+        "text": "Every hit steals a tile 🟥 Who was the sneakiest player? #zoowars #colorwar #animalbattle #whowouldwin #satisfying",
+        "dueAt": "2026-11-16T15:00:00.000Z",
+        "sentAt": "2026-11-16T15:06:11.349Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.631Z",
+        "assets": [
+          {
+            "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6af780e84b28296eb117cd43_video.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 1,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0.39,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 257,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 240,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 25.65,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 5.83,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af780e5bb36d00909cc6347",
+        "status": "sent",
+        "text": "Zoo Wars simulation on the jungle stage: the bomb carrier has to catch someone before it explodes.\nDid your pick make it to the final duel?\n\n#shorts #zoowars #simulation #hotpotato",
+        "dueAt": "2026-11-16T11:30:00.000Z",
+        "sentAt": "2026-11-16T11:30:39.120Z",
+        "channelId": "6af611d662b70b94b00d5648",
+        "channelService": "youtube",
+        "metricsUpdatedAt": "2026-11-21T17:27:35.445Z",
+        "assets": [
+          {
+            "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-16/ZW-20261116-1.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 7,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0.77,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 910,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af780e49257ce339810ebd7",
+        "status": "sent",
+        "text": "Pass it or blow up 💣 Hot potato battle on the jungle stage. Call your winner in the comments 👇 #zoowars #simulation #hotpotato #animalbattle #whowouldwin",
+        "dueAt": "2026-11-16T11:30:00.000Z",
+        "sentAt": "2026-11-16T11:32:46.167Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.631Z",
+        "assets": [
+          {
+            "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6af780e49257ce339810ebd7_video.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 2,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0.75,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 267,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 239,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 16.73,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 3.74,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af7750881e1228421c17063",
+        "status": "sent",
+        "text": "The bomb drops, the chase begins in outer space. Seven explosions, one survivor.\nWho did you pick? Tell us in the comments!\n\n#shorts #zoowars #hotpotato #animalbattle",
+        "dueAt": "2026-11-15T18:00:00.000Z",
+        "sentAt": "2026-11-15T18:02:07.408Z",
+        "channelId": "6af611d662b70b94b00d5648",
+        "channelService": "youtube",
+        "metricsUpdatedAt": "2026-11-21T17:27:35.445Z",
+        "assets": [
+          {
+            "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-15/ZW-20261115-2.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 1,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0.4,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 252,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af7750778196a0a971c4093",
+        "status": "sent",
+        "text": "Hot potato, but the potato explodes 💥 Hot potato battle in outer space. Rate this final from 1 to 10 👇 #zoowars #hotpotato #animalbattle #whowouldwin #simulation",
+        "dueAt": "2026-11-15T18:00:00.000Z",
+        "sentAt": "2026-11-15T18:04:44.147Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.631Z",
+        "assets": [
+          {
+            "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6af7750778196a0a971c4093_video.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 2,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 1,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 0.03,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 1.34,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af7750a78196a0a971c4116",
+        "status": "sent",
+        "text": "The bomb keeps changing hands until only one animal is left standing.\nNew Zoo Wars battle every day.\n\n#shorts #zoowars #hotpotato #animalbattle",
+        "dueAt": "2026-11-15T15:00:00.000Z",
+        "sentAt": "2026-11-15T15:02:22.896Z",
+        "channelId": "6af611d662b70b94b00d5648",
+        "channelService": "youtube",
+        "metricsUpdatedAt": "2026-11-21T17:27:35.445Z",
+        "assets": [
+          {
+            "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-15/ZW-20261115-3.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 6,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0.57,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 1057,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af77509bb36d00909c82ced",
+        "status": "sent",
+        "text": "Tag, run, explode 💥 Who deserved to win? #zoowars #hotpotato #animalbattle #whowouldwin #simulation",
+        "dueAt": "2026-11-15T15:00:00.000Z",
+        "sentAt": "2026-11-15T15:06:13.168Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.631Z",
+        "assets": [
+          {
+            "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6af77509bb36d00909c82ced_video.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 0,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af775069257ce33980c97f3",
+        "status": "sent",
+        "text": "The bomb drops, the chase begins on a floating volcano. Seven explosions, one survivor.\nDid your pick make it to the final duel?\n\n#shorts #zoowars #hotpotato #simulation",
+        "dueAt": "2026-11-15T11:30:00.000Z",
+        "sentAt": "2026-11-15T11:30:34.202Z",
+        "channelId": "6af611d662b70b94b00d5648",
+        "channelService": "youtube",
+        "metricsUpdatedAt": "2026-11-21T17:27:35.445Z",
+        "assets": [
+          {
+            "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-15/ZW-20261115-1.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 10,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 1,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 1.07,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 1027,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af7750578196a0a971c4036",
+        "status": "sent",
+        "text": "This bomb changed hands way too fast 😳 Hot potato battle on a floating volcano. Did you guess the winner? #zoowars #hotpotato #simulation #whowouldwin #satisfying",
+        "dueAt": "2026-11-15T11:30:00.000Z",
+        "sentAt": "2026-11-15T11:32:20.033Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.631Z",
+        "assets": [
+          {
+            "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6af7750578196a0a971c4036_video.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 0,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af61fbd8a13f5efaaf8c682",
+        "status": "sent",
+        "text": "The bomb drops, the chase begins on the frozen arena. Seven explosions, one survivor.\nComment your animal for the next battle!\n\n#shorts #zoowars #hotpotato #satisfying",
+        "dueAt": "2026-11-14T18:00:00.000Z",
+        "sentAt": "2026-11-14T18:02:09.103Z",
+        "channelId": "6af611d662b70b94b00d5648",
+        "channelService": "youtube",
+        "metricsUpdatedAt": "2026-11-21T17:27:35.445Z",
+        "assets": [
+          {
+            "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-14/ZW-20261114-2.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 10,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 1,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0.95,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 1157,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af61fa77d05892ccea5646f",
+        "status": "sent",
+        "text": "Don't blink at the end 👀 Hot potato battle on the frozen arena. Comment your animal before the end 👀 #zoowars #hotpotato #satisfying #simulation #animalbattle",
+        "dueAt": "2026-11-14T18:00:00.000Z",
+        "sentAt": "2026-11-14T18:04:37.511Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.631Z",
+        "assets": [
+          {
+            "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6af61fa77d05892ccea5646f_video.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 0,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af62bc4f8f0d4b8329f320b",
+        "status": "sent",
+        "text": "A Zoo Wars territory battle: grab tiles, survive the cuts, own the map.\nComment your animal for the next battle!\n\n#shorts #zoowars #territorywar #animalbattle",
+        "dueAt": "2026-11-14T15:00:00.000Z",
+        "sentAt": "2026-11-14T15:02:21.366Z",
+        "channelId": "6af611d662b70b94b00d5648",
+        "channelService": "youtube",
+        "metricsUpdatedAt": "2026-11-21T17:27:35.445Z",
+        "assets": [
+          {
+            "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-14/ZW-20261114-3.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 5,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0.47,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 1064,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af62bc4446d978be7e9a25d",
+        "status": "sent",
+        "text": "Watch the map change hands 👀 Which animal are you rooting for next time? #zoowars #territorywar #animalbattle #whowouldwin #simulation",
+        "dueAt": "2026-11-14T15:00:00.000Z",
+        "sentAt": "2026-11-14T15:05:21.303Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.631Z",
+        "assets": [
+          {
+            "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6af62bc4446d978be7e9a25d_video.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 0,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af61f8c76b8df0929bcae25",
+        "status": "sent",
+        "text": "Who can dodge the bomb the longest? Animal hot potato battle on a space platform.\nDid your pick make it to the final duel?\n\n#shorts #zoowars #whowouldwin #animalbattle",
+        "dueAt": "2026-11-14T11:30:00.000Z",
+        "sentAt": "2026-11-14T11:30:27.729Z",
+        "channelId": "6af611d662b70b94b00d5648",
+        "channelService": "youtube",
+        "metricsUpdatedAt": "2026-11-21T17:27:35.446Z",
+        "assets": [
+          {
+            "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-14/ZW-20261114-1.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 8,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0.72,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 1111,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af61f5bad1ba188ea6c7a0a",
+        "status": "sent",
+        "text": "Chaos in the arena 🌀 Hot potato battle on a space platform. Call your winner in the comments 👇 #zoowars #whowouldwin #animalbattle #satisfying #simulation",
+        "dueAt": "2026-11-14T11:30:00.000Z",
+        "sentAt": "2026-11-14T11:32:41.532Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.631Z",
+        "assets": [
+          {
+            "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6af61f5bad1ba188ea6c7a0a_video.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 0,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af6264c7d05892ccea7697b",
+        "status": "sent",
+        "text": "The bomb drops, the chase begins with lava bubbling below. Seven explosions, one survivor.\nNew Zoo Wars battle every day.\n\n#shorts #zoowars #satisfying #whowouldwin",
+        "dueAt": "2026-11-13T18:00:00.000Z",
+        "sentAt": "2026-11-13T18:02:29.588Z",
+        "channelId": "6af611d662b70b94b00d5648",
+        "channelService": "youtube",
+        "metricsUpdatedAt": "2026-11-21T17:27:35.446Z",
+        "assets": [
+          {
+            "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-13/ZW-20261113-2.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 6,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 2,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0.74,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 1086,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af6264b48a8bf93e4242acc",
+        "status": "sent",
+        "text": "This final was way too close 😤 Hot potato battle with lava bubbling below. Did your animal survive? 👇 #zoowars #satisfying #whowouldwin #animalbattle #hotpotato",
+        "dueAt": "2026-11-13T18:00:00.000Z",
+        "sentAt": "2026-11-13T18:03:34.948Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.631Z",
+        "assets": [
+          {
+            "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6af6264b48a8bf93e4242acc_video.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 0,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af62b30a01fb6efee4b91a6",
+        "status": "sent",
+        "text": "Bounce, steal, survive 🔵 Call your winner in the comments 👇 #zoowars #colorwar #simulation #animalbattle #whowouldwin",
+        "dueAt": "2026-11-13T15:00:00.000Z",
+        "sentAt": "2026-11-13T15:06:00.783Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.631Z",
+        "assets": [
+          {
+            "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6af62b30a01fb6efee4b91a6_video.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 0,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af62b307d05892ccea929cd",
+        "status": "sent",
+        "text": "A Zoo Wars color battle: every hit steals a tile, only one color survives.\nDid your pick survive the cuts?\n\n#shorts #zoowars #colorwar #simulation",
+        "dueAt": "2026-11-13T15:00:00.000Z",
+        "sentAt": "2026-11-13T15:02:32.088Z",
+        "channelId": "6af611d662b70b94b00d5648",
+        "channelService": "youtube",
+        "metricsUpdatedAt": "2026-11-21T17:27:35.446Z",
+        "assets": [
+          {
+            "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-13/ZW-20261113-3.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 12,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 1.09,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 1099,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af624848a13f5efaafa494f",
+        "status": "sent",
+        "text": "Zoo Wars simulation between the jungle trees: the bomb carrier has to catch someone before it explodes.\nWho did you pick? Tell us in the comments!\n\n#shorts #zoowars #hotpotato #animalbattle",
+        "dueAt": "2026-11-13T11:30:00.000Z",
+        "sentAt": "2026-11-13T11:30:37.238Z",
+        "channelId": "6af611d662b70b94b00d5648",
+        "channelService": "youtube",
+        "metricsUpdatedAt": "2026-11-21T17:27:35.446Z",
+        "assets": [
+          {
+            "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-13/ZW-20261113-1.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 13,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0.98,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 1321,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af6248348a8bf93e423c5bf",
+        "status": "sent",
+        "text": "Nobody wants to hold the bomb 😅 Hot potato battle between the jungle trees. Which animal should get a rematch? #zoowars #hotpotato #animalbattle #whowouldwin #simulation",
+        "dueAt": "2026-11-13T11:30:00.000Z",
+        "sentAt": "2026-11-13T11:32:27.740Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.631Z",
+        "assets": [
+          {
+            "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6af6248348a8bf93e423c5bf_video.mp4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 4,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 2,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 1.52,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 15.31,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6afa9be52afc0eb900905454",
+        "status": "sent",
+        "text": "Pass it or BOOM 💣 Pick your animal before the end! #zoowars #hotpotato #animalbattle #whowouldwin #simulation #satisfying",
+        "dueAt": "2026-11-12T20:30:00.000Z",
+        "sentAt": "2026-11-12T20:30:00.000Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.631Z",
+        "assets": [
+          {
+            "source": "https://www.tiktok.com/@zoowarsdaily/video/7706346623512677654?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 0.25,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 15.1,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af614512c68c5f2f8417ec8",
+        "status": "sent",
+        "text": "Pass it or BOOM 💣 Pick your animal before the end!\n\n#zoowars #hotpotato #animalbattle #whowouldwin #simulation #satisfying",
+        "dueAt": "2026-11-12T19:30:27.000Z",
+        "sentAt": "2026-11-12T19:30:27.000Z",
+        "channelId": "6af611d662b70b94b00d5648",
+        "channelService": "youtube",
+        "metricsUpdatedAt": "2026-11-21T17:27:35.446Z",
+        "assets": [
+          {
+            "source": "https://www.youtube.com/shorts/T2bhdEivaxY",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 8,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0.6,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 1344,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af60dc2b82e39b08e37ecaa",
+        "status": "sent",
+        "text": "Only the biggest survives 🍖 Who's your pick? #zoowars #bigeatssmall #animalbattle #simulation #whowouldwin #satisfying",
+        "dueAt": "2026-11-12T18:00:00.000Z",
+        "sentAt": "2026-11-12T18:00:00.000Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-12T19:04:34.846Z",
+        "assets": [
+          {
+            "source": "https://www.tiktok.com/@zoowarsdaily/video/7706346416414756118?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 0,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af611d816fe4fcc9041bef9",
+        "status": "sent",
+        "text": "Only the biggest survives 🍖 Who's your pick?\n\n#zoowars #bigeatssmall #animalbattle #simulation #whowouldwin #satisfying",
+        "dueAt": "2026-11-12T17:00:20.000Z",
+        "sentAt": "2026-11-12T17:00:20.000Z",
+        "channelId": "6af611d662b70b94b00d5648",
+        "channelService": "youtube",
+        "metricsUpdatedAt": "2026-11-21T17:27:35.446Z",
+        "assets": [
+          {
+            "source": "https://www.youtube.com/shorts/aIRrFHbbY2A",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 2,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0.85,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 235,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af60dc2b82e39b08e37ec9c",
+        "status": "sent",
+        "text": "Which color takes over the board? 🟥🟦🟩 Comment before the end! #zoowars #colorwar #animalbattle #simulation #satisfying #whowouldwin",
+        "dueAt": "2026-11-12T15:00:00.000Z",
+        "sentAt": "2026-11-12T15:00:00.000Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.631Z",
+        "assets": [
+          {
+            "source": "https://www.tiktok.com/@zoowarsdaily/video/7706346099665161494?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 0.03,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 2.67,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af611d816fe4fcc9041bef1",
+        "status": "sent",
+        "text": "6 animals, 1 map, only 1 survivor 🎨 Who's your pick?#zoowars #territorywar #animalbattle #simulation #satisfying #whowouldwin",
+        "dueAt": "2026-11-12T14:00:34.000Z",
+        "sentAt": "2026-11-12T14:00:34.000Z",
+        "channelId": "6af611d662b70b94b00d5648",
+        "channelService": "youtube",
+        "metricsUpdatedAt": "2026-11-21T17:27:35.446Z",
+        "assets": [
+          {
+            "source": "https://www.youtube.com/shorts/ctGFSDyLCHY",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 5,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0.97,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 513,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af611d816fe4fcc9041befb",
+        "status": "sent",
+        "text": "Which color takes over the board? 🟥🟦🟩 Comment before the end!\n\n#zoowars #colorwar #animalbattle #simulation #satisfying #whowouldwin",
+        "dueAt": "2026-11-12T11:00:37.000Z",
+        "sentAt": "2026-11-12T11:00:37.000Z",
+        "channelId": "6af611d662b70b94b00d5648",
+        "channelService": "youtube",
+        "metricsUpdatedAt": "2026-11-21T17:27:35.446Z",
+        "assets": [
+          {
+            "source": "https://www.youtube.com/shorts/mXThG923_hI",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 9,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 2.18,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 413,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af60dc2b82e39b08e37ecac",
+        "status": "sent",
+        "text": "6 animals, 1 map, only 1 survivor 🎨 Who's your pick? #zoowars #territorywar #animalbattle #simulation #satisfying #whowouldwin",
+        "dueAt": "2026-11-12T11:00:00.000Z",
+        "sentAt": "2026-11-12T11:00:00.000Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.632Z",
+        "assets": [
+          {
+            "source": "https://www.tiktok.com/@zoowarsdaily/video/7706345867439131926?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 0.3,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 9.01,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af60dc2b82e39b08e37ec9e",
+        "status": "sent",
+        "text": "Don't get caught holding the bomb 💣 Who survives the last explosion? 👇 #zoowars #hotpotato #animalbattle #whowouldwin #simulation #satisfying",
+        "dueAt": "2026-11-11T20:30:00.000Z",
+        "sentAt": "2026-11-11T20:30:00.000Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.632Z",
+        "assets": [
+          {
+            "source": "https://www.tiktok.com/@zoowarsdaily/video/7706345592837999894?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 0,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af611d816fe4fcc9041beef",
+        "status": "sent",
+        "text": "Bigger eats smaller 😱 Eat, grow… or get eaten. Pick your animal 👇\n\n#zoowars #bigeatssmall #animalbattle #simulation #whowouldwin #satisfying",
+        "dueAt": "2026-11-11T18:00:17.000Z",
+        "sentAt": "2026-11-11T18:00:17.000Z",
+        "channelId": "6af611d662b70b94b00d5648",
+        "channelService": "youtube",
+        "metricsUpdatedAt": "2026-11-21T17:27:35.446Z",
+        "assets": [
+          {
+            "source": "https://www.youtube.com/shorts/Edf6v6j4R4Y",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 5,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 2.09,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 239,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af60dc2b82e39b08e37eca4",
+        "status": "sent",
+        "text": "Bigger eats smaller 😱 Eat, grow… or get eaten. Pick your animal 👇 #zoowars #bigeatssmall #animalbattle #simulation #whowouldwin #satisfying",
+        "dueAt": "2026-11-11T18:00:00.000Z",
+        "sentAt": "2026-11-11T18:00:00.000Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.632Z",
+        "assets": [
+          {
+            "source": "https://www.tiktok.com/@zoowarsdaily/video/7706345383655574807?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 0,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af611d816fe4fcc9041beed",
+        "status": "sent",
+        "text": "Don't get caught holding the bomb 💣 Who survives the last explosion? 👇\n\n#zoowars #hotpotato #animalbattle #whowouldwin #simulation #satisfying",
+        "dueAt": "2026-11-11T16:00:13.000Z",
+        "sentAt": "2026-11-11T16:00:13.000Z",
+        "channelId": "6af611d662b70b94b00d5648",
+        "channelService": "youtube",
+        "metricsUpdatedAt": "2026-11-21T17:27:35.446Z",
+        "assets": [
+          {
+            "source": "https://www.youtube.com/shorts/miVzCUFYuPw",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 10,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 1,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0.89,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 1241,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af60dc2b82e39b08e37ecae",
+        "status": "sent",
+        "text": "Every hit steals a tile 🟥 Only one color survives. Pick yours 👇 #zoowars #colorwar #animalbattle #simulation #satisfying #whowouldwin",
+        "dueAt": "2026-11-11T15:00:00.000Z",
+        "sentAt": "2026-11-11T15:00:00.000Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.632Z",
+        "assets": [
+          {
+            "source": "https://www.tiktok.com/@zoowarsdaily/video/7706345145817419030?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 0,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af611d816fe4fcc9041bee7",
+        "status": "sent",
+        "text": "Every hit steals a tile 🟥 Only one color survives. Pick yours 👇\n\n#zoowars #colorwar #animalbattle #simulation #satisfying #whowouldwin",
+        "dueAt": "2026-11-11T12:00:35.000Z",
+        "sentAt": "2026-11-11T12:00:35.000Z",
+        "channelId": "6af611d662b70b94b00d5648",
+        "channelService": "youtube",
+        "metricsUpdatedAt": "2026-11-21T17:27:35.446Z",
+        "assets": [
+          {
+            "source": "https://www.youtube.com/shorts/ZR2INiu080o",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 8,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 1.18,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 679,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af60dc2b82e39b08e37ecb0",
+        "status": "sent",
+        "text": "Who will own the map? 🎨 Last place is out every 12 seconds. Pick your animal 👇 #zoowars #territorywar #animalbattle #simulation #satisfying #whowouldwin",
+        "dueAt": "2026-11-11T11:00:00.000Z",
+        "sentAt": "2026-11-11T11:00:00.000Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.632Z",
+        "assets": [
+          {
+            "source": "https://www.tiktok.com/@zoowarsdaily/video/7706344808222117142?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 0,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af60dc2b82e39b08e37eca8",
+        "status": "sent",
+        "text": "Bigger eats smaller 😱 Eat, grow… or get eaten. Comment your pick in the first 5 seconds 👇 #zoowars #bigeatssmall #animalbattle #simulation #whowouldwin #satisfying",
+        "dueAt": "2026-11-10T20:00:00.000Z",
+        "sentAt": "2026-11-10T20:00:00.000Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.632Z",
+        "assets": [
+          {
+            "source": "https://www.tiktok.com/@zoowarsdaily/video/7706344428243373334?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 0,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af611d816fe4fcc9041bef5",
+        "status": "sent",
+        "text": "Who will own the map? 🎨 Last place is out every 12 seconds… pick your animal before the end 👇\n\n#zoowars #animalbattle #whowouldwin #simulation #satisfying #territorywar",
+        "dueAt": "2026-11-10T18:00:15.000Z",
+        "sentAt": "2026-11-10T18:00:15.000Z",
+        "channelId": "6af611d662b70b94b00d5648",
+        "channelService": "youtube",
+        "metricsUpdatedAt": "2026-11-21T17:27:35.446Z",
+        "assets": [
+          {
+            "source": "https://www.youtube.com/shorts/4DIjO4MvQw4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 1,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 7.14,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 14,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af60dc2b82e39b08e37eca2",
+        "status": "sent",
+        "text": "Don't get caught holding the bomb 💣 Who survives the last explosion? Pick your animal before the end 👇 #zoowars #hotpotato #animalbattle #whowouldwin #simulation #satisfying",
+        "dueAt": "2026-11-10T17:00:00.000Z",
+        "sentAt": "2026-11-10T17:00:00.000Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.632Z",
+        "assets": [
+          {
+            "source": "https://www.tiktok.com/@zoowarsdaily/video/7706344144372813078?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 1,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 1,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 0.4,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 24,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af611d816fe4fcc9041beeb",
+        "status": "sent",
+        "text": "Every hit steals a tile 🟥 Only one color survives. Who's your champion? 👇\n\n#zoowars #colorwar #animalbattle #simulation #satisfying #whowouldwin",
+        "dueAt": "2026-11-10T16:00:36.000Z",
+        "sentAt": "2026-11-10T16:00:36.000Z",
+        "channelId": "6af611d662b70b94b00d5648",
+        "channelService": "youtube",
+        "metricsUpdatedAt": "2026-11-21T17:27:35.446Z",
+        "assets": [
+          {
+            "source": "https://www.youtube.com/shorts/rR2E9jtHel0",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 1,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 3.85,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 26,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af60dc2b82e39b08e37eca0",
+        "status": "sent",
+        "text": "Every hit steals a tile 🟥 Only one color survives. Who's your champion? 👇 #zoowars #colorwar #animalbattle #simulation #satisfying #whowouldwin",
+        "dueAt": "2026-11-10T14:30:00.000Z",
+        "sentAt": "2026-11-10T14:30:00.000Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.632Z",
+        "assets": [
+          {
+            "source": "https://www.tiktok.com/@zoowarsdaily/video/7706343981633768726?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 1,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 1,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 0.02,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 1,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af611d816fe4fcc9041bee9",
+        "status": "sent",
+        "text": "Bigger eats smaller 😱 Eat, grow… or get eaten. Comment your pick in the first 5 seconds 👇\n\n#zoowars #bigeatssmall #animalbattle #simulation #whowouldwin #satisfying",
+        "dueAt": "2026-11-10T14:00:06.000Z",
+        "sentAt": "2026-11-10T14:00:06.000Z",
+        "channelId": "6af611d662b70b94b00d5648",
+        "channelService": "youtube",
+        "metricsUpdatedAt": "2026-11-21T17:27:35.446Z",
+        "assets": [
+          {
+            "source": "https://www.youtube.com/shorts/X1Vmb4MJem4",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 1,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0.38,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 266,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af611d816fe4fcc9041bef7",
+        "status": "sent",
+        "text": "Don't get caught holding the bomb 💣 Who survives the last explosion? Pick your animal before the end 👇\n\n#zoowars #hotpotato #animalbattle #whowouldwin #simulation #satisfying",
+        "dueAt": "2026-11-10T12:00:10.000Z",
+        "sentAt": "2026-11-10T12:00:10.000Z",
+        "channelId": "6af611d662b70b94b00d5648",
+        "channelService": "youtube",
+        "metricsUpdatedAt": "2026-11-21T17:27:35.446Z",
+        "assets": [
+          {
+            "source": "https://www.youtube.com/shorts/6ozNKOTW3x8",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 4,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0.39,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 1016,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af60dc2b82e39b08e37eca6",
+        "status": "sent",
+        "text": "Who will own the map? 🎨 Last place is out every 12 seconds… pick your animal before the end 👇 #zoowars #animalbattle #whowouldwin #simulation #satisfying #territorywar",
+        "dueAt": "2026-11-10T11:00:00.000Z",
+        "sentAt": "2026-11-10T11:00:00.000Z",
+        "channelId": "6af60dc162b70b94b00d05a1",
+        "channelService": "tiktok",
+        "metricsUpdatedAt": "2026-11-21T10:13:42.632Z",
+        "assets": [
+          {
+            "source": "https://www.tiktok.com/@zoowarsdaily/video/7706343762405887254?utm_campaign=tt4d_open_api&utm_source=7103819247981182978",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 3,
+            "unit": "count"
+          },
+          {
+            "type": "shares",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "reach",
+            "value": 1,
+            "unit": "count"
+          },
+          {
+            "type": "totalTimeWatched",
+            "value": 0.33,
+            "unit": "count"
+          },
+          {
+            "type": "averageTimeWatched",
+            "value": 6.67,
+            "unit": "count"
+          }
+        ]
+      }
+    },
+    {
+      "node": {
+        "id": "6af611d816fe4fcc9041bef3",
+        "status": "sent",
+        "text": "Who will own the map? 🎨 Last place is out every 12 seconds. Pick your animal 👇\n\n#zoowars #territorywar #animalbattle #simulation #satisfying #whowouldwin",
+        "dueAt": "2026-11-10T00:53:43.000Z",
+        "sentAt": "2026-11-10T00:53:43.000Z",
+        "channelId": "6af611d662b70b94b00d5648",
+        "channelService": "youtube",
+        "metricsUpdatedAt": "2026-11-21T17:27:35.446Z",
+        "assets": [
+          {
+            "source": "https://www.youtube.com/shorts/5tp7RMznBZo",
+            "type": "video",
+            "mimeType": "video/mp4"
+          }
+        ],
+        "metrics": [
+          {
+            "type": "reactions",
+            "value": 8,
+            "unit": "count"
+          },
+          {
+            "type": "comments",
+            "value": 0,
+            "unit": "count"
+          },
+          {
+            "type": "engagementRate",
+            "value": 0.92,
+            "unit": "percentage"
+          },
+          {
+            "type": "views",
+            "value": 869,
+            "unit": "count"
+          }
+        ]
+      }
+    }
+  ],
+  "pageInfo": {
+    "hasNextPage": false
+  }
+}
