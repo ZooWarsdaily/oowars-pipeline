@@ -1,0 +1,38 @@
+{
+  "id": "ZW-20261124-3",
+  "game": "Hot Potato 2D",
+  "publishDate": "2026-11-24",
+  "slot": 3,
+  "time": "16:00",
+  "timezone": "Europe/Paris",
+  "seed": 1918311784,
+  "winner": "Shark",
+  "highlights": {
+    "eliminations": 5,
+    "finalMargin": null,
+    "videoSeconds": 63.4,
+    "score": 15,
+    "gamesPreviewed": 6
+  },
+  "file": {
+    "name": "ZW-20261124-3.mp4",
+    "at": "2026-11-21T22:12:34+01:00",
+    "ok": true,
+    "problems": [],
+    "duration": 63.43,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "sizeMB": 14.39,
+    "sha256": "7eb2a80ca8c52dcab42bb9c51c787ae8c41f355e6b34d7a846c7c333b6a164ab",
+    "luminance": [
+      34.2,
+      36.2,
+      37.5,
+      39.8,
+      20
+    ]
+  }
+}

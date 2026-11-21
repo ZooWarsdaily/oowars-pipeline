@@ -1,0 +1,24 @@
+{
+  "channelId": "6af611d662b70b94b00d5648",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "dueAt": "2026-11-24T19:00:00+01:00",
+  "text": "Who can dodge the bomb the longest? Animal hot potato battle in outer space.\nWho did you pick? Tell us in the comments!\n🏆 Season 1 leader: Panda (4 wins)\n\n#shorts #zoowars #satisfying #whowouldwin",
+  "assets": [
+    {
+      "video": {
+        "url": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-24/ZW-20261124-2.mp4",
+        "metadata": {}
+      }
+    }
+  ],
+  "metadata": {
+    "youtube": {
+      "title": "Hot Potato: one bomb, eight animals 💥",
+      "categoryId": "24",
+      "madeForKids": false,
+      "privacy": "public",
+      "notifySubscribers": true
+    }
+  }
+}
