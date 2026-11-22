@@ -1,0 +1,38 @@
+{
+  "id": "ZW-20261125-3",
+  "game": "Color War",
+  "publishDate": "2026-11-25",
+  "slot": 3,
+  "time": "16:00",
+  "timezone": "Europe/Paris",
+  "seed": 1631185023,
+  "winner": "Lion",
+  "highlights": {
+    "eliminations": 5,
+    "finalMargin": null,
+    "videoSeconds": 66.9,
+    "score": 15,
+    "gamesPreviewed": 6
+  },
+  "file": {
+    "name": "ZW-20261125-3.mp4",
+    "at": "2026-11-22T21:58:46+01:00",
+    "ok": true,
+    "problems": [],
+    "duration": 66.87,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "sizeMB": 15.61,
+    "sha256": "3935b245969e025e2721737dab433f435afe8604dac1146686e54ec7609fdf56",
+    "luminance": [
+      95.6,
+      89.6,
+      87.2,
+      86.1,
+      30.6
+    ]
+  }
+}
