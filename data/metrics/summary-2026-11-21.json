@@ -1,0 +1,1011 @@
+{
+  "weekStart": "2026-11-15",
+  "weekEnd": "2026-11-21",
+  "posts": 36,
+  "prevPosts": 36,
+  "totals": {
+    "views": 15873,
+    "prevViews": 13702,
+    "likes": 122,
+    "comments": 3
+  },
+  "byPlatform": {
+    "youtube": {
+      "n": 16,
+      "medianViews": 882.5,
+      "medianLikes": 6.5,
+      "medianAvgWatchSec": null,
+      "totalViews": 11943
+    },
+    "tiktok": {
+      "n": 20,
+      "medianViews": 221.5,
+      "medianLikes": 0.5,
+      "medianAvgWatchSec": 4.9,
+      "totalViews": 3930
+    }
+  },
+  "byGame": {
+    "hotpotato3d": {
+      "n": 15,
+      "medianViews": 248,
+      "medianLikes": 1,
+      "medianAvgWatchSec": 3.495,
+      "totalViews": 6939
+    },
+    "hotpotato2d": {
+      "n": 6,
+      "medianViews": 235.5,
+      "medianLikes": 1,
+      "medianAvgWatchSec": 5.86,
+      "totalViews": 2439
+    },
+    "colorwar": {
+      "n": 3,
+      "medianViews": 257,
+      "medianLikes": 1,
+      "medianAvgWatchSec": 5.925,
+      "totalViews": 1360
+    },
+    "musicalchairs3d": {
+      "n": 5,
+      "medianViews": 265,
+      "medianLikes": 3,
+      "medianAvgWatchSec": 4.6,
+      "totalViews": 2680
+    },
+    "territory": {
+      "n": 3,
+      "medianViews": 218,
+      "medianLikes": 1,
+      "medianAvgWatchSec": 7.82,
+      "totalViews": 885
+    },
+    "infection3d": {
+      "n": 4,
+      "medianViews": 233.5,
+      "medianLikes": 1,
+      "medianAvgWatchSec": 5.93,
+      "totalViews": 1570
+    }
+  },
+  "byGamePlatform": {
+    "hotpotato3d / youtube": {
+      "n": 7,
+      "medianViews": 903,
+      "medianLikes": 7,
+      "medianAvgWatchSec": null,
+      "totalViews": 5518
+    },
+    "hotpotato3d / tiktok": {
+      "n": 8,
+      "medianViews": 224,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 3.495,
+      "totalViews": 1421
+    },
+    "hotpotato2d / youtube": {
+      "n": 3,
+      "medianViews": 689,
+      "medianLikes": 6,
+      "medianAvgWatchSec": null,
+      "totalViews": 1968
+    },
+    "hotpotato2d / tiktok": {
+      "n": 3,
+      "medianViews": 224,
+      "medianLikes": 1,
+      "medianAvgWatchSec": 5.86,
+      "totalViews": 471
+    },
+    "colorwar / youtube": {
+      "n": 1,
+      "medianViews": 896,
+      "medianLikes": 5,
+      "medianAvgWatchSec": null,
+      "totalViews": 897
+    },
+    "colorwar / tiktok": {
+      "n": 2,
+      "medianViews": 231.5,
+      "medianLikes": 0.5,
+      "medianAvgWatchSec": 5.925,
+      "totalViews": 463
+    },
+    "musicalchairs3d / youtube": {
+      "n": 2,
+      "medianViews": 1006.5,
+      "medianLikes": 12.5,
+      "medianAvgWatchSec": null,
+      "totalViews": 2006
+    },
+    "musicalchairs3d / tiktok": {
+      "n": 3,
+      "medianViews": 209,
+      "medianLikes": 1,
+      "medianAvgWatchSec": 4.6,
+      "totalViews": 674
+    },
+    "territory / youtube": {
+      "n": 1,
+      "medianViews": 426,
+      "medianLikes": 4,
+      "medianAvgWatchSec": null,
+      "totalViews": 451
+    },
+    "territory / tiktok": {
+      "n": 2,
+      "medianViews": 217,
+      "medianLikes": 0.5,
+      "medianAvgWatchSec": 7.82,
+      "totalViews": 434
+    },
+    "infection3d / youtube": {
+      "n": 2,
+      "medianViews": 541.5,
+      "medianLikes": 5.5,
+      "medianAvgWatchSec": null,
+      "totalViews": 1103
+    },
+    "infection3d / tiktok": {
+      "n": 2,
+      "medianViews": 233.5,
+      "medianLikes": 0.5,
+      "medianAvgWatchSec": 5.93,
+      "totalViews": 467
+    }
+  },
+  "bySlot": {
+    "12:30": {
+      "n": 3,
+      "medianViews": 903,
+      "medianLikes": 10,
+      "medianAvgWatchSec": null,
+      "totalViews": 2806
+    },
+    "12:32": {
+      "n": 5,
+      "medianViews": 221,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 4.6,
+      "totalViews": 953
+    },
+    "16:02": {
+      "n": 2,
+      "medianViews": 869.5,
+      "medianLikes": 7.5,
+      "medianAvgWatchSec": null,
+      "totalViews": 1746
+    },
+    "16:06": {
+      "n": 3,
+      "medianViews": 216,
+      "medianLikes": 1,
+      "medianAvgWatchSec": 5.83,
+      "totalViews": 473
+    },
+    "19:02": {
+      "n": 1,
+      "medianViews": 218,
+      "medianLikes": 1,
+      "medianAvgWatchSec": null,
+      "totalViews": 252
+    },
+    "19:04": {
+      "n": 3,
+      "medianViews": 356,
+      "medianLikes": 2,
+      "medianAvgWatchSec": 1.34,
+      "totalViews": 1411
+    },
+    "16:04": {
+      "n": 3,
+      "medianViews": 426,
+      "medianLikes": 4,
+      "medianAvgWatchSec": null,
+      "totalViews": 1570
+    },
+    "19:05": {
+      "n": 2,
+      "medianViews": 930,
+      "medianLikes": 9,
+      "medianAvgWatchSec": null,
+      "totalViews": 1920
+    },
+    "19:07": {
+      "n": 3,
+      "medianViews": 226,
+      "medianLikes": 1,
+      "medianAvgWatchSec": 3.25,
+      "totalViews": 696
+    },
+    "12:31": {
+      "n": 3,
+      "medianViews": 941,
+      "medianLikes": 10,
+      "medianAvgWatchSec": null,
+      "totalViews": 2240
+    },
+    "16:08": {
+      "n": 1,
+      "medianViews": 218,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 7.18,
+      "totalViews": 218
+    },
+    "19:06": {
+      "n": 2,
+      "medianViews": 227.5,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 4.79,
+      "totalViews": 456
+    },
+    "12:33": {
+      "n": 2,
+      "medianViews": 227.5,
+      "medianLikes": 1,
+      "medianAvgWatchSec": 5.22,
+      "totalViews": 455
+    },
+    "16:07": {
+      "n": 2,
+      "medianViews": 226.5,
+      "medianLikes": 0.5,
+      "medianAvgWatchSec": 6.595,
+      "totalViews": 453
+    },
+    "16:05": {
+      "n": 1,
+      "medianViews": 224,
+      "medianLikes": 1,
+      "medianAvgWatchSec": 5.86,
+      "totalViews": 224
+    }
+  },
+  "byWeekday": {
+    "Sun": {
+      "n": 6,
+      "medianViews": 110,
+      "medianLikes": 0.5,
+      "medianAvgWatchSec": 0,
+      "totalViews": 2338
+    },
+    "Mon": {
+      "n": 6,
+      "medianViews": 496.5,
+      "medianLikes": 3.5,
+      "medianAvgWatchSec": 3.74,
+      "totalViews": 3365
+    },
+    "Tue": {
+      "n": 6,
+      "medianViews": 345.5,
+      "medianLikes": 3.5,
+      "medianAvgWatchSec": 5.2,
+      "totalViews": 3354
+    },
+    "Wed": {
+      "n": 6,
+      "medianViews": 246.5,
+      "medianLikes": 1,
+      "medianAvgWatchSec": 6.09,
+      "totalViews": 2264
+    },
+    "Thu": {
+      "n": 4,
+      "medianViews": 212.5,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 5.58,
+      "totalViews": 1760
+    },
+    "Fri": {
+      "n": 4,
+      "medianViews": 218.5,
+      "medianLikes": 0.5,
+      "medianAvgWatchSec": 5.77,
+      "totalViews": 801
+    },
+    "Sat": {
+      "n": 4,
+      "medianViews": 456.5,
+      "medianLikes": 5,
+      "medianAvgWatchSec": 5.105,
+      "totalViews": 1991
+    }
+  },
+  "byDecor": {
+    "volcano": {
+      "n": 2,
+      "medianViews": 507.5,
+      "medianLikes": 5,
+      "medianAvgWatchSec": 0,
+      "totalViews": 1027
+    },
+    "space": {
+      "n": 4,
+      "medianViews": 222,
+      "medianLikes": 1,
+      "medianAvgWatchSec": 2.86,
+      "totalViews": 842
+    },
+    "jungle": {
+      "n": 6,
+      "medianViews": 585,
+      "medianLikes": 4.5,
+      "medianAvgWatchSec": 4,
+      "totalViews": 3814
+    },
+    "ice": {
+      "n": 3,
+      "medianViews": 248,
+      "medianLikes": 1,
+      "medianAvgWatchSec": 3.215,
+      "totalViews": 1256
+    }
+  },
+  "byHook": {
+    "The Bomb Keeps Moving… Who Survives?": {
+      "n": 2,
+      "medianViews": 1074.5,
+      "medianLikes": 11.5,
+      "medianAvgWatchSec": null,
+      "totalViews": 2161
+    },
+    "This bomb changed hands way too fast 😳": {
+      "n": 1,
+      "medianViews": 0,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 0,
+      "totalViews": 0
+    },
+    "Animal Hot Potato – Run From the Bomb": {
+      "n": 1,
+      "medianViews": 1050,
+      "medianLikes": 6,
+      "medianAvgWatchSec": null,
+      "totalViews": 1057
+    },
+    "Tag, run, explode 💥": {
+      "n": 1,
+      "medianViews": 0,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 0,
+      "totalViews": 0
+    },
+    "Animal Hot Potato Battle – Last One Standing Wins": {
+      "n": 1,
+      "medianViews": 218,
+      "medianLikes": 1,
+      "medianAvgWatchSec": null,
+      "totalViews": 252
+    },
+    "Hot potato, but the potato explodes 💥": {
+      "n": 1,
+      "medianViews": 2,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 1.34,
+      "totalViews": 2
+    },
+    "One Bomb, Eight Animals, One Winner": {
+      "n": 1,
+      "medianViews": 903,
+      "medianLikes": 7,
+      "medianAvgWatchSec": null,
+      "totalViews": 910
+    },
+    "Pass it or blow up 💣": {
+      "n": 1,
+      "medianViews": 267,
+      "medianLikes": 2,
+      "medianAvgWatchSec": 3.74,
+      "totalViews": 267
+    },
+    "Color War: Last Color Standing": {
+      "n": 1,
+      "medianViews": 896,
+      "medianLikes": 5,
+      "medianAvgWatchSec": null,
+      "totalViews": 897
+    },
+    "Every hit steals a tile 🟥": {
+      "n": 1,
+      "medianViews": 257,
+      "medianLikes": 1,
+      "medianAvgWatchSec": 5.83,
+      "totalViews": 257
+    },
+    "Hot Potato Survival: Which Animal Wins?": {
+      "n": 1,
+      "medianViews": 726,
+      "medianLikes": 5,
+      "medianAvgWatchSec": null,
+      "totalViews": 786
+    },
+    "Who will be the last animal standing? 🐾": {
+      "n": 1,
+      "medianViews": 248,
+      "medianLikes": 1,
+      "medianAvgWatchSec": 3.25,
+      "totalViews": 248
+    },
+    "When the Music Stops… Animal Musical Chairs": {
+      "n": 1,
+      "medianViews": 1144,
+      "medianLikes": 14,
+      "medianAvgWatchSec": null,
+      "totalViews": 1137
+    },
+    "8 animals, 7 cushions 🪑": {
+      "n": 1,
+      "medianViews": 265,
+      "medianLikes": 3,
+      "medianAvgWatchSec": 5.2,
+      "totalViews": 265
+    },
+    "6 Animals Fight for the Map": {
+      "n": 1,
+      "medianViews": 426,
+      "medianLikes": 4,
+      "medianAvgWatchSec": null,
+      "totalViews": 451
+    },
+    "Who will own the map? 🎨": {
+      "n": 1,
+      "medianViews": 218,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 7.18,
+      "totalViews": 218
+    },
+    "Who Gets Caught With the Bomb?": {
+      "n": 1,
+      "medianViews": 1006,
+      "medianLikes": 11,
+      "medianAvgWatchSec": null,
+      "totalViews": 1047
+    },
+    "Last one standing wins 🏆": {
+      "n": 1,
+      "medianViews": 236,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 4,
+      "totalViews": 236
+    },
+    "Zoo Wars: Infection Showdown": {
+      "n": 1,
+      "medianViews": 941,
+      "medianLikes": 10,
+      "medianAvgWatchSec": null,
+      "totalViews": 961
+    },
+    "1 infected… then 2… then 7 😳": {
+      "n": 1,
+      "medianViews": 246,
+      "medianLikes": 1,
+      "medianAvgWatchSec": 6.09,
+      "totalViews": 246
+    },
+    "Hot Potato: nobody wants this bomb 😬": {
+      "n": 1,
+      "medianViews": 224,
+      "medianLikes": 0,
+      "medianAvgWatchSec": null,
+      "totalViews": 222
+    },
+    "Pass it or BOOM 💣": {
+      "n": 1,
+      "medianViews": 247,
+      "medianLikes": 1,
+      "medianAvgWatchSec": 7.17,
+      "totalViews": 247
+    },
+    "Hot Potato: that final duel 😱": {
+      "n": 1,
+      "medianViews": 356,
+      "medianLikes": 2,
+      "medianAvgWatchSec": null,
+      "totalViews": 362
+    },
+    "Zoo Wars: Hot Potato edition 💣": {
+      "n": 1,
+      "medianViews": 226,
+      "medianLikes": 1,
+      "medianAvgWatchSec": 4.38,
+      "totalViews": 226
+    },
+    "The last cushion is a war zone 😤": {
+      "n": 2,
+      "medianViews": 204.5,
+      "medianLikes": 0.5,
+      "medianAvgWatchSec": 4.475,
+      "totalViews": 409
+    },
+    "Bounce, steal, survive 🔵": {
+      "n": 1,
+      "medianViews": 206,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 6.02,
+      "totalViews": 206
+    },
+    "The bomb never stays still for long 💣": {
+      "n": 1,
+      "medianViews": 219,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 5.58,
+      "totalViews": 220
+    },
+    "7 Against 1 – Animal Infection Chase": {
+      "n": 1,
+      "medianViews": 142,
+      "medianLikes": 1,
+      "medianAvgWatchSec": null,
+      "totalViews": 142
+    },
+    "Don't let them touch you 🟢": {
+      "n": 1,
+      "medianViews": 221,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 5.77,
+      "totalViews": 221
+    },
+    "Every tile counts 🟩": {
+      "n": 1,
+      "medianViews": 216,
+      "medianLikes": 1,
+      "medianAvgWatchSec": 8.46,
+      "totalViews": 216
+    },
+    "The chase is real 🏃💨": {
+      "n": 1,
+      "medianViews": 222,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 3.18,
+      "totalViews": 222
+    },
+    "8 Animals, 7 Cushions – Musical Chairs Battle": {
+      "n": 1,
+      "medianViews": 869,
+      "medianLikes": 11,
+      "medianAvgWatchSec": null,
+      "totalViews": 869
+    },
+    "Hot Potato Chase – Pick Your Animal": {
+      "n": 1,
+      "medianViews": 689,
+      "medianLikes": 9,
+      "medianAvgWatchSec": null,
+      "totalViews": 689
+    },
+    "Don't get caught holding the bomb 💣": {
+      "n": 1,
+      "medianViews": 224,
+      "medianLikes": 1,
+      "medianAvgWatchSec": 5.86,
+      "totalViews": 224
+    }
+  },
+  "byQuestion": {
+    "Did you guess the winner?": {
+      "n": 2,
+      "medianViews": 103,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 3.01,
+      "totalViews": 206
+    },
+    "Who deserved to win?": {
+      "n": 1,
+      "medianViews": 0,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 0,
+      "totalViews": 0
+    },
+    "Rate this final from 1 to 10 👇": {
+      "n": 1,
+      "medianViews": 2,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 1.34,
+      "totalViews": 2
+    },
+    "Call your winner in the comments 👇": {
+      "n": 1,
+      "medianViews": 267,
+      "medianLikes": 2,
+      "medianAvgWatchSec": 3.74,
+      "totalViews": 267
+    },
+    "Who was the sneakiest player?": {
+      "n": 1,
+      "medianViews": 257,
+      "medianLikes": 1,
+      "medianAvgWatchSec": 5.83,
+      "totalViews": 257
+    },
+    "Did your animal survive? 👇\n🏆 Season 1 leader: Bear (1 win)": {
+      "n": 1,
+      "medianViews": 248,
+      "medianLikes": 1,
+      "medianAvgWatchSec": 3.25,
+      "totalViews": 248
+    },
+    "Which animal should get a rematch?\n🏆 Season 1: Fox & Bear tied at the top (1 wins)": {
+      "n": 1,
+      "medianViews": 265,
+      "medianLikes": 3,
+      "medianAvgWatchSec": 5.2,
+      "totalViews": 265
+    },
+    "Who did you pick? 👇": {
+      "n": 1,
+      "medianViews": 218,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 7.18,
+      "totalViews": 218
+    },
+    "Who deserved to win?\n🏆 Season 1 leader: Fox (2 wins)": {
+      "n": 1,
+      "medianViews": 236,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 4,
+      "totalViews": 236
+    },
+    "Did you guess the winner?\n🏆 Season 1 leader: Fox (2 wins)": {
+      "n": 1,
+      "medianViews": 246,
+      "medianLikes": 1,
+      "medianAvgWatchSec": 6.09,
+      "totalViews": 246
+    },
+    "Comment your animal before the end 👀": {
+      "n": 2,
+      "medianViews": 235.5,
+      "medianLikes": 1,
+      "medianAvgWatchSec": 6.515000000000001,
+      "totalViews": 471
+    },
+    "Rate this final from 1 to 10 👇\n🏆 Season 1 leader: Fox (2 wins)": {
+      "n": 1,
+      "medianViews": 226,
+      "medianLikes": 1,
+      "medianAvgWatchSec": 4.38,
+      "totalViews": 226
+    },
+    "Did your animal survive? 👇\n🏆 Season 1: Wolf & Fox tied at the top (2 wins)": {
+      "n": 1,
+      "medianViews": 200,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 4.6,
+      "totalViews": 200
+    },
+    "Who did you pick? 👇\n🏆 Season 1: Wolf & Fox tied at the top (2 wins)": {
+      "n": 1,
+      "medianViews": 219,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 5.58,
+      "totalViews": 220
+    },
+    "Call your winner in the comments 👇\n🏆 Season 1 leader: Wolf (3 wins)": {
+      "n": 1,
+      "medianViews": 221,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 5.77,
+      "totalViews": 221
+    },
+    "Which animal are you rooting for next time?": {
+      "n": 1,
+      "medianViews": 216,
+      "medianLikes": 1,
+      "medianAvgWatchSec": 8.46,
+      "totalViews": 216
+    },
+    "Which animal should get a rematch?\n🏆 Season 1 leader: Wolf (3 wins)": {
+      "n": 1,
+      "medianViews": 222,
+      "medianLikes": 0,
+      "medianAvgWatchSec": 3.18,
+      "totalViews": 222
+    },
+    "Rate this final from 1 to 10 👇\n🏆 Season 1 leader: Wolf (3 wins)": {
+      "n": 1,
+      "medianViews": 209,
+      "medianLikes": 1,
+      "medianAvgWatchSec": 4.35,
+      "totalViews": 209
+    }
+  },
+  "top": [
+    {
+      "postId": "6afa1525a869c35e5b942ece",
+      "platform": "youtube",
+      "date": "2026-11-17",
+      "weekday": "Tue",
+      "time": "12:31",
+      "inWeek": true,
+      "videoId": "ZW-20261117-1",
+      "auto": true,
+      "game": "musicalchairs3d",
+      "decor": "volcano",
+      "winner": "fox",
+      "slot": "12:30",
+      "hook": "When the Music Stops… Animal Musical Chairs",
+      "question": "",
+      "intensity": 32.86,
+      "duration": 60.73,
+      "views": 1137,
+      "likes": 14,
+      "comments": 0,
+      "shares": null,
+      "reach": null,
+      "avgWatchSec": null,
+      "watchMin": null,
+      "ageHours": 118.5,
+      "views48h": 1144,
+      "views7d": null,
+      "likes48h": 14
+    },
+    {
+      "postId": "6afcb830dfbe5d51e1ebf9d4",
+      "platform": "youtube",
+      "date": "2026-11-19",
+      "weekday": "Thu",
+      "time": "19:05",
+      "inWeek": true,
+      "videoId": "ZW-20261119-2",
+      "auto": true,
+      "game": "hotpotato3d",
+      "decor": "jungle",
+      "winner": "wolf",
+      "slot": "19:00",
+      "hook": "The Bomb Keeps Moving… Who Survives?",
+      "question": "",
+      "intensity": 68.5,
+      "duration": 66,
+      "views": 1134,
+      "likes": 13,
+      "comments": 0,
+      "shares": null,
+      "reach": null,
+      "avgWatchSec": null,
+      "watchMin": null,
+      "ageHours": 63.9,
+      "views48h": 1134,
+      "views7d": null,
+      "likes48h": 13
+    },
+    {
+      "postId": "6af7750a78196a0a971c4116",
+      "platform": "youtube",
+      "date": "2026-11-15",
+      "weekday": "Sun",
+      "time": "16:02",
+      "inWeek": true,
+      "videoId": "ZW-20261115-3",
+      "auto": true,
+      "game": "hotpotato2d",
+      "decor": "",
+      "winner": "Crocodile",
+      "slot": "16:00",
+      "hook": "Animal Hot Potato – Run From the Bomb",
+      "question": "",
+      "intensity": 15,
+      "duration": 61.43,
+      "views": 1057,
+      "likes": 6,
+      "comments": 0,
+      "shares": null,
+      "reach": null,
+      "avgWatchSec": null,
+      "watchMin": null,
+      "ageHours": 162.9,
+      "views48h": 1050,
+      "views7d": 1057,
+      "likes48h": 6
+    },
+    {
+      "postId": "6af775069257ce33980c97f3",
+      "platform": "youtube",
+      "date": "2026-11-15",
+      "weekday": "Sun",
+      "time": "12:30",
+      "inWeek": true,
+      "videoId": "ZW-20261115-1",
+      "auto": true,
+      "game": "hotpotato3d",
+      "decor": "volcano",
+      "winner": "bear",
+      "slot": "12:30",
+      "hook": "The Bomb Keeps Moving… Who Survives?",
+      "question": "",
+      "intensity": 62.98,
+      "duration": 65.07,
+      "views": 1027,
+      "likes": 10,
+      "comments": 1,
+      "shares": null,
+      "reach": null,
+      "avgWatchSec": null,
+      "watchMin": null,
+      "ageHours": 166.5,
+      "views48h": 1015,
+      "views7d": 1027,
+      "likes48h": 10
+    },
+    {
+      "postId": "6afa1528cc27d16d7fbaaa7c",
+      "platform": "youtube",
+      "date": "2026-11-17",
+      "weekday": "Tue",
+      "time": "19:04",
+      "inWeek": true,
+      "videoId": "ZW-20261117-2",
+      "auto": true,
+      "game": "hotpotato3d",
+      "decor": "jungle",
+      "winner": "lion",
+      "slot": "19:00",
+      "hook": "Who Gets Caught With the Bomb?",
+      "question": "",
+      "intensity": 67.47,
+      "duration": 64.07,
+      "views": 1047,
+      "likes": 11,
+      "comments": 1,
+      "shares": null,
+      "reach": null,
+      "avgWatchSec": null,
+      "watchMin": null,
+      "ageHours": 111.9,
+      "views48h": 1006,
+      "views7d": null,
+      "likes48h": 11
+    }
+  ],
+  "flop": [
+    {
+      "postId": "6af7750578196a0a971c4036",
+      "platform": "tiktok",
+      "date": "2026-11-15",
+      "weekday": "Sun",
+      "time": "12:32",
+      "inWeek": true,
+      "videoId": "ZW-20261115-1",
+      "auto": true,
+      "game": "hotpotato3d",
+      "decor": "volcano",
+      "winner": "bear",
+      "slot": "12:30",
+      "hook": "This bomb changed hands way too fast 😳",
+      "question": "Did you guess the winner?",
+      "intensity": 62.98,
+      "duration": 65.07,
+      "views": 0,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "reach": 0,
+      "avgWatchSec": 0,
+      "watchMin": 0,
+      "ageHours": 166.4,
+      "views48h": 0,
+      "views7d": 0,
+      "likes48h": 0
+    },
+    {
+      "postId": "6af77509bb36d00909c82ced",
+      "platform": "tiktok",
+      "date": "2026-11-15",
+      "weekday": "Sun",
+      "time": "16:06",
+      "inWeek": true,
+      "videoId": "ZW-20261115-3",
+      "auto": true,
+      "game": "hotpotato2d",
+      "decor": "",
+      "winner": "Crocodile",
+      "slot": "16:00",
+      "hook": "Tag, run, explode 💥",
+      "question": "Who deserved to win?",
+      "intensity": 15,
+      "duration": 61.43,
+      "views": 0,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "reach": 0,
+      "avgWatchSec": 0,
+      "watchMin": 0,
+      "ageHours": 162.9,
+      "views48h": 0,
+      "views7d": 0,
+      "likes48h": 0
+    },
+    {
+      "postId": "6af7750778196a0a971c4093",
+      "platform": "tiktok",
+      "date": "2026-11-15",
+      "weekday": "Sun",
+      "time": "19:04",
+      "inWeek": true,
+      "videoId": "ZW-20261115-2",
+      "auto": true,
+      "game": "hotpotato3d",
+      "decor": "space",
+      "winner": "bull",
+      "slot": "19:00",
+      "hook": "Hot potato, but the potato explodes 💥",
+      "question": "Rate this final from 1 to 10 👇",
+      "intensity": 63.52,
+      "duration": 65.97,
+      "views": 2,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "reach": 1,
+      "avgWatchSec": 1.34,
+      "watchMin": 0.03,
+      "ageHours": 159.9,
+      "views48h": 2,
+      "views7d": 2,
+      "likes48h": 0
+    },
+    {
+      "postId": "6afcc11b843fae727bb52cbc",
+      "platform": "youtube",
+      "date": "2026-11-20",
+      "weekday": "Fri",
+      "time": "12:31",
+      "inWeek": true,
+      "videoId": "ZW-20261120-1",
+      "auto": true,
+      "game": "infection3d",
+      "decor": "volcano",
+      "winner": "panda",
+      "slot": "12:30",
+      "hook": "7 Against 1 – Animal Infection Chase",
+      "question": "",
+      "intensity": 32.37,
+      "duration": 62.6,
+      "views": 142,
+      "likes": 1,
+      "comments": 0,
+      "shares": null,
+      "reach": null,
+      "avgWatchSec": null,
+      "watchMin": null,
+      "ageHours": 46.5,
+      "views48h": 142,
+      "views7d": null,
+      "likes48h": 1
+    },
+    {
+      "postId": "6afcb82d700b9ade62f321c1",
+      "platform": "tiktok",
+      "date": "2026-11-19",
+      "weekday": "Thu",
+      "time": "12:32",
+      "inWeek": true,
+      "videoId": "ZW-20261119-1",
+      "auto": true,
+      "game": "musicalchairs3d",
+      "decor": "space",
+      "winner": "tiger",
+      "slot": "12:30",
+      "hook": "The last cushion is a war zone 😤",
+      "question": "Did your animal survive? 👇\n🏆 Season 1: Wolf & Fox tied at the top (2 wins)",
+      "intensity": 33.06,
+      "duration": 64.9,
+      "views": 200,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "reach": 200,
+      "avgWatchSec": 4.6,
+      "watchMin": 18.72,
+      "ageHours": 70.4,
+      "views48h": 200,
+      "views7d": null,
+      "likes48h": 0
+    }
+  ],
+  "dataWarnings": [
+    "4 posts have no 48 h capture yet: latest value used."
+  ]
+}

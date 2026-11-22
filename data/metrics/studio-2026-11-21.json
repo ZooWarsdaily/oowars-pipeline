@@ -1,0 +1,30 @@
+{
+  "capturedAt": "2026-11-22T11:10:00+01:00",
+  "source": "navigateur integre, lecture seule",
+  "tiktok": {
+    "contentListTotal": 37,
+    "videos": [
+      {"platform": "tiktok", "date": "2026-11-21", "time": "12:31", "videoId": "ZW-20261121-1", "views": 209, "avgWatchSec": 4.35, "fullWatchPct": 0.4, "newFollowers": 0, "dropOff": "0:01", "traffic": {"pourToi": 1.0}},
+      {"platform": "tiktok", "date": "2026-11-20", "time": "16:04", "videoId": "ZW-20261120-3", "views": 216, "avgWatchSec": 8.46, "fullWatchPct": 2.0, "newFollowers": 0, "dropOff": "0:01", "traffic": {"pourToi": 1.0}},
+      {"platform": "tiktok", "date": "2026-11-20", "time": "19:04", "videoId": "ZW-20261120-2", "views": 222, "avgWatchSec": 3.18, "fullWatchPct": 0.4, "newFollowers": 0, "dropOff": "0:01", "traffic": {"pourToi": 1.0}}
+    ]
+  },
+  "youtube": {
+    "channel": {"period": "28 derniers jours (25/10-21/11)", "views": 26100, "watchHours": 144.4, "subscribersGained": 13, "subscribersTotal": 13, "newViewers": 0.99},
+    "shortsPublishedInWeek": 16,
+    "videos": [
+      {"platform": "youtube", "date": "2026-11-17", "time": "12:31", "videoId": "ZW-20261117-1", "ytId": "AfBBnKT2s6Q", "views": 1100, "continuedPct": 57.1, "likes": 14, "topRegion": "US 52%"},
+      {"platform": "youtube", "date": "2026-11-17", "time": "19:04", "videoId": "ZW-20261117-2", "ytId": "n_eL904WLPw", "titleVariant": "control", "continuedPct": 51.6},
+      {"platform": "youtube", "date": "2026-11-18", "time": "19:04", "videoId": "ZW-20261118-2", "ytId": "0N5DFD7Tmc4", "titleVariant": "emoji", "continuedPct": 53.8},
+      {"platform": "youtube", "date": "2026-11-18", "time": "16:04", "videoId": "ZW-20261118-3", "ytId": "eqoRutREZD8", "titleVariant": "emoji", "continuedPct": 44.3},
+      {"platform": "youtube", "date": "2026-11-20", "time": "12:31", "videoId": "ZW-20261120-1", "ytId": "CZyULWRJ9rg", "continuedPct": 51.4, "traffic48h": {"shortsFeed": 152, "search": 33, "other": 6}, "topRegion": "US 22%"},
+      {"platform": "youtube", "date": "2026-11-21", "time": "16:02", "videoId": "ZW-20261121-3", "ytId": "37cZgBeNqZw", "avgPctViewed": 63, "views": 959}
+    ]
+  },
+  "bufferErrors": [
+    {"videoId": "ZW-20261119-1", "channel": "youtube", "error": "daily posting limit reached"},
+    {"videoId": "ZW-20261119-3", "channel": "youtube", "error": "daily posting limit reached"},
+    {"videoId": "ZW-20261120-2", "channel": "youtube", "error": "daily posting limit reached"},
+    {"videoId": "ZW-20261120-3", "channel": "youtube", "error": "daily posting limit reached"}
+  ]
+}
