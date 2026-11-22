@@ -28,6 +28,20 @@
       "seuil": "on garde les titres emoji si leur mediane a 48 h depasse de plus de 25 % celle des titres normaux, sur au moins 5 videos par variante",
       "mesure": "variante notee dans le registre : captions.youtube.titleVariant",
       "statut": "en_cours"
+    },
+    {
+      "id": "T3-tiktok-debut-action",
+      "plateforme": "tiktok",
+      "valide_le": "2026-11-22",
+      "debut": "2026-11-25",
+      "fin_prevue": "2026-12-01",
+      "hypothese": "les spectateurs TikTok decrochent a 0:01 pendant la presentation statique des animaux ; une video qui demarre sur l'action les garde plus longtemps",
+      "changement": "config.buffer.channels.tiktok.trimStartSec = 1.8 (src/tiktokcut.js) : copie TikTok <id>-tt.mp4 coupee de 1,8 s au debut, avec son propre controle qualite ; YouTube, jeux, horaires et legendes inchanges ; videos deja programmees non touchees",
+      "indicateur": "temps de visionnage moyen median et vues a 48 h medianes TikTok (Buffer), part ayant regarde en entier (TikTok Studio)",
+      "reference": "semaine du 16 au 21/11 : temps moyen median 5,6 s, mediane 48 h 224 vues (n = 17)",
+      "seuil": "on garde si le temps moyen median depasse 7 s ou si la mediane a 48 h depasse 280 vues, sur au moins 10 videos coupees ; sinon on supprime trimStartSec",
+      "mesure": "registre : tiktokCut et publicUrlTiktok ; les URL Buffer finissent par -tt.mp4",
+      "statut": "en_cours"
     }
   ],
   "_help": "tests valides par le proprietaire : {id, debut, fin_prevue, changement, indicateur, seuil, statut}"

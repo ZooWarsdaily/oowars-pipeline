@@ -30,6 +30,7 @@ function postsFrom(json) {
 }
 const chanOf = p => p.channelId || (p.channel && (p.channel.id || p.channel)) || null;
 const videoUrlsOf = p => JSON.stringify(p.assets || p.media || '').match(/https?:[^"\\]+/g) || [];
+const isVideo = (u, id) => u.includes(id + '.mp4') || u.includes(id + '-tt.mp4'); // -tt = TikTok copy (test T3)
 
 function captions(id) {
   return L.withRegistry(reg => {
@@ -50,34 +51,38 @@ function captions(id) {
   });
 }
 
+// download the public file and compare its fingerprint with the validated one; otherwise compare git blob ids on the media branch
+function verifyPublic(id, url, sha256, localRel) {
+  const tmp = path.join(require('os').tmpdir(), path.basename(url) + '.check');
+  let viaHttp = false;
+  try { execFileSync('curl', ['-sS', '-L', '--fail', '-m', '300', '-o', tmp, url], { stdio: ['ignore', 'pipe', 'pipe'] }); viaHttp = true; } catch (e) { /* the cloud workspace cannot always reach raw.githubusercontent.com */ }
+  if (viaHttp) {
+    const sha = crypto.createHash('sha256').update(fs.readFileSync(tmp)).digest('hex'); fs.unlinkSync(tmp);
+    if (sha !== sha256) L.die('public file differs from the validated file (sha256): ' + url);
+    return 'http sha256 ok';
+  }
+  const media = path.join(L.P.root, 'media'), rel = url.split('/' + cfg.media.branch + '/')[1];
+  if (!fs.existsSync(path.join(media, '.git')) || !rel) L.die('cannot verify: public URL unreachable from here and no media worktree');
+  execFileSync('git', ['fetch', '-q', 'origin', `+${cfg.media.branch}:refs/remotes/origin/${cfg.media.branch}`], { cwd: media });
+  let remote; try { remote = execFileSync('git', ['rev-parse', `origin/${cfg.media.branch}:${rel}`], { cwd: media }).toString().trim(); } catch (e) { L.die('file not found on the public branch: ' + rel); }
+  const local = execFileSync('git', ['hash-object', path.join(L.P.root, localRel)]).toString().trim();
+  if (remote !== local) L.die('file on GitHub differs from the validated file: ' + rel);
+  if (!url.startsWith(`https://raw.githubusercontent.com/${cfg.media.githubOwner}/${cfg.media.repo}/${cfg.media.branch}/`)) L.die('URL does not match the configured public repository');
+  return 'git blob ok (' + local.slice(0, 10) + ')';
+}
+
 function uploaded(id, url) {
   const v = L.loadRegistry().videos[id]; if (!v) L.die('unknown ' + id);
   if (v.status !== 'validated' && !(v.status === 'uploaded' && v.publicUrl === url)) L.die(`${id} is ${v.status}, expected validated`);
   if (!url.includes(id + '.mp4')) L.die('the URL must end with the video file name ' + id + '.mp4');
-  let check = 'simulated (test mode)';
-  if (cfg.mode !== 'test') {
-    // download the public file and compare its fingerprint with the validated one
-    // 1) try to download the public URL and compare sha256 with the validated file
-    const tmp = path.join(require('os').tmpdir(), id + '.check.mp4');
-    let viaHttp = false;
-    try { execFileSync('curl', ['-sS', '-L', '--fail', '-m', '300', '-o', tmp, url], { stdio: ['ignore', 'pipe', 'pipe'] }); viaHttp = true; } catch (e) { /* the cloud workspace cannot always reach raw.githubusercontent.com */ }
-    if (viaHttp) {
-      const sha = crypto.createHash('sha256').update(fs.readFileSync(tmp)).digest('hex'); fs.unlinkSync(tmp);
-      if (sha !== v.qc.sha256) L.die('public file differs from the validated file (sha256)');
-      check = 'http sha256 ok';
-    } else {
-      // 2) otherwise prove GitHub holds exactly these bytes on the public branch: git blob id of the remote file = blob id of the validated file
-      const media = path.join(L.P.root, 'media'), rel = url.split('/' + cfg.media.branch + '/')[1];
-      if (!fs.existsSync(path.join(media, '.git')) || !rel) L.die('cannot verify: public URL unreachable from here and no media worktree');
-      execFileSync('git', ['fetch', '-q', 'origin', `+${cfg.media.branch}:refs/remotes/origin/${cfg.media.branch}`], { cwd: media });
-      let remote; try { remote = execFileSync('git', ['rev-parse', `origin/${cfg.media.branch}:${rel}`], { cwd: media }).toString().trim(); } catch (e) { L.die('file not found on the public branch: ' + rel); }
-      const local = execFileSync('git', ['hash-object', path.join(L.P.root, v.approvedFile)]).toString().trim();
-      if (remote !== local) L.die('file on GitHub differs from the validated file');
-      if (!url.startsWith(`https://raw.githubusercontent.com/${cfg.media.githubOwner}/${cfg.media.repo}/${cfg.media.branch}/`)) L.die('URL does not match the configured public repository');
-      check = 'git blob ok (' + local.slice(0, 10) + ')';
-    }
+  let check = 'simulated (test mode)', checkTT = null, urlTT = null;
+  if (cfg.mode !== 'test') check = verifyPublic(id, url, v.qc.sha256, v.approvedFile);
+  // test T3: TikTok copy pushed next to it (only if its own QC passed)
+  if (v.tiktokCut && v.tiktokCut.qc && v.tiktokCut.qc.ok) {
+    urlTT = url.replace(id + '.mp4', id + '-tt.mp4');
+    checkTT = cfg.mode === 'test' ? 'simulated (test mode)' : verifyPublic(id, urlTT, v.tiktokCut.qc.sha256, v.tiktokCut.file);
   }
-  L.withRegistry(r => { const x = r.videos[id]; x.publicUrl = url; x.uploadCheck = check; if (x.status === 'validated') L.setVideoStatus(r, id, 'uploaded', check); });
+  L.withRegistry(r => { const x = r.videos[id]; x.publicUrl = url; x.uploadCheck = check; if (urlTT) { x.publicUrlTiktok = urlTT; x.uploadCheckTiktok = checkTT; } if (x.status === 'validated') L.setVideoStatus(r, id, 'uploaded', check); });
   L.log(AG, `${id}: uploaded (${check}) ${url}`);
 }
 
@@ -98,7 +103,7 @@ function payload(id, ch) {
     const ex = arg('--existing'); if (!ex) L.die('--existing <list_posts.json> is required: list the channel posts in Buffer first');
     const posts = postsFrom(L.readJSON(ex));
     // a post in error was never published: it does not block a new attempt (the monitor reports it)
-    const same = posts.filter(p => p.status !== 'error' && (!chanOf(p) || chanOf(p) === chan.id) && videoUrlsOf(p).some(u => u.includes(id + '.mp4')));
+    const same = posts.filter(p => p.status !== 'error' && (!chanOf(p) || chanOf(p) === chan.id) && videoUrlsOf(p).some(u => isVideo(u, id)));
     if (same.length) {
       L.withRegistry(r => { r.videos[id].posts = r.videos[id].posts || {}; r.videos[id].posts[ch] = { ...(r.videos[id].posts[ch] || {}), status: 'needs_review', foundInBuffer: same.map(p => p.id) }; });
       L.die(`DUPLICATE BLOCKED: Buffer already holds ${same.map(p => p.id + '/' + p.status).join(', ')} for ${id} on ${ch}. Run record with that post instead of creating a new one.`);
@@ -113,7 +118,7 @@ function payload(id, ch) {
   const c = v.captions[ch];
   const req = {
     channelId: chan.id, schedulingType: 'automatic', mode: 'customScheduled', dueAt, text: c.text,
-    assets: [{ video: { url: v.publicUrl, metadata: ch === 'tiktok' ? { thumbnailOffset: 3000 } : {} } }],
+    assets: [{ video: { url: ch === 'tiktok' && v.publicUrlTiktok && v.tiktokCut && v.tiktokCut.qc && v.tiktokCut.qc.ok ? v.publicUrlTiktok : v.publicUrl, metadata: ch === 'tiktok' ? { thumbnailOffset: 3000 } : {} } }],
     metadata: ch === 'youtube'
       ? { youtube: { title: c.title, categoryId: chan.categoryId, madeForKids: chan.madeForKids, privacy: chan.privacy, notifySubscribers: true } }
       : {},
@@ -163,7 +168,7 @@ function record(id, ch, src) {
     L.writeJSON(path.join(bufDir(v.date), `${id}.${ch}.response.json`), resp);
   } else {
     const all = postsFrom(L.readJSON(src));
-    resp = all.find(p => videoUrlsOf(p).some(u => u.includes(id + '.mp4'))) || all[0];
+    resp = all.find(p => videoUrlsOf(p).some(u => isVideo(u, id))) || all[0];
     fs.copyFileSync(src, path.join(bufDir(v.date), `${id}.${ch}.response.json`));
   }
   // --- verify what Buffer really answered ---

@@ -15,7 +15,10 @@
     "channels": {
       "tiktok": {
         "id": "6af60dc162b70b94b00d05a1",
-        "name": "zoowarsdaily"
+        "name": "zoowarsdaily",
+        "trimStartSec": 1.8,
+        "trimExperiment": "T3-tiktok-debut-action",
+        "_trim_help": "test T3 valide par le proprietaire le 22/11/2026 : la copie TikTok (<id>-tt.mp4) commence 1,8 s plus tard, sur l'action (RUN! en 3D, GO! en 2D). Montage apres le rendu, jeux inchanges, YouTube garde le fichier valide, video Classement exclue. Supprimer trimStartSec pour arreter."
       },
       "youtube": {
         "id": "6af611d662b70b94b00d5648",

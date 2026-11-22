@@ -23,6 +23,7 @@ Claude est l'orchestrateur. Il lance les trois agents, dans `.claude/agents/`, d
 
 ### Tests en cours (validés par le propriétaire le 15/11/2026, détail dans `data/experiments.json`)
 - **T1 (TikTok 19:00 publié à la main)** : abandonné le 15/11/2026 avant son début. Toutes les vidéos TikTok passent par Buffer. Le code des créneaux manuels (`manualSlots`) reste dans `src/` mais est inactif sans cette clé de config.
+- **T3, TikTok, à partir des vidéos produites après le 22/11 (7 jours)** : la vidéo TikTok commence 1,8 s plus tard, directement sur l'action (« RUN! » en 3D, « GO! » en 2D). C'est une copie `<id>-tt.mp4` faite au montage par `src/tiktokcut.js` (`buffer.channels.tiktok.trimStartSec`), avec son propre contrôle qualité. Les jeux et YouTube ne changent pas. Automatique, rien à faire.
 - **T2, YouTube, du 17 au 30/11** : titres YouTube « Jeu : accroche + emoji » les jours pairs aux créneaux 16:00 et 19:00 (`captions.youtubeTitleTest`), titres normaux les jours impairs. Automatique, rien à faire.
 
 ## Règles absolues

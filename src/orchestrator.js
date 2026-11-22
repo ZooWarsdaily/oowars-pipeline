@@ -39,7 +39,7 @@ function planToday() {
       for (const [name, c] of Object.entries(cfg.buffer.channels)) {
         const ch = c.id;
         if (L.isManual(name, d, sl.time)) { const x = reg.videos[id]; if (x && x.posts && x.posts[name] && ['manual', 'published'].includes(x.posts[name].status)) continue; return false; } // test T1: prepared for the owner, not in Buffer
-        const ok = posts.some(p => (p.channelId || (p.channel && p.channel.id)) === ch && p.dueAt && Math.abs(new Date(p.dueAt).getTime() - due) < 60000 && JSON.stringify(p.assets || '').includes(id + '.mp4'));
+        const ok = posts.some(p => (p.channelId || (p.channel && p.channel.id)) === ch && p.dueAt && Math.abs(new Date(p.dueAt).getTime() - due) < 60000 && (JSON.stringify(p.assets || '').includes(id + '.mp4') || JSON.stringify(p.assets || '').includes(id + '-tt.mp4')));
         if (!ok) return false;
       }
     }
@@ -80,6 +80,13 @@ function publishMedia(id) {
   const dest = path.join(MEDIA, rel); fs.mkdirSync(path.dirname(dest), { recursive: true });
   fs.copyFileSync(path.join(L.P.root, v.approvedFile), dest);
   git(['add', rel], MEDIA);
+  // test T3: TikTok-only copy that starts on the action (its own QC; never pushed if it fails)
+  const cut = require('./tiktokcut').make(id);
+  if (cut && cut.qc.ok) {
+    const relTT = `${v.date}/${require('./tiktokcut').cutName(id)}`;
+    fs.copyFileSync(path.join(L.P.root, cut.file), path.join(MEDIA, relTT));
+    git(['add', relTT], MEDIA);
+  } else if (cut) L.log(AG, `${id}: TikTok cut failed QC, TikTok will get the normal file`);
   try { git(['commit', '-m', 'video ' + id], MEDIA); } catch (e) { /* already committed */ }
   git(['push', 'origin', cfg.media.branch], MEDIA);
   L.log(AG, `${id}: pushed to media branch`); console.log('MEDIA_URL ' + url);
@@ -95,7 +102,10 @@ function pruneMedia() {
   const reg = L.loadRegistry();
   const gone = Object.values(reg.videos).filter(v => v.publicUrl && v.status === 'published' && fs.existsSync(path.join(MEDIA, v.date, v.id + '.mp4')));
   if (!gone.length) { console.log('nothing to prune'); return; }
-  for (const v of gone) git(['rm', '-q', `${v.date}/${v.id}.mp4`], MEDIA);
+  for (const v of gone) {
+    git(['rm', '-q', `${v.date}/${v.id}.mp4`], MEDIA);
+    if (fs.existsSync(path.join(MEDIA, v.date, v.id + '-tt.mp4'))) git(['rm', '-q', `${v.date}/${v.id}-tt.mp4`], MEDIA); // test T3 TikTok copy
+  }
   git(['commit', '-m', 'remove published videos: ' + gone.map(v => v.id).join(', ')], MEDIA);
   git(['push', 'origin', cfg.media.branch], MEDIA);
   L.withRegistry(r => { for (const v of gone) r.videos[v.id].mediaPruned = L.nowParisISO(); });

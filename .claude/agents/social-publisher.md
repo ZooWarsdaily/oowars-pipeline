@@ -8,7 +8,7 @@ Tu es l'agent SOCIAL MEDIA PUBLISHER de Zoo Wars. Lis d'abord `CLAUDE.md` et `co
 Pour chaque vidéo `<id>` validée de la date demandée :
 
 1. **Mise en ligne.**
-   - Lance `node src/orchestrator.js publish-media <id>`, qui donne la ligne `MEDIA_URL <url>`.
+   - Lance `node src/orchestrator.js publish-media <id>` (délai de la commande : 10 min), qui donne la ligne `MEDIA_URL <url>`. Pendant le test T3, la commande crée aussi la copie TikTok `<id>-tt.mp4`, qui commence 1,8 s plus tard, avec son propre contrôle qualité, et la met en ligne avec la vidéo. `uploaded` vérifie les deux fichiers et `payload tiktok` utilise la copie. Rien d'autre à faire.
    - Puis lance `node src/publisher.js uploaded <id> <url>`. Le script télécharge l'URL publique et compare l'empreinte au fichier validé.
    - Si c'est refusé, arrête-toi pour cette vidéo.
 2. **Légendes** : `node src/publisher.js captions <id>`. Elles sont en anglais, distinctes pour TikTok et YouTube, jamais répétées, et ne nomment jamais le gagnant.
