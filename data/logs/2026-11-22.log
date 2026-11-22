@@ -1,2 +1,5 @@
 2026-11-22T10:58:48+01:00 [analytics] snapshot: 72 posts with metrics stored
 2026-11-22T10:58:48+01:00 [analytics] dataset 2026-11-15..2026-11-21: 36 posts this week, 72 in history
+2026-11-22T12:35:41+01:00 [tiktokcut] ZW-20261124-2: TikTok cut -1.8s ok []
+2026-11-22T12:36:33+01:00 [tiktokcut] ZW-20261124-3: TikTok cut -1.8s ok []
+2026-11-22T12:37:10+01:00 [tiktokcut] note: les lignes tiktokcut de 12:35-12:36 sont un essai sur une copie du registre (ZW_REGISTRY), le vrai registre n'a pas change
