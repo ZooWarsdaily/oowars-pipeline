@@ -1,0 +1,24 @@
+{
+  "channelId": "6af611d662b70b94b00d5648",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "dueAt": "2026-11-25T12:30:00+01:00",
+  "text": "Dance, wait for the stop, grab a cushion on a floating volcano. Seven rounds, one animal left sitting.\nNew Zoo Wars battle every day.\n🏆 Season 1 leader: Panda (5 wins)\n\n#shorts #zoowars #musicalchairs #animalbattle",
+  "assets": [
+    {
+      "video": {
+        "url": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-25/ZW-20261125-1.mp4",
+        "metadata": {}
+      }
+    }
+  ],
+  "metadata": {
+    "youtube": {
+      "title": "One Cushion Too Few! Animal Battle",
+      "categoryId": "24",
+      "madeForKids": false,
+      "privacy": "public",
+      "notifySubscribers": true
+    }
+  }
+}
