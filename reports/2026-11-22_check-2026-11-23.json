@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-23",
+  "mode": "live",
+  "verdict": "À CORRIGER",
+  "confirmed": 4,
+  "expected": 6,
+  "ok": [
+    "ZW-20261123-1 (12:30, décor ice) : vidéo validée, 62.97 s, 81.08 Mo",
+    "ZW-20261123-1 tiktok : programmée 23/11/2026 12:30:00 — post 6b00b2acdd205ed77995b7bf",
+    "ZW-20261123-1 youtube : programmée 23/11/2026 12:30:00 — post 6b00b2ad861298c9b150cf11",
+    "ZW-20261123-3 (16:00, terr) : vidéo validée, 66.87 s, 17.62 Mo",
+    "ZW-20261123-3 tiktok : programmée 23/11/2026 16:00:00 — post 6b00bc3cd9cbb430a1fa5724",
+    "ZW-20261123-3 youtube : programmée 23/11/2026 16:00:00 — post 6b00bc3cd9cbb430a1fa5762"
+  ],
+  "issues": [
+    "ZW-20261123-2 : non validée (statut error, qc: size 98.9 MB)"
+  ],
+  "actions": [
+    {
+      "type": "produce",
+      "safe": true,
+      "date": "2026-11-23",
+      "why": "error"
+    }
+  ],
+  "manual": [],
+  "at": "2026-11-22T22:43:21+01:00"
+}

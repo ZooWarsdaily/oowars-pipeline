@@ -5403,7 +5403,8 @@
           "experiment": "T2-youtube-titres-emoji"
         },
         "at": "2026-11-19T23:50:50+01:00"
-      }
+      },
+      "mediaPruned": "2026-11-22T22:07:59+01:00"
     },
     "ZW-20261122-3": {
       "id": "ZW-20261122-3",
@@ -5961,107 +5962,143 @@
           "from": "produced",
           "to": "error",
           "note": "qc failed"
+        },
+        {
+          "at": "2026-11-22T22:07:49+01:00",
+          "from": "error",
+          "to": "planned",
+          "note": "retry 1"
+        },
+        {
+          "at": "2026-11-22T22:25:06+01:00",
+          "from": "planned",
+          "to": "produced",
+          "note": "render ok"
+        },
+        {
+          "at": "2026-11-22T22:25:21+01:00",
+          "from": "produced",
+          "to": "error",
+          "note": "qc failed"
+        },
+        {
+          "at": "2026-11-22T22:25:21+01:00",
+          "from": "error",
+          "to": "planned",
+          "note": "retry 2"
+        },
+        {
+          "at": "2026-11-22T22:42:30+01:00",
+          "from": "planned",
+          "to": "produced",
+          "note": "render ok"
+        },
+        {
+          "at": "2026-11-22T22:42:44+01:00",
+          "from": "produced",
+          "to": "error",
+          "note": "qc failed"
         }
       ],
-      "lastError": "qc: size 99.3 MB",
+      "lastError": "qc: size 98.9 MB",
       "selection": {
-        "seed": 4045559375,
+        "seed": 2497543824,
         "metrics": {
-          "seed": 4045559375,
+          "seed": 2497543824,
           "winner": "gorilla",
-          "dur": 63.72,
-          "tags": 20,
+          "dur": 63.97,
+          "tags": 22,
           "minTags": 2,
           "roundTags": [
+            3,
+            2,
+            2,
             4,
-            2,
-            2,
-            2,
-            2,
+            3,
             3,
             5
           ],
-          "clutch": 7,
-          "dodges": 17,
+          "clutch": 6,
+          "dodges": 20,
           "finalTags": 5,
-          "finalDur": 7.25,
+          "finalDur": 7.45,
           "order": [
-            "bear",
-            "bull",
-            "panda",
-            "tiger",
+            "wolf",
             "fox",
+            "panda",
+            "bear",
+            "tiger",
             "lion",
-            "wolf"
+            "bull"
           ],
-          "score": 65.64
+          "score": 64.52
         },
         "simulated": 600,
         "runnersUp": [
           {
-            "seed": 1103512253,
-            "score": 65.44
+            "seed": 1096362681,
+            "score": 63.91
           },
           {
-            "seed": 1956150194,
-            "score": 64.39
+            "seed": 1083022921,
+            "score": 62.95
           },
           {
-            "seed": 420382286,
-            "score": 62.34
+            "seed": 4216159466,
+            "score": 62.94
           }
         ]
       },
       "render": {
         "file": "production/2026-11-23/ZW-20261123-2.mp4",
-        "seconds": 1025,
+        "seconds": 979,
         "info": {
-          "seed": 4045559375,
+          "seed": 2497543824,
           "theme": "volcano",
-          "vt": 63.733333333331,
+          "vt": 63.96666666666432,
           "phase": "win",
-          "tags": 20,
+          "tags": 22,
           "winner": "gorilla",
           "order": [
-            "bear",
-            "bull",
-            "panda",
-            "tiger",
+            "wolf",
             "fox",
+            "panda",
+            "bear",
+            "tiger",
             "lion",
-            "wolf"
+            "bull"
           ],
           "kinds": [
-            2,
-            2,
+            0,
             1,
-            2,
+            0,
             1,
-            2,
-            1
+            1,
+            0,
+            0
           ]
         }
       },
       "qc": {
-        "at": "2026-11-22T21:22:59+01:00",
+        "at": "2026-11-22T22:42:44+01:00",
         "ok": false,
         "problems": [
-          "size 99.3 MB"
+          "size 98.9 MB"
         ],
-        "duration": 63.73,
+        "duration": 63.97,
         "width": 1080,
         "height": 1920,
         "fps": 30,
         "videoCodec": "h264",
         "audioCodec": "aac",
-        "sizeMB": 99.28,
-        "sha256": "906ee047a353ec110ec755b2679fc75b6687c4712945fdbb57ad6967faa54cda",
+        "sizeMB": 98.87,
+        "sha256": "0fdeff4cb75ef78019cac135418beb95abd45262af9a8f35ae7447a0e0ca72a3",
         "luminance": [
-          134.5,
-          141.2,
-          134,
-          126.1,
-          112.2
+          136.2,
+          150,
+          136.6,
+          126.6,
+          127.8
         ]
       }
     },
@@ -7355,5 +7392,5 @@
     "2t|Which Animal Paints the Whole Board?",
     "yte|Comment your animal for the next battle!"
   ],
-  "updatedAt": "2026-11-22T22:07:39+01:00"
+  "updatedAt": "2026-11-22T22:42:44+01:00"
 }
