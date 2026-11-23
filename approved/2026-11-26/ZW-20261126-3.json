@@ -1,0 +1,38 @@
+{
+  "id": "ZW-20261126-3",
+  "game": "Territory War",
+  "publishDate": "2026-11-26",
+  "slot": 3,
+  "time": "16:00",
+  "timezone": "Europe/Paris",
+  "seed": 1159002652,
+  "winner": "Gorilla",
+  "highlights": {
+    "eliminations": 5,
+    "finalMargin": null,
+    "videoSeconds": 66.9,
+    "score": 15,
+    "gamesPreviewed": 6
+  },
+  "file": {
+    "name": "ZW-20261126-3.mp4",
+    "at": "2026-11-23T21:12:22+01:00",
+    "ok": true,
+    "problems": [],
+    "duration": 66.87,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "sizeMB": 17.49,
+    "sha256": "351c418e83fc23cf2cc3f6a4995e8350daef7be96bb4916e0483d8ccf2c8ce8d",
+    "luminance": [
+      53.6,
+      92.5,
+      96.7,
+      99.9,
+      29.5
+    ]
+  }
+}

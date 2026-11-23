@@ -13,7 +13,6 @@
     "assets": [
      {
       "type": "video",
-      "mimeType": "video/mp4",
       "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-24/ZW-20261124-1.mp4"
      }
     ]
@@ -32,7 +31,6 @@
     "assets": [
      {
       "type": "video",
-      "mimeType": "video/mp4",
       "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-24/ZW-20261124-2.mp4"
      }
     ]
