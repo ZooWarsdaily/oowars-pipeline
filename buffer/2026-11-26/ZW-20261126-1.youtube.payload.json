@@ -1,0 +1,24 @@
+{
+  "channelId": "6af611d662b70b94b00d5648",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "dueAt": "2026-11-26T12:30:00+01:00",
+  "text": "A Zoo Wars infection chase floating in space: the pack grows with every catch until only one animal is left clean.\nWho did you pick? Tell us in the comments!\n🏆 Season 1 leader: Panda (5 wins)\n\n#shorts #zoowars #infection #satisfying",
+  "assets": [
+    {
+      "video": {
+        "url": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-26/ZW-20261126-1.mp4",
+        "metadata": {}
+      }
+    }
+  ],
+  "metadata": {
+    "youtube": {
+      "title": "One Touch and You Turn Green!",
+      "categoryId": "24",
+      "madeForKids": false,
+      "privacy": "public",
+      "notifySubscribers": true
+    }
+  }
+}

@@ -5842,7 +5842,8 @@
           "text": "Eight animals dance around the cushions on the frozen arena. When the music stops, the one left standing is out.\nDid your pick make it to the final duel?\n🏆 Season 1 leader: Panda (4 wins)\n\n#shorts #zoowars #musicalchairs #animalbattle"
         },
         "at": "2026-11-20T21:50:36+01:00"
-      }
+      },
+      "mediaPruned": "2026-11-23T21:18:12+01:00"
     },
     "ZW-20261123-2": {
       "id": "ZW-20261123-2",
@@ -7321,7 +7322,7 @@
       "slot": 1,
       "time": "12:30",
       "game": "infection-3d",
-      "status": "validated",
+      "status": "scheduled",
       "plan": {
         "winner": "bear",
         "theme": "space",
@@ -7336,7 +7337,30 @@
           "panda"
         ]
       },
-      "posts": {},
+      "posts": {
+        "tiktok": {
+          "status": "scheduled",
+          "dueAt": "2026-11-26T11:30:00.000Z",
+          "payload": "buffer/2026-11-26/ZW-20261126-1.tiktok.payload.json",
+          "mode": "live",
+          "at": "2026-11-23T21:17:36+01:00",
+          "bufferPostId": "6b049f70a083c79d702f542b",
+          "bufferStatus": "scheduled",
+          "recordedAt": "2026-11-23T21:18:05+01:00",
+          "simulated": false
+        },
+        "youtube": {
+          "status": "scheduled",
+          "dueAt": "2026-11-26T11:30:00.000Z",
+          "payload": "buffer/2026-11-26/ZW-20261126-1.youtube.payload.json",
+          "mode": "live",
+          "at": "2026-11-23T21:17:36+01:00",
+          "bufferPostId": "6b049f74546af97ff754f3b7",
+          "bufferStatus": "scheduled",
+          "recordedAt": "2026-11-23T21:18:05+01:00",
+          "simulated": false
+        }
+      },
       "history": [
         {
           "at": "2026-11-23T20:49:15+01:00",
@@ -7353,6 +7377,18 @@
           "from": "produced",
           "to": "validated",
           "note": "qc ok"
+        },
+        {
+          "at": "2026-11-23T21:17:24+01:00",
+          "from": "validated",
+          "to": "uploaded",
+          "note": "git blob ok (d9bb91f7bc)"
+        },
+        {
+          "at": "2026-11-23T21:18:05+01:00",
+          "from": "uploaded",
+          "to": "scheduled",
+          "note": "tiktok 6b049f70a083c79d702f542b / youtube 6b049f74546af97ff754f3b7"
         }
       ],
       "selection": {
@@ -7450,7 +7486,34 @@
         ]
       },
       "approvedFile": "approved/2026-11-26/ZW-20261126-1.mp4",
-      "fiche": "approved/2026-11-26/ZW-20261126-1.json"
+      "fiche": "approved/2026-11-26/ZW-20261126-1.json",
+      "tiktokCut": {
+        "file": "approved/2026-11-26/ZW-20261126-1-tt.mp4",
+        "experiment": "T3-tiktok-debut-action",
+        "qc": {
+          "at": "2026-11-23T21:15:04+01:00",
+          "ok": true,
+          "problems": [],
+          "trimStartSec": 1.8,
+          "duration": 58.77,
+          "sizeMB": 73.42,
+          "sha256": "91440c1b51b79e9c8d5ea3652be465426a6c3cd33c5e219237d53e52c36ad3d9"
+        }
+      },
+      "publicUrl": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-26/ZW-20261126-1.mp4",
+      "uploadCheck": "git blob ok (d9bb91f7bc)",
+      "publicUrlTiktok": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-26/ZW-20261126-1-tt.mp4",
+      "uploadCheckTiktok": "git blob ok (fe4e722a53)",
+      "captions": {
+        "tiktok": {
+          "text": "Who stays clean the longest? 👀\nInfection chase floating in space.\n\nWhich animal are you rooting for next time?\n🏆 Season 1 leader: Panda (5 wins)\n\n#zoowars #infection #satisfying #simulation #whowouldwin"
+        },
+        "youtube": {
+          "title": "One Touch and You Turn Green!",
+          "text": "A Zoo Wars infection chase floating in space: the pack grows with every catch until only one animal is left clean.\nWho did you pick? Tell us in the comments!\n🏆 Season 1 leader: Panda (5 wins)\n\n#shorts #zoowars #infection #satisfying"
+        },
+        "at": "2026-11-23T21:17:24+01:00"
+      }
     },
     "ZW-20261126-2": {
       "id": "ZW-20261126-2",
@@ -7458,7 +7521,7 @@
       "slot": 2,
       "time": "19:00",
       "game": "hot-potato-3d",
-      "status": "validated",
+      "status": "scheduled",
       "plan": {
         "winner": "gorilla",
         "theme": "jungle",
@@ -7473,7 +7536,30 @@
           "panda"
         ]
       },
-      "posts": {},
+      "posts": {
+        "tiktok": {
+          "status": "scheduled",
+          "dueAt": "2026-11-26T18:00:00.000Z",
+          "payload": "buffer/2026-11-26/ZW-20261126-2.tiktok.payload.json",
+          "mode": "live",
+          "at": "2026-11-23T21:17:36+01:00",
+          "bufferPostId": "6b049f71a083c79d702f551d",
+          "bufferStatus": "scheduled",
+          "recordedAt": "2026-11-23T21:18:05+01:00",
+          "simulated": false
+        },
+        "youtube": {
+          "status": "scheduled",
+          "dueAt": "2026-11-26T18:00:00.000Z",
+          "payload": "buffer/2026-11-26/ZW-20261126-2.youtube.payload.json",
+          "mode": "live",
+          "at": "2026-11-23T21:17:36+01:00",
+          "bufferPostId": "6b049f76546af97ff754f404",
+          "bufferStatus": "scheduled",
+          "recordedAt": "2026-11-23T21:18:05+01:00",
+          "simulated": false
+        }
+      },
       "history": [
         {
           "at": "2026-11-23T20:49:15+01:00",
@@ -7490,6 +7576,18 @@
           "from": "produced",
           "to": "validated",
           "note": "qc ok"
+        },
+        {
+          "at": "2026-11-23T21:17:26+01:00",
+          "from": "validated",
+          "to": "uploaded",
+          "note": "git blob ok (061cd38d78)"
+        },
+        {
+          "at": "2026-11-23T21:18:05+01:00",
+          "from": "uploaded",
+          "to": "scheduled",
+          "note": "tiktok 6b049f71a083c79d702f551d / youtube 6b049f76546af97ff754f404"
         }
       ],
       "selection": {
@@ -7591,7 +7689,36 @@
         ]
       },
       "approvedFile": "approved/2026-11-26/ZW-20261126-2.mp4",
-      "fiche": "approved/2026-11-26/ZW-20261126-2.json"
+      "fiche": "approved/2026-11-26/ZW-20261126-2.json",
+      "tiktokCut": {
+        "file": "approved/2026-11-26/ZW-20261126-2-tt.mp4",
+        "experiment": "T3-tiktok-debut-action",
+        "qc": {
+          "at": "2026-11-23T21:16:22+01:00",
+          "ok": true,
+          "problems": [],
+          "trimStartSec": 1.8,
+          "duration": 61.73,
+          "sizeMB": 75.46,
+          "sha256": "8fd8e744ba125d742e7720cde9868f26bfde26e45ec2c59f8bfca1bb363fea1b"
+        }
+      },
+      "publicUrl": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-26/ZW-20261126-2.mp4",
+      "uploadCheck": "git blob ok (061cd38d78)",
+      "publicUrlTiktok": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-26/ZW-20261126-2-tt.mp4",
+      "uploadCheckTiktok": "git blob ok (a119bfa05a)",
+      "captions": {
+        "tiktok": {
+          "text": "The bomb never stays still for long 💣\nHot potato battle in the jungle arena.\n\nDid your animal survive? 👇\n🏆 Season 1 leader: Panda (5 wins)\n\n#zoowars #animalbattle #hotpotato #satisfying #simulation"
+        },
+        "youtube": {
+          "title": "Hot Potato: last one standing wins 🏆",
+          "text": "Eight animals run around a floating arena in the jungle arena. Whoever holds the bomb must tag someone else before the fuse runs out.\nDid your pick make it to the final duel?\n🏆 Season 1 leader: Panda (5 wins)\n\n#shorts #zoowars #animalbattle #hotpotato",
+          "titleVariant": "emoji",
+          "experiment": "T2-youtube-titres-emoji"
+        },
+        "at": "2026-11-23T21:17:26+01:00"
+      }
     },
     "ZW-20261126-3": {
       "id": "ZW-20261126-3",
@@ -7599,12 +7726,24 @@
       "slot": 3,
       "time": "16:00",
       "game": "arena2d",
-      "status": "validated",
+      "status": "uploaded",
       "plan": {
         "winner": null,
         "theme": "terr"
       },
-      "posts": {},
+      "posts": {
+        "tiktok": {
+          "status": "scheduled",
+          "dueAt": "2026-11-26T15:00:00.000Z",
+          "payload": "buffer/2026-11-26/ZW-20261126-3.tiktok.payload.json",
+          "mode": "live",
+          "at": "2026-11-23T21:17:36+01:00",
+          "bufferPostId": "6b049f73d73c10ed4ca5cd80",
+          "bufferStatus": "scheduled",
+          "recordedAt": "2026-11-23T21:18:05+01:00",
+          "simulated": false
+        }
+      },
       "history": [
         {
           "at": "2026-11-23T20:49:15+01:00",
@@ -7621,6 +7760,12 @@
           "from": "produced",
           "to": "validated",
           "note": "qc ok"
+        },
+        {
+          "at": "2026-11-23T21:17:28+01:00",
+          "from": "validated",
+          "to": "uploaded",
+          "note": "git blob ok (574b46e3a1)"
         }
       ],
       "selection": {
@@ -7683,26 +7828,39 @@
         ]
       },
       "approvedFile": "approved/2026-11-26/ZW-20261126-3.mp4",
-      "fiche": "approved/2026-11-26/ZW-20261126-3.json"
+      "fiche": "approved/2026-11-26/ZW-20261126-3.json",
+      "tiktokCut": {
+        "file": "approved/2026-11-26/ZW-20261126-3-tt.mp4",
+        "experiment": "T3-tiktok-debut-action",
+        "qc": {
+          "at": "2026-11-23T21:17:08+01:00",
+          "ok": true,
+          "problems": [],
+          "trimStartSec": 1.8,
+          "duration": 65.08,
+          "sizeMB": 67.39,
+          "sha256": "f09b13b1e92242f787e4b535218e559d18e325982908e1acb57906a12900df76"
+        }
+      },
+      "publicUrl": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-26/ZW-20261126-3.mp4",
+      "uploadCheck": "git blob ok (574b46e3a1)",
+      "publicUrlTiktok": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-26/ZW-20261126-3-tt.mp4",
+      "uploadCheckTiktok": "git blob ok (dacc928ff7)",
+      "captions": {
+        "tiktok": {
+          "text": "The map keeps shrinking… 😳\n\nWho was the sneakiest player?\n\n#zoowars #territorywar #animalbattle #whowouldwin #simulation"
+        },
+        "youtube": {
+          "title": "Territory War: the map keeps shrinking 😳",
+          "text": "Power-ups, freezes and paint bombs: who will control the whole map?\nDid your pick survive the cuts?\n\n#shorts #zoowars #territorywar #animalbattle",
+          "titleVariant": "emoji",
+          "experiment": "T2-youtube-titres-emoji"
+        },
+        "at": "2026-11-23T21:17:28+01:00"
+      }
     }
   },
   "captionsUsed": [
-    "3t|8 Animals, 7 Cushions – Musical Chairs Battle",
-    "yte|New Zoo Wars battle every day.",
-    "tt|The bomb never stays still for long 💣|Who did you pick? 👇",
-    "tth|The bomb never stays still for long 💣",
-    "ttq|Who did you pick? 👇",
-    "yt|The Bomb Keeps Moving… Who Survives?|Pick your animal at the start and see if it survives the hot potato battle {theme}.",
-    "ytt|The Bomb Keeps Moving… Who Survives?",
-    "yte|Did your pick make it to the final duel?",
-    "2h|Bounce, steal, survive 🔵",
-    "ttq|Did you guess the winner?",
-    "2t|Animal Color Battle – Pick Your Color",
-    "yte|Did your pick survive the cuts?",
-    "3h|Don't let them touch you 🟢",
-    "ttq|Call your winner in the comments 👇",
-    "3t|7 Against 1 – Animal Infection Chase",
-    "yte|Comment your animal for the next battle!",
     "tt|The chase is real 🏃💨|Which animal should get a rematch?",
     "tth|The chase is real 🏃💨",
     "ttq|Which animal should get a rematch?",
@@ -7776,7 +7934,23 @@
     "2h|Watch the colors fight 👀",
     "ttq|Comment your animal before the end 👀",
     "2t|Which Animal Paints the Whole Board?",
-    "yte|Comment your animal for the next battle!"
+    "yte|Comment your animal for the next battle!",
+    "3h|Who stays clean the longest? 👀",
+    "ttq|Which animal are you rooting for next time?",
+    "3t|One Touch and You Turn Green!",
+    "yte|Who did you pick? Tell us in the comments!",
+    "tt|The bomb never stays still for long 💣|Did your animal survive? 👇",
+    "tth|The bomb never stays still for long 💣",
+    "ttq|Did your animal survive? 👇",
+    "yt|One Bomb, Eight Animals, One Winner|Eight animals run around a floating arena {theme}. Whoever holds the bomb must tag someone else before the fuse runs out.",
+    "ytt|One Bomb, Eight Animals, One Winner",
+    "yte|Did your pick make it to the final duel?",
+    "emt|Hot Potato: last one standing wins 🏆",
+    "2h|The map keeps shrinking… 😳",
+    "ttq|Who was the sneakiest player?",
+    "2t|Territory War: Last Animal Standing",
+    "yte|Did your pick survive the cuts?",
+    "emt|Territory War: the map keeps shrinking 😳"
   ],
-  "updatedAt": "2026-11-23T21:12:22+01:00"
+  "updatedAt": "2026-11-23T21:18:12+01:00"
 }
