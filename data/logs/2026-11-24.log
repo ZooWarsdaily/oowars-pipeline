@@ -82,3 +82,5 @@
 2026-11-24T21:13:51+01:00 [publisher] ZW-20261127-2: tiktok confirmed by Buffer, post 6b05eff1ad5aa59f729a42d4 (scheduled)
 2026-11-24T21:13:51+01:00 [publisher] ZW-20261127-2: youtube confirmed by Buffer, post 6b05eff3ad5aa59f729a4352 (scheduled)
 2026-11-24T21:13:51+01:00 [publisher] ZW-20261127-3: tiktok confirmed by Buffer, post 6b05eff4f86f2594b87ed2de (scheduled)
+2026-11-24T21:14:12+01:00 [monitor] check 2026-11-25: À CORRIGER (5/6) {"issues":1,"actions":1}
+2026-11-24T21:14:19+01:00 [orchestrator] media pruned: ZW-20261124-1, ZW-20261124-2
