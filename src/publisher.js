@@ -120,7 +120,7 @@ function payload(id, ch) {
     channelId: chan.id, schedulingType: 'automatic', mode: 'customScheduled', dueAt, text: c.text,
     assets: [{ video: { url: ch === 'tiktok' && v.publicUrlTiktok && v.tiktokCut && v.tiktokCut.qc && v.tiktokCut.qc.ok ? v.publicUrlTiktok : v.publicUrl, metadata: ch === 'tiktok' ? { thumbnailOffset: 3000 } : {} } }],
     metadata: ch === 'youtube'
-      ? { youtube: { title: c.title, categoryId: chan.categoryId, madeForKids: chan.madeForKids, privacy: chan.privacy, notifySubscribers: true } }
+      ? { youtube: { type: 'short', title: c.title, categoryId: chan.categoryId, madeForKids: chan.madeForKids, privacy: chan.privacy, notifySubscribers: true } }
       : {},
   };
   if (cfg.mode === 'draft') { req.saveToDraft = true; delete req.mode; delete req.dueAt; }

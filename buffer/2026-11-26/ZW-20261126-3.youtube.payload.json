@@ -1,0 +1,25 @@
+{
+  "channelId": "6af611d662b70b94b00d5648",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "dueAt": "2026-11-26T16:00:00+01:00",
+  "text": "Power-ups, freezes and paint bombs: who will control the whole map?\nDid your pick survive the cuts?\n\n#shorts #zoowars #territorywar #animalbattle",
+  "assets": [
+    {
+      "video": {
+        "url": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-26/ZW-20261126-3.mp4",
+        "metadata": {}
+      }
+    }
+  ],
+  "metadata": {
+    "youtube": {
+      "type": "short",
+      "title": "Territory War: the map keeps shrinking 😳",
+      "categoryId": "24",
+      "madeForKids": false,
+      "privacy": "public",
+      "notifySubscribers": true
+    }
+  }
+}

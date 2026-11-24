@@ -1,0 +1,5403 @@
+{
+ "edges": [
+  {
+   "node": {
+    "id": "6b02098c0247969092014041",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-24T15:00:00.000Z",
+    "sentAt": "2026-11-24T15:07:55.247Z",
+    "text": "The bomb is looking for a new owner 😅\n\nDid you guess the winner?\n\n#zoowars #hotpotato #animalbattle #whowouldwin #simulation",
+    "metricsUpdatedAt": "2026-11-21T21:13:48.461Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6b02098c0247969092014041_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 0,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6b02098bd5eabfb8cc5f9fb3",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-24T18:00:00.000Z",
+    "sentAt": "2026-11-24T18:04:30.686Z",
+    "text": "Who can dodge the bomb the longest? Animal hot potato battle in outer space.\nWho did you pick? Tell us in the comments!\n🏆 Season 1 leader: Panda (4 wins)\n\n#shorts #zoowars #satisfying #whowouldwin",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.210Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-24/ZW-20261124-2.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 2,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 16.67,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 12,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6b02098a0247969092014005",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-24T18:00:00.000Z",
+    "sentAt": "2026-11-24T18:07:34.072Z",
+    "text": "8 animals. 1 bomb. Only one survives 💣\nHot potato battle in outer space.\n\nWhich animal should get a rematch?\n🏆 Season 1 leader: Panda (4 wins)\n\n#zoowars #satisfying #whowouldwin #simulation #animalbattle",
+    "metricsUpdatedAt": "2026-11-21T21:13:46.499Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6b02098a0247969092014005_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 0,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6b020988c72676f5e9dfd39b",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-24T11:30:00.000Z",
+    "sentAt": "2026-11-24T11:31:10.269Z",
+    "text": "A Zoo Wars infection chase between the jungle trees: the pack grows with every catch until only one animal is left clean.\nComment your animal for the next battle!\n🏆 Season 1 leader: Panda (4 wins)\n\n#shorts #zoowars #infection #satisfying",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.210Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-24/ZW-20261124-1.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 10,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.97,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 1036,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6b020987cc364169c106718d",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-24T11:30:00.000Z",
+    "sentAt": "2026-11-24T11:33:10.738Z",
+    "text": "Last one clean wins 🏆\nInfection chase between the jungle trees.\n\nWho did you pick? 👇\n🏆 Season 1 leader: Panda (4 wins)\n\n#zoowars #infection #satisfying #simulation #whowouldwin",
+    "metricsUpdatedAt": "2026-11-21T21:13:43.690Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6b020987cc364169c106718d_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 0,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6b00bc3cd9cbb430a1fa5724",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-23T15:00:00.000Z",
+    "sentAt": "2026-11-23T15:06:17.233Z",
+    "text": "Who will own the map? 🎨\n\nComment your animal before the end 👀\n\n#zoowars #territorywar #animalbattle #whowouldwin #simulation",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.928Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6b00bc3cd9cbb430a1fa5724_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 206,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 26.35,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 6.85,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6b00b2ad861298c9b150cf11",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-23T11:30:00.000Z",
+    "sentAt": "2026-11-23T11:30:47.141Z",
+    "text": "Eight animals dance around the cushions on the frozen arena. When the music stops, the one left standing is out.\nDid your pick make it to the final duel?\n🏆 Season 1 leader: Panda (4 wins)\n\n#shorts #zoowars #musicalchairs #animalbattle",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.210Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-23/ZW-20261123-1.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 4,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.53,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 947,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6b00b2acdd205ed77995b7bf",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-23T11:30:00.000Z",
+    "sentAt": "2026-11-23T11:32:44.459Z",
+    "text": "The last cushion is a war zone 😤\nMusical chairs on the frozen arena.\n\nWhich animal are you rooting for next time?\n🏆 Season 1 leader: Panda (4 wins)\n\n#zoowars #musicalchairs #animalbattle #satisfying #whowouldwin",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.928Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6b00b2acdd205ed77995b7bf_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.53,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 188,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 17.85,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 4.85,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6aff7d788d2272fdf5171942",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-22T17:00:00.000Z",
+    "sentAt": "2026-11-22T17:07:09.729Z",
+    "text": "Panda leads Season 1! 👑 This week's wins and the full season ranking. Who wins next week? Comment your animal 👇 #zoowars #animalbattle #leaderboard #whowouldwin #simulation",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.928Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6aff7d788d2272fdf5171942_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 237,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 221,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 10.08,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 2.28,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6aff7d761a1724ac8f56b022",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-22T15:00:00.000Z",
+    "sentAt": "2026-11-22T15:06:46.842Z",
+    "text": "Bounce, steal, survive 🔵 Who was the sneakiest player? #zoowars #colorwar #animalbattle #satisfying #whowouldwin",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.928Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6aff7d761a1724ac8f56b022_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.43,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 233,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 155,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 24.18,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 5.65,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6aff7d761a1724ac8f56afd5",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-22T18:00:00.000Z",
+    "sentAt": "2026-11-22T18:02:42.000Z",
+    "text": "The bomb drops, the chase begins on the frozen arena. Seven explosions, one survivor.\nComment your animal for the next battle!\n🏆 Season 1 leader: Panda (4 wins)\n\n#shorts #zoowars #hotpotato #satisfying",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.210Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-22/ZW-20261122-2.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 4,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.38,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 1055,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6aff7d748d2272fdf51718a2",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-22T18:00:00.000Z",
+    "sentAt": "2026-11-22T18:07:00.558Z",
+    "text": "Chaos in the arena 🌀 Hot potato battle on the frozen arena. Did you guess the winner? 🏆 Season 1 leader: Panda (4 wins) #zoowars #hotpotato #satisfying #animalbattle #simulation",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.928Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6aff7d748d2272fdf51718a2_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.9,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 222,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 222,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 16.93,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 3.91,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6aff79968d2272fdf515ab99",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-22T11:30:00.000Z",
+    "sentAt": "2026-11-22T11:32:25.077Z",
+    "text": "Run from the pack 🏃💨 Infection chase on the jungle stage. Did your animal survive? 👇 🏆 Season 1: Wolf & Panda tied at the top (3 wins) #zoowars #infection #animalbattle #whowouldwin #satisfying",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.928Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6aff79968d2272fdf515ab99_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 2,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.9,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 223,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 222,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 23.17,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 5.41,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6aff646bd606779a4df954f1",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-21T15:00:00.000Z",
+    "sentAt": "2026-11-21T15:02:46.701Z",
+    "text": "Six animals run from the bomb. The carrier has to tag someone before the fuse runs out.\nDid your pick survive the cuts?\n\n#shorts #zoowars #hotpotato #satisfying",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.210Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-21/ZW-20261121-3.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 7,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.75,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 1063,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6aff646a373c7db3cb52a5ce",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-21T15:00:00.000Z",
+    "sentAt": "2026-11-21T15:05:14.009Z",
+    "text": "Don't get caught holding the bomb 💣 Comment your animal before the end 👀 #zoowars #hotpotato #satisfying #simulation #whowouldwin",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.928Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6aff646a373c7db3cb52a5ce_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.45,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 224,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 224,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 25.85,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 5.86,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6aff64696e3094bf7109e14b",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-21T11:30:00.000Z",
+    "sentAt": "2026-11-21T11:30:30.727Z",
+    "text": "A Zoo Wars musical chairs battle floating in space: one cushion too few every round, one winner at the end.\nWho did you pick? Tell us in the comments!\n🏆 Season 1 leader: Wolf (3 wins)\n\n#shorts #zoowars #musicalchairs #animalbattle",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.210Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-21/ZW-20261121-1.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 14,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 1.16,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 1209,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6aff6468d606779a4df953b1",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-21T11:30:00.000Z",
+    "sentAt": "2026-11-21T11:33:18.812Z",
+    "text": "The last cushion is a war zone 😤 Musical chairs floating in space. Rate this final from 1 to 10 👇 🏆 Season 1 leader: Wolf (3 wins) #zoowars #musicalchairs #animalbattle #whowouldwin #simulation",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.928Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6aff6468d606779a4df953b1_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.48,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 209,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 209,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 17.63,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 4.35,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6afcc11f843fae727bb52e98",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-20T15:00:00.000Z",
+    "sentAt": "2026-11-20T15:06:59.190Z",
+    "text": "Every tile counts 🟩 Which animal are you rooting for next time? #zoowars #territorywar #simulation #whowouldwin #satisfying",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.928Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6afcc11f843fae727bb52e98_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.46,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 216,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 216,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 34.8,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 8.46,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6afcc11dbbe886f1b511b6a5",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-20T18:00:00.000Z",
+    "sentAt": "2026-11-20T18:07:14.666Z",
+    "text": "The chase is real 🏃💨 Hot potato battle on a frozen lake. Which animal should get a rematch? 🏆 Season 1 leader: Wolf (3 wins) #zoowars #hotpotato #animalbattle #simulation #whowouldwin",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.928Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6afcc11dbbe886f1b511b6a5_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 222,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 222,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 13.42,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 3.17,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6afcc11b843fae727bb52cbc",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-20T11:30:00.000Z",
+    "sentAt": "2026-11-20T11:31:33.468Z",
+    "text": "Run, dodge and hide over the lava: who will be the last animal standing against the green pack?\nComment your animal for the next battle!\n🏆 Season 1 leader: Wolf (3 wins)\n\n#shorts #zoowars #infection #simulation",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.210Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-20/ZW-20261120-1.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.47,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 212,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6afcc11a9b0477630c930d6b",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-20T11:30:00.000Z",
+    "sentAt": "2026-11-20T11:32:23.301Z",
+    "text": "Don't let them touch you 🟢 Infection chase over the lava. Call your winner in the comments 👇 🏆 Season 1 leader: Wolf (3 wins) #zoowars #infection #simulation #satisfying #whowouldwin",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.928Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6afcc11a9b0477630c930d6b_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 221,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 221,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 24.45,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 5.73,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6afcb8317847359f57af53a4",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-19T15:00:00.000Z",
+    "sentAt": "2026-11-19T15:07:13.092Z",
+    "text": "Bounce, steal, survive 🔵 Did you guess the winner? #zoowars #colorwar #satisfying #animalbattle #whowouldwin",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.928Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6afcb8317847359f57af53a4_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 206,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 206,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 23.95,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 6.02,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6afcb830dfbe5d51e1ebf9d4",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-19T18:00:00.000Z",
+    "sentAt": "2026-11-19T18:05:13.392Z",
+    "text": "Pick your animal at the start and see if it survives the hot potato battle between the jungle trees.\nDid your pick make it to the final duel?\n🏆 Season 1: Wolf & Fox tied at the top (2 wins)\n\n#shorts #zoowars #whowouldwin #simulation",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.210Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-19/ZW-20261119-2.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 14,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 1.18,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 1185,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6afcb82f57c8fecbcd1b6583",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-19T18:00:00.000Z",
+    "sentAt": "2026-11-19T18:06:40.708Z",
+    "text": "The bomb never stays still for long 💣 Hot potato battle between the jungle trees. Who did you pick? 👇 🏆 Season 1: Wolf & Fox tied at the top (2 wins) #zoowars #whowouldwin #simulation #satisfying #animalbattle",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.928Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6afcb82f57c8fecbcd1b6583_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 220,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 219,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 23.52,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 5.58,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6afcb82d700b9ade62f321c1",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-19T11:30:00.000Z",
+    "sentAt": "2026-11-19T11:32:44.821Z",
+    "text": "The last cushion is a war zone 😤 Musical chairs floating in space. Did your animal survive? 👇 🏆 Season 1: Wolf & Fox tied at the top (2 wins) #zoowars #musicalchairs #satisfying #whowouldwin #animalbattle",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.928Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6afcb82d700b9ade62f321c1_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 200,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 200,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 18.72,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 4.6,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6afa9be52afc0eb900905454",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-12T20:30:00.000Z",
+    "sentAt": "2026-11-12T20:30:00.000Z",
+    "text": "Pass it or BOOM 💣 Pick your animal before the end! #zoowars #hotpotato #animalbattle #whowouldwin #simulation #satisfying",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.929Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://www.tiktok.com/@zoowarsdaily/video/7706346623512677654?utm_campaign=tt4d_open_api&utm_source=7103819247981182978"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 0.17,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 5,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6afa1fc406e1675856a6ac61",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-18T15:00:00.000Z",
+    "sentAt": "2026-11-18T15:04:59.814Z",
+    "text": "Six animals run from the bomb. The carrier has to tag someone before the fuse runs out.\nWho did you pick? Tell us in the comments!\n\n#shorts #zoowars #hotpotato #animalbattle",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.210Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-18/ZW-20261118-3.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 235,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6afa1fc3a869c35e5b978aa0",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-18T15:00:00.000Z",
+    "sentAt": "2026-11-18T15:07:55.733Z",
+    "text": "Pass it or BOOM 💣 Comment your animal before the end 👀 #zoowars #hotpotato #animalbattle #whowouldwin #simulation",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.928Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6afa1fc3a869c35e5b978aa0_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.4,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 247,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 230,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 30.95,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 7.17,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6afa1fc28e87c256a3903235",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-18T18:00:00.000Z",
+    "sentAt": "2026-11-18T18:04:50.581Z",
+    "text": "Eight animals run around a floating arena among the stars. Whoever holds the bomb must tag someone else before the fuse runs out.\nComment your animal for the next battle!\n🏆 Season 1 leader: Fox (2 wins)\n\n#shorts #zoowars #whowouldwin #hotpotato",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.210Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-18/ZW-20261118-2.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 2,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.54,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 370,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6afa1fc1daa378ad68923e1d",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-18T18:00:00.000Z",
+    "sentAt": "2026-11-18T18:07:18.085Z",
+    "text": "Zoo Wars: Hot Potato edition 💣 Hot potato battle among the stars. Rate this final from 1 to 10 👇 🏆 Season 1 leader: Fox (2 wins) #zoowars #whowouldwin #hotpotato #animalbattle #satisfying",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.928Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6afa1fc1daa378ad68923e1d_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.44,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 226,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 216,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 17.37,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 4.38,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6afa1fc0daa378ad68923d45",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-18T11:30:00.000Z",
+    "sentAt": "2026-11-18T11:31:11.658Z",
+    "text": "Run, dodge and hide on the frozen arena: who will be the last animal standing against the green pack?\nDid your pick make it to the final duel?\n🏆 Season 1 leader: Fox (2 wins)\n\n#shorts #zoowars #infection #animalbattle",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.210Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-18/ZW-20261118-1.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 11,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 1.11,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 988,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6afa1fbfa869c35e5b9789ca",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-18T11:30:00.000Z",
+    "sentAt": "2026-11-18T11:33:31.000Z",
+    "text": "1 infected… then 2… then 7 😳 Infection chase on the frozen arena. Did you guess the winner? 🏆 Season 1 leader: Fox (2 wins) #zoowars #infection #animalbattle #whowouldwin #satisfying",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.928Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6afa1fbfa869c35e5b9789ca_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.41,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 246,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 230,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 26.07,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 6.09,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6afa1529ff465c57daadbae2",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-17T15:00:00.000Z",
+    "sentAt": "2026-11-17T15:04:56.501Z",
+    "text": "A Zoo Wars territory battle: grab tiles, survive the cuts, own the map.\nDid your pick survive the cuts?\n\n#shorts #zoowars #territorywar #animalbattle",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.210Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-17/ZW-20261117-3.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 4,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.86,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 465,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6afa1528cc27d16d7fbaaa7c",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-17T18:00:00.000Z",
+    "sentAt": "2026-11-17T18:04:38.008Z",
+    "text": "Pick your animal at the start and see if it survives the hot potato battle between the jungle trees.\nNew Zoo Wars battle every day.\n🏆 Season 1 leader: Fox (2 wins)\n\n#shorts #zoowars #whowouldwin #simulation",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.210Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-17/ZW-20261117-2.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 11,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 1.14,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 1055,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6afa1528a869c35e5b942f99",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-17T15:00:00.000Z",
+    "sentAt": "2026-11-17T15:08:43.371Z",
+    "text": "Who will own the map? 🎨 Who did you pick? 👇 #zoowars #territorywar #animalbattle #whowouldwin #simulation",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.928Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6afa1528a869c35e5b942f99_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 218,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 218,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 27.63,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 7.18,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6afa152706e1675856a2e4cc",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-17T18:00:00.000Z",
+    "sentAt": "2026-11-17T18:06:56.405Z",
+    "text": "Last one standing wins 🏆 Hot potato battle between the jungle trees. Who deserved to win? 🏆 Season 1 leader: Fox (2 wins) #zoowars #whowouldwin #simulation #satisfying #animalbattle",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.928Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6afa152706e1675856a2e4cc_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 236,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 222,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 16.68,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 4,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6afa1525a869c35e5b942ece",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-17T11:30:00.000Z",
+    "sentAt": "2026-11-17T11:31:17.941Z",
+    "text": "Eight animals dance around the cushions on a floating volcano. When the music stops, the one left standing is out.\nWho did you pick? Tell us in the comments!\n🏆 Season 1: Fox & Bear tied at the top (1 wins)\n\n#shorts #zoowars #musicalchairs #whowouldwin",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.210Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-17/ZW-20261117-1.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 14,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 1.22,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 1148,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6afa15248e87c256a38c630c",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-17T11:30:00.000Z",
+    "sentAt": "2026-11-17T11:32:25.369Z",
+    "text": "8 animals, 7 cushions 🪑 Musical chairs on a floating volcano. Which animal should get a rematch? 🏆 Season 1: Fox & Bear tied at the top (1 wins) #zoowars #musicalchairs #whowouldwin #satisfying #animalbattle",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.928Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6afa15248e87c256a38c630c_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 3,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 1.13,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 266,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 232,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 23.32,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 5.16,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af780e881e1228421c5e1ac",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-16T15:00:00.000Z",
+    "sentAt": "2026-11-16T15:04:09.193Z",
+    "text": "A Zoo Wars color battle: every hit steals a tile, only one color survives.\nDid your pick survive the cuts?\n\n#shorts #zoowars #colorwar #animalbattle",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.210Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-16/ZW-20261116-3.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 5,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.55,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 903,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af780e84b28296eb117cd43",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-16T15:00:00.000Z",
+    "sentAt": "2026-11-16T15:06:11.349Z",
+    "text": "Every hit steals a tile 🟥 Who was the sneakiest player? #zoowars #colorwar #animalbattle #whowouldwin #satisfying",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.928Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6af780e84b28296eb117cd43_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.39,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 258,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 240,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 25.67,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 5.81,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af780e778196a0a9720a706",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-16T18:00:00.000Z",
+    "sentAt": "2026-11-16T18:05:16.322Z",
+    "text": "A new Zoo Wars hot potato battle on slippery ice: tag, dodge and survive until only one animal is left.\nComment your animal for the next battle!\n🏆 Season 1 leader: Bear (1 win)\n\n#shorts #zoowars #hotpotato #satisfying",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.210Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-16/ZW-20261116-2.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 5,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.63,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 798,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af780e69257ce339810ec50",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-16T18:00:00.000Z",
+    "sentAt": "2026-11-16T18:07:34.760Z",
+    "text": "Who will be the last animal standing? 🐾 Hot potato battle on slippery ice. Did your animal survive? 👇 🏆 Season 1 leader: Bear (1 win) #zoowars #hotpotato #satisfying #simulation #animalbattle",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.928Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6af780e69257ce339810ec50_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.4,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 249,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 241,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 14.08,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 3.23,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af780e5bb36d00909cc6347",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-16T11:30:00.000Z",
+    "sentAt": "2026-11-16T11:30:39.120Z",
+    "text": "Zoo Wars simulation on the jungle stage: the bomb carrier has to catch someone before it explodes.\nDid your pick make it to the final duel?\n\n#shorts #zoowars #simulation #hotpotato",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.210Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-16/ZW-20261116-1.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 7,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.76,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 916,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af780e49257ce339810ebd7",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-16T11:30:00.000Z",
+    "sentAt": "2026-11-16T11:32:46.167Z",
+    "text": "Pass it or blow up 💣 Hot potato battle on the jungle stage. Call your winner in the comments 👇 #zoowars #simulation #hotpotato #animalbattle #whowouldwin",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.928Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6af780e49257ce339810ebd7_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 2,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.75,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 268,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 239,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 16.73,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 3.72,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af7750a78196a0a971c4116",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-15T15:00:00.000Z",
+    "sentAt": "2026-11-15T15:02:22.896Z",
+    "text": "The bomb keeps changing hands until only one animal is left standing.\nNew Zoo Wars battle every day.\n\n#shorts #zoowars #hotpotato #animalbattle",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.210Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-15/ZW-20261115-3.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 6,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.57,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 1061,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af77509bb36d00909c82ced",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-15T15:00:00.000Z",
+    "sentAt": "2026-11-15T15:06:13.168Z",
+    "text": "Tag, run, explode 💥 Who deserved to win? #zoowars #hotpotato #animalbattle #whowouldwin #simulation",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.928Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6af77509bb36d00909c82ced_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 0,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af7750881e1228421c17063",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-15T18:00:00.000Z",
+    "sentAt": "2026-11-15T18:02:07.408Z",
+    "text": "The bomb drops, the chase begins in outer space. Seven explosions, one survivor.\nWho did you pick? Tell us in the comments!\n\n#shorts #zoowars #hotpotato #animalbattle",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.210Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-15/ZW-20261115-2.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.39,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 255,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af7750778196a0a971c4093",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-15T18:00:00.000Z",
+    "sentAt": "2026-11-15T18:04:44.147Z",
+    "text": "Hot potato, but the potato explodes 💥 Hot potato battle in outer space. Rate this final from 1 to 10 👇 #zoowars #hotpotato #animalbattle #whowouldwin #simulation",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.928Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6af7750778196a0a971c4093_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 2,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 0.03,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 1.34,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af775069257ce33980c97f3",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-15T11:30:00.000Z",
+    "sentAt": "2026-11-15T11:30:34.202Z",
+    "text": "The bomb drops, the chase begins on a floating volcano. Seven explosions, one survivor.\nDid your pick make it to the final duel?\n\n#shorts #zoowars #hotpotato #simulation",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.210Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-15/ZW-20261115-1.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 10,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 1.02,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 1077,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af7750578196a0a971c4036",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-15T11:30:00.000Z",
+    "sentAt": "2026-11-15T11:32:20.033Z",
+    "text": "This bomb changed hands way too fast 😳 Hot potato battle on a floating volcano. Did you guess the winner? #zoowars #hotpotato #simulation #whowouldwin #satisfying",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.928Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6af7750578196a0a971c4036_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 0,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af62bc4f8f0d4b8329f320b",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-14T15:00:00.000Z",
+    "sentAt": "2026-11-14T15:02:21.366Z",
+    "text": "A Zoo Wars territory battle: grab tiles, survive the cuts, own the map.\nComment your animal for the next battle!\n\n#shorts #zoowars #territorywar #animalbattle",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.210Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-14/ZW-20261114-3.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 5,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.47,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 1067,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af62bc4446d978be7e9a25d",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-14T15:00:00.000Z",
+    "sentAt": "2026-11-14T15:05:21.303Z",
+    "text": "Watch the map change hands 👀 Which animal are you rooting for next time? #zoowars #territorywar #animalbattle #whowouldwin #simulation",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.929Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6af62bc4446d978be7e9a25d_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 0,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af62b30a01fb6efee4b91a6",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-13T15:00:00.000Z",
+    "sentAt": "2026-11-13T15:06:00.783Z",
+    "text": "Bounce, steal, survive 🔵 Call your winner in the comments 👇 #zoowars #colorwar #simulation #animalbattle #whowouldwin",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.929Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6af62b30a01fb6efee4b91a6_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 0,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af62b307d05892ccea929cd",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-13T15:00:00.000Z",
+    "sentAt": "2026-11-13T15:02:32.088Z",
+    "text": "A Zoo Wars color battle: every hit steals a tile, only one color survives.\nDid your pick survive the cuts?\n\n#shorts #zoowars #colorwar #simulation",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.210Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-13/ZW-20261113-3.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 12,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 1.09,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 1103,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af6264c7d05892ccea7697b",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-13T18:00:00.000Z",
+    "sentAt": "2026-11-13T18:02:29.588Z",
+    "text": "The bomb drops, the chase begins with lava bubbling below. Seven explosions, one survivor.\nNew Zoo Wars battle every day.\n\n#shorts #zoowars #satisfying #whowouldwin",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.210Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-13/ZW-20261113-2.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 6,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 2,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.73,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 1089,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af6264b48a8bf93e4242acc",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-13T18:00:00.000Z",
+    "sentAt": "2026-11-13T18:03:34.948Z",
+    "text": "This final was way too close 😤 Hot potato battle with lava bubbling below. Did your animal survive? 👇 #zoowars #satisfying #whowouldwin #animalbattle #hotpotato",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.929Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6af6264b48a8bf93e4242acc_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 0,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af624848a13f5efaafa494f",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-13T11:30:00.000Z",
+    "sentAt": "2026-11-13T11:30:37.238Z",
+    "text": "Zoo Wars simulation between the jungle trees: the bomb carrier has to catch someone before it explodes.\nWho did you pick? Tell us in the comments!\n\n#shorts #zoowars #hotpotato #animalbattle",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.210Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-13/ZW-20261113-1.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 13,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.98,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 1323,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af6248348a8bf93e423c5bf",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-13T11:30:00.000Z",
+    "sentAt": "2026-11-13T11:32:27.740Z",
+    "text": "Nobody wants to hold the bomb 😅 Hot potato battle between the jungle trees. Which animal should get a rematch? #zoowars #hotpotato #animalbattle #whowouldwin #simulation",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.929Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6af6248348a8bf93e423c5bf_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 4,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 2,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 1.02,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 10.17,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af61fbd8a13f5efaaf8c682",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-14T18:00:00.000Z",
+    "sentAt": "2026-11-14T18:02:09.103Z",
+    "text": "The bomb drops, the chase begins on the frozen arena. Seven explosions, one survivor.\nComment your animal for the next battle!\n\n#shorts #zoowars #hotpotato #satisfying",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.210Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-14/ZW-20261114-2.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 10,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.95,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 1160,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af61fa77d05892ccea5646f",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-14T18:00:00.000Z",
+    "sentAt": "2026-11-14T18:04:37.511Z",
+    "text": "Don't blink at the end 👀 Hot potato battle on the frozen arena. Comment your animal before the end 👀 #zoowars #hotpotato #satisfying #simulation #animalbattle",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.928Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6af61fa77d05892ccea5646f_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 0,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af61f8c76b8df0929bcae25",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-14T11:30:00.000Z",
+    "sentAt": "2026-11-14T11:30:27.729Z",
+    "text": "Who can dodge the bomb the longest? Animal hot potato battle on a space platform.\nDid your pick make it to the final duel?\n\n#shorts #zoowars #whowouldwin #animalbattle",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.210Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-14/ZW-20261114-1.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 8,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.72,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 1112,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af61f5bad1ba188ea6c7a0a",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-14T11:30:00.000Z",
+    "sentAt": "2026-11-14T11:32:41.532Z",
+    "text": "Chaos in the arena 🌀 Hot potato battle on a space platform. Call your winner in the comments 👇 #zoowars #whowouldwin #animalbattle #satisfying #simulation",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.929Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://buffer-updates-media-backfill-bucket.s3.amazonaws.com/6af60d1f91eb89558077e389/6af60dc162b70b94b00d05a1/6af61f5bad1ba188ea6c7a0a_video.mp4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 0,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af614512c68c5f2f8417ec8",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-12T19:30:27.000Z",
+    "sentAt": "2026-11-12T19:30:27.000Z",
+    "text": "Pass it or BOOM 💣 Pick your animal before the end!\n\n#zoowars #hotpotato #animalbattle #whowouldwin #simulation #satisfying",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.210Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://www.youtube.com/shorts/T2bhdEivaxY"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 8,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.6,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 1344,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af611d816fe4fcc9041befb",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-12T11:00:37.000Z",
+    "sentAt": "2026-11-12T11:00:37.000Z",
+    "text": "Which color takes over the board? 🟥🟦🟩 Comment before the end!\n\n#zoowars #colorwar #animalbattle #simulation #satisfying #whowouldwin",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.211Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://www.youtube.com/shorts/mXThG923_hI"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 9,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 2.18,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 413,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af611d816fe4fcc9041bef9",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-12T17:00:20.000Z",
+    "sentAt": "2026-11-12T17:00:20.000Z",
+    "text": "Only the biggest survives 🍖 Who's your pick?\n\n#zoowars #bigeatssmall #animalbattle #simulation #whowouldwin #satisfying",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.210Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://www.youtube.com/shorts/aIRrFHbbY2A"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 2,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.85,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 236,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af611d816fe4fcc9041bef7",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-10T12:00:10.000Z",
+    "sentAt": "2026-11-10T12:00:10.000Z",
+    "text": "Don't get caught holding the bomb 💣 Who survives the last explosion? Pick your animal before the end 👇\n\n#zoowars #hotpotato #animalbattle #whowouldwin #simulation #satisfying",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.211Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://www.youtube.com/shorts/6ozNKOTW3x8"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 4,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.39,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 1020,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af611d816fe4fcc9041bef5",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-10T18:00:15.000Z",
+    "sentAt": "2026-11-10T18:00:15.000Z",
+    "text": "Who will own the map? 🎨 Last place is out every 12 seconds… pick your animal before the end 👇\n\n#zoowars #animalbattle #whowouldwin #simulation #satisfying #territorywar",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.211Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://www.youtube.com/shorts/4DIjO4MvQw4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 6.67,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 15,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af611d816fe4fcc9041bef3",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-10T00:53:43.000Z",
+    "sentAt": "2026-11-10T00:53:43.000Z",
+    "text": "Who will own the map? 🎨 Last place is out every 12 seconds. Pick your animal 👇\n\n#zoowars #territorywar #animalbattle #simulation #satisfying #whowouldwin",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.211Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://www.youtube.com/shorts/5tp7RMznBZo"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 8,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.91,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 880,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af611d816fe4fcc9041bef1",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-12T14:00:34.000Z",
+    "sentAt": "2026-11-12T14:00:34.000Z",
+    "text": "6 animals, 1 map, only 1 survivor 🎨 Who's your pick?#zoowars #territorywar #animalbattle #simulation #satisfying #whowouldwin",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.210Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://www.youtube.com/shorts/ctGFSDyLCHY"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 5,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.97,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 513,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af611d816fe4fcc9041beef",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-11T18:00:17.000Z",
+    "sentAt": "2026-11-11T18:00:17.000Z",
+    "text": "Bigger eats smaller 😱 Eat, grow… or get eaten. Pick your animal 👇\n\n#zoowars #bigeatssmall #animalbattle #simulation #whowouldwin #satisfying",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.211Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://www.youtube.com/shorts/Edf6v6j4R4Y"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 5,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 2.09,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 239,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af611d816fe4fcc9041beed",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-11T16:00:13.000Z",
+    "sentAt": "2026-11-11T16:00:13.000Z",
+    "text": "Don't get caught holding the bomb 💣 Who survives the last explosion? 👇\n\n#zoowars #hotpotato #animalbattle #whowouldwin #simulation #satisfying",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.211Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://www.youtube.com/shorts/miVzCUFYuPw"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 10,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.88,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 1244,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af611d816fe4fcc9041beeb",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-10T16:00:36.000Z",
+    "sentAt": "2026-11-10T16:00:36.000Z",
+    "text": "Every hit steals a tile 🟥 Only one color survives. Who's your champion? 👇\n\n#zoowars #colorwar #animalbattle #simulation #satisfying #whowouldwin",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.211Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://www.youtube.com/shorts/rR2E9jtHel0"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 3.57,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 28,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af611d816fe4fcc9041bee9",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-10T14:00:06.000Z",
+    "sentAt": "2026-11-10T14:00:06.000Z",
+    "text": "Bigger eats smaller 😱 Eat, grow… or get eaten. Comment your pick in the first 5 seconds 👇\n\n#zoowars #bigeatssmall #animalbattle #simulation #whowouldwin #satisfying",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.211Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://www.youtube.com/shorts/X1Vmb4MJem4"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0.37,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 270,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af611d816fe4fcc9041bee7",
+    "status": "sent",
+    "channelId": "6af611d662b70b94b00d5648",
+    "channelService": "youtube",
+    "dueAt": "2026-11-11T12:00:35.000Z",
+    "sentAt": "2026-11-11T12:00:35.000Z",
+    "text": "Every hit steals a tile 🟥 Only one color survives. Pick yours 👇\n\n#zoowars #colorwar #animalbattle #simulation #satisfying #whowouldwin",
+    "metricsUpdatedAt": "2026-11-24T18:39:08.211Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://www.youtube.com/shorts/ZR2INiu080o"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on YouTube. This shows how many people reacted to your post.",
+      "value": 8,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 1.18,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 679,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af60dc2b82e39b08e37ecb0",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-11T11:00:00.000Z",
+    "sentAt": "2026-11-11T11:00:00.000Z",
+    "text": "Who will own the map? 🎨 Last place is out every 12 seconds. Pick your animal 👇 #zoowars #territorywar #animalbattle #simulation #satisfying #whowouldwin",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.929Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://www.tiktok.com/@zoowarsdaily/video/7706344808222117142?utm_campaign=tt4d_open_api&utm_source=7103819247981182978"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 0,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af60dc2b82e39b08e37ecae",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-11T15:00:00.000Z",
+    "sentAt": "2026-11-11T15:00:00.000Z",
+    "text": "Every hit steals a tile 🟥 Only one color survives. Pick yours 👇 #zoowars #colorwar #animalbattle #simulation #satisfying #whowouldwin",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.929Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://www.tiktok.com/@zoowarsdaily/video/7706345145817419030?utm_campaign=tt4d_open_api&utm_source=7103819247981182978"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 0,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af60dc2b82e39b08e37ecac",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-12T11:00:00.000Z",
+    "sentAt": "2026-11-12T11:00:00.000Z",
+    "text": "6 animals, 1 map, only 1 survivor 🎨 Who's your pick? #zoowars #territorywar #animalbattle #simulation #satisfying #whowouldwin",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.929Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://www.tiktok.com/@zoowarsdaily/video/7706345867439131926?utm_campaign=tt4d_open_api&utm_source=7103819247981182978"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 0,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af60dc2b82e39b08e37ecaa",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-12T18:00:00.000Z",
+    "sentAt": "2026-11-12T18:00:00.000Z",
+    "text": "Only the biggest survives 🍖 Who's your pick? #zoowars #bigeatssmall #animalbattle #simulation #whowouldwin #satisfying",
+    "metricsUpdatedAt": "2026-11-12T19:04:34.846Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://www.tiktok.com/@zoowarsdaily/video/7706346416414756118?utm_campaign=tt4d_open_api&utm_source=7103819247981182978"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 0,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af60dc2b82e39b08e37eca8",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-10T20:00:00.000Z",
+    "sentAt": "2026-11-10T20:00:00.000Z",
+    "text": "Bigger eats smaller 😱 Eat, grow… or get eaten. Comment your pick in the first 5 seconds 👇 #zoowars #bigeatssmall #animalbattle #simulation #whowouldwin #satisfying",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.929Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://www.tiktok.com/@zoowarsdaily/video/7706344428243373334?utm_campaign=tt4d_open_api&utm_source=7103819247981182978"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 0,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af60dc2b82e39b08e37eca6",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-10T11:00:00.000Z",
+    "sentAt": "2026-11-10T11:00:00.000Z",
+    "text": "Who will own the map? 🎨 Last place is out every 12 seconds… pick your animal before the end 👇 #zoowars #animalbattle #whowouldwin #simulation #satisfying #territorywar",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.929Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://www.tiktok.com/@zoowarsdaily/video/7706343762405887254?utm_campaign=tt4d_open_api&utm_source=7103819247981182978"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 3,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 0.33,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 6.67,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af60dc2b82e39b08e37eca4",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-11T18:00:00.000Z",
+    "sentAt": "2026-11-11T18:00:00.000Z",
+    "text": "Bigger eats smaller 😱 Eat, grow… or get eaten. Pick your animal 👇 #zoowars #bigeatssmall #animalbattle #simulation #whowouldwin #satisfying",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.929Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://www.tiktok.com/@zoowarsdaily/video/7706345383655574807?utm_campaign=tt4d_open_api&utm_source=7103819247981182978"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 0,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af60dc2b82e39b08e37eca2",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-10T17:00:00.000Z",
+    "sentAt": "2026-11-10T17:00:00.000Z",
+    "text": "Don't get caught holding the bomb 💣 Who survives the last explosion? Pick your animal before the end 👇 #zoowars #hotpotato #animalbattle #whowouldwin #simulation #satisfying",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.929Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://www.tiktok.com/@zoowarsdaily/video/7706344144372813078?utm_campaign=tt4d_open_api&utm_source=7103819247981182978"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 0.4,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 24,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af60dc2b82e39b08e37eca0",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-10T14:30:00.000Z",
+    "sentAt": "2026-11-10T14:30:00.000Z",
+    "text": "Every hit steals a tile 🟥 Only one color survives. Who's your champion? 👇 #zoowars #colorwar #animalbattle #simulation #satisfying #whowouldwin",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.929Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://www.tiktok.com/@zoowarsdaily/video/7706343981633768726?utm_campaign=tt4d_open_api&utm_source=7103819247981182978"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 0.02,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 1,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af60dc2b82e39b08e37ec9e",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-11T20:30:00.000Z",
+    "sentAt": "2026-11-11T20:30:00.000Z",
+    "text": "Don't get caught holding the bomb 💣 Who survives the last explosion? 👇 #zoowars #hotpotato #animalbattle #whowouldwin #simulation #satisfying",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.929Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://www.tiktok.com/@zoowarsdaily/video/7706345592837999894?utm_campaign=tt4d_open_api&utm_source=7103819247981182978"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 0,
+      "unit": "count"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6af60dc2b82e39b08e37ec9c",
+    "status": "sent",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "channelService": "tiktok",
+    "dueAt": "2026-11-12T15:00:00.000Z",
+    "sentAt": "2026-11-12T15:00:00.000Z",
+    "text": "Which color takes over the board? 🟥🟦🟩 Comment before the end! #zoowars #colorwar #animalbattle #simulation #satisfying #whowouldwin",
+    "metricsUpdatedAt": "2026-11-24T07:16:29.929Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://www.tiktok.com/@zoowarsdaily/video/7706346099665161494?utm_campaign=tt4d_open_api&utm_source=7103819247981182978"
+     }
+    ],
+    "metrics": [
+     {
+      "type": "reactions",
+      "name": "Reactions",
+      "description": "Also called Likes on TikTok. This shows how many people reacted to your post.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "comments",
+      "name": "Comments",
+      "description": "The number of comments your post received. Shows when your post is starting conversations, not just getting seen.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "engagementRate",
+      "name": "Eng. Rate",
+      "description": "The percentage of people who interacted with your post compared to how many saw it. Balances views and actions to show how compelling your posts are.",
+      "value": 0,
+      "unit": "percentage"
+     },
+     {
+      "type": "views",
+      "name": "Video Views",
+      "description": "How many times your video was watched. Helps you understand how much attention your video content gets.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "shares",
+      "name": "Shares",
+      "description": "How many times your post was shared by others. A sign your content is reaching beyond your immediate audience.",
+      "value": 0,
+      "unit": "count"
+     },
+     {
+      "type": "reach",
+      "name": "Reach",
+      "description": "How many unique people saw your post. Unlike impressions, each person is only counted once. Gives you a sense of how far your content spread.",
+      "value": 1,
+      "unit": "count"
+     },
+     {
+      "type": "totalTimeWatched",
+      "name": "Watch Time (min)",
+      "description": "The total time people spent watching your video, added up over every view.",
+      "value": 0.02,
+      "unit": "count"
+     },
+     {
+      "type": "averageTimeWatched",
+      "name": "Avg. Watch Time (sec)",
+      "description": "How long people watched your video for on average. Shows how well the video holds attention.",
+      "value": 0.5,
+      "unit": "count"
+     }
+    ]
+   }
+  }
+ ],
+ "pageInfo": {
+  "hasNextPage": false
+ }
+}
