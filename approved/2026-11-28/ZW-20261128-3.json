@@ -1,0 +1,38 @@
+{
+  "id": "ZW-20261128-3",
+  "game": "Color War",
+  "publishDate": "2026-11-28",
+  "slot": 3,
+  "time": "16:00",
+  "timezone": "Europe/Paris",
+  "seed": 785224765,
+  "winner": "Wolf",
+  "highlights": {
+    "eliminations": 5,
+    "finalMargin": null,
+    "videoSeconds": 66.9,
+    "score": 15,
+    "gamesPreviewed": 6
+  },
+  "file": {
+    "name": "ZW-20261128-3.mp4",
+    "at": "2026-11-25T21:07:14+01:00",
+    "ok": true,
+    "problems": [],
+    "duration": 66.87,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "sizeMB": 19.99,
+    "sha256": "dd669442306892c9cb786ffe9dde2f3de644d75a919a61c4c4c2684bfccad628",
+    "luminance": [
+      95.7,
+      89,
+      86,
+      88.1,
+      27.1
+    ]
+  }
+}

@@ -1,43 +1,5 @@
-2026-11-24T20:47:08+01:00 [producer] planned ZW-20261127-1 {"slot":"12:30","game":"musical-chairs-3d","theme":"jungle","winner":"random draw"}
-2026-11-24T20:47:08+01:00 [producer] planned ZW-20261127-2 {"slot":"19:00","game":"hot-potato-3d","theme":"space","winner":"random draw"}
-2026-11-24T20:47:08+01:00 [producer] planned ZW-20261127-3 {"slot":"16:00","game":"hot"}
-2026-11-24T20:47:20+01:00 [producer] ZW-20261127-1: 600 games simulated in 7s, 77 valid with the planned winner
-2026-11-24T20:47:20+01:00 [producer] ZW-20261127-1: best seed 3916558761 score 32.75 {"tags":9,"dur":61.5}
-2026-11-24T20:47:20+01:00 [producer] ZW-20261127-1: render starts (seed 3916558761, jungle)
-2026-11-24T20:47:25+01:00 [producer] ZW-20261127-1 | seed 3916558761 frames 1845
-2026-11-24T20:49:43+01:00 [producer] ZW-20261127-1 | part 1 frame 300 / 922
-2026-11-24T20:49:58+01:00 [producer] ZW-20261127-1 | part 0 frame 300 / 923
-2026-11-24T20:51:59+01:00 [producer] ZW-20261127-1 | part 1 frame 600 / 922
-2026-11-24T20:52:39+01:00 [producer] ZW-20261127-1 | part 0 frame 600 / 923
-2026-11-24T20:54:03+01:00 [producer] ZW-20261127-1 | part 1 frame 900 / 922
-2026-11-24T20:54:52+01:00 [producer] ZW-20261127-1 | part 0 frame 900 / 923
-2026-11-24T20:55:05+01:00 [producer] ZW-20261127-1 | DONE /home/claude/oowars-pipeline/production/2026-11-27/ZW-20261127-1.mp4 in 465 s {"seed":3916558761,"theme":"jungle","vt":61.49999999999779,"phase":"win","tags":9,"winner":"tiger","order":["panda","bull","wolf","gorilla","lion","bear","fox"],"kinds":[0,1,1,1,2,1,0]}
-2026-11-24T20:55:05+01:00 [producer] ZW-20261127-1: rendered in 8 min
-2026-11-24T20:55:20+01:00 [producer] ZW-20261127-1: VALIDATED (61.5s, 79.69 MB)
-2026-11-24T20:56:12+01:00 [producer] ZW-20261127-2: 600 games simulated in 50s, 76 valid with the planned winner
-2026-11-24T20:56:12+01:00 [producer] ZW-20261127-2: best seed 1020552255 score 67.42 {"tags":21,"clutch":8,"final":4,"dur":64.15}
-2026-11-24T20:56:12+01:00 [producer] ZW-20261127-2: render starts (seed 1020552255, space)
-2026-11-24T20:56:17+01:00 [producer] ZW-20261127-2 | seed 1020552255 frames 1925
-2026-11-24T20:59:08+01:00 [producer] ZW-20261127-2 | part 1 frame 300 / 962
-2026-11-24T20:59:28+01:00 [producer] ZW-20261127-2 | part 0 frame 300 / 963
-2026-11-24T21:01:28+01:00 [producer] ZW-20261127-2 | part 1 frame 600 / 962
-2026-11-24T21:02:34+01:00 [producer] ZW-20261127-2 | part 0 frame 600 / 963
-2026-11-24T21:04:11+01:00 [producer] ZW-20261127-2 | part 1 frame 900 / 962
-2026-11-24T21:05:34+01:00 [producer] ZW-20261127-2 | part 0 frame 900 / 963
-2026-11-24T21:06:10+01:00 [producer] ZW-20261127-2 | DONE /home/claude/oowars-pipeline/production/2026-11-27/ZW-20261127-2.mp4 in 598 s {"seed":1020552255,"theme":"space","vt":64.16666666666431,"phase":"win","tags":21,"winner":"wolf","order":["bear","lion","gorilla","bull","panda","fox","tiger"],"kinds":[2,2,2,2,2,1,2]}
-2026-11-24T21:06:10+01:00 [producer] ZW-20261127-2: rendered in 10 min
-2026-11-24T21:06:26+01:00 [producer] ZW-20261127-2: VALIDATED (64.17s, 90.29 MB)
-2026-11-24T21:07:46+01:00 [producer] ZW-20261127-3: 6 hot games previewed in 80s
-2026-11-24T21:07:46+01:00 [producer] ZW-20261127-3: best seed 4223783285 score 15
-2026-11-24T21:07:46+01:00 [producer] ZW-20261127-3: render starts (seed 4223783285, hot)
-2026-11-24T21:07:59+01:00 [producer] ZW-20261127-3 | frame 300
-2026-11-24T21:08:10+01:00 [producer] ZW-20261127-3 | frame 600
-2026-11-24T21:08:22+01:00 [producer] ZW-20261127-3 | frame 900
-2026-11-24T21:08:35+01:00 [producer] ZW-20261127-3 | frame 1200
-2026-11-24T21:08:46+01:00 [producer] ZW-20261127-3 | frame 1500
-2026-11-24T21:08:57+01:00 [producer] ZW-20261127-3 | frame 1800
-2026-11-24T21:09:12+01:00 [producer] ZW-20261127-3 | DONE /home/claude/oowars-pipeline/production/2026-11-27/ZW-20261127-3.mp4 in 86 s {"game":"hot","seed":4223783285,"frames":1886,"seconds":62.86666666666667,"winner":"Bear","out":5,"gameT":56.04444444444746,"finalMargin":null}
-2026-11-24T21:09:12+01:00 [producer] ZW-20261127-3: rendered in 1 min
-2026-11-24T21:09:19+01:00 [producer] ZW-20261127-3: VALIDATED (62.87s, 15.96 MB)
-2026-11-24T21:09:19+01:00 [producer] run 2026-11-27 finished: ZW-20261127-1=validated ZW-20261127-2=validated ZW-20261127-3=validated
-PRODUCER_RESULT ZW-20261127-1=validated ZW-20261127-2=validated ZW-20261127-3=validated
+2026-11-25T20:47:23+01:00 [producer] ZW-20261127-1 already scheduled
+2026-11-25T20:47:23+01:00 [producer] ZW-20261127-2 already scheduled
+2026-11-25T20:47:23+01:00 [producer] ZW-20261127-3 already uploaded
+2026-11-25T20:47:23+01:00 [producer] run 2026-11-27 finished: ZW-20261127-1=scheduled ZW-20261127-2=scheduled ZW-20261127-3=uploaded
+PRODUCER_RESULT ZW-20261127-1=scheduled ZW-20261127-2=scheduled ZW-20261127-3=uploaded

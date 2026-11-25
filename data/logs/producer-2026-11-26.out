@@ -1,0 +1,5 @@
+2026-11-25T20:47:23+01:00 [producer] ZW-20261126-1 already scheduled
+2026-11-25T20:47:23+01:00 [producer] ZW-20261126-2 already scheduled
+2026-11-25T20:47:23+01:00 [producer] ZW-20261126-3 already uploaded
+2026-11-25T20:47:23+01:00 [producer] run 2026-11-26 finished: ZW-20261126-1=scheduled ZW-20261126-2=scheduled ZW-20261126-3=uploaded
+PRODUCER_RESULT ZW-20261126-1=scheduled ZW-20261126-2=scheduled ZW-20261126-3=uploaded
