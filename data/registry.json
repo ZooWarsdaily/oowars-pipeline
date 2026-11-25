@@ -7208,7 +7208,8 @@
           "experiment": "T2-youtube-titres-emoji"
         },
         "at": "2026-11-22T22:06:07+01:00"
-      }
+      },
+      "mediaPruned": "2026-11-25T21:14:13+01:00"
     },
     "ZW-20261125-3": {
       "id": "ZW-20261125-3",
@@ -9102,5 +9103,5 @@
     "yte|Did your pick survive the cuts?",
     "emt|Color War: every hit steals a tile 🟥"
   ],
-  "updatedAt": "2026-11-25T21:13:32+01:00"
+  "updatedAt": "2026-11-25T21:14:13+01:00"
 }
