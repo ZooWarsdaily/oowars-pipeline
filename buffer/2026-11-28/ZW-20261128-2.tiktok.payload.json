@@ -1,0 +1,18 @@
+{
+  "channelId": "6af60dc162b70b94b00d05a1",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "dueAt": "2026-11-28T19:00:00+01:00",
+  "text": "The fuse is burning… who gets caught? 🔥\nHot potato battle on slippery ice.\n\nWho was the sneakiest player?\n🏆 Season 1 leader: Panda (5 wins)\n\n#zoowars #simulation #whowouldwin #animalbattle #hotpotato",
+  "assets": [
+    {
+      "video": {
+        "url": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-28/ZW-20261128-2-tt.mp4",
+        "metadata": {
+          "thumbnailOffset": 3000
+        }
+      }
+    }
+  ],
+  "metadata": {}
+}

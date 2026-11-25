@@ -1,0 +1,25 @@
+{
+  "channelId": "6af611d662b70b94b00d5648",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "dueAt": "2026-11-28T12:30:00+01:00",
+  "text": "One animal is infected with lava bubbling below. Every animal it touches turns green and joins the pack. The last clean animal wins.\nDid your pick make it to the final duel?\n🏆 Season 1 leader: Panda (5 wins)\n\n#shorts #zoowars #infection #animalbattle",
+  "assets": [
+    {
+      "video": {
+        "url": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-28/ZW-20261128-1.mp4",
+        "metadata": {}
+      }
+    }
+  ],
+  "metadata": {
+    "youtube": {
+      "type": "short",
+      "title": "Animal Infection – Pick Your Survivor",
+      "categoryId": "24",
+      "madeForKids": false,
+      "privacy": "public",
+      "notifySubscribers": true
+    }
+  }
+}

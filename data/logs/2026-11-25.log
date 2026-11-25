@@ -53,3 +53,26 @@
 2026-11-25T21:07:08+01:00 [producer] ZW-20261128-3: rendered in 1 min
 2026-11-25T21:07:14+01:00 [producer] ZW-20261128-3: VALIDATED (66.87s, 19.99 MB)
 2026-11-25T21:07:14+01:00 [producer] run 2026-11-28 finished: ZW-20261128-1=validated ZW-20261128-2=validated ZW-20261128-3=validated
+2026-11-25T21:08:31+01:00 [tiktokcut] ZW-20261128-1: TikTok cut -1.8s ok []
+2026-11-25T21:08:47+01:00 [orchestrator] ZW-20261128-1: pushed to media branch
+2026-11-25T21:08:52+01:00 [publisher] ZW-20261128-1: uploaded (git blob ok (a1bebd2eb0)) https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-28/ZW-20261128-1.mp4
+2026-11-25T21:08:52+01:00 [publisher] ZW-20261128-1: captions written
+2026-11-25T21:09:05+01:00 [publisher] ZW-20261128-1: tiktok payload ready (live)
+2026-11-25T21:09:23+01:00 [publisher] ZW-20261128-1: tiktok confirmed by Buffer, post 6b07406a37bb564f6766dcf5 (scheduled)
+2026-11-25T21:09:29+01:00 [publisher] ZW-20261128-1: youtube payload ready (live)
+2026-11-25T21:09:48+01:00 [publisher] ZW-20261128-1: youtube confirmed by Buffer, post 6b0740824b0d1382c82c3b2a (scheduled)
+2026-11-25T21:10:46+01:00 [tiktokcut] ZW-20261128-2: TikTok cut -1.8s ok []
+2026-11-25T21:11:03+01:00 [orchestrator] ZW-20261128-2: pushed to media branch
+2026-11-25T21:11:08+01:00 [publisher] ZW-20261128-2: uploaded (git blob ok (ab4d361efa)) https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-28/ZW-20261128-2.mp4
+2026-11-25T21:11:08+01:00 [publisher] ZW-20261128-2: captions written
+2026-11-25T21:11:20+01:00 [publisher] ZW-20261128-2: tiktok payload ready (live)
+2026-11-25T21:11:36+01:00 [publisher] ZW-20261128-2: tiktok confirmed by Buffer, post 6b0740ee37bb564f67671939 (scheduled)
+2026-11-25T21:11:44+01:00 [publisher] ZW-20261128-2: youtube payload ready (live)
+2026-11-25T21:12:00+01:00 [publisher] ZW-20261128-2: youtube confirmed by Buffer, post 6b07410779540b3bd6766165 (scheduled)
+2026-11-25T21:12:29+01:00 [tiktokcut] ZW-20261128-3: TikTok cut -1.8s ok []
+2026-11-25T21:12:41+01:00 [orchestrator] ZW-20261128-3: pushed to media branch
+2026-11-25T21:12:45+01:00 [publisher] ZW-20261128-3: uploaded (git blob ok (bbf761c1dd)) https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-28/ZW-20261128-3.mp4
+2026-11-25T21:12:45+01:00 [publisher] ZW-20261128-3: captions written
+2026-11-25T21:13:00+01:00 [publisher] ZW-20261128-3: tiktok payload ready (live)
+2026-11-25T21:13:19+01:00 [publisher] ZW-20261128-3: tiktok confirmed by Buffer, post 6b0741551dafb30359214e2f (scheduled)
+2026-11-25T21:13:32+01:00 [publisher] ZW-20261128-3: youtube payload ready (live)
