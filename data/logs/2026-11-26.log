@@ -94,3 +94,6 @@
 2026-11-26T21:18:09+01:00 [publisher] ZW-20261129-3: youtube payload ready (live)
 2026-11-26T21:18:09+01:00 [publisher] ZW-20261129-4: youtube payload ready (live)
 2026-11-26T21:18:21+01:00 [orchestrator] ZW-20261129-4 youtube refused (YouTube 2/day limit); ZW-20261129-3 youtube not attempted (same limit)
+2026-11-26T21:18:32+01:00 [monitor] check 2026-11-27: À CORRIGER (5/6) {"issues":1,"actions":1}
+2026-11-26T21:18:36+01:00 [orchestrator] monitor action 'schedule ZW-20261127-3 youtube' not repeated: create_post refused at 20:52 by the YouTube 2/day limit
+2026-11-26T21:18:38+01:00 [orchestrator] media pruned: ZW-20261126-1
