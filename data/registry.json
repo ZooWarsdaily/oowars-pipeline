@@ -6292,7 +6292,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-21T22:13:55+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-25T20:48:33+01:00",
+          "syncedAt": "2026-11-26T20:52:47+01:00",
           "sentAt": "2026-11-24T11:33:10.738Z"
         },
         "youtube": {
@@ -6305,7 +6305,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-21T22:13:55+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-25T20:48:33+01:00",
+          "syncedAt": "2026-11-26T20:52:47+01:00",
           "sentAt": "2026-11-24T11:31:10.269Z"
         }
       },
@@ -6487,7 +6487,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-21T22:13:55+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-25T20:48:33+01:00",
+          "syncedAt": "2026-11-26T20:52:47+01:00",
           "sentAt": "2026-11-24T18:07:34.072Z"
         },
         "youtube": {
@@ -6500,7 +6500,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-21T22:13:55+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-25T20:48:33+01:00",
+          "syncedAt": "2026-11-26T20:52:47+01:00",
           "sentAt": "2026-11-24T18:04:30.686Z"
         }
       },
@@ -6678,7 +6678,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-21T22:13:55+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-25T20:48:33+01:00",
+          "syncedAt": "2026-11-26T20:52:47+01:00",
           "sentAt": "2026-11-24T15:07:55.247Z"
         },
         "youtube": {
@@ -6821,7 +6821,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-22T22:07:39+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-25T20:48:33+01:00",
+          "syncedAt": "2026-11-26T20:52:47+01:00",
           "sentAt": "2026-11-25T11:32:52.426Z"
         },
         "youtube": {
@@ -6834,7 +6834,7 @@
           "bufferStatus": "error",
           "recordedAt": "2026-11-22T22:07:39+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-25T20:48:33+01:00",
+          "syncedAt": "2026-11-26T20:52:47+01:00",
           "problems": [
             "{\"message\":\"The daily posting limit for this channel has been reached! Please try reducing the amount of times per day in your schedule and try again later.\"}"
           ]
@@ -7027,7 +7027,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-22T22:07:39+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-25T20:48:33+01:00",
+          "syncedAt": "2026-11-26T20:52:47+01:00",
           "sentAt": "2026-11-25T18:06:46.954Z"
         },
         "youtube": {
@@ -7040,7 +7040,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-22T22:07:39+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-25T20:48:33+01:00",
+          "syncedAt": "2026-11-26T20:52:47+01:00",
           "sentAt": "2026-11-25T18:05:03.470Z"
         }
       },
@@ -7233,7 +7233,7 @@
           "bufferStatus": "sent",
           "recordedAt": "2026-11-22T22:07:39+01:00",
           "simulated": false,
-          "syncedAt": "2026-11-25T20:48:33+01:00",
+          "syncedAt": "2026-11-26T20:52:47+01:00",
           "sentAt": "2026-11-25T15:06:57.070Z"
         },
         "youtube": {
@@ -7365,7 +7365,7 @@
       "slot": 1,
       "time": "12:30",
       "game": "infection-3d",
-      "status": "scheduled",
+      "status": "published",
       "plan": {
         "winner": "bear",
         "theme": "space",
@@ -7382,26 +7382,30 @@
       },
       "posts": {
         "tiktok": {
-          "status": "scheduled",
+          "status": "published",
           "dueAt": "2026-11-26T11:30:00.000Z",
           "payload": "buffer/2026-11-26/ZW-20261126-1.tiktok.payload.json",
           "mode": "live",
           "at": "2026-11-23T21:17:36+01:00",
           "bufferPostId": "6b049f70a083c79d702f542b",
-          "bufferStatus": "scheduled",
+          "bufferStatus": "sent",
           "recordedAt": "2026-11-23T21:18:05+01:00",
-          "simulated": false
+          "simulated": false,
+          "syncedAt": "2026-11-26T20:52:47+01:00",
+          "sentAt": "2026-11-26T11:33:21.040Z"
         },
         "youtube": {
-          "status": "scheduled",
+          "status": "published",
           "dueAt": "2026-11-26T11:30:00.000Z",
           "payload": "buffer/2026-11-26/ZW-20261126-1.youtube.payload.json",
           "mode": "live",
           "at": "2026-11-23T21:17:36+01:00",
           "bufferPostId": "6b049f74546af97ff754f3b7",
-          "bufferStatus": "scheduled",
+          "bufferStatus": "sent",
           "recordedAt": "2026-11-23T21:18:05+01:00",
-          "simulated": false
+          "simulated": false,
+          "syncedAt": "2026-11-26T20:52:47+01:00",
+          "sentAt": "2026-11-26T11:31:21.217Z"
         }
       },
       "history": [
@@ -7432,6 +7436,12 @@
           "from": "uploaded",
           "to": "scheduled",
           "note": "tiktok 6b049f70a083c79d702f542b / youtube 6b049f74546af97ff754f3b7"
+        },
+        {
+          "at": "2026-11-26T20:52:47+01:00",
+          "from": "scheduled",
+          "to": "published",
+          "note": "both channels sent"
         }
       ],
       "selection": {
@@ -7581,26 +7591,32 @@
       },
       "posts": {
         "tiktok": {
-          "status": "scheduled",
+          "status": "published",
           "dueAt": "2026-11-26T18:00:00.000Z",
           "payload": "buffer/2026-11-26/ZW-20261126-2.tiktok.payload.json",
           "mode": "live",
           "at": "2026-11-23T21:17:36+01:00",
           "bufferPostId": "6b049f71a083c79d702f551d",
-          "bufferStatus": "scheduled",
+          "bufferStatus": "sent",
           "recordedAt": "2026-11-23T21:18:05+01:00",
-          "simulated": false
+          "simulated": false,
+          "syncedAt": "2026-11-26T20:52:47+01:00",
+          "sentAt": "2026-11-26T18:08:08.305Z"
         },
         "youtube": {
-          "status": "scheduled",
+          "status": "error",
           "dueAt": "2026-11-26T18:00:00.000Z",
           "payload": "buffer/2026-11-26/ZW-20261126-2.youtube.payload.json",
           "mode": "live",
           "at": "2026-11-23T21:17:36+01:00",
           "bufferPostId": "6b049f76546af97ff754f404",
-          "bufferStatus": "scheduled",
+          "bufferStatus": "error",
           "recordedAt": "2026-11-23T21:18:05+01:00",
-          "simulated": false
+          "simulated": false,
+          "syncedAt": "2026-11-26T20:52:47+01:00",
+          "problems": [
+            "{\"message\":\"The daily posting limit for this channel has been reached! Please try reducing the amount of times per day in your schedule and try again later.\"}"
+          ]
         }
       },
       "history": [
@@ -7776,15 +7792,17 @@
       },
       "posts": {
         "tiktok": {
-          "status": "scheduled",
+          "status": "published",
           "dueAt": "2026-11-26T15:00:00.000Z",
           "payload": "buffer/2026-11-26/ZW-20261126-3.tiktok.payload.json",
           "mode": "live",
           "at": "2026-11-23T21:17:36+01:00",
           "bufferPostId": "6b049f73d73c10ed4ca5cd80",
-          "bufferStatus": "scheduled",
+          "bufferStatus": "sent",
           "recordedAt": "2026-11-23T21:18:05+01:00",
-          "simulated": false
+          "simulated": false,
+          "syncedAt": "2026-11-26T20:52:47+01:00",
+          "sentAt": "2026-11-26T15:08:27.922Z"
         },
         "youtube": {
           "status": "prepared",
@@ -8342,7 +8360,7 @@
           "dueAt": "2026-11-27T16:00:00+01:00",
           "payload": "buffer/2026-11-27/ZW-20261127-3.youtube.payload.json",
           "mode": "live",
-          "at": "2026-11-24T21:13:04+01:00"
+          "at": "2026-11-26T20:52:10+01:00"
         }
       },
       "history": [
@@ -9009,6 +9027,448 @@
         },
         "at": "2026-11-25T21:12:45+01:00"
       }
+    },
+    "ZW-20261129-1": {
+      "id": "ZW-20261129-1",
+      "date": "2026-11-29",
+      "slot": 1,
+      "time": "12:30",
+      "game": "musical-chairs-3d",
+      "status": "validated",
+      "plan": {
+        "winner": "wolf",
+        "theme": "jungle",
+        "roster": [
+          "lion",
+          "tiger",
+          "bear",
+          "wolf",
+          "gorilla",
+          "fox",
+          "bull",
+          "panda"
+        ]
+      },
+      "posts": {},
+      "history": [
+        {
+          "at": "2026-11-26T20:51:28+01:00",
+          "to": "planned"
+        },
+        {
+          "at": "2026-11-26T20:58:38+01:00",
+          "from": "planned",
+          "to": "produced",
+          "note": "render ok"
+        },
+        {
+          "at": "2026-11-26T20:58:52+01:00",
+          "from": "produced",
+          "to": "validated",
+          "note": "qc ok"
+        }
+      ],
+      "selection": {
+        "seed": 3311450323,
+        "metrics": {
+          "seed": 3311450323,
+          "winner": "wolf",
+          "dur": 60.43,
+          "tags": 10,
+          "roundTags": [
+            4,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "gaps": [],
+          "calmHits": 0,
+          "order": [
+            "lion",
+            "bear",
+            "tiger",
+            "bull",
+            "fox",
+            "gorilla",
+            "panda"
+          ],
+          "score": 33.72
+        },
+        "simulated": 600,
+        "runnersUp": [
+          {
+            "seed": 3093681380,
+            "score": 32.97
+          },
+          {
+            "seed": 2811168090,
+            "score": 32.94
+          },
+          {
+            "seed": 2915931717,
+            "score": 32.41
+          }
+        ]
+      },
+      "render": {
+        "file": "production/2026-11-29/ZW-20261129-1.mp4",
+        "seconds": 418,
+        "info": {
+          "seed": 3311450323,
+          "theme": "jungle",
+          "vt": 60.433333333331184,
+          "phase": "win",
+          "tags": 10,
+          "winner": "wolf",
+          "order": [
+            "lion",
+            "bear",
+            "tiger",
+            "bull",
+            "fox",
+            "gorilla",
+            "panda"
+          ],
+          "kinds": [
+            1,
+            0,
+            0,
+            0,
+            2,
+            2,
+            1
+          ]
+        }
+      },
+      "qc": {
+        "at": "2026-11-26T20:58:51+01:00",
+        "ok": true,
+        "problems": [],
+        "duration": 60.43,
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "videoCodec": "h264",
+        "audioCodec": "aac",
+        "sizeMB": 75.46,
+        "sha256": "72deb21fbb781b578505e9053b9750536b4b6133730fbd58e8cf6ca80b2b96de",
+        "luminance": [
+          136.9,
+          161.2,
+          152.9,
+          119.9,
+          120.3
+        ]
+      },
+      "approvedFile": "approved/2026-11-29/ZW-20261129-1.mp4",
+      "fiche": "approved/2026-11-29/ZW-20261129-1.json"
+    },
+    "ZW-20261129-2": {
+      "id": "ZW-20261129-2",
+      "date": "2026-11-29",
+      "slot": 2,
+      "time": "19:00",
+      "game": "hot-potato-3d",
+      "status": "validated",
+      "plan": {
+        "winner": "tiger",
+        "theme": "ice",
+        "roster": [
+          "lion",
+          "tiger",
+          "bear",
+          "wolf",
+          "gorilla",
+          "fox",
+          "bull",
+          "panda"
+        ]
+      },
+      "posts": {},
+      "history": [
+        {
+          "at": "2026-11-26T20:51:28+01:00",
+          "to": "planned"
+        },
+        {
+          "at": "2026-11-26T21:07:28+01:00",
+          "from": "planned",
+          "to": "produced",
+          "note": "render ok"
+        },
+        {
+          "at": "2026-11-26T21:07:42+01:00",
+          "from": "produced",
+          "to": "validated",
+          "note": "qc ok"
+        }
+      ],
+      "selection": {
+        "seed": 1184558818,
+        "metrics": {
+          "seed": 1184558818,
+          "winner": "tiger",
+          "dur": 62.95,
+          "tags": 19,
+          "minTags": 2,
+          "roundTags": [
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            4
+          ],
+          "clutch": 8,
+          "dodges": 13,
+          "finalTags": 4,
+          "finalDur": 6.5,
+          "order": [
+            "gorilla",
+            "panda",
+            "bull",
+            "bear",
+            "fox",
+            "wolf",
+            "lion"
+          ],
+          "score": 66.03
+        },
+        "simulated": 600,
+        "runnersUp": [
+          {
+            "seed": 2585739961,
+            "score": 65.56
+          },
+          {
+            "seed": 127491694,
+            "score": 65.03
+          },
+          {
+            "seed": 4269434394,
+            "score": 63.74
+          }
+        ]
+      },
+      "render": {
+        "file": "production/2026-11-29/ZW-20261129-2.mp4",
+        "seconds": 464,
+        "info": {
+          "seed": 1184558818,
+          "theme": "ice",
+          "vt": 62.96666666666437,
+          "phase": "win",
+          "tags": 19,
+          "winner": "tiger",
+          "order": [
+            "gorilla",
+            "panda",
+            "bull",
+            "bear",
+            "fox",
+            "wolf",
+            "lion"
+          ],
+          "kinds": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            2,
+            1
+          ]
+        }
+      },
+      "qc": {
+        "at": "2026-11-26T21:07:42+01:00",
+        "ok": true,
+        "problems": [],
+        "duration": 62.97,
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "videoCodec": "h264",
+        "audioCodec": "aac",
+        "sizeMB": 91.08,
+        "sha256": "2f9ca959e1a627becdf2e0610936bd28e6c51d92d919e31ded83183044911a23",
+        "luminance": [
+          154.8,
+          164.9,
+          153.2,
+          147.9,
+          123.7
+        ]
+      },
+      "approvedFile": "approved/2026-11-29/ZW-20261129-2.mp4",
+      "fiche": "approved/2026-11-29/ZW-20261129-2.json"
+    },
+    "ZW-20261129-3": {
+      "id": "ZW-20261129-3",
+      "date": "2026-11-29",
+      "slot": 3,
+      "time": "16:00",
+      "game": "arena2d",
+      "status": "validated",
+      "plan": {
+        "winner": null,
+        "theme": "terr"
+      },
+      "posts": {},
+      "history": [
+        {
+          "at": "2026-11-26T20:51:28+01:00",
+          "to": "planned"
+        },
+        {
+          "at": "2026-11-26T21:10:22+01:00",
+          "from": "planned",
+          "to": "produced",
+          "note": "render ok"
+        },
+        {
+          "at": "2026-11-26T21:10:28+01:00",
+          "from": "produced",
+          "to": "validated",
+          "note": "qc ok"
+        }
+      ],
+      "selection": {
+        "seed": 896975468,
+        "metrics": {
+          "game": "terr",
+          "seed": 896975468,
+          "frames": 2006,
+          "seconds": 66.86666666666666,
+          "winner": "Snake",
+          "out": 5,
+          "gameT": 60.02222222222586,
+          "finalMargin": null,
+          "score": 15
+        },
+        "simulated": 6,
+        "runnersUp": [
+          {
+            "seed": 3534439179,
+            "score": 15
+          },
+          {
+            "seed": 2236659800,
+            "score": 5
+          }
+        ]
+      },
+      "render": {
+        "file": "production/2026-11-29/ZW-20261129-3.mp4",
+        "seconds": 81,
+        "info": {
+          "game": "terr",
+          "seed": 896975468,
+          "frames": 2006,
+          "seconds": 66.86666666666666,
+          "winner": "Snake",
+          "out": 5,
+          "gameT": 60.02222222222586,
+          "finalMargin": null
+        }
+      },
+      "qc": {
+        "at": "2026-11-26T21:10:27+01:00",
+        "ok": true,
+        "problems": [],
+        "duration": 66.87,
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "videoCodec": "h264",
+        "audioCodec": "aac",
+        "sizeMB": 16.77,
+        "sha256": "b2cce9f4fbdddc5ebd67a51ecc5878620ec32df1cdf366486f317f65224d1098",
+        "luminance": [
+          55.1,
+          86.9,
+          100.8,
+          101.2,
+          29.7
+        ]
+      },
+      "approvedFile": "approved/2026-11-29/ZW-20261129-3.mp4",
+      "fiche": "approved/2026-11-29/ZW-20261129-3.json"
+    },
+    "ZW-20261129-4": {
+      "id": "ZW-20261129-4",
+      "date": "2026-11-29",
+      "slot": 4,
+      "time": "18:00",
+      "game": "standings",
+      "status": "validated",
+      "plan": {
+        "winner": null,
+        "theme": "standings"
+      },
+      "posts": {},
+      "history": [
+        {
+          "at": "2026-11-26T20:51:28+01:00",
+          "to": "planned"
+        },
+        {
+          "at": "2026-11-26T21:10:47+01:00",
+          "from": "planned",
+          "to": "produced",
+          "note": "render ok"
+        },
+        {
+          "at": "2026-11-26T21:10:49+01:00",
+          "from": "produced",
+          "to": "validated",
+          "note": "qc ok"
+        }
+      ],
+      "selection": {
+        "seed": 0,
+        "metrics": {},
+        "simulated": 0
+      },
+      "render": {
+        "file": "production/2026-11-29/ZW-20261129-4.mp4",
+        "seconds": 20,
+        "info": {
+          "game": "standings",
+          "theme": "standings",
+          "season": 1,
+          "week": "2026-11-23",
+          "leader": "panda",
+          "games": 25,
+          "weekGames": 12
+        }
+      },
+      "qc": {
+        "at": "2026-11-26T21:10:49+01:00",
+        "ok": true,
+        "problems": [],
+        "duration": 18,
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "videoCodec": "h264",
+        "audioCodec": "aac",
+        "sizeMB": 3.02,
+        "sha256": "b4bcd6280f0f584bb28eb1c0929339914d5511f5274180ca3022c83e2840be2e",
+        "luminance": [
+          52,
+          43.7,
+          null,
+          null,
+          43.7
+        ]
+      },
+      "approvedFile": "approved/2026-11-29/ZW-20261129-4.mp4",
+      "fiche": "approved/2026-11-29/ZW-20261129-4.json"
     }
   },
   "captionsUsed": [
@@ -9103,5 +9563,5 @@
     "yte|Did your pick survive the cuts?",
     "emt|Color War: every hit steals a tile 🟥"
   ],
-  "updatedAt": "2026-11-25T21:14:13+01:00"
+  "updatedAt": "2026-11-26T21:10:49+01:00"
 }

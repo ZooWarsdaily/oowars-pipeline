@@ -1,0 +1,56 @@
+{
+  "id": "ZW-20261129-1",
+  "game": "Musical Chairs 3D",
+  "publishDate": "2026-11-29",
+  "slot": 1,
+  "time": "12:30",
+  "timezone": "Europe/Paris",
+  "seed": 3311450323,
+  "theme": "jungle",
+  "winner": "wolf",
+  "eliminationOrder": [
+    "lion",
+    "bear",
+    "tiger",
+    "bull",
+    "fox",
+    "gorilla",
+    "panda"
+  ],
+  "highlights": {
+    "shoves": 10,
+    "shovesPerRound": [
+      4,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "gameSeconds": 60.43,
+    "score": 33.72,
+    "gamesSimulated": 600
+  },
+  "file": {
+    "name": "ZW-20261129-1.mp4",
+    "at": "2026-11-26T20:58:51+01:00",
+    "ok": true,
+    "problems": [],
+    "duration": 60.43,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "sizeMB": 75.46,
+    "sha256": "72deb21fbb781b578505e9053b9750536b4b6133730fbd58e8cf6ca80b2b96de",
+    "luminance": [
+      136.9,
+      161.2,
+      152.9,
+      119.9,
+      120.3
+    ]
+  }
+}
