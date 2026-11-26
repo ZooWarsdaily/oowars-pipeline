@@ -1,0 +1,25 @@
+{
+  "channelId": "6af611d662b70b94b00d5648",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "dueAt": "2026-11-29T19:00:00+01:00",
+  "text": "A new Zoo Wars hot potato battle in the ice arena: tag, dodge and survive until only one animal is left.\nWho did you pick? Tell us in the comments!\n🏆 Season 1: Panda & Wolf tied at the top (5 wins)\n\n#shorts #zoowars #satisfying #simulation",
+  "assets": [
+    {
+      "video": {
+        "url": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-29/ZW-20261129-2.mp4",
+        "metadata": {}
+      }
+    }
+  ],
+  "metadata": {
+    "youtube": {
+      "type": "short",
+      "title": "Pass the Bomb or Explode! Animal Battle",
+      "categoryId": "24",
+      "madeForKids": false,
+      "privacy": "public",
+      "notifySubscribers": true
+    }
+  }
+}

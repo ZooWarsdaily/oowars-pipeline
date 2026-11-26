@@ -1,0 +1,35 @@
+{
+ "edges": [
+  {
+   "node": {
+    "id": "6b0893d21fa409158296421e",
+    "status": "scheduled",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "dueAt": "2026-11-29T18:00:00.000Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-29/ZW-20261129-2-tt.mp4"
+     }
+    ]
+   }
+  },
+  {
+   "node": {
+    "id": "6b08932cce64081689ed7377",
+    "status": "scheduled",
+    "channelId": "6af60dc162b70b94b00d05a1",
+    "dueAt": "2026-11-29T11:30:00.000Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-29/ZW-20261129-1-tt.mp4"
+     }
+    ]
+   }
+  }
+ ],
+ "pageInfo": {
+  "hasNextPage": false
+ }
+}

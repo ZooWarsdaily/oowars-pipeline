@@ -64,3 +64,33 @@
 2026-11-26T21:10:47+01:00 [producer] ZW-20261129-4: rendered in 0 min
 2026-11-26T21:10:49+01:00 [producer] ZW-20261129-4: VALIDATED (18s, 3.02 MB)
 2026-11-26T21:10:49+01:00 [producer] run 2026-11-29 finished: ZW-20261129-1=validated ZW-20261129-2=validated ZW-20261129-3=validated ZW-20261129-4=validated
+2026-11-26T21:12:03+01:00 [tiktokcut] ZW-20261129-1: TikTok cut -1.8s ok []
+2026-11-26T21:12:17+01:00 [orchestrator] ZW-20261129-1: pushed to media branch
+2026-11-26T21:13:15+01:00 [tiktokcut] ZW-20261129-2: TikTok cut -1.8s ok []
+2026-11-26T21:13:32+01:00 [orchestrator] ZW-20261129-2: pushed to media branch
+2026-11-26T21:13:59+01:00 [tiktokcut] ZW-20261129-3: TikTok cut -1.8s ok []
+2026-11-26T21:14:10+01:00 [orchestrator] ZW-20261129-3: pushed to media branch
+2026-11-26T21:14:12+01:00 [orchestrator] ZW-20261129-4: pushed to media branch
+2026-11-26T21:14:17+01:00 [publisher] ZW-20261129-1: uploaded (git blob ok (3f73a03f53)) https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-29/ZW-20261129-1.mp4
+2026-11-26T21:14:17+01:00 [publisher] ZW-20261129-1: captions written
+2026-11-26T21:14:19+01:00 [publisher] ZW-20261129-2: uploaded (git blob ok (aa37181f5b)) https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-29/ZW-20261129-2.mp4
+2026-11-26T21:14:19+01:00 [publisher] ZW-20261129-2: captions written
+2026-11-26T21:14:20+01:00 [publisher] ZW-20261129-3: uploaded (git blob ok (dcdd66229b)) https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-29/ZW-20261129-3.mp4
+2026-11-26T21:14:20+01:00 [publisher] ZW-20261129-3: captions written
+2026-11-26T21:14:21+01:00 [publisher] ZW-20261129-4: uploaded (git blob ok (1caceddba5)) https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-29/ZW-20261129-4.mp4
+2026-11-26T21:14:21+01:00 [publisher] ZW-20261129-4: captions written
+2026-11-26T21:14:31+01:00 [publisher] ZW-20261129-1: tiktok payload ready (live)
+2026-11-26T21:16:50+01:00 [publisher] ZW-20261129-1: tiktok confirmed by Buffer, post 6b08932cce64081689ed7377 (scheduled)
+2026-11-26T21:16:50+01:00 [publisher] ZW-20261129-1: youtube payload ready (live)
+2026-11-26T21:17:02+01:00 [publisher] ZW-20261129-1: youtube confirmed by Buffer, post 6b0893ba3accdac92cf9966c (scheduled)
+2026-11-26T21:17:12+01:00 [publisher] ZW-20261129-2: tiktok payload ready (live)
+2026-11-26T21:17:12+01:00 [publisher] ZW-20261129-2: youtube payload ready (live)
+2026-11-26T21:17:28+01:00 [publisher] ZW-20261129-2: tiktok confirmed by Buffer, post 6b0893d21fa409158296421e (scheduled)
+2026-11-26T21:17:28+01:00 [publisher] ZW-20261129-2: youtube confirmed by Buffer, post 6b0893d4ce64081689edcb28 (scheduled)
+2026-11-26T21:17:35+01:00 [publisher] ZW-20261129-3: tiktok payload ready (live)
+2026-11-26T21:17:44+01:00 [publisher] ZW-20261129-3: tiktok confirmed by Buffer, post 6b0893e4f0a96d0f218a2a12 (scheduled)
+2026-11-26T21:17:51+01:00 [publisher] ZW-20261129-4: tiktok payload ready (live)
+2026-11-26T21:18:01+01:00 [publisher] ZW-20261129-4: tiktok confirmed by Buffer, post 6b0893f53accdac92cf9c398 (scheduled)
+2026-11-26T21:18:09+01:00 [publisher] ZW-20261129-3: youtube payload ready (live)
+2026-11-26T21:18:09+01:00 [publisher] ZW-20261129-4: youtube payload ready (live)
+2026-11-26T21:18:21+01:00 [orchestrator] ZW-20261129-4 youtube refused (YouTube 2/day limit); ZW-20261129-3 youtube not attempted (same limit)

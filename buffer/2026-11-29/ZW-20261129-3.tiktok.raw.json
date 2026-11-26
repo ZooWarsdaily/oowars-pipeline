@@ -1,0 +1,19 @@
+{
+ "id": "6b0893e4f0a96d0f218a2a12",
+ "status": "scheduled",
+ "channelId": "6af60dc162b70b94b00d05a1",
+ "channelService": "tiktok",
+ "dueAt": "2026-11-29T15:00:00.000Z",
+ "sentAt": null,
+ "shareMode": "customScheduled",
+ "isCustomScheduled": true,
+ "createdAt": "2026-11-26T20:17:40.201Z",
+ "error": null,
+ "assets": [
+  {
+   "type": "video",
+   "mimeType": "video/mp4",
+   "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-29/ZW-20261129-3-tt.mp4"
+  }
+ ]
+}

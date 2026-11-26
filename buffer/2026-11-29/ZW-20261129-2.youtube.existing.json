@@ -1,0 +1,21 @@
+{
+ "edges": [
+  {
+   "node": {
+    "id": "6b0893ba3accdac92cf9966c",
+    "status": "scheduled",
+    "channelId": "6af611d662b70b94b00d5648",
+    "dueAt": "2026-11-29T11:30:00.000Z",
+    "assets": [
+     {
+      "type": "video",
+      "source": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-11-29/ZW-20261129-1.mp4"
+     }
+    ]
+   }
+  }
+ ],
+ "pageInfo": {
+  "hasNextPage": false
+ }
+}
