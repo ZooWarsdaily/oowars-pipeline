@@ -1,0 +1,38 @@
+{
+  "id": "ZW-20261130-3",
+  "game": "Hot Potato 2D",
+  "publishDate": "2026-11-30",
+  "slot": 3,
+  "time": "16:00",
+  "timezone": "Europe/Paris",
+  "seed": 163655141,
+  "winner": "Wolf",
+  "highlights": {
+    "eliminations": 5,
+    "finalMargin": null,
+    "videoSeconds": 62.4,
+    "score": 15,
+    "gamesPreviewed": 6
+  },
+  "file": {
+    "name": "ZW-20261130-3.mp4",
+    "at": "2026-11-27T21:12:29+01:00",
+    "ok": true,
+    "problems": [],
+    "duration": 62.4,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "sizeMB": 14.2,
+    "sha256": "d6c7ed935e206d1aca3ba3fcf81b73dd1cad983d89d4655530310b8f79314e74",
+    "luminance": [
+      34.2,
+      34,
+      36.6,
+      38.9,
+      19.5
+    ]
+  }
+}
