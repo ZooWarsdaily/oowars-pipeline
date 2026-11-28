@@ -1,0 +1,25 @@
+{
+  "channelId": "6af611d662b70b94b00d5648",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "dueAt": "2026-12-01T12:30:00+01:00",
+  "text": "A Zoo Wars musical chairs battle above a boiling volcano: one cushion too few every round, one winner at the end.\nComment your animal for the next battle!\n🏆 Season 1: Panda & Tiger & Wolf tied at the top (5 wins)\n\n#shorts #zoowars #musicalchairs #animalbattle",
+  "assets": [
+    {
+      "video": {
+        "url": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-12-01/ZW-20261201-1.mp4",
+        "metadata": {}
+      }
+    }
+  ],
+  "metadata": {
+    "youtube": {
+      "type": "short",
+      "title": "Animal Musical Chairs – Pick Your Fighter",
+      "categoryId": "24",
+      "madeForKids": false,
+      "privacy": "public",
+      "notifySubscribers": true
+    }
+  }
+}

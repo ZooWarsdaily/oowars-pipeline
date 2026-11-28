@@ -1,0 +1,25 @@
+{
+  "channelId": "6af611d662b70b94b00d5648",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "dueAt": "2026-12-01T16:00:00+01:00",
+  "text": "Six animals bounce across the board and steal tiles from each other. Every 12 seconds, last place is out.\nNew Zoo Wars battle every day.\n\n#shorts #zoowars #colorwar #animalbattle",
+  "assets": [
+    {
+      "video": {
+        "url": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-12-01/ZW-20261201-3.mp4",
+        "metadata": {}
+      }
+    }
+  ],
+  "metadata": {
+    "youtube": {
+      "type": "short",
+      "title": "Six Colors, One Winner – Animal Color War",
+      "categoryId": "24",
+      "madeForKids": false,
+      "privacy": "public",
+      "notifySubscribers": true
+    }
+  }
+}

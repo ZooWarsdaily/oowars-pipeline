@@ -1,0 +1,25 @@
+{
+  "channelId": "6af611d662b70b94b00d5648",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "dueAt": "2026-12-01T19:00:00+01:00",
+  "text": "The bomb drops, the chase begins among the stars. Seven explosions, one survivor.\nWho did you pick? Tell us in the comments!\n🏆 Season 1 leader: Panda (6 wins)\n\n#shorts #zoowars #satisfying #simulation",
+  "assets": [
+    {
+      "video": {
+        "url": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-12-01/ZW-20261201-2.mp4",
+        "metadata": {}
+      }
+    }
+  ],
+  "metadata": {
+    "youtube": {
+      "type": "short",
+      "title": "Insane Final Duel in Animal Hot Potato",
+      "categoryId": "24",
+      "madeForKids": false,
+      "privacy": "public",
+      "notifySubscribers": true
+    }
+  }
+}

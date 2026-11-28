@@ -1,0 +1,18 @@
+{
+  "channelId": "6af60dc162b70b94b00d05a1",
+  "schedulingType": "automatic",
+  "mode": "customScheduled",
+  "dueAt": "2026-12-01T12:30:00+01:00",
+  "text": "Dance… dance… STOP! 🎵\nMusical chairs above a boiling volcano.\n\nCall your winner in the comments 👇\n🏆 Season 1: Panda & Tiger & Wolf tied at the top (5 wins)\n\n#zoowars #musicalchairs #animalbattle #simulation #whowouldwin",
+  "assets": [
+    {
+      "video": {
+        "url": "https://raw.githubusercontent.com/ZooWarsdaily/oowars-pipeline/media/2026-12-01/ZW-20261201-1-tt.mp4",
+        "metadata": {
+          "thumbnailOffset": 3000
+        }
+      }
+    }
+  ],
+  "metadata": {}
+}
