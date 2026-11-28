@@ -9822,71 +9822,107 @@
           "from": "produced",
           "to": "error",
           "note": "qc failed"
+        },
+        {
+          "at": "2026-11-28T21:13:27+01:00",
+          "from": "error",
+          "to": "planned",
+          "note": "retry 1"
+        },
+        {
+          "at": "2026-11-28T21:21:14+01:00",
+          "from": "planned",
+          "to": "produced",
+          "note": "render ok"
+        },
+        {
+          "at": "2026-11-28T21:21:27+01:00",
+          "from": "produced",
+          "to": "error",
+          "note": "qc failed"
+        },
+        {
+          "at": "2026-11-28T21:21:27+01:00",
+          "from": "error",
+          "to": "planned",
+          "note": "retry 2"
+        },
+        {
+          "at": "2026-11-28T21:29:06+01:00",
+          "from": "planned",
+          "to": "produced",
+          "note": "render ok"
+        },
+        {
+          "at": "2026-11-28T21:29:19+01:00",
+          "from": "produced",
+          "to": "error",
+          "note": "qc failed"
         }
       ],
-      "lastError": "qc: size 105.5 MB",
+      "lastError": "qc: size 98.1 MB",
       "selection": {
-        "seed": 265761779,
+        "seed": 576076104,
         "metrics": {
-          "seed": 265761779,
+          "seed": 576076104,
           "winner": "bear",
-          "dur": 63.35,
+          "dur": 59.57,
           "tags": 7,
           "roundTags": [],
           "gaps": [
-            10.63,
-            10.84,
-            11.04,
-            11.13,
-            5.67,
-            5.22
+            9.31,
+            7.01,
+            7.94,
+            8.64,
+            8.76,
+            7.98
           ],
           "calmHits": 0,
           "order": [
-            "bull",
-            "fox",
             "panda",
-            "gorilla",
-            "wolf",
+            "bull",
             "tiger",
-            "lion"
+            "lion",
+            "gorilla",
+            "fox",
+            "wolf"
           ],
-          "score": 28.6
+          "score": 34.28
         },
         "simulated": 600,
         "runnersUp": [
           {
-            "seed": 696201594,
-            "score": 28.3
+            "seed": 371646921,
+            "score": 32.19
           },
           {
-            "seed": 2624344490,
-            "score": 26.62
+            "seed": 301804503,
+            "score": 31.87
           },
           {
-            "seed": 1675184611,
-            "score": 26.25
+            "seed": 3378438390,
+            "score": 31.63
           }
         ]
       },
       "render": {
         "file": "production/2026-11-30/ZW-20261130-1.mp4",
-        "seconds": 368,
+        "seconds": 398,
         "info": {
-          "seed": 265761779,
+          "seed": 576076104,
           "theme": "volcano",
-          "vt": 63.36666666666435,
+          "vt": 59.56666666666457,
           "phase": "win",
           "tags": 7,
           "winner": "bear",
           "order": [
-            "bull",
-            "fox",
             "panda",
-            "gorilla",
-            "wolf",
+            "bull",
             "tiger",
-            "lion"
+            "lion",
+            "gorilla",
+            "fox",
+            "wolf"
           ],
           "kinds": [
             -1,
@@ -9900,25 +9936,25 @@
         }
       },
       "qc": {
-        "at": "2026-11-27T21:33:08+01:00",
+        "at": "2026-11-28T21:29:19+01:00",
         "ok": false,
         "problems": [
-          "size 105.5 MB"
+          "size 98.1 MB"
         ],
-        "duration": 63.37,
+        "duration": 59.57,
         "width": 1080,
         "height": 1920,
         "fps": 30,
         "videoCodec": "h264",
         "audioCodec": "aac",
-        "sizeMB": 105.55,
-        "sha256": "de35183be960b9e1b8e04f158e4ed475e05f8b251d3cf3ea4d33390fce35717e",
+        "sizeMB": 98.12,
+        "sha256": "e82661328abc45d04388bb6bba53fc815457f96201fd78ce922b3a29c7e2cc41",
         "luminance": [
-          137.3,
-          152.6,
-          137.2,
-          134.2,
-          151.5
+          139.5,
+          141.6,
+          137.6,
+          134.3,
+          142.6
         ]
       }
     },
@@ -10923,5 +10959,5 @@
     "2t|Six Colors, One Winner – Animal Color War",
     "yte|New Zoo Wars battle every day."
   ],
-  "updatedAt": "2026-11-28T21:13:19+01:00"
+  "updatedAt": "2026-11-28T21:29:19+01:00"
 }

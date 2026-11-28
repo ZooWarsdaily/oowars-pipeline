@@ -69,3 +69,33 @@
 2026-11-28T21:13:19+01:00 [publisher] ZW-20261201-3: tiktok confirmed by Buffer, post 6b0b35d41a50ad405063cd83 (scheduled)
 2026-11-28T21:13:19+01:00 [publisher] ZW-20261201-3: youtube payload ready (live)
 2026-11-28T21:13:19+01:00 [orchestrator] ZW-20261201-3: youtube not attempted (YouTube 2 posts/day limit in Buffer; 01/12 already holds ZW-20261201-1 and -2)
+2026-11-28T21:13:43+01:00 [monitor] check 2026-11-29: À CORRIGER (6/8) {"issues":2,"actions":2}
+2026-11-28T21:13:49+01:00 [orchestrator] monitor 2026-11-29: actions 'schedule ZW-20261129-3/-4 youtube' not applied: 29/11 already holds 2 YouTube posts (Buffer YouTube 2/day limit, refused on 26/11)
+2026-11-28T21:14:32+01:00 [producer] ZW-20261130-1: 600 games simulated in 61s, 33 valid with the planned winner
+2026-11-28T21:14:32+01:00 [producer] ZW-20261130-1: best seed 1529902308 score 31.86 {"tags":7,"dur":60.6}
+2026-11-28T21:14:32+01:00 [producer] ZW-20261130-1: render starts (seed 1529902308, volcano)
+2026-11-28T21:14:37+01:00 [producer] ZW-20261130-1 | seed 1529902308 frames 1818
+2026-11-28T21:16:50+01:00 [producer] ZW-20261130-1 | part 1 frame 300 / 909
+2026-11-28T21:16:51+01:00 [producer] ZW-20261130-1 | part 0 frame 300 / 909
+2026-11-28T21:18:56+01:00 [producer] ZW-20261130-1 | part 0 frame 600 / 909
+2026-11-28T21:19:00+01:00 [producer] ZW-20261130-1 | part 1 frame 600 / 909
+2026-11-28T21:20:59+01:00 [producer] ZW-20261130-1 | part 0 frame 900 / 909
+2026-11-28T21:21:07+01:00 [producer] ZW-20261130-1 | part 1 frame 900 / 909
+2026-11-28T21:21:14+01:00 [producer] ZW-20261130-1 | DONE /home/claude/oowars-pipeline/production/2026-11-30/ZW-20261130-1.mp4 in 402 s {"seed":1529902308,"theme":"volcano","vt":60.59999999999784,"phase":"win","tags":7,"winner":"bear","order":["tiger","lion","bull","panda","fox","gorilla","wolf"],"kinds":[-1,-1,-1,-1,-1,-1,-1]}
+2026-11-28T21:21:14+01:00 [producer] ZW-20261130-1: rendered in 7 min
+2026-11-28T21:21:27+01:00 [producer] ZW-20261130-1: QC FAILED ["size 97.2 MB"]
+2026-11-28T21:22:28+01:00 [producer] ZW-20261130-1: 600 games simulated in 57s, 26 valid with the planned winner
+2026-11-28T21:22:28+01:00 [producer] ZW-20261130-1: best seed 576076104 score 34.28 {"tags":7,"dur":59.57}
+2026-11-28T21:22:28+01:00 [producer] ZW-20261130-1: render starts (seed 576076104, volcano)
+2026-11-28T21:22:32+01:00 [producer] ZW-20261130-1 | seed 576076104 frames 1787
+2026-11-28T21:24:40+01:00 [producer] ZW-20261130-1 | part 1 frame 300 / 893
+2026-11-28T21:24:42+01:00 [producer] ZW-20261130-1 | part 0 frame 300 / 894
+2026-11-28T21:26:43+01:00 [producer] ZW-20261130-1 | part 0 frame 600 / 894
+2026-11-28T21:26:52+01:00 [producer] ZW-20261130-1 | part 1 frame 600 / 893
+2026-11-28T21:29:06+01:00 [producer] ZW-20261130-1 | DONE /home/claude/oowars-pipeline/production/2026-11-30/ZW-20261130-1.mp4 in 398 s {"seed":576076104,"theme":"volcano","vt":59.56666666666457,"phase":"win","tags":7,"winner":"bear","order":["panda","bull","tiger","lion","gorilla","fox","wolf"],"kinds":[-1,-1,-1,-1,-1,-1,-1]}
+2026-11-28T21:29:06+01:00 [producer] ZW-20261130-1: rendered in 7 min
+2026-11-28T21:29:19+01:00 [producer] ZW-20261130-1: QC FAILED ["size 98.1 MB"]
+2026-11-28T21:29:19+01:00 [producer] ZW-20261130-2 already scheduled
+2026-11-28T21:29:19+01:00 [producer] ZW-20261130-3 already scheduled
+2026-11-28T21:29:19+01:00 [producer] run 2026-11-30 finished: ZW-20261130-1=error ZW-20261130-2=scheduled ZW-20261130-3=scheduled
+2026-11-28T21:29:30+01:00 [orchestrator] ZW-20261130-1 (infection-3d, volcano): 2 more renders failed QC on size (97.2/98.1 MB > 95), 6 failures in total, left in error; TikTok and YouTube 12:30 slot of 30/11 empty; owner alerted

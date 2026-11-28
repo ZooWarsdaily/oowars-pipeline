@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-29",
+  "mode": "live",
+  "verdict": "À CORRIGER",
+  "confirmed": 6,
+  "expected": 8,
+  "ok": [
+    "ZW-20261129-1 (12:30, décor jungle) : vidéo validée, 60.43 s, 75.46 Mo",
+    "ZW-20261129-1 tiktok : programmée 29/11/2026 12:30:00 — post 6b08932cce64081689ed7377",
+    "ZW-20261129-1 youtube : programmée 29/11/2026 12:30:00 — post 6b0893ba3accdac92cf9966c",
+    "ZW-20261129-2 (19:00, décor ice) : vidéo validée, 62.97 s, 91.08 Mo",
+    "ZW-20261129-2 tiktok : programmée 29/11/2026 19:00:00 — post 6b0893d21fa409158296421e",
+    "ZW-20261129-2 youtube : programmée 29/11/2026 19:00:00 — post 6b0893d4ce64081689edcb28",
+    "ZW-20261129-3 (16:00, terr) : vidéo validée, 66.87 s, 16.77 Mo",
+    "ZW-20261129-3 tiktok : programmée 29/11/2026 16:00:00 — post 6b0893e4f0a96d0f218a2a12",
+    "ZW-20261129-4 (18:00, standings) : vidéo validée, 18 s, 3.02 Mo",
+    "ZW-20261129-4 tiktok : programmée 29/11/2026 18:00:00 — post 6b0893f53accdac92cf9c398"
+  ],
+  "issues": [
+    "ZW-20261129-3 youtube : publication MANQUANTE",
+    "ZW-20261129-4 youtube : publication MANQUANTE"
+  ],
+  "actions": [
+    {
+      "type": "schedule",
+      "safe": true,
+      "id": "ZW-20261129-3",
+      "channel": "youtube"
+    },
+    {
+      "type": "schedule",
+      "safe": true,
+      "id": "ZW-20261129-4",
+      "channel": "youtube"
+    }
+  ],
+  "manual": [],
+  "at": "2026-11-28T21:13:43+01:00"
+}
