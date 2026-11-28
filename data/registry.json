@@ -8921,7 +8921,8 @@
           "experiment": "T2-youtube-titres-emoji"
         },
         "at": "2026-11-25T21:11:08+01:00"
-      }
+      },
+      "mediaPruned": "2026-11-28T21:30:29+01:00"
     },
     "ZW-20261128-3": {
       "id": "ZW-20261128-3",
@@ -10959,5 +10960,5 @@
     "2t|Six Colors, One Winner – Animal Color War",
     "yte|New Zoo Wars battle every day."
   ],
-  "updatedAt": "2026-11-28T21:29:19+01:00"
+  "updatedAt": "2026-11-28T21:30:29+01:00"
 }

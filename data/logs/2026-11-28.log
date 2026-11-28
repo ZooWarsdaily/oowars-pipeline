@@ -99,3 +99,5 @@
 2026-11-28T21:29:19+01:00 [producer] ZW-20261130-3 already scheduled
 2026-11-28T21:29:19+01:00 [producer] run 2026-11-30 finished: ZW-20261130-1=error ZW-20261130-2=scheduled ZW-20261130-3=scheduled
 2026-11-28T21:29:30+01:00 [orchestrator] ZW-20261130-1 (infection-3d, volcano): 2 more renders failed QC on size (97.2/98.1 MB > 95), 6 failures in total, left in error; TikTok and YouTube 12:30 slot of 30/11 empty; owner alerted
+2026-11-28T21:30:18+01:00 [analytics] snapshot: 102 posts with metrics stored
+2026-11-28T21:30:29+01:00 [orchestrator] media pruned: ZW-20261128-2
